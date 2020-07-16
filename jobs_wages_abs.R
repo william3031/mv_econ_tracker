@@ -52,10 +52,6 @@ jobs_wages_index <- bind_rows(weekly_jobs_data_raw, weekly_wages_data_raw) %>%
   mutate(values = round(values - 100, 1))
 write_csv(jobs_wages_index, "app_data/jobs_wages_index.csv")
 
-# industry division list - use this as a filter for the bottom graph in the app
-ind_div_list <- weekly_abs_data %>% 
-  distinct(industry_division) %>% 
-  pull()
 
 # data for age and gender - victoria
 jobs_wages_by_age_data <- weekly_abs_data %>% 
@@ -64,5 +60,15 @@ jobs_wages_by_age_data <- weekly_abs_data %>%
   mutate(latest_week = round(latest_week - 100, 1))
 write_csv(jobs_wages_by_age_data, "app_data/jobs_wages_by_age_data.csv")
 
-weekly_abs_data %>% 
-  distinct(industry_division)
+# for plotly first graph
+jobs_index <- jobs_wages_index %>% 
+  filter(type == "jobs")
+
+wages_index <- jobs_wages_index %>% 
+  filter(type == "wages")
+
+plot_ly() %>% 
+  add_trace(data = jobs_index, x = ~date, y = ~values, name = "jobs", mode = "lines+markers") %>% 
+  add_trace(data = wages_index, x = ~date, y = ~values, name = "wages", mode = "lines+markers") %>% 
+  layout(xaxis = list(title = 'Date'), yaxis = list(title = "Change % (from 14 March)"))
+

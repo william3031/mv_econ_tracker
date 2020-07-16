@@ -3,7 +3,7 @@
 # postcode level data for organisations
 
 # libraries
-pacman::p_load(tidyverse, readxl, janitor, scales, sf)
+pacman::p_load(tidyverse, readxl, janitor, scales, sf, rmapshaper)
 
 # read in data
 jk_raw <- read_excel("data_in/jobkeeper-data.xlsx", sheet = "Data") %>% 
@@ -12,7 +12,7 @@ jk_raw <- read_excel("data_in/jobkeeper-data.xlsx", sheet = "Data") %>%
   filter(!is.na(count))
 
 # join to selected postcodes and export # simplify the postcode file first!!!!!!!!!!!!!!!!!!!!!
-postcodes_jk <- st_read("data_in/shp/postcodes_selected.shp") %>% 
+postcodes_jk <- st_read("data_in/shp/postcodes_simplified.shp") %>% 
   clean_names() %>% 
   left_join(jk_raw) %>% 
   filter(!is.na(count))
@@ -26,4 +26,9 @@ jk_raw %>%
   filter(postcode != "TOTAL") %>% 
   filter(postcode %in% c("3031", "3032", "3033", "3034", "3039", "3040", "3041", "3042"))
 
-
+## postcodes were simplified first using rmapshaper
+#pex <- st_read("data_in/shp/postcodes_ex.shp") %>% 
+#  clean_names() %>% 
+#  ms_simplify() %>% 
+#  select(postcode)
+#st_write(pex, "data_in/shp/postcodes_simplified.shp")

@@ -2,7 +2,7 @@
 # https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile
 
 # libraries
-pacman::p_load(tidyverse, readxl, janitor, scales, sf)
+pacman::p_load(tidyverse, readxl, janitor, scales, sf, rmapshaper)
 
 # don't use purrr on this as the files are the same, cant' work out month
 data_mar20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipients-monthly-profile-march-2020.xlsx",
@@ -108,7 +108,7 @@ jobseeker_joined_mv_sa2 <- jobseeker_joined %>%
   filter(!region %in% c("City of Moonee Valley", "Greater Melbourne", "Victoria"))
 
 
-# spatial data - simplify the file perhaps
+# spatial data - already simplified
 sa2_greater <- st_read("data_in/shp/sa2_2016_gmel.shp") %>% 
   clean_names() 
 
