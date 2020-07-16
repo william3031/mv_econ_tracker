@@ -108,7 +108,7 @@ jobseeker_joined_mv_sa2 <- jobseeker_joined %>%
   filter(!region %in% c("City of Moonee Valley", "Greater Melbourne", "Victoria"))
 
 
-# spatial data
+# spatial data - simplify the file perhaps
 sa2_greater <- st_read("data_in/shp/sa2_2016_gmel.shp") %>% 
   clean_names() 
 

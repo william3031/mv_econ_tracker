@@ -11,7 +11,7 @@ jk_raw <- read_excel("data_in/jobkeeper-data.xlsx", sheet = "Data") %>%
   rename(count = april_application_count) %>%  # change as needed
   filter(!is.na(count))
 
-# join to selected postcodes and export
+# join to selected postcodes and export # simplify the postcode file first!!!!!!!!!!!!!!!!!!!!!
 postcodes_jk <- st_read("data_in/shp/postcodes_selected.shp") %>% 
   clean_names() %>% 
   left_join(jk_raw) %>% 
