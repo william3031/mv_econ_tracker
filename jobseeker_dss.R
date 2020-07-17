@@ -2,7 +2,7 @@
 # https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile
 
 # libraries
-pacman::p_load(tidyverse, readxl, janitor, scales, sf, rmapshaper)
+pacman::p_load(tidyverse, readxl, janitor, scales, sf, rmapshaper, lubridate, RColorBrewer)
 
 # don't use purrr on this as the files are the same, cant' work out month
 data_mar20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipients-monthly-profile-march-2020.xlsx",
@@ -40,25 +40,6 @@ jobseeker_merge_sa2 <- jobseeker_merge %>%
   select(-sa2) %>% 
   rename(region = sa2_name)
 
-jobseeker_merge_mv <- jobseeker_merge_sa2 %>% 
-  group_by(month) %>% 
-  summarise(job_seeker_payment = sum(job_seeker_payment), youth_allowance_other = sum(youth_allowance_other), total = sum(total)) %>% 
-  mutate(region = "City of Moonee Valley")
-
-jobseeker_merge_gm <- jobseeker_merge %>% 
-  filter((sa2 >= 21105 & sa2 <= 21385)| sa2 >= 21424 & sa2 <= 21468) %>% 
-  group_by(month)  %>% 
-  summarise(job_seeker_payment = sum(job_seeker_payment), youth_allowance_other = sum(youth_allowance_other), total = sum(total)) %>% 
-  mutate(region = "Greater Melbourne")
-
-jobseeker_merge_vic <- jobseeker_merge %>% 
-  group_by(month)  %>% 
-  summarise(job_seeker_payment = sum(job_seeker_payment), youth_allowance_other = sum(youth_allowance_other), total = sum(total)) %>% 
-  mutate(region = "Victoria")
-
-# everything joined
-jobseeker_all <- bind_rows(jobseeker_merge_sa2, jobseeker_merge_mv, jobseeker_merge_gm, jobseeker_merge_vic) %>% 
-  rename(total_js_ya = total)
 
 # add 15-64 population proportion ########################################################################
 
@@ -91,9 +72,11 @@ jobseeker_table_long <- jobseeker_table %>%
                                data_type == "total" ~ "Total JobSeeker and Youth allowance recipients",
                                data_type == "age15_64" ~ "Population aged 15-64 y.o.",
                                data_type == "pct_15_64" ~ "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance",
-                               TRUE ~ NA_character_)) %>% 
-  mutate(month = format(month, "%b %Y"))
+                               TRUE ~ NA_character_)) 
 write_csv(jobseeker_table_long, "app_data/jobseeker_table_long.csv")
+
+
+# mutate(month = format(month, "%b %Y"))
 
 # spatial data - already simplified
 sa2_greater <- st_read("data_in/shp/sa2_2016_gmel.shp") %>% 
@@ -125,8 +108,6 @@ tm_shape(js_map_join, bbox = tmaptools::bb(mv_shp)) +
   tm_borders(alpha = 0.5, col = "purple", lwd = 2)
 
 #########################
-
-
 
 mv_sa2_age <- asgs_age %>% 
   select(-(s_t_code:sa2_code)) %>% 
@@ -163,18 +144,53 @@ joined_ages <- bind_rows(mv_sa2_age, lga_age, vic_age, gm_age) %>%
   group_by(region) %>% 
   summarise(age15_64 = sum(count))
 
+jobseeker_merge_mv <- jobseeker_merge_sa2 %>% 
+  group_by(month) %>% 
+  summarise(job_seeker_payment = sum(job_seeker_payment), youth_allowance_other = sum(youth_allowance_other), total = sum(total)) %>% 
+  mutate(region = "City of Moonee Valley")
+
+jobseeker_merge_gm <- jobseeker_merge %>% 
+  filter((sa2 >= 21105 & sa2 <= 21385)| sa2 >= 21424 & sa2 <= 21468) %>% 
+  group_by(month)  %>% 
+  summarise(job_seeker_payment = sum(job_seeker_payment), youth_allowance_other = sum(youth_allowance_other), total = sum(total)) %>% 
+  mutate(region = "Greater Melbourne")
+
+jobseeker_merge_vic <- jobseeker_merge %>% 
+  group_by(month)  %>% 
+  summarise(job_seeker_payment = sum(job_seeker_payment), youth_allowance_other = sum(youth_allowance_other), total = sum(total)) %>% 
+  mutate(region = "Victoria")
+
+# everything joined
+jobseeker_all <- bind_rows(jobseeker_merge_sa2, jobseeker_merge_mv, jobseeker_merge_gm, jobseeker_merge_vic) 
+
 # join to the ages
 jobseeker_joined <- left_join(jobseeker_all, joined_ages) %>% 
-  mutate(pct_15_64 = round(total_js_ya/age15_64*100, 1)) %>% 
+  mutate(pct_15_64 = round(total/age15_64*100, 1)) %>% 
   mutate(region = factor(region, levels = c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Ponds",
                                             "Airport West", "Keilor East", "Niddrie - Essendon West", "Strathmore",
-                                            "City of Moonee Valley", "Greater Melbourne", "Victoria")))
+                                            "City of Moonee Valley", "Greater Melbourne", "Victoria"))) %>% 
+  mutate(pct_15_64 = round(total/age15_64*100, 1)) %>% 
+  select(-job_seeker_payment, -youth_allowance_other) %>% 
+  pivot_longer(cols = -(region:month), names_to = "data_type", values_to = "values") %>% 
+  mutate(data_type = case_when(data_type == "job_seeker_payment" ~ "JobSeeker payment recipients",
+                               data_type == "youth_allowance_other" ~ "Youth Allowance recipients",
+                               data_type == "total" ~ "Total JobSeeker and Youth allowance recipients",
+                               data_type == "age15_64" ~ "Population aged 15-64 y.o.",
+                               data_type == "pct_15_64" ~ "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance",
+                               TRUE ~ NA_character_)) %>% 
+  filter(data_type != "Population aged 15-64 y.o.")
+write_csv(jobseeker_joined, "app_data/jobseeker_joined.csv")
 
-jobseeker_joined_mv_sa2 <- jobseeker_joined %>% 
-  filter(!region %in% c("City of Moonee Valley", "Greater Melbourne", "Victoria"))
+## test
+selected_regions <- c("City of Moonee Valley", "Greater Melbourne")
 
+jobseeker_joined_filtered <- jobseeker_joined %>% 
+  filter(data_type == "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance") %>% 
+  filter(region %in% selected_regions)
 
+plot_ly() %>% 
+  add_trace(data = jobseeker_joined_filtered, x = ~month, y = ~values,
+            mode = "lines+markers", color = ~region, colors = colorRampPalette(brewer.pal(10,"Spectral"))(16)) %>% 
+  layout(xaxis = list(title = 'Month'), yaxis = list(title = "Value"))
 
-
-# perhaps calculate the lastest month and show the counts and rates for all?
 

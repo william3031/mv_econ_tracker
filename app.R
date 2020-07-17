@@ -13,17 +13,20 @@ library(tmap)
 library(leaflet)
 library(tmaptools)
 library(DT)
+library(RColorBrewer)
 
 #disable scientific notation
 options(scipen = 999)
 
 # data #########
 ## dates -------------------------------------------------------------------------------------------------------------
+#abs
 abs_latest_week <- "27 June"
 abs_publication_date <- "15 July 2020"
+# jobkeeper
 jobkeeper_date <- "24 June 2020"
 jobkeeper_text <- "Numbers are based on the total number of <b>processed applications for organisations</b> for the April fortnights – 30 March 2020 to 26 April 2020 (as at midnight 3 June 2020)"
-jobseeker_month <- "Jun 2020" # in this format mmm YYYY
+#jobseeker
 jobseeker_update <- "17 July 2020"
 
 
@@ -78,19 +81,29 @@ jobseeker_table_long <- read_csv("app_data/jobseeker_table_long.csv")
 sa2_greater <- st_read("app_data/shp/sa2_2016_gmel.shp") %>% 
     select(-sa2_code)
 
-js_data_list <- c("Total JobSeeker and Youth allowance recipients", "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance", 
-                  "JobSeeker payment recipients", "Youth Allowance recipients")
+js_data_list <- c("Total JobSeeker and Youth allowance recipients", "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance")
 
 js_month_list <- jobseeker_table_long %>% 
     distinct(month) %>% 
     arrange(desc(month)) %>% 
     pull()
 
+jobseeker_month <- js_month_list[1]
+jobseeker_month_formatted <- format(ymd(jobseeker_month), "%b %Y")
+
 jobseeker_table_filtered <- jobseeker_table_long %>% 
     filter(month == jobseeker_month) %>% 
     filter(data_type == "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance")
 
 js_map_join <- left_join(sa2_greater, jobseeker_table_filtered)
+
+jobseeker_joined <- read_csv("app_data/jobseeker_joined.csv")
+
+region_list <- c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Ponds",
+                 "Airport West", "Keilor East", "Niddrie - Essendon West", "Strathmore",
+                 "City of Moonee Valley", "Greater Melbourne", "Victoria")
+
+selected_regions <- c("City of Moonee Valley", "Greater Melbourne")
 
 # the app ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -119,7 +132,7 @@ sidebar <- dashboardSidebar(
         ),
         menuItem("Jobseeker and Youth Allowance",
                  menuSubItem("Jobseeker map", tabName = "jobseeker_map"),
-                 menuSubItem("Jobseeker table", tabName = "jobseeker_table")
+                 menuSubItem("Jobseeker graph", tabName = "jobseeker_graph")
         ),
         menuItem("Unemployment rate",
                  menuSubItem("Unemployment rate map", tabName = "unemp_map"),
@@ -198,7 +211,7 @@ body <- dashboardBody(
         ## jobseeker data ####
         tabItem(tabName = "jobseeker_map",
                 fluidRow(
-                    box(title = 'Jobseeker data (SA2)', tags$body(HTML(glue("Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance for {jobseeker_month}.</br>",
+                    box(title = 'Jobseeker data (SA2)', tags$body(HTML(glue("Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance for {jobseeker_month_formatted}.</br>",
                                                                             "</br>Click on the map to see the percentages."))), width = 12)
                 ),
                 fluidRow(tmapOutput("jobseeker_map")
@@ -206,10 +219,24 @@ body <- dashboardBody(
                 box(title = 'Source', tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
                                                           "Last updated {jobseeker_update}"))), width = 12)
         ),
-        tabItem(tabName = "jobseeker_table",
+        tabItem(tabName = "jobseeker_graph",
                 fluidRow(
-                    box(title = 'Jobseeker table', tags$body(HTML("text")), width = 12)
-                )
+                    box(title = 'Jobseeker graph', tags$body(HTML("text")), width = 12)
+                ),
+                fluidRow(
+                    box(selectInput(inputId = "js_graph_input",
+                                    label = "Select the data type",
+                                    choices = js_data_list),
+                    ),
+                    box(checkboxGroupInput(inputId = "js_region_input",
+                                           label = "Select the regions",
+                                           choices = region_list,
+                                           selected = selected_regions
+                        ),
+                    ),
+                ),
+                fluidRow(plotlyOutput("jobseeker_lines")
+                ),
         ),
         ## salm data ####
         tabItem(tabName = "unemp_map",
@@ -247,9 +274,15 @@ server <- function(input, output) {
     })
     
     # jobkeeper data
-    output$jobkeeper_mv_table <- renderDT(jk_mv_postcodes,options = list(dom = 't'))
+    output$jobkeeper_mv_table <- renderDT(jk_mv_postcodes, options = list(dom = 't'))
     
-    # jobseeker data    
+    # jobseeker data   
+    jobseeker_joined_filtered <- reactive({
+        jobseeker_joined %>% 
+            filter(data_type == input$js_graph_input) %>% 
+            filter(region %in% input$js_region_input)
+    })
+
     
     # graphs ###############################################
     # jobs wages plotly change line
@@ -266,6 +299,14 @@ server <- function(input, output) {
             add_trace(data = jobs_wages_by_age_data_males_filtered(), x = ~age_group, y = ~latest_week, type = 'bar', name = 'Males') %>% 
             add_trace(data = jobs_wages_by_age_data_females_filtered(), x = ~age_group, y = ~latest_week, type = 'bar', name = 'Females') %>% 
             layout(xaxis = list(title = 'Age'), yaxis = list(title = "Change % (from 14 March)"))
+    })
+    
+    # jobseeker lines
+    output$jobseeker_lines <- renderPlotly({
+        plot_ly() %>% 
+            add_trace(data = jobseeker_joined_filtered, x = ~month, y = ~values,
+                      mode = "lines+markers", color = ~region) %>% 
+            layout(xaxis = list(title = 'Month'), yaxis = list(title = "Value"))
     })
     
     # maps #####################################################
