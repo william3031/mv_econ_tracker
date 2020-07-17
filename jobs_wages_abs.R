@@ -12,12 +12,12 @@ abs_publication_date <- "15 July 2020"
 weekly_jobs_data_raw <- read_excel("data_in/6160055001_do004_150720.xlsx", sheet = "Payroll jobs index", skip = 5) %>% 
   clean_names() %>% 
   filter(state_or_territory == "2. VIC") %>% 
-  mutate(type = "jobs")
+  mutate(type = "Jobs")
 
 weekly_wages_data_raw <- read_excel("data_in/6160055001_do004_150720.xlsx", sheet = "Total wages index", skip = 5) %>% 
   clean_names() %>% 
   filter(state_or_territory == "2. VIC") %>% 
-  mutate(type = "wages")
+  mutate(type = "Wages")
 
 #filter and join
 weekly_jobs_data <- weekly_jobs_data_raw %>% 
@@ -56,19 +56,33 @@ write_csv(jobs_wages_index, "app_data/jobs_wages_index.csv")
 # data for age and gender - victoria
 jobs_wages_by_age_data <- weekly_abs_data %>% 
   filter(sex %in% c("Males", "Females")) %>% 
-  filter(industry_division == "All industries") %>% 
-  mutate(latest_week = round(latest_week - 100, 1))
+  mutate(latest_week = round(latest_week - 100, 1)) %>% 
+  filter(industry_division == "All industries")
 write_csv(jobs_wages_by_age_data, "app_data/jobs_wages_by_age_data.csv")
+
 
 # for plotly first graph
 jobs_index <- jobs_wages_index %>% 
-  filter(type == "jobs")
+  filter(type == "Jobs")
 
 wages_index <- jobs_wages_index %>% 
-  filter(type == "wages")
+  filter(type == "Wages")
 
 plot_ly() %>% 
-  add_trace(data = jobs_index, x = ~date, y = ~values, name = "jobs", mode = "lines+markers") %>% 
-  add_trace(data = wages_index, x = ~date, y = ~values, name = "wages", mode = "lines+markers") %>% 
+  add_trace(data = jobs_index, x = ~date, y = ~values, name = "Jobs", mode = "lines+markers") %>% 
+  add_trace(data = wages_index, x = ~date, y = ~values, name = "Wages", mode = "lines+markers") %>% 
   layout(xaxis = list(title = 'Date'), yaxis = list(title = "Change % (from 14 March)"))
 
+
+jobs_wages_by_age_data_males <- jobs_wages_by_age_data %>% 
+  filter(sex == "Males") %>% 
+  filter(type == "Jobs") # change this
+
+jobs_wages_by_age_data_females <- jobs_wages_by_age_data %>% 
+  filter(sex == "Females") %>% 
+  filter(type == "Jobs") # change this
+
+plot_ly() %>% 
+  add_trace(data = jobs_wages_by_age_data_males, x = ~age_group, y = ~latest_week, type = 'bar', name = 'Males') %>% 
+  add_trace(data = jobs_wages_by_age_data_females, x = ~age_group, y = ~latest_week, type = 'bar', name = 'Females') %>% 
+  layout(xaxis = list(title = 'Date'), yaxis = list(title = "Change % (from 14 March)"))
