@@ -7,13 +7,13 @@ library(janitor)
 library(plotly)
 library(scales)
 library(shinydashboard)
-library(shinycssloaders)
-library(apputils)
 library(tmap)
 library(leaflet)
 library(tmaptools)
 library(DT)
 library(RColorBrewer)
+library(sf)
+library(lubridate)
 
 #disable scientific notation
 options(scipen = 999)
@@ -81,7 +81,7 @@ jobseeker_table_long <- read_csv("app_data/jobseeker_table_long.csv")
 sa2_greater <- st_read("app_data/shp/sa2_2016_gmel.shp") %>% 
     select(-sa2_code)
 
-js_data_list <- c("Total JobSeeker and Youth allowance recipients", "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance")
+js_data_list <- c("Total JobSeeker and Youth allowance recipients", "Percentage aged 15-64 on either JobSeeker or Youth Allowance")
 
 js_month_list <- jobseeker_table_long %>% 
     distinct(month) %>% 
@@ -89,11 +89,12 @@ js_month_list <- jobseeker_table_long %>%
     pull()
 
 jobseeker_month <- js_month_list[1]
+jobseeker_first <- js_month_list[length(js_month_list)]
 jobseeker_month_formatted <- format(ymd(jobseeker_month), "%b %Y")
 
 jobseeker_table_filtered <- jobseeker_table_long %>% 
     filter(month == jobseeker_month) %>% 
-    filter(data_type == "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance")
+    filter(data_type == "Percentage aged 15-64 on either JobSeeker or Youth Allowance")
 
 js_map_join <- left_join(sa2_greater, jobseeker_table_filtered)
 
@@ -104,6 +105,24 @@ region_list <- c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Po
                  "City of Moonee Valley", "Greater Melbourne", "Victoria")
 
 selected_regions <- c("City of Moonee Valley", "Greater Melbourne")
+
+jobseeker_large_first <- jobseeker_joined %>% 
+    filter(month  == jobseeker_first) %>% 
+    mutate(month = format(month, "%b %Y")) %>% 
+    mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
+                               glue("Recipients {month}"), glue("As % of 15-64 pop. {month}"))) %>% 
+    pivot_wider(names_from = data_type, values_from = values) %>% 
+    select(-month)
+
+jobseeker_large_current <- jobseeker_joined %>% 
+    filter(month == jobseeker_month) %>% 
+    mutate(month = format(month, "%b %Y")) %>% 
+    mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
+                               glue("Recipients {month}"), glue("As % of 15-64 pop. {month}"))) %>% 
+    pivot_wider(names_from = data_type, values_from = values) %>% 
+    select(-region, -month) 
+
+jobseeker_large <- bind_cols(jobseeker_large_first, jobseeker_large_current) 
 
 # the app ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -132,7 +151,8 @@ sidebar <- dashboardSidebar(
         ),
         menuItem("Jobseeker and Youth Allowance",
                  menuSubItem("Jobseeker map", tabName = "jobseeker_map"),
-                 menuSubItem("Jobseeker graph", tabName = "jobseeker_graph")
+                 menuSubItem("Jobseeker graph", tabName = "jobseeker_graph"),
+                 menuSubItem("Jobseeker table", tabName = "jobseeker_table")
         ),
         menuItem("Unemployment rate",
                  menuSubItem("Unemployment rate map", tabName = "unemp_map"),
@@ -161,7 +181,7 @@ body <- dashboardBody(
                 fluidRow(plotlyOutput("jobs_wages_line")
                 ),
                 fluidRow(
-                    box(title = 'Source', tags$body(HTML(glue("ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia </br>",
+                    box(title = 'Source:', tags$body(HTML(glue("ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia </br>",
                                                          "Last updated {abs_publication_date}"))), width = 12)
                 ),
         ),
@@ -179,7 +199,7 @@ body <- dashboardBody(
                 fluidRow(plotlyOutput("jobs_wages_age_bar")
                 ),
                 fluidRow(
-                    box(title = 'Source', tags$body(HTML(glue("ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia </br>",
+                    box(title = 'Source:', tags$body(HTML(glue("ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia </br>",
                                                               "Last updated {abs_publication_date}"))), width = 12),
                 ),
         ),
@@ -191,7 +211,7 @@ body <- dashboardBody(
                 ),
                 fluidRow(tmapOutput("jobkeeper_pc_map")
                 ),
-                box(title = 'Source', tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
+                box(title = 'Source:', tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
                                                             "Last updated {jobkeeper_date}</br>",
                                                             "Note: Postcode polygons have been simplified."))), width = 12)
         ),
@@ -205,38 +225,53 @@ body <- dashboardBody(
                 ),
                 fluidRow(DTOutput("jobkeeper_mv_table")
                 ),
-                box(title = 'Source', tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
+                box(title = 'Source:', tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
                                                           "Last updated {jobkeeper_date}"))), width = 12)
         ),
         ## jobseeker data ####
         tabItem(tabName = "jobseeker_map",
                 fluidRow(
-                    box(title = 'Jobseeker data (SA2)', tags$body(HTML(glue("Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance for {jobseeker_month_formatted}.</br>",
+                    box(title = 'Jobseeker data (SA2)', tags$body(HTML(glue("Percentage aged 15-64 on either JobSeeker or Youth Allowance for {jobseeker_month_formatted}.</br>",
                                                                             "</br>Click on the map to see the percentages."))), width = 12)
                 ),
                 fluidRow(tmapOutput("jobseeker_map")
                 ),
-                box(title = 'Source', tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
-                                                          "Last updated {jobseeker_update}"))), width = 12)
+                box(title = 'Sources:', tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
+                                                            "ABS, 3235.0 - Regional Population by Age and Sex (2018)</br>",
+                                                            "Last updated {jobseeker_update}"))), width = 12)
         ),
         tabItem(tabName = "jobseeker_graph",
                 fluidRow(
-                    box(title = 'Jobseeker graph', tags$body(HTML("text")), width = 12)
+                    box(title = 'JobSeeker and Youth Allowance recipients', tags$body(HTML("Total recipients and normalised to 15-64 y.o. population.")), width = 12)
                 ),
                 fluidRow(
                     box(selectInput(inputId = "js_graph_input",
                                     label = "Select the data type",
-                                    choices = js_data_list),
+                                    choices = js_data_list,
+                                    selected = "Percentage aged 15-64 on either JobSeeker or Youth Allowance"),
                     ),
                     box(checkboxGroupInput(inputId = "js_region_input",
                                            label = "Select the regions",
                                            choices = region_list,
-                                           selected = selected_regions
-                        ),
+                                           selected = selected_regions,
+                                           inline = TRUE),
                     ),
                 ),
                 fluidRow(plotlyOutput("jobseeker_lines")
                 ),
+                box(title = 'Sources:', tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
+                                                            "ABS, 3235.0 - Regional Population by Age and Sex (2018)</br>",
+                                                            "Last updated {jobseeker_update}"))), width = 12)
+        ),
+        tabItem(tabName = "jobseeker_table",
+                fluidRow(
+                    box(title = 'JobSeeker and Youth Allowance recipients', tags$body(HTML("Total recipients and normalised to 15-64 y.o. population.")), width = 12)
+                ),
+                fluidRow(DTOutput("jobseeker_large_table")
+                ),
+                box(title = 'Sources:', tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
+                                                            "ABS, 3235.0 - Regional Population by Age and Sex (2018)</br>",
+                                                            "Last updated {jobseeker_update}"))), width = 12)
         ),
         ## salm data ####
         tabItem(tabName = "unemp_map",
@@ -282,7 +317,8 @@ server <- function(input, output) {
             filter(data_type == input$js_graph_input) %>% 
             filter(region %in% input$js_region_input)
     })
-
+    
+    output$jobseeker_large_table <- renderDT(jobseeker_large, options = list(dom = 't'))
     
     # graphs ###############################################
     # jobs wages plotly change line
@@ -304,7 +340,7 @@ server <- function(input, output) {
     # jobseeker lines
     output$jobseeker_lines <- renderPlotly({
         plot_ly() %>% 
-            add_trace(data = jobseeker_joined_filtered, x = ~month, y = ~values,
+            add_trace(data = jobseeker_joined_filtered(), x = ~month, y = ~values,
                       mode = "lines+markers", color = ~region) %>% 
             layout(xaxis = list(title = 'Month'), yaxis = list(title = "Value"))
     })
