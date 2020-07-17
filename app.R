@@ -9,17 +9,22 @@ library(scales)
 library(shinydashboard)
 library(shinycssloaders)
 library(apputils)
+library(tmap)
+library(leaflet)
+library(tmaptools)
+library(DT)
 
 #disable scientific notation
 options(scipen = 999)
 
-#data
-# dates -------------------------------------------------------------------------------------------------------------
+# data #########
+## dates -------------------------------------------------------------------------------------------------------------
 abs_latest_week <- "27 June"
 abs_publication_date <- "15 July 2020"
+jobkeeper_date <- "24 June 2020"
+jobkeeper_text <- "Numbers are based on the total number of processed applications for organisations for the April fortnights – 30 March 2020 to 26 April 2020 (as at midnight 3 June 2020)"
 
-##read in data -----------------------------------------------------------------------------------------------------------------------------
-#jobs and wages ************
+## jobs and wages ####
 jobs_wages_index <- read_csv("app_data/jobs_wages_index.csv")
 
 jobs_wages_by_age_data <- read_csv("app_data/jobs_wages_by_age_data.csv")  %>% 
@@ -41,7 +46,30 @@ jobs_wages_by_age_data_males <- jobs_wages_by_age_data %>%
 jobs_wages_by_age_data_females <- jobs_wages_by_age_data %>% 
     filter(sex == "Females") 
 
-#the app ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## jobkeeper #### 
+# mv shapefile
+mv_shp <- st_read("app_data/shp/mvcc_boundary.shp")
+
+# jobkeeper
+postcodes_jk <- st_read("app_data/shp/postcodes_simplified.shp")
+
+# raw data
+jk_raw <- read_csv("app_data/jk_raw.csv")
+
+# join to shp
+jk_join <- left_join(postcodes_jk, jk_raw) %>%  
+    filter(!is.na(count)) 
+
+# mv postcodes
+jk_mv_postcodes <- jk_raw %>% 
+    mutate(postcode = str_trim(postcode)) %>%
+    filter(postcode != "TOTAL") %>% 
+    filter(postcode %in% c("3031", "3032", "3033", "3034", "3039", "3040", "3041", "3042")) %>% 
+    adorn_totals() %>% 
+    mutate(count = comma(count)) %>% 
+    rename(Postcode = postcode, Count = count)
+
+# the app ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # dashboard input
 header <- dashboardHeader(
@@ -87,6 +115,7 @@ body <- dashboardBody(
                     box(title = 'MV Economic tracker', tags$body(HTML("text")), width = 12)
                 )
         ),
+        ## abs data ####
         tabItem(tabName = "jobs_wages_vic",
                 fluidRow(
                     box(title = 'Jobs and wages (Victoria)', tags$body(HTML(glue("Percentage change from 14 March to {abs_latest_week}"))), width = 12)
@@ -113,18 +142,31 @@ body <- dashboardBody(
                 ),
                 fluidRow(
                     box(title = 'Source', tags$body(HTML(glue("ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia </br>",
-                                                              "Last updated {abs_publication_date}"))), width = 12)
+                                                              "Last updated {abs_publication_date}"))), width = 12),
                 ),
         ),
+        ## jobkeeper data ####
         tabItem(tabName = "jobkeeper_map",
                 fluidRow(
-                    box(title = 'Jobkeeper data (postcodes)', tags$body(HTML("text")), width = 12)
-                )
+                    box(title = 'Jobkeeper data (all postcodes)', tags$body(HTML(glue("{jobkeeper_text}</br>"))), width = 12)
+                ),
+                fluidRow(tmapOutput("jobkeeper_pc_map")
+                ),
+                box(title = 'Source', tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
+                                                            "Last updated {jobkeeper_date}"))), width = 12)
         ),
         tabItem(tabName = "jobkeeper_table",
                 fluidRow(
-                    box(title = 'Jobkeeper table', tags$body(HTML("text")), width = 12)
-                )
+                    box(title = 'Jobkeeper data (MV postcodes)', tags$body(HTML(glue("{jobkeeper_text}</br>",
+                                                                             "</br> Noting that:</br>",
+                                                                             "* 3031 includes Kensington and the parts of Flemington within the City of Melbourne</br>",
+                                                                             "* 3032 includes Maribyrnong (City of Maribyrnong), and that </br>",
+                                                                             "* 3042 includes Keilor Park (City of Brimbank)."))), width = 12)
+                ),
+                fluidRow(DTOutput("jobkeeper_mv_table")
+                ),
+                box(title = 'Source', tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
+                                                          "Last updated {jobkeeper_date}"))), width = 12)
         ),
         tabItem(tabName = "jobseeker_map",
                 fluidRow(
@@ -136,6 +178,7 @@ body <- dashboardBody(
                     box(title = 'Jobseeker table', tags$body(HTML("text")), width = 12)
                 )
         ),
+        ## salm data ####
         tabItem(tabName = "unemp_map",
                 fluidRow(
                     box(title = 'Labour force and unemployment data (SA2)', tags$body(HTML("text")), width = 12)
@@ -169,6 +212,9 @@ server <- function(input, output) {
             filter(type == input$jobs_wages_input)
     })
     
+    output$jobkeeper_mv_table <- renderDT(jk_mv_postcodes,options = list(dom = 't'))
+        
+    
     # graphs ###############################################
     # jobs wages plotly change line
     output$jobs_wages_line <- renderPlotly({
@@ -185,8 +231,20 @@ server <- function(input, output) {
             add_trace(data = jobs_wages_by_age_data_females_filtered(), x = ~age_group, y = ~latest_week, type = 'bar', name = 'Females') %>% 
             layout(xaxis = list(title = 'Age'), yaxis = list(title = "Change % (from 14 March)"))
     })
+    
+    # maps #####################################################
+    output$jobkeeper_pc_map <- renderTmap({
+        tmap_mode("view")
+        tm_shape(jk_join, bbox = tmaptools::bb(mv_shp)) +
+            tm_fill("count") +
+            tm_borders(alpha = 0.5, col = "grey") +
+            tm_shape(mv_shp) +
+            tm_borders(alpha = 0.5, col = "purple", lwd = 2)
+    })
 
 }
+
+
 
 # for the app
 ui <- dashboardPage(header,
