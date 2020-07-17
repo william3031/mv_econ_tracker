@@ -20,12 +20,19 @@ data_may20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipien
   clean_names() %>% remove_empty() %>%
   mutate(month = "2020-05-01")
 
+data_jun20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipients-june-2020.xlsx",
+                         sheet = "Table 4 - By SA2", skip = 6) %>%
+  clean_names() %>% remove_empty() %>%
+  mutate(month = "2020-06-01")
+
+
 ### merge it all
-jobseeker_merge <- bind_rows(data_mar20, data_apr20, data_may20) %>% 
+jobseeker_merge <- bind_rows(data_mar20, data_apr20, data_may20, data_jun20) %>% 
   mutate(job_seeker_payment = parse_number(job_seeker_payment), youth_allowance_other = parse_number(youth_allowance_other)) %>% 
   mutate(month = ymd(month)) %>%
   mutate(total = job_seeker_payment + youth_allowance_other) %>% 
   filter((sa2 >= 20000 & sa2 <= 29999))
+
 
 jobseeker_merge_sa2 <- jobseeker_merge %>% 
   filter(sa2_name %in% c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Ponds",
@@ -99,23 +106,15 @@ js_data_list <- c("Total JobSeeker and Youth allowance recipients", "Percentage 
 # test #################################
 # reactive table
 jobseeker_table_filtered <- jobseeker_table_long %>% 
-  filter(month == "May 2020") %>% 
+  filter(month == "Jun 2020") %>% 
   filter(data_type == "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance")
-
-#
-jobseeker_table_filtered2 <- jobseeker_table_long %>% 
-  filter(month == "May 2020") %>% 
-  filter(data_type == "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance")
-
-js_map_join2 <- left_join(sa2_greater, jobseeker_table_filtered2)
-#
-
-js_map_join <- left_join(sa2_greater, jobseeker_table_filtered)
 
 js_month_list <- jobseeker_table_long %>% 
   distinct(month) %>% 
   arrange(desc(month)) %>% 
   pull()
+
+js_map_join <- left_join(sa2_greater, jobseeker_table_filtered)
 
 # tmap
 tmap_mode("view")

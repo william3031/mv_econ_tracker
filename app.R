@@ -23,6 +23,9 @@ abs_latest_week <- "27 June"
 abs_publication_date <- "15 July 2020"
 jobkeeper_date <- "24 June 2020"
 jobkeeper_text <- "Numbers are based on the total number of <b>processed applications for organisations</b> for the April fortnights – 30 March 2020 to 26 April 2020 (as at midnight 3 June 2020)"
+jobseeker_month <- "Jun 2020" # in this format mmm YYYY
+jobseeker_update <- "17 July 2020"
+
 
 ## jobs and wages ####
 jobs_wages_index <- read_csv("app_data/jobs_wages_index.csv")
@@ -82,6 +85,12 @@ js_month_list <- jobseeker_table_long %>%
     distinct(month) %>% 
     arrange(desc(month)) %>% 
     pull()
+
+jobseeker_table_filtered <- jobseeker_table_long %>% 
+    filter(month == jobseeker_month) %>% 
+    filter(data_type == "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance")
+
+js_map_join <- left_join(sa2_greater, jobseeker_table_filtered)
 
 # the app ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -189,22 +198,13 @@ body <- dashboardBody(
         ## jobseeker data ####
         tabItem(tabName = "jobseeker_map",
                 fluidRow(
-                    box(title = 'Jobseeker data (SA2)', tags$body(HTML("text")), width = 12)
-                ),
-                fluidRow(
-                    box(selectInput(inputId = "js_data_input",
-                                    label = "Select the data to show",
-                                    choices = js_data_list),
-                    ),
-                ),
-                fluidRow(
-                    box(selectInput(inputId = "js_month_input",
-                                    label = "Select the month",
-                                    choices = js_month_list),
-                    ),
+                    box(title = 'Jobseeker data (SA2)', tags$body(HTML(glue("Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance for {jobseeker_month}.</br>",
+                                                                            "</br>Click on the map to see the percentages."))), width = 12)
                 ),
                 fluidRow(tmapOutput("jobseeker_map")
                 ),
+                box(title = 'Source', tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
+                                                          "Last updated {jobseeker_update}"))), width = 12)
         ),
         tabItem(tabName = "jobseeker_table",
                 fluidRow(
@@ -250,13 +250,6 @@ server <- function(input, output) {
     output$jobkeeper_mv_table <- renderDT(jk_mv_postcodes,options = list(dom = 't'))
     
     # jobseeker data    
-    jobseeker_table_filtered <- reactive({jobseeker_table_long %>% 
-        filter(month == input$js_month_input) %>% 
-        filter(data_type == input$js_data_input)
-    })
-    
-    js_map_join <- reactive({left_join(sa2_greater, jobseeker_table_filtered())
-    })
     
     # graphs ###############################################
     # jobs wages plotly change line
@@ -285,14 +278,14 @@ server <- function(input, output) {
             tm_borders(alpha = 0.5, col = "purple", lwd = 2)
     })
     
-    #output$jobseeker_map <- renderTmap({
-    #    tmap_mode("view")
-    #    tm_shape(js_map_join(), bbox = tmaptools::bb(mv_shp)) +
-    #        tm_fill("values") +
-    #        tm_borders(alpha = 0.5, col = "grey") +
-    #        tm_shape(mv_shp) +
-    #        tm_borders(alpha = 0.5, col = "purple", lwd = 2)
-    #})
+    output$jobseeker_map <- renderTmap({
+        tmap_mode("view")
+        tm_shape(js_map_join, bbox = tmaptools::bb(mv_shp)) +
+            tm_fill("values") +
+            tm_borders(alpha = 0.5, col = "grey") +
+            tm_shape(mv_shp) +
+            tm_borders(alpha = 0.5, col = "purple", lwd = 2)
+    })
 
 }
 
