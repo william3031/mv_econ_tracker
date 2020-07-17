@@ -24,7 +24,8 @@ data_may20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipien
 jobseeker_merge <- bind_rows(data_mar20, data_apr20, data_may20) %>% 
   mutate(job_seeker_payment = parse_number(job_seeker_payment), youth_allowance_other = parse_number(youth_allowance_other)) %>% 
   mutate(month = ymd(month)) %>%
-  mutate(total = job_seeker_payment + youth_allowance_other)
+  mutate(total = job_seeker_payment + youth_allowance_other) %>% 
+  filter((sa2 >= 20000 & sa2 <= 29999))
 
 jobseeker_merge_sa2 <- jobseeker_merge %>% 
   filter(sa2_name %in% c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Ponds",
@@ -44,7 +45,6 @@ jobseeker_merge_gm <- jobseeker_merge %>%
   mutate(region = "Greater Melbourne")
 
 jobseeker_merge_vic <- jobseeker_merge %>% 
-  filter((sa2 >= 20000 & sa2 <= 29999)) %>% 
   group_by(month)  %>% 
   summarise(job_seeker_payment = sum(job_seeker_payment), youth_allowance_other = sum(youth_allowance_other), total = sum(total)) %>% 
   mutate(region = "Victoria")
@@ -61,6 +61,73 @@ asgs_col_names <- c("S/T code", "S/T name", "GCCSA code", "GCCSA name", "SA4 cod
 asgs_age <- read_excel("data_in/32350ds0001_asgs2016_2018.xls", sheet = "Table 3", skip = 9, col_names = asgs_col_names) %>% 
   clean_names() %>% 
   filter(s_t_name == "Victoria") 
+
+# all vic sa2s 15-64
+vic_sa2_1564 <- asgs_age %>% 
+  select(-(s_t_code:sa2_code)) %>% 
+  select(sa2_name, age15_19:age60_64) %>% 
+  pivot_longer(-sa2_name, names_to = "age_groups", values_to = "count") %>% 
+  group_by(sa2_name) %>% 
+  summarise(age15_64 = sum(count))
+
+# join it up
+jobseeker_table <- left_join(jobseeker_merge, vic_sa2_1564) %>% 
+  mutate(pct_15_64 = round(total/age15_64*100, 1))
+
+# export - to be filtered by month and data type then joined to shp
+jobseeker_table_long <- jobseeker_table %>% 
+  select(sa2, sa2_name, month, everything()) %>% 
+  filter(age15_64 >= 250) %>% 
+  pivot_longer(cols = -(sa2:month), names_to = "data_type", values_to = "values") %>% 
+  mutate(data_type = case_when(data_type == "job_seeker_payment" ~ "JobSeeker payment recipients",
+                               data_type == "youth_allowance_other" ~ "Youth Allowance recipients",
+                               data_type == "total" ~ "Total JobSeeker and Youth allowance recipients",
+                               data_type == "age15_64" ~ "Population aged 15-64 y.o.",
+                               data_type == "pct_15_64" ~ "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance",
+                               TRUE ~ NA_character_)) %>% 
+  mutate(month = format(month, "%b %Y"))
+write_csv(jobseeker_table_long, "app_data/jobseeker_table_long.csv")
+
+# spatial data - already simplified
+sa2_greater <- st_read("data_in/shp/sa2_2016_gmel.shp") %>% 
+  select(-sa2_code) %>% 
+  clean_names() 
+
+js_data_list <- c("Total JobSeeker and Youth allowance recipients", "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance", 
+             "JobSeeker payment recipients", "Youth Allowance recipients")
+
+# test #################################
+# reactive table
+jobseeker_table_filtered <- jobseeker_table_long %>% 
+  filter(month == "May 2020") %>% 
+  filter(data_type == "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance")
+
+#
+jobseeker_table_filtered2 <- jobseeker_table_long %>% 
+  filter(month == "May 2020") %>% 
+  filter(data_type == "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance")
+
+js_map_join2 <- left_join(sa2_greater, jobseeker_table_filtered2)
+#
+
+js_map_join <- left_join(sa2_greater, jobseeker_table_filtered)
+
+js_month_list <- jobseeker_table_long %>% 
+  distinct(month) %>% 
+  arrange(desc(month)) %>% 
+  pull()
+
+# tmap
+tmap_mode("view")
+tm_shape(js_map_join, bbox = tmaptools::bb(mv_shp)) +
+  tm_fill("values") +
+  tm_borders(alpha = 0.5, col = "grey") +
+  tm_shape(mv_shp) +
+  tm_borders(alpha = 0.5, col = "purple", lwd = 2)
+
+#########################
+
+
 
 mv_sa2_age <- asgs_age %>% 
   select(-(s_t_code:sa2_code)) %>% 
@@ -108,9 +175,7 @@ jobseeker_joined_mv_sa2 <- jobseeker_joined %>%
   filter(!region %in% c("City of Moonee Valley", "Greater Melbourne", "Victoria"))
 
 
-# spatial data - already simplified
-sa2_greater <- st_read("data_in/shp/sa2_2016_gmel.shp") %>% 
-  clean_names() 
+
 
 # perhaps calculate the lastest month and show the counts and rates for all?
 

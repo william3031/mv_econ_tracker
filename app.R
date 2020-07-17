@@ -22,7 +22,7 @@ options(scipen = 999)
 abs_latest_week <- "27 June"
 abs_publication_date <- "15 July 2020"
 jobkeeper_date <- "24 June 2020"
-jobkeeper_text <- "Numbers are based on the total number of processed applications for organisations for the April fortnights – 30 March 2020 to 26 April 2020 (as at midnight 3 June 2020)"
+jobkeeper_text <- "Numbers are based on the total number of <b>processed applications for organisations</b> for the April fortnights – 30 March 2020 to 26 April 2020 (as at midnight 3 June 2020)"
 
 ## jobs and wages ####
 jobs_wages_index <- read_csv("app_data/jobs_wages_index.csv")
@@ -50,7 +50,7 @@ jobs_wages_by_age_data_females <- jobs_wages_by_age_data %>%
 # mv shapefile
 mv_shp <- st_read("app_data/shp/mvcc_boundary.shp")
 
-# jobkeeper
+# jobkeeper data
 postcodes_jk <- st_read("app_data/shp/postcodes_simplified.shp")
 
 # raw data
@@ -68,6 +68,20 @@ jk_mv_postcodes <- jk_raw %>%
     adorn_totals() %>% 
     mutate(count = comma(count)) %>% 
     rename(Postcode = postcode, Count = count)
+
+## jobseeker #################################
+jobseeker_table_long <- read_csv("app_data/jobseeker_table_long.csv")
+
+sa2_greater <- st_read("app_data/shp/sa2_2016_gmel.shp") %>% 
+    select(-sa2_code)
+
+js_data_list <- c("Total JobSeeker and Youth allowance recipients", "Percentage aged 15-64 y.o. on either JobSeeker or Youth Allowance", 
+                  "JobSeeker payment recipients", "Youth Allowance recipients")
+
+js_month_list <- jobseeker_table_long %>% 
+    distinct(month) %>% 
+    arrange(desc(month)) %>% 
+    pull()
 
 # the app ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -112,13 +126,15 @@ body <- dashboardBody(
     tabItems(
         tabItem(tabName = "home",
                 fluidRow(
-                    box(title = 'MV Economic tracker', tags$body(HTML("text")), width = 12)
+                    box(title = 'MV Economic tracker', tags$body(HTML("Click the tabs on the left</br>",
+                                                                      "</br> More to be added </br>",
+                                                                      "</br> Last updated: 17 July 2020")), width = 12)
                 )
         ),
         ## abs data ####
         tabItem(tabName = "jobs_wages_vic",
                 fluidRow(
-                    box(title = 'Jobs and wages (Victoria)', tags$body(HTML(glue("Percentage change from 14 March to {abs_latest_week}"))), width = 12)
+                    box(title = 'Jobs and wages (Victoria)', tags$body(HTML(glue("Percentage change from 14 March to {abs_latest_week}."))), width = 12)
                 ),
                 fluidRow(plotlyOutput("jobs_wages_line")
                 ),
@@ -130,7 +146,7 @@ body <- dashboardBody(
         tabItem(tabName = "jobs_wages_age",
                 fluidRow(
                     box(title = 'Jobs and wages (Victoria)',
-                        tags$body(HTML(glue("Percentage change from 14 March to {abs_latest_week} by age and gender for all industries"))), width = 12)
+                        tags$body(HTML(glue("Percentage change from 14 March to {abs_latest_week} by age and gender for all industries."))), width = 12)
                 ),
                 fluidRow(
                     box(selectInput(inputId = "jobs_wages_input",
@@ -148,30 +164,47 @@ body <- dashboardBody(
         ## jobkeeper data ####
         tabItem(tabName = "jobkeeper_map",
                 fluidRow(
-                    box(title = 'Jobkeeper data (all postcodes)', tags$body(HTML(glue("{jobkeeper_text}</br>"))), width = 12)
+                    box(title = 'Jobkeeper data (all postcodes)', tags$body(HTML(glue("{jobkeeper_text}</br>",
+                                                                                      "</br>Click on the map to see the counts."))), width = 12)
                 ),
                 fluidRow(tmapOutput("jobkeeper_pc_map")
                 ),
                 box(title = 'Source', tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
-                                                            "Last updated {jobkeeper_date}"))), width = 12)
+                                                            "Last updated {jobkeeper_date}</br>",
+                                                            "Note: Postcode polygons have been simplified."))), width = 12)
         ),
         tabItem(tabName = "jobkeeper_table",
                 fluidRow(
                     box(title = 'Jobkeeper data (MV postcodes)', tags$body(HTML(glue("{jobkeeper_text}</br>",
                                                                              "</br> Noting that:</br>",
                                                                              "* 3031 includes Kensington and the parts of Flemington within the City of Melbourne</br>",
-                                                                             "* 3032 includes Maribyrnong (City of Maribyrnong), and that </br>",
-                                                                             "* 3042 includes Keilor Park (City of Brimbank)."))), width = 12)
+                                                                             "* 3032 includes Maribyrnong (City of Maribyrnong) </br>",
+                                                                             "* 3042 includes Keilor Park (City of Brimbank)"))), width = 12)
                 ),
                 fluidRow(DTOutput("jobkeeper_mv_table")
                 ),
                 box(title = 'Source', tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
                                                           "Last updated {jobkeeper_date}"))), width = 12)
         ),
+        ## jobseeker data ####
         tabItem(tabName = "jobseeker_map",
                 fluidRow(
                     box(title = 'Jobseeker data (SA2)', tags$body(HTML("text")), width = 12)
-                )
+                ),
+                fluidRow(
+                    box(selectInput(inputId = "js_data_input",
+                                    label = "Select the data to show",
+                                    choices = js_data_list),
+                    ),
+                ),
+                fluidRow(
+                    box(selectInput(inputId = "js_month_input",
+                                    label = "Select the month",
+                                    choices = js_month_list),
+                    ),
+                ),
+                fluidRow(tmapOutput("jobseeker_map")
+                ),
         ),
         tabItem(tabName = "jobseeker_table",
                 fluidRow(
@@ -202,6 +235,7 @@ body <- dashboardBody(
 server <- function(input, output) {
     
     # tables ###############################################
+    # abs data
     jobs_wages_by_age_data_females_filtered <- reactive({
         jobs_wages_by_age_data_females %>% 
             filter(type == input$jobs_wages_input)
@@ -212,8 +246,17 @@ server <- function(input, output) {
             filter(type == input$jobs_wages_input)
     })
     
+    # jobkeeper data
     output$jobkeeper_mv_table <- renderDT(jk_mv_postcodes,options = list(dom = 't'))
-        
+    
+    # jobseeker data    
+    jobseeker_table_filtered <- reactive({jobseeker_table_long %>% 
+        filter(month == input$js_month_input) %>% 
+        filter(data_type == input$js_data_input)
+    })
+    
+    js_map_join <- reactive({left_join(sa2_greater, jobseeker_table_filtered())
+    })
     
     # graphs ###############################################
     # jobs wages plotly change line
@@ -241,6 +284,15 @@ server <- function(input, output) {
             tm_shape(mv_shp) +
             tm_borders(alpha = 0.5, col = "purple", lwd = 2)
     })
+    
+    #output$jobseeker_map <- renderTmap({
+    #    tmap_mode("view")
+    #    tm_shape(js_map_join(), bbox = tmaptools::bb(mv_shp)) +
+    #        tm_fill("values") +
+    #        tm_borders(alpha = 0.5, col = "grey") +
+    #        tm_shape(mv_shp) +
+    #        tm_borders(alpha = 0.5, col = "purple", lwd = 2)
+    #})
 
 }
 
