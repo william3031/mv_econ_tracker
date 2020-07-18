@@ -224,8 +224,8 @@ body <- dashboardBody(
                                                                              "* 3033 Keilor East </br>",
                                                                              "* 3034 Avondale Heights </br>",
                                                                              "* 3039 Moonee Ponds </br>",
-                                                                             "* 3040 Aberfeldie, Essendon, Essendon West </br>",
-                                                                             "* 3041 Essendon Fields, Essendon North, Strathmore, Strathmore Heights </br>",
+                                                                             "* 3040 Aberfeldie, Essendon and Essendon West </br>",
+                                                                             "* 3041 Essendon Fields, Essendon North, Strathmore and Strathmore Heights </br>",
                                                                              "* 3042 Airport West and Niddrie, as well as Keilor Park (City of Brimbank)"))), width = 12)
                 ),
                 fluidRow(DTOutput("jobkeeper_mv_table")
