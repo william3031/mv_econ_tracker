@@ -25,7 +25,7 @@ lgadata <- read_excel("data_in/SALM Smoothed LGA Datafiles (ASGS 2019) - Decembe
   clean_names() %>% 
   rename(region = local_government_area_lga_2019_asgs, lga_code = lga_code_2019_asgs)
   
-colnames(lgadata)
+salm_col_names <- colnames(lgadata)
 
 lgamv <- lgadata %>% 
   filter(region ==  "Moonee Valley (C)") %>% 
@@ -33,26 +33,26 @@ lgamv <- lgadata %>%
 lgamv
 
 #reshape data
-sa2mv_tidy1 <- sa2mv %>% 
-  gather(date_ex, unemployment_rate, '40513': length(sa2mv)) %>%
+sa2mv_tidy <- sa2mv %>% 
+  gather(date_ex, unemployment_rate, salm_col_names[3]: length(sa2mv)) %>%
+  mutate(date_ex = str_remove(date_ex, "x")) %>% 
   mutate(mon_yr = excel_numeric_to_date(as.numeric(as.character((date_ex))), date_system = "modern")) %>% 
   mutate(mon_yr = yearmonth(mon_yr))%>% 
   mutate(type = "SA2") %>% 
   mutate(unemployment_rate = as.numeric(unemployment_rate))
 
-lgamv_tidy1 <- lgamv %>% 
-  gather(date_ex, unemployment_rate, '40513': length(sa2mv)) %>%
+lgamv_tidy <- lgamv %>% 
+  gather(date_ex, unemployment_rate, salm_col_names[3]: length(sa2mv)) %>%
+  mutate(date_ex = str_remove(date_ex, "x")) %>% 
   mutate(mon_yr = excel_numeric_to_date(as.numeric(as.character((date_ex))), date_system = "modern")) %>% 
   mutate(mon_yr = yearmonth(mon_yr))%>% 
   mutate(unemployment_rate = as.numeric(unemployment_rate)) %>% 
   mutate(unemployment_rate = round(unemployment_rate, digits =1)) %>% 
   mutate(type = "LGA")
 
-
-merged <- rbind(sa2mv_tidy, lgamv_tidy) %>% 
+merged_unemp <- bind_rows(sa2mv_tidy, lgamv_tidy) %>% 
   arrange(desc(date_ex), desc(type), region)
 
-# do something with these
-# maps
-# graphs
-# need greater melbourne and victoria for the graphs
+# add greater melbourne and victoria
+# add labour force and unemployed - put in to longer table possible need another wider one
+# change the date format - no need for mon_yr ????
