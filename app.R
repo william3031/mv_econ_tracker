@@ -219,9 +219,14 @@ body <- dashboardBody(
                 fluidRow(
                     box(title = 'Jobkeeper data (MV postcodes)', tags$body(HTML(glue("{jobkeeper_text}</br>",
                                                                              "</br> Noting that:</br>",
-                                                                             "* 3031 includes Kensington and the parts of Flemington within the City of Melbourne</br>",
-                                                                             "* 3032 includes Maribyrnong (City of Maribyrnong) </br>",
-                                                                             "* 3042 includes Keilor Park (City of Brimbank)"))), width = 12)
+                                                                             "* 3031 Flemington (partly in the City of Melbourne) and Kensington (mostly in the City of Melbourne)</br>",
+                                                                             "* 3032 Ascot Vale and Travancore, as well as Maribyrnong (City of Maribyrnong) </br>",
+                                                                             "* 3033 Keilor East </br>",
+                                                                             "* 3034 Avondale Heights </br>",
+                                                                             "* 3039 Moonee Ponds </br>",
+                                                                             "* 3040 Aberfeldie, Essendon, Essendon West </br>",
+                                                                             "* 3041 Essendon Fields, Essendon North, Strathmore, Strathmore Heights </br>",
+                                                                             "* 3042 Airport West and Niddrie, as well as Keilor Park (City of Brimbank)"))), width = 12)
                 ),
                 fluidRow(DTOutput("jobkeeper_mv_table")
                 ),
