@@ -140,14 +140,17 @@ jobseeker_large_current <- jobseeker_joined %>%
     select(-region, -month) 
 
 jobseeker_large <- bind_cols(jobseeker_large_first, jobseeker_large_current) %>% 
+    mutate(recipients_change = recipients_last - recipients_first) %>% 
     mutate(recipients_first = format(recipients_first, big.mark = ",")) %>% 
-    mutate(recipients_last = format(recipients_last, big.mark = ",")) 
+    mutate(recipients_last = format(recipients_last, big.mark = ",")) %>% 
+    mutate(recipients_change = format(recipients_change, big.mark = ","))
 # rename the columns - do it this way!!!
 colnames(jobseeker_large) <- c("Region",
                                paste0("Recipients ", jobseeker_first_month_formatted),
                                paste0("As % of 15-64 pop. ", jobseeker_first_month_formatted),
                                paste0("Recipients ", jobseeker_month_formatted),
-                               paste0("As % of 15-64 pop. ", jobseeker_month_formatted))
+                               paste0("As % of 15-64 pop. ", jobseeker_month_formatted),
+                               "Change")
 
 js_mv_num <- jobseeker_joined %>% 
     filter(month == jobseeker_month) %>% 
@@ -244,7 +247,7 @@ body <- dashboardBody(
         tabItem(tabName = "jobs_wages_vic",
                 fluidRow(
                     box(title = 'Jobs and wages (Victoria)',
-                        tags$body(HTML(glue("Percentage change from 14 March to {abs_latest_week}."))), width = 12)
+                        tags$body(HTML(glue("Weekly payroll jobs and wages data for Victoria. Percentage change from 14 March to {abs_latest_week}."))), width = 12)
                 ),
                 fluidRow(plotlyOutput("jobs_wages_line")
                 ),
@@ -258,7 +261,7 @@ body <- dashboardBody(
         tabItem(tabName = "jobs_wages_age",
                 fluidRow(
                     box(title = 'Jobs and wages (Victoria)',
-                        tags$body(HTML(glue("Percentage change from 14 March to {abs_latest_week} by age and gender for all industries."))), width = 12)
+                        tags$body(HTML(glue("Weekly payroll jobs and wages data for Victoria. Percentage change from 14 March to {abs_latest_week} by age and gender for all industries."))), width = 12)
                 ),
                 fluidRow(
                     box(selectInput(inputId = "jobs_wages_input",
@@ -367,7 +370,7 @@ body <- dashboardBody(
                            "Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile; "),
                     tags$a(href="https://www.abs.gov.au/AUSSTATS/abs@.nsf/mf/3235.0", target="_blank",
                            "ABS, 3235.0 - Regional Population by Age and Sex (2018)"),
-                    tags$body(HTML(glue("</br>Last updated {jobseeker_publication_date}"))), width = 12)
+                    tags$body(HTML(glue("</br>Last updated {jobseeker_publication_date}"))), width = 12),
         ),
         ## salm data ####
         tabItem(tabName = "unemp_map",
@@ -420,9 +423,18 @@ body <- dashboardBody(
                            "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
                     tags$body(HTML(glue("Last updated {salm_publication_date}"))), width = 12)
         ),
+        ## Notes ####
         tabItem(tabName = "notes",
                 fluidRow(
-                    box(title = 'Notes',
+                    box(title = 'Jobeeker and Youth Allowance:',
+                        tags$body(HTML(glue("The <b>JobSeeker</b> payment replaced the Newstart allowance in March 2020 and is available to Australian residents aged between 22 and 65 years, who are unemployed and looking for work or are unable to do their usual work for a short period. ",
+                                            "<b>Youth Allowance</b> is available to those aged between 16 and 21 years looking for full time work, as well as others who are studying or doing an apprenticeship. Not all of these recipients are unemployed. To be unemployed, one must be actively looking for work."))), width = 12),
+                    box(title = 'Unemployment and labour force',
+                        tags$body(HTML(glue("Unemployment and labour force data is from the Small Area Labour Markets publication. ",
+                                            "The <b> labour force</b> is the population aged 15 years and over that are either in work, or actively looking for work in a region. ",
+                                            "The <b> number of unemployed </b> is the part of the labour force that are looking for work. ",
+                                            "The <b> unemployment rate </b> is calculated as the <i>number of unemployed</i> divided by the <i>number in the labour force</i>, multiplied by 100."))), width = 12),
+                    box(title = 'More information:',
                         tags$body(HTML("Contact the Research and Facilities team if you have any queries.")), width = 12)
                 )
         )
@@ -460,7 +472,7 @@ server <- function(input, output) {
     
     output$jobseeker_large_table <- renderDT(jobseeker_large,
                                              options = list(dom = 't',
-                                                            columnDefs = list(list(className = 'dt-right', targets = c(2, 4)))
+                                                            columnDefs = list(list(className = 'dt-right', targets = c(2, 4, 6)))
                                              ))
     
     # salm data
@@ -472,7 +484,7 @@ server <- function(input, output) {
     
     output$salm_large_table <- renderDT(salm_table_data,
                                         options = list(dom = 't',
-                                                       columnDefs = list(list(className = 'dt-right', targets = c(3,4)))
+                                                       columnDefs = list(list(className = 'dt-right', targets = c(3, 4)))
                                         ))
     
     # graphs ###############################################
