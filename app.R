@@ -19,6 +19,8 @@ options(scipen = 999)
 
 # data #########
 ## dates -------------------------------------------------------------------------------------------------------------
+# date updated
+date_updated <- format(Sys.time(), '%d %B %Y')
 #abs
 abs_publication_date <- "15 July 2020"
 # jobkeeper
@@ -226,8 +228,8 @@ body <- dashboardBody(
         tabItem(tabName = "home",
                 fluidRow(
                     box(title = 'Economic data tracker',
-                        tags$body(HTML("Click the tabs on the left for detailed information.</br>",
-                                       "</br>Last updated: 17 July 2020")), width = 12)
+                        tags$body(HTML(glue("Click the tabs on the left for detailed information.</br>",
+                                       "</br>Last updated: {date_updated}"))), width = 12)
                 ),
                 fluidRow(
                     valueBoxOutput("vbox_jobkeep"),
@@ -248,8 +250,9 @@ body <- dashboardBody(
                 ),
                 fluidRow(
                     box(title = 'Source:',
-                        tags$body(HTML(glue("ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia </br>",
-                                                         "Last updated {abs_publication_date}"))), width = 12)
+                        tags$a(href="https://www.abs.gov.au/ausstats/abs@.nsf/mf/6160.0.55.001", target="_blank",
+                               "ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia"),
+                        tags$body(HTML(glue("</br>Last updated {abs_publication_date}"))), width = 12)
                 ),
         ),
         tabItem(tabName = "jobs_wages_age",
@@ -267,8 +270,9 @@ body <- dashboardBody(
                 ),
                 fluidRow(
                     box(title = 'Source:',
-                        tags$body(HTML(glue("ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia </br>",
-                                                              "Last updated {abs_publication_date}"))), width = 12),
+                        tags$a(href="https://www.abs.gov.au/ausstats/abs@.nsf/mf/6160.0.55.001", target="_blank",
+                               "ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia"),
+                        tags$body(HTML(glue("</br>Last updated {abs_publication_date}"))), width = 12)
                 ),
         ),
         ## jobkeeper ####
@@ -281,8 +285,9 @@ body <- dashboardBody(
                 fluidRow(tmapOutput("jobkeeper_pc_map")
                 ),
                 box(title = 'Source:',
-                    tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
-                                                            "Last updated {jobkeeper_publication_date}</br>",
+                    tags$a(href="https://treasury.gov.au/coronavirus/jobkeeper/data", target="_blank",
+                           "Treasury JobKeeper postcode data"),
+                    tags$body(HTML(glue("</br>Last updated {jobkeeper_publication_date}</br>",
                                                             "Note: Postcode polygons have been simplified."))), width = 12)
         ),
         tabItem(tabName = "jobkeeper_table",
@@ -302,8 +307,10 @@ body <- dashboardBody(
                 fluidRow(DTOutput("jobkeeper_mv_table")
                 ),
                 box(title = 'Source:',
-                    tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
-                                                          "Last updated {jobkeeper_publication_date}"))), width = 12)
+                    tags$a(href="https://treasury.gov.au/coronavirus/jobkeeper/data", target="_blank",
+                           "Treasury JobKeeper postcode data"),
+                    tags$body(HTML(glue("</br>Last updated {jobkeeper_publication_date}</br>",
+                                        "Note: Postcode polygons have been simplified."))), width = 12)
         ),
         ## jobseeker####
         tabItem(tabName = "jobseeker_map",
@@ -315,9 +322,11 @@ body <- dashboardBody(
                 fluidRow(tmapOutput("jobseeker_map")
                 ),
                 box(title = 'Sources:',
-                    tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
-                                                            "ABS, 3235.0 - Regional Population by Age and Sex (2018)</br>",
-                                                            "Last updated {jobseeker_publication_date}"))), width = 12)
+                    tags$a(href="https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile", target="_blank",
+                           "Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile; "),
+                    tags$a(href="https://www.abs.gov.au/AUSSTATS/abs@.nsf/mf/3235.0", target="_blank",
+                           "ABS, 3235.0 - Regional Population by Age and Sex (2018)"),
+                    tags$body(HTML(glue("</br>Last updated {jobseeker_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "jobseeker_graph",
                 fluidRow(
@@ -340,9 +349,11 @@ body <- dashboardBody(
                 fluidRow(plotlyOutput("jobseeker_lines")
                 ),
                 box(title = 'Sources:',
-                    tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
-                                                            "ABS, 3235.0 - Regional Population by Age and Sex (2018)</br>",
-                                                            "Last updated {jobseeker_publication_date}"))), width = 12)
+                    tags$a(href="https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile", target="_blank",
+                           "Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile; "),
+                    tags$a(href="https://www.abs.gov.au/AUSSTATS/abs@.nsf/mf/3235.0", target="_blank",
+                           "ABS, 3235.0 - Regional Population by Age and Sex (2018)"),
+                    tags$body(HTML(glue("</br>Last updated {jobseeker_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "jobseeker_table",
                 fluidRow(
@@ -351,9 +362,12 @@ body <- dashboardBody(
                 ),
                 fluidRow(DTOutput("jobseeker_large_table")
                 ),
-                box(title = 'Sources:', tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
-                                                            "ABS, 3235.0 - Regional Population by Age and Sex (2018)</br>",
-                                                            "Last updated {jobseeker_publication_date}"))), width = 12)
+                box(title = 'Sources:', 
+                    tags$a(href="https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile", target="_blank",
+                           "Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile; "),
+                    tags$a(href="https://www.abs.gov.au/AUSSTATS/abs@.nsf/mf/3235.0", target="_blank",
+                           "ABS, 3235.0 - Regional Population by Age and Sex (2018)"),
+                    tags$body(HTML(glue("</br>Last updated {jobseeker_publication_date}"))), width = 12)
         ),
         ## salm data ####
         tabItem(tabName = "unemp_map",
@@ -365,8 +379,9 @@ body <- dashboardBody(
                 fluidRow(tmapOutput("salm_unemp_map")
                 ),
                 box(title = 'Sources:',
-                    tags$body(HTML(glue("Department of Education, Skills and Employment, Small Area Labour Markets publication. </br>",
-                                        "Last updated {salm_publication_date}"))), width = 12)
+                    tags$a(href="https://www.employment.gov.au/small-area-labour-markets-publication-0", target="_blank",
+                           "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
+                    tags$body(HTML(glue("Last updated {salm_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "unemp_graph",
                 fluidRow(
@@ -389,8 +404,9 @@ body <- dashboardBody(
                 fluidRow(plotlyOutput("salm_lines")
                 ),
                 box(title = 'Sources:',
-                    tags$body(HTML(glue("Department of Education, Skills and Employment, Small Area Labour Markets publication. </br>",
-                                        "Last updated {salm_publication_date}"))), width = 12)
+                    tags$a(href="https://www.employment.gov.au/small-area-labour-markets-publication-0", target="_blank",
+                           "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
+                    tags$body(HTML(glue("Last updated {salm_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "unemp_table",
                 fluidRow(
@@ -400,13 +416,14 @@ body <- dashboardBody(
                 fluidRow(DTOutput("salm_large_table")
                 ),
                 box(title = 'Sources:', 
-                    tags$body(HTML(glue("Department of Education, Skills and Employment, Small Area Labour Markets publication. </br>",
-                                                            "Last updated {salm_publication_date}"))), width = 12)
+                    tags$a(href="https://www.employment.gov.au/small-area-labour-markets-publication-0", target="_blank",
+                           "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
+                    tags$body(HTML(glue("Last updated {salm_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "notes",
                 fluidRow(
                     box(title = 'Notes',
-                        tags$body(HTML("text")), width = 12)
+                        tags$body(HTML("Contact the Research and Facilities team if you have any queries.")), width = 12)
                 )
         )
     )
