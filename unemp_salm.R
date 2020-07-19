@@ -133,8 +133,8 @@ salm_large <- sa2_merge_data %>%
                          "Airport West", "Keilor East", "Niddrie - Essendon West", "Strathmore")) %>% 
   select(-sa2_code) %>% 
   rename(region = sa2_name) %>% 
-  bind_rows(sa2_merge_data_gm) %>% 
-  bind_rows(lga_mv_merge_data)
+  bind_rows(lga_mv_merge_data) %>% 
+  bind_rows(sa2_merge_data_gm) 
 
 # to export
 salm_data_list <- c("Unemployment rate %", "No. of unemployed", "Labour force")

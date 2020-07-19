@@ -23,6 +23,7 @@ options(scipen = 999)
 abs_publication_date <- "15 July 2020"
 # jobkeeper
 jobkeeper_publication_date <- "24 June 2020"
+jobkeeper_data_date <- "April 2020"
 jobkeeper_text <- "Numbers are based on the total number of <b>processed applications for organisations</b> for the April fortnights – 30 March 2020 to 26 April 2020 (as at midnight 3 June 2020)"
 #jobseeker
 jobseeker_publication_date <- "17 July 2020"
@@ -81,6 +82,11 @@ jk_mv_postcodes <- jk_raw %>%
     mutate(count = format(count, big.mark = ",")) %>% 
     rename(Postcode = postcode, Count = count)
 
+jk_mv_num <- jk_mv_postcodes %>% 
+    filter(Postcode == "Total") %>% 
+    select(Count) %>% 
+    pull()
+
 ## jobseeker data #################################
 jobseeker_table_long <- read_csv("app_data/jobseeker_table_long.csv")
 
@@ -96,6 +102,7 @@ js_month_list <- jobseeker_table_long %>%
 
 jobseeker_month <- js_month_list[1]
 jobseeker_month_formatted <- format(ymd(jobseeker_month), "%b %Y")
+jobseeker_month_long <- format(ymd(jobseeker_month), "%B %Y")
 jobseeker_first <- js_month_list[length(js_month_list)]
 jobseeker_first_month_formatted <- format(ymd(jobseeker_first), "%b %Y")
 
@@ -140,6 +147,14 @@ colnames(jobseeker_large) <- c("Region",
                                paste0("Recipients ", jobseeker_month_formatted),
                                paste0("As % of 15-64 pop. ", jobseeker_month_formatted))
 
+js_mv_num <- jobseeker_joined %>% 
+    filter(month == jobseeker_month) %>% 
+    filter(region == "City of Moonee Valley") %>% 
+    filter(data_type == "Total JobSeeker and Youth allowance recipients") %>% 
+    select(values) %>% 
+    mutate(values = format(values, big.mark = ",")) %>% 
+    pull()
+
 # salm data ##########################
 sa2_vic_current_unemp_rate <- read_csv("app_data/salm_unemp_rate_current_sa2.csv")
 
@@ -158,6 +173,11 @@ salm_chart_data <- read_csv("app_data/salm_chart_data.csv")
 salm_table_data <- read_csv("app_data/salm_table_data.csv") %>% 
     mutate(`No. of unemployed` = format(`No. of unemployed`, big.mark = ","),
            `Labour force` = format(`Labour force`, big.mark = ","))
+
+unemp_rate_mv_num <- salm_table_data %>% 
+    filter(Region == "City of Moonee Valley") %>% 
+    select(`Unemployment rate %`) %>% 
+    pull()
     
 # the app ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -202,13 +222,21 @@ sidebar <- dashboardSidebar(
 body <- dashboardBody(
     
     tabItems(
+        ## home ####
         tabItem(tabName = "home",
                 fluidRow(
-                    box(title = 'MV Economic tracker',
-                        tags$body(HTML("Click the tabs on the left</br>",
-                                                                      "</br> Dashboard summary to be added </br>",
-                                                                      "</br> Last updated: 17 July 2020")), width = 12)
-                )
+                    box(title = 'Economic data tracker',
+                        tags$body(HTML("Click the tabs on the left for detailed information.</br>",
+                                       "</br>Last updated: 17 July 2020")), width = 12)
+                ),
+                fluidRow(
+                    valueBoxOutput("vbox_jobkeep"),
+                    valueBoxOutput("vbox_jobseek"),
+                    valueBoxOutput("vbox_unemp_rate")
+                ),
+                fluidRow(
+                    helpText("*Some postcodes are shared with areas outside of the municipality.")
+                ),
         ),
         ## abs data ####
         tabItem(tabName = "jobs_wages_vic",
@@ -489,6 +517,25 @@ server <- function(input, output) {
             tm_borders(alpha = 0.5, col = "grey") +
             tm_shape(mv_shp) +
             tm_borders(alpha = 0.5, col = "purple", lwd = 2)
+    })
+    
+    # valueboxes #############
+    output$vbox_jobkeep <- renderValueBox({
+            valueBox(value = tags$p(jk_mv_num, style = "font-size: 150%;"),
+                    subtitle = glue("Jobkeeper recipients in Moonee Valley postcodes* ({jobkeeper_data_date})"),
+                    width = 4, color = "yellow")
+    })
+    
+    output$vbox_jobseek <- renderValueBox({
+        valueBox(value = tags$p(js_mv_num, style = "font-size: 150%;"),
+                 subtitle = glue("Jobseeker and Youth Allowance recipients ({jobseeker_month_long})"),
+                 width = 4, color = "yellow")
+    })
+    
+    output$vbox_unemp_rate <- renderValueBox({
+        valueBox(value = tags$p(glue("{unemp_rate_mv_num}%"), style = "font-size: 150%;"),
+                 subtitle = glue("Unemployment rate % ({salm_current_month})"),
+                 width = 4, color = "yellow")
     })
 
 }
