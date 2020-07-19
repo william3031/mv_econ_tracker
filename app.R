@@ -5,7 +5,6 @@ library(glue)
 library(readxl)
 library(janitor)
 library(plotly)
-library(scales)
 library(shinydashboard)
 library(tmap)
 library(leaflet)
@@ -44,12 +43,7 @@ jobs_index <- jobs_wages_index %>%
 wages_index <- jobs_wages_index %>% 
     filter(type == "Wages")
 
-abs_col_names <- colnames(weekly_jobs_data_raw)
-
-abs_latest_numeric <- jobs_wages_index %>% 
-    str_remove(., "x")  %>% as.numeric(.)
-
-latest_week <- jobs_wages_index %>% 
+abs_latest_week <- jobs_wages_index %>% 
     tail(1) %>% 
     select(date) %>% 
     pull() %>% 
@@ -84,7 +78,7 @@ jk_mv_postcodes <- jk_raw %>%
     filter(postcode != "TOTAL") %>% 
     filter(postcode %in% c("3031", "3032", "3033", "3034", "3039", "3040", "3041", "3042")) %>% 
     adorn_totals() %>% 
-    mutate(count = comma(count)) %>% 
+    mutate(count = format(count, big.mark = ",")) %>% 
     rename(Postcode = postcode, Count = count)
 
 ## jobseeker data #################################
@@ -101,21 +95,22 @@ js_month_list <- jobseeker_table_long %>%
     pull()
 
 jobseeker_month <- js_month_list[1]
-jobseeker_first <- js_month_list[length(js_month_list)]
 jobseeker_month_formatted <- format(ymd(jobseeker_month), "%b %Y")
+jobseeker_first <- js_month_list[length(js_month_list)]
+jobseeker_first_month_formatted <- format(ymd(jobseeker_first), "%b %Y")
 
 jobseeker_table_filtered <- jobseeker_table_long %>% 
     filter(month == jobseeker_month) %>% 
     filter(data_type == "Percentage aged 15-64 on either JobSeeker or Youth Allowance") %>% 
     rename(percentage = values)
 
-js_map_join <- left_join(sa2_greater, jobseeker_table_filtered)
+js_map_join <- left_join(sa2_greater, jobseeker_table_filtered, by = "sa2_name")
 
 jobseeker_joined <- read_csv("app_data/jobseeker_joined.csv")
 
 region_list <- c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Ponds",
                  "Airport West", "Keilor East", "Niddrie - Essendon West", "Strathmore",
-                 "City of Moonee Valley", "Greater Melbourne", "Victoria")
+                 "City of Moonee Valley", "Greater Melbourne")
 
 selected_regions <- c("City of Moonee Valley", "Greater Melbourne")
 
@@ -123,7 +118,7 @@ jobseeker_large_first <- jobseeker_joined %>%
     filter(month  == jobseeker_first) %>% 
     mutate(month = format(month, "%b %Y")) %>% 
     mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
-                               glue("Recipients {month}"), glue("As % of 15-64 pop. {month}"))) %>% 
+                               "recipients_first", "of_pop_first")) %>% 
     pivot_wider(names_from = data_type, values_from = values) %>% 
     select(-month)
 
@@ -131,28 +126,38 @@ jobseeker_large_current <- jobseeker_joined %>%
     filter(month == jobseeker_month) %>% 
     mutate(month = format(month, "%b %Y")) %>% 
     mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
-                               glue("Recipients {month}"), glue("As % of 15-64 pop. {month}"))) %>% 
+                               "recipients_last", "of_pop_last")) %>%  
     pivot_wider(names_from = data_type, values_from = values) %>% 
     select(-region, -month) 
 
-jobseeker_large <- bind_cols(jobseeker_large_first, jobseeker_large_current) 
+jobseeker_large <- bind_cols(jobseeker_large_first, jobseeker_large_current) %>% 
+    mutate(recipients_first = format(recipients_first, big.mark = ",")) %>% 
+    mutate(recipients_last = format(recipients_last, big.mark = ",")) 
+# rename the columns - do it this way!!!
+colnames(jobseeker_large) <- c("Region",
+                               paste0("Recipients ", jobseeker_first_month_formatted),
+                               paste0("As % of 15-64 pop.", jobseeker_first_month_formatted),
+                               paste0("Recipients ", jobseeker_month_formatted),
+                               paste0("As % of 15-64 pop.", jobseeker_month_formatted))
 
 # salm data ##########################
-sa2_vic_current <- read_csv("app_data/salm_unemp_current_sa2.csv")
+sa2_vic_current_unemp_rate <- read_csv("app_data/salm_unemp_rate_current_sa2.csv")
 
-unemp_rate_map_join <- left_join(sa2_greater, sa2_vic_current) 
+unemp_rate_map_join <- left_join(sa2_greater, sa2_vic_current_unemp_rate, by = "sa2_name") 
 
-sa2_col_names <- colnames(sa2data)
-
-salm_current_numeric <- sa2_col_names[length(sa2_col_names)] %>% 
-    str_remove(., "x")  %>% 
-    as.numeric(.)
-
-salm_current_month <- sa2_vic_current %>% 
+salm_current_month <- sa2_vic_current_unemp_rate %>% 
     tail(1) %>% 
     select(date) %>% 
     pull() %>% 
     format(., format = "%B %Y")
+
+salm_data_list <- c("Unemployment rate %", "No. of unemployed", "Labour force")
+
+salm_chart_data <- read_csv("app_data/salm_chart_data.csv")
+
+salm_table_data <- read_csv("app_data/salm_table_data.csv") %>% 
+    mutate(`No. of unemployed` = format(`No. of unemployed`, big.mark = ","),
+           `Labour force` = format(`Labour force`, big.mark = ","))
     
 # the app ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -184,9 +189,10 @@ sidebar <- dashboardSidebar(
                  menuSubItem("Jobseeker graph", tabName = "jobseeker_graph"),
                  menuSubItem("Jobseeker table", tabName = "jobseeker_table")
         ),
-        menuItem("Unemployment rate",
+        menuItem("Unemployment and labour force",
                  menuSubItem("Unemployment rate map", tabName = "unemp_map"),
-                 menuSubItem("Unemployment rate table", tabName = "unemp_table")
+                 menuSubItem("Unemployment graph", tabName = "unemp_graph"),
+                 menuSubItem("Unemployment table", tabName = "unemp_table")
         ),
         menuItem("Notes", tabName = "notes")
     )
@@ -287,7 +293,8 @@ body <- dashboardBody(
         ),
         tabItem(tabName = "jobseeker_graph",
                 fluidRow(
-                    box(title = 'JobSeeker and Youth Allowance recipients', tags$body(HTML("Total recipients and normalised to 15-64 y.o. population.")), width = 12)
+                    box(title = 'JobSeeker and Youth Allowance recipients',
+                        tags$body(HTML("Total recipients and normalised to 15-64 y.o. population.")), width = 12)
                 ),
                 fluidRow(
                     box(selectInput(inputId = "js_graph_input",
@@ -333,11 +340,40 @@ body <- dashboardBody(
                     tags$body(HTML(glue("Department of Education, Skills and Employment, Small Area Labour Markets publication. </br>",
                                         "Last updated {salm_publication_date}"))), width = 12)
         ),
+        tabItem(tabName = "unemp_graph",
+                fluidRow(
+                    box(title = 'Unemployment and labour force',
+                        tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force</br>"))), width = 12)
+                ),
+                fluidRow(
+                    box(selectInput(inputId = "salm_data_input",
+                                    label = "Select the data type",
+                                    choices = salm_data_list,
+                                    selected = "Unemployment rate %"),
+                    ),
+                    box(checkboxGroupInput(inputId = "salm_region_input",
+                                           label = "Select the regions",
+                                           choices = region_list,
+                                           selected = selected_regions,
+                                           inline = TRUE),
+                    ),
+                ),
+                fluidRow(plotlyOutput("salm_lines")
+                ),
+                box(title = 'Sources:',
+                    tags$body(HTML(glue("Department of Education, Skills and Employment, Small Area Labour Markets publication. </br>",
+                                        "Last updated {salm_publication_date}"))), width = 12)
+        ),
         tabItem(tabName = "unemp_table",
                 fluidRow(
                     box(title = 'Labour force and unemployment table',
-                        tags$body(HTML("text")), width = 12)
-                )
+                        tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force - {salm_current_month}</br>"))), width = 12)
+                ),
+                fluidRow(DTOutput("salm_large_table")
+                ),
+                box(title = 'Sources:', 
+                    tags$body(HTML(glue("Department of Education, Skills and Employment, Small Area Labour Markets publication. </br>",
+                                                            "Last updated {salm_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "notes",
                 fluidRow(
@@ -365,7 +401,10 @@ server <- function(input, output) {
     })
     
     # jobkeeper data
-    output$jobkeeper_mv_table <- renderDT(jk_mv_postcodes, options = list(dom = 't'))
+    output$jobkeeper_mv_table <- renderDT(jk_mv_postcodes,
+                                          options = list(dom = 't',
+                                                         columnDefs = list(list(className = 'dt-right', targets = 2))
+                                          ))
     
     # jobseeker data   
     jobseeker_joined_filtered <- reactive({
@@ -374,7 +413,22 @@ server <- function(input, output) {
             filter(region %in% input$js_region_input)
     })
     
-    output$jobseeker_large_table <- renderDT(jobseeker_large, options = list(dom = 't'))
+    output$jobseeker_large_table <- renderDT(jobseeker_large,
+                                             options = list(dom = 't',
+                                                            columnDefs = list(list(className = 'dt-right', targets = c(2, 4)))
+                                             ))
+    
+    # salm data
+    salm_chart_data_filtered <- reactive({
+        salm_chart_data %>% 
+            filter(data_type == input$salm_data_input) %>% 
+            filter(region %in% input$salm_region_input)
+    })
+    
+    output$salm_large_table <- renderDT(salm_table_data,
+                                        options = list(dom = 't',
+                                                       columnDefs = list(list(className = 'dt-right', targets = c(3,4)))
+                                        ))
     
     # graphs ###############################################
     # jobs wages plotly change line
@@ -397,6 +451,14 @@ server <- function(input, output) {
     output$jobseeker_lines <- renderPlotly({
         plot_ly() %>% 
             add_trace(data = jobseeker_joined_filtered(), x = ~month, y = ~values,
+                      mode = "lines+markers", color = ~region) %>% 
+            layout(xaxis = list(title = 'Month'), yaxis = list(title = "Value"))
+    })
+    
+    # salm lines
+    output$salm_lines <- renderPlotly({
+        plot_ly() %>% 
+            add_trace(data = salm_chart_data_filtered(), x = ~date, y = ~values,
                       mode = "lines+markers", color = ~region) %>% 
             layout(xaxis = list(title = 'Month'), yaxis = list(title = "Value"))
     })
@@ -430,8 +492,6 @@ server <- function(input, output) {
     })
 
 }
-
-
 
 # for the app
 ui <- dashboardPage(header,

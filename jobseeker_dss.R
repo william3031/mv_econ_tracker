@@ -33,13 +33,30 @@ jobseeker_merge <- bind_rows(data_mar20, data_apr20, data_may20, data_jun20) %>%
   mutate(total = job_seeker_payment + youth_allowance_other) %>% 
   filter((sa2 >= 20000 & sa2 <= 29999))
 
-
 jobseeker_merge_sa2 <- jobseeker_merge %>% 
   filter(sa2_name %in% c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Ponds",
                          "Airport West", "Keilor East", "Niddrie - Essendon West", "Strathmore")) %>% 
   select(-sa2) %>% 
   rename(region = sa2_name)
 
+# these for the app table part 1 of 2
+jobseeker_merge_mv <- jobseeker_merge_sa2 %>% 
+  group_by(month) %>% 
+  summarise(job_seeker_payment = sum(job_seeker_payment), youth_allowance_other = sum(youth_allowance_other), total = sum(total)) %>% 
+  mutate(region = "City of Moonee Valley")
+
+jobseeker_merge_gm <- jobseeker_merge %>% 
+  filter((sa2 >= 21105 & sa2 <= 21385)| sa2 >= 21424 & sa2 <= 21468) %>% 
+  group_by(month)  %>% 
+  summarise(job_seeker_payment = sum(job_seeker_payment), youth_allowance_other = sum(youth_allowance_other), total = sum(total)) %>% 
+  mutate(region = "Greater Melbourne")
+
+jobseeker_merge_vic <- jobseeker_merge %>% 
+  group_by(month)  %>% 
+  summarise(job_seeker_payment = sum(job_seeker_payment), youth_allowance_other = sum(youth_allowance_other), total = sum(total)) %>% 
+  mutate(region = "Victoria")
+
+jobseeker_all <- bind_rows(jobseeker_merge_sa2, jobseeker_merge_mv, jobseeker_merge_gm, jobseeker_merge_vic) 
 
 # add 15-64 population proportion ########################################################################
 
@@ -75,10 +92,53 @@ jobseeker_table_long <- jobseeker_table %>%
                                TRUE ~ NA_character_)) 
 write_csv(jobseeker_table_long, "app_data/jobseeker_table_long.csv")
 
+# join to age for app table part 2 of 2
+mv_sa2_age <- asgs_age %>% 
+  select(-(s_t_code:sa2_code)) %>% 
+  rename(region = sa2_name) %>% 
+  filter(region %in% c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Ponds",
+                       "Airport West", "Keilor East", "Niddrie - Essendon West", "Strathmore"))
+
+vic_age <- asgs_age %>% 
+  select(-s_t_code, -(gccsa_code:sa2_name)) %>% 
+  summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>% 
+  mutate(region = "Victoria")
+
+gm_age <- asgs_age %>% 
+  filter(gccsa_name == "Greater Melbourne") %>% 
+  select(-(s_t_code:gccsa_code), -(sa4_code:sa2_name)) %>% 
+  summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>% 
+  mutate(region = "Greater Melbourne")
+
+# lga
+lga_col_names <- c("S/T code", "S/T name", "LGA code", "LGA name", "Age0-4", "Age5–9", "Age10–14", "Age15–19", "Age20–24", "Age25–29", "Age30–34", "Age35–39", "Age40–44", "Age45–49", "Age50–54", "Age55–59", "Age60–64", "Age65–69", "Age70–74", "Age75–79", "Age80–84", "Age85 and over", "Total Persons")
+
+lga_age <- read_excel("data_in/32350ds0003_lga_2018.xls", sheet = "Table 3", skip = 10, col_names = lga_col_names) %>% 
+  clean_names() %>% 
+  filter(s_t_name == "Victoria") %>% 
+  select(-(s_t_code:lga_code)) %>% 
+  rename(region = lga_name) %>% 
+  filter(region == "Moonee Valley (C)") %>% 
+  mutate(region = "City of Moonee Valley")
+
+# join and get the 15-64 year olds
+joined_ages <- bind_rows(mv_sa2_age, lga_age, vic_age, gm_age) %>% 
+  select(region, age15_19:age60_64) %>% 
+  pivot_longer(-region, names_to = "age_groups", values_to = "count") %>% 
+  group_by(region) %>% 
+  summarise(age15_64 = sum(count))
+
+# join to the ages for the app table
+jobseeker_joined <- left_join(jobseeker_all, joined_ages) %>% 
+  mutate(pct_15_64 = round(total_js_ya/age15_64*100, 1)) %>% 
+  mutate(region = factor(region, levels = c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Ponds",
+                                            "Airport West", "Keilor East", "Niddrie - Essendon West", "Strathmore",
+                                            "City of Moonee Valley", "Greater Melbourne", "Victoria")))
+write_csv(jobseeker_joined, "app_data/jobseeker_joined.csv")
 
 # mutate(month = format(month, "%b %Y"))
 
-# spatial data - already simplified
+# spatial data - already simplified #############################
 sa2_greater <- st_read("data_in/shp/sa2_2016_gmel.shp") %>% 
   select(-sa2_code) %>% 
   clean_names() 
@@ -98,24 +158,6 @@ js_month_list <- jobseeker_table_long %>%
 
 jobseeker_month <- js_month_list[1]
 jobseeker_first <- js_month_list[length(js_month_list)]
-
-jobseeker_large_first <- jobseeker_joined %>% 
-  filter(month  == jobseeker_first) %>% 
-  mutate(month = format(month, "%b %Y")) %>% 
-  mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
-                             glue("Recipients {month}"), glue("As % of 15-64 pop. {month}"))) %>% 
-  pivot_wider(names_from = data_type, values_from = values) %>% 
-  select(-month)
-  
-jobseeker_large_current <- jobseeker_joined %>% 
-  filter(month == jobseeker_month) %>% 
-  mutate(month = format(month, "%b %Y")) %>% 
-  mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
-                             glue("Recipients {month}"), glue("As % of 15-64 pop. {month}"))) %>% 
-  pivot_wider(names_from = data_type, values_from = values) %>% 
-  select(-region, -month)
-
-jobseeker_large <- bind_cols(jobseeker_large_first, jobseeker_large_current)
 
 
 # tmap

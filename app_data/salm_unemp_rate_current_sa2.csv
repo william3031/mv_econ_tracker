@@ -1,0 +1,452 @@
+sa2_name,date,rate
+Alfredton,2019-12-01,1.6
+Ballarat,2019-12-01,3.3
+Ballarat - North,2019-12-01,3.2
+Ballarat - South,2019-12-01,5.3
+Buninyong,2019-12-01,1.6
+Delacombe,2019-12-01,3.4
+Smythes Creek,2019-12-01,1.6
+Wendouree - Miners Rest,2019-12-01,5.9
+Bacchus Marsh Region,2019-12-01,1.9
+Creswick - Clunes,2019-12-01,3.4
+Daylesford,2019-12-01,2.3
+Gordon (Vic.),2019-12-01,2.1
+Avoca,2019-12-01,5.1
+Beaufort,2019-12-01,4.1
+Golden Plains - North,2019-12-01,3.8
+Maryborough (Vic.),2019-12-01,7.4
+Maryborough Region,2019-12-01,6.2
+Bendigo,2019-12-01,6.9
+California Gully - Eaglehawk,2019-12-01,6.4
+East Bendigo - Kennington,2019-12-01,3.6
+Flora Hill - Spring Gully,2019-12-01,3.9
+Kangaroo Flat - Golden Square,2019-12-01,4.4
+Maiden Gully,2019-12-01,1.3
+Strathfieldsaye,2019-12-01,1.2
+White Hills - Ascot,2019-12-01,3.1
+Bendigo Region - South,2019-12-01,1.8
+Castlemaine,2019-12-01,3
+Castlemaine Region,2019-12-01,2.9
+Heathcote,2019-12-01,5.9
+Kyneton,2019-12-01,2
+Woodend,2019-12-01,1.3
+Bendigo Region - North,2019-12-01,3.3
+Loddon,2019-12-01,5.4
+Bannockburn,2019-12-01,1.8
+Golden Plains - South,2019-12-01,2.8
+Winchelsea,2019-12-01,2.6
+Belmont,2019-12-01,4
+Corio - Norlane,2019-12-01,15.3
+Geelong,2019-12-01,5.5
+Geelong West - Hamlyn Heights,2019-12-01,3.6
+Grovedale,2019-12-01,3.1
+Highton,2019-12-01,1.7
+Lara,2019-12-01,3.6
+Leopold,2019-12-01,3.1
+Newcomb - Moolap,2019-12-01,9.3
+Newtown (Vic.),2019-12-01,2.2
+North Geelong - Bell Park,2019-12-01,5.9
+Clifton Springs,2019-12-01,4.6
+Lorne - Anglesea,2019-12-01,1.6
+Ocean Grove - Barwon Heads,2019-12-01,2.2
+Portarlington,2019-12-01,7.5
+Point Lonsdale - Queenscliff,2019-12-01,2.3
+Torquay,2019-12-01,1.4
+Alexandra,2019-12-01,3.2
+Euroa,2019-12-01,3.7
+Kilmore - Broadford,2019-12-01,3.6
+Mansfield (Vic.),2019-12-01,2.3
+Nagambie,2019-12-01,3.2
+Seymour,2019-12-01,7.5
+Seymour Region,2019-12-01,1.9
+Yea,2019-12-01,4.6
+Benalla,2019-12-01,6
+Benalla Region,2019-12-01,2.9
+Rutherglen,2019-12-01,2.8
+Wangaratta,2019-12-01,4.9
+Wangaratta Region,2019-12-01,2.2
+Beechworth,2019-12-01,2.4
+Bright - Mount Beauty,2019-12-01,1.9
+Chiltern - Indigo Valley,2019-12-01,3.8
+Myrtleford,2019-12-01,3.3
+Towong,2019-12-01,3.8
+West Wodonga,2019-12-01,4.7
+Wodonga,2019-12-01,5.2
+Yackandandah,2019-12-01,1.8
+Drouin,2019-12-01,2.8
+Mount Baw Baw Region,2019-12-01,1.9
+Trafalgar (Vic.),2019-12-01,1.9
+Warragul,2019-12-01,2.5
+Bairnsdale,2019-12-01,4.8
+Bruthen - Omeo,2019-12-01,2.5
+Lakes Entrance,2019-12-01,5.3
+Orbost,2019-12-01,5.8
+Paynesville,2019-12-01,4
+Foster,2019-12-01,2.1
+Korumburra,2019-12-01,2.5
+Leongatha,2019-12-01,2
+Phillip Island,2019-12-01,2.9
+Wonthaggi - Inverloch,2019-12-01,4
+Churchill,2019-12-01,3.8
+Moe - Newborough,2019-12-01,6.8
+Morwell,2019-12-01,9.9
+Traralgon,2019-12-01,3.3
+Yallourn North - Glengarry,2019-12-01,2.7
+Longford - Loch Sport,2019-12-01,3.9
+Maffra,2019-12-01,2.8
+Rosedale,2019-12-01,2.6
+Sale,2019-12-01,4.8
+Yarram,2019-12-01,3.9
+Brunswick,2019-12-01,5.5
+Brunswick East,2019-12-01,4.7
+Brunswick West,2019-12-01,6.6
+Coburg,2019-12-01,7.4
+Pascoe Vale South,2019-12-01,4.6
+Alphington - Fairfield,2019-12-01,4.2
+Northcote,2019-12-01,4.6
+Thornbury,2019-12-01,6.1
+Ascot Vale,2019-12-01,8.7
+Essendon - Aberfeldie,2019-12-01,3.5
+Flemington,2019-12-01,13.2
+Moonee Ponds,2019-12-01,3.8
+Carlton,2019-12-01,6.6
+Docklands,2019-12-01,1.9
+East Melbourne,2019-12-01,1.2
+Kensington (Vic.),2019-12-01,5
+Melbourne,2019-12-01,3.6
+North Melbourne,2019-12-01,6.4
+Parkville,2019-12-01,3.6
+South Yarra - West,2019-12-01,2.2
+Southbank,2019-12-01,1.8
+Albert Park,2019-12-01,2.1
+Elwood,2019-12-01,3.2
+Port Melbourne,2019-12-01,4
+Port Melbourne Industrial,2019-12-01,1.2
+South Melbourne,2019-12-01,7.4
+St Kilda,2019-12-01,5.7
+St Kilda East,2019-12-01,5
+Armadale,2019-12-01,1.8
+Prahran - Windsor,2019-12-01,3.5
+South Yarra - East,2019-12-01,3
+Toorak,2019-12-01,2
+Abbotsford,2019-12-01,3.1
+Carlton North - Princes Hill,2019-12-01,4.5
+Collingwood,2019-12-01,11.8
+Fitzroy,2019-12-01,9.1
+Fitzroy North,2019-12-01,4.9
+Richmond (Vic.),2019-12-01,5.2
+Yarra - North,2019-12-01,4.1
+Ashburton (Vic.),2019-12-01,4.7
+Balwyn,2019-12-01,3.7
+Balwyn North,2019-12-01,3.7
+Camberwell,2019-12-01,2.7
+Glen Iris - East,2019-12-01,2
+Hawthorn,2019-12-01,3.2
+Hawthorn East,2019-12-01,2.6
+Kew,2019-12-01,3.1
+Kew East,2019-12-01,3.6
+Surrey Hills (West) - Canterbury,2019-12-01,2.9
+Bulleen,2019-12-01,5.9
+Doncaster,2019-12-01,6.7
+Templestowe,2019-12-01,4
+Templestowe Lower,2019-12-01,5.6
+Doncaster East (North),2019-12-01,NA
+Doncaster East (South),2019-12-01,NA
+Blackburn,2019-12-01,5
+Blackburn South,2019-12-01,6.7
+Box Hill,2019-12-01,7.4
+Box Hill North,2019-12-01,5.2
+Burwood,2019-12-01,8.3
+Burwood East,2019-12-01,6.2
+Surrey Hills (East) - Mont Albert,2019-12-01,3.1
+Beaumaris,2019-12-01,1.8
+Brighton (Vic.),2019-12-01,1.6
+Brighton East,2019-12-01,2.2
+Cheltenham - Highett (West),2019-12-01,4.7
+Hampton,2019-12-01,4.6
+Sandringham - Black Rock,2019-12-01,2.6
+Bentleigh - McKinnon,2019-12-01,3.1
+Carnegie,2019-12-01,3.5
+Caulfield - North,2019-12-01,2.9
+Caulfield - South,2019-12-01,3.2
+Elsternwick,2019-12-01,2.7
+Hughesdale,2019-12-01,4.1
+Murrumbeena,2019-12-01,3.1
+Ormond - Glen Huntly,2019-12-01,3.8
+Bentleigh East (North),2019-12-01,NA
+Bentleigh East (South),2019-12-01,NA
+Aspendale Gardens - Waterways,2019-12-01,3.3
+Carrum - Patterson Lakes,2019-12-01,5.9
+Chelsea - Bonbeach,2019-12-01,6.8
+Chelsea Heights,2019-12-01,6.7
+Cheltenham - Highett (East),2019-12-01,4.9
+Edithvale - Aspendale,2019-12-01,4.1
+Mentone,2019-12-01,4.5
+Moorabbin - Heatherton,2019-12-01,5.2
+Mordialloc - Parkdale,2019-12-01,4.4
+Malvern - Glen Iris,2019-12-01,2
+Malvern East,2019-12-01,2.6
+Bundoora - East,2019-12-01,3.9
+Greensborough,2019-12-01,2.8
+Heidelberg - Rosanna,2019-12-01,2.2
+Heidelberg West,2019-12-01,7.8
+Ivanhoe,2019-12-01,1.5
+Ivanhoe East - Eaglemont,2019-12-01,1
+Montmorency - Briar Hill,2019-12-01,2.8
+Viewbank - Yallambie,2019-12-01,2.4
+Watsonia,2019-12-01,4.1
+Kingsbury,2019-12-01,2.5
+Reservoir - East,2019-12-01,6.1
+Reservoir - West,2019-12-01,5.2
+Preston - East,2019-12-01,NA
+Preston - West,2019-12-01,NA
+Eltham,2019-12-01,1.7
+Hurstbridge,2019-12-01,2.7
+Kinglake,2019-12-01,3
+Panton Hill - St Andrews,2019-12-01,2.6
+Plenty - Yarrambat,2019-12-01,1.4
+Research - North Warrandyte,2019-12-01,1.3
+Wattle Glen - Diamond Creek,2019-12-01,1.8
+Bundoora - North,2019-12-01,3
+Bundoora - West,2019-12-01,4
+Lalor,2019-12-01,8.6
+Mill Park - North,2019-12-01,4.3
+Mill Park - South,2019-12-01,5.4
+Thomastown,2019-12-01,9.2
+Wallan,2019-12-01,4.3
+Whittlesea,2019-12-01,3.8
+Doreen,2019-12-01,NA
+Epping - East,2019-12-01,NA
+Epping - South,2019-12-01,NA
+Epping - West,2019-12-01,NA
+Mernda,2019-12-01,NA
+South Morang (North),2019-12-01,NA
+South Morang (South),2019-12-01,NA
+Wollert,2019-12-01,NA
+Airport West,2019-12-01,4
+Keilor,2019-12-01,2.9
+Keilor East,2019-12-01,3.3
+Niddrie - Essendon West,2019-12-01,2.3
+Strathmore,2019-12-01,1.7
+Gisborne,2019-12-01,1.7
+Macedon,2019-12-01,1.6
+Riddells Creek,2019-12-01,2.3
+Romsey,2019-12-01,3.7
+Coburg North,2019-12-01,4.8
+Fawkner,2019-12-01,6.8
+Pascoe Vale,2019-12-01,2.8
+Glenroy,2019-12-01,NA
+Gowanbrae,2019-12-01,NA
+Hadfield,2019-12-01,NA
+Sunbury,2019-12-01,3.9
+Sunbury - South,2019-12-01,4.7
+Broadmeadows,2019-12-01,20
+Campbellfield - Coolaroo,2019-12-01,16
+Gladstone Park - Westmeadows,2019-12-01,6.1
+Greenvale - Bulla,2019-12-01,NA
+Meadow Heights,2019-12-01,19.7
+Melbourne Airport,2019-12-01,1.3
+Roxburgh Park - Somerton,2019-12-01,13
+Tullamarine,2019-12-01,7.8
+Craigieburn - Central,2019-12-01,NA
+Craigieburn - North,2019-12-01,NA
+Craigieburn - South,2019-12-01,NA
+Craigieburn - West,2019-12-01,NA
+Mickleham - Yuroke,2019-12-01,NA
+Bayswater,2019-12-01,4.4
+Knoxfield - Scoresby,2019-12-01,2.5
+Lysterfield,2019-12-01,1.2
+Rowville - Central,2019-12-01,2.2
+Rowville - North,2019-12-01,2.1
+Rowville - South,2019-12-01,1.7
+Wantirna,2019-12-01,2.6
+Wantirna South,2019-12-01,2.3
+Boronia,2019-12-01,NA
+Ferntree Gully (North),2019-12-01,NA
+Ferntree Gully (South) - Upper Ferntree Gully,2019-12-01,NA
+The Basin,2019-12-01,NA
+Donvale - Park Orchards,2019-12-01,1.5
+Warrandyte - Wonga Park,2019-12-01,1
+Bayswater North,2019-12-01,3.7
+Croydon Hills - Warranwood,2019-12-01,1.7
+Ringwood,2019-12-01,5.1
+Ringwood East,2019-12-01,4
+Ringwood North,2019-12-01,1.5
+Croydon - East,2019-12-01,NA
+Croydon - West,2019-12-01,NA
+Croydon South,2019-12-01,NA
+Forest Hill,2019-12-01,2.9
+Mitcham (Vic.),2019-12-01,2.1
+Nunawading,2019-12-01,2.4
+Vermont,2019-12-01,1.8
+Vermont South,2019-12-01,1.6
+Belgrave - Selby,2019-12-01,2.8
+Chirnside Park,2019-12-01,2.8
+Healesville - Yarra Glen,2019-12-01,3.5
+Kilsyth,2019-12-01,4
+Lilydale - Coldstream,2019-12-01,3.5
+Monbulk - Silvan,2019-12-01,2.3
+Montrose,2019-12-01,2.5
+Mooroolbark,2019-12-01,4.1
+Mount Dandenong - Olinda,2019-12-01,2.1
+Mount Evelyn,2019-12-01,2.7
+Upwey - Tecoma,2019-12-01,2.6
+Wandin - Seville,2019-12-01,2.3
+Yarra Valley,2019-12-01,5.3
+Beaconsfield - Officer,2019-12-01,4.3
+Bunyip - Garfield,2019-12-01,4.2
+Emerald - Cockatoo,2019-12-01,3.2
+Koo Wee Rup,2019-12-01,5.2
+Pakenham - North,2019-12-01,7.6
+Pakenham - South,2019-12-01,8.7
+Berwick - North,2019-12-01,3.7
+Berwick - South,2019-12-01,3.8
+Doveton,2019-12-01,15.4
+Hallam,2019-12-01,10.2
+Narre Warren North,2019-12-01,2.1
+Endeavour Hills - North,2019-12-01,NA
+Endeavour Hills - South,2019-12-01,NA
+Narre Warren - North East,2019-12-01,NA
+Narre Warren - South West,2019-12-01,NA
+Cranbourne,2019-12-01,12.1
+Cranbourne East,2019-12-01,5.3
+Cranbourne North,2019-12-01,6.4
+Cranbourne South,2019-12-01,3.8
+Cranbourne West,2019-12-01,7
+Hampton Park - Lynbrook,2019-12-01,10.1
+Lynbrook - Lyndhurst,2019-12-01,4
+Pearcedale - Tooradin,2019-12-01,4.2
+Narre Warren South (East),2019-12-01,NA
+Narre Warren South (West),2019-12-01,NA
+Clarinda - Oakleigh South,2019-12-01,4.4
+Clayton South,2019-12-01,3.9
+Dandenong,2019-12-01,15.5
+Dandenong North,2019-12-01,9.7
+Dingley Village,2019-12-01,2.6
+Keysborough,2019-12-01,4.3
+Noble Park North,2019-12-01,8.1
+Springvale,2019-12-01,8.1
+Springvale South,2019-12-01,7.9
+Noble Park - East,2019-12-01,NA
+Noble Park - West,2019-12-01,NA
+Ashwood - Chadstone,2019-12-01,4
+Clayton,2019-12-01,2.8
+Glen Waverley - East,2019-12-01,2.5
+Glen Waverley - West,2019-12-01,2.5
+Mount Waverley - North,2019-12-01,2.1
+Mount Waverley - South,2019-12-01,2.3
+Mulgrave,2019-12-01,3.3
+Oakleigh - Huntingdale,2019-12-01,3.6
+Wheelers Hill,2019-12-01,1.8
+Ardeer - Albion,2019-12-01,8.6
+Cairnlea,2019-12-01,5.5
+Deer Park - Derrimut,2019-12-01,7.8
+Delahey,2019-12-01,8
+Keilor Downs,2019-12-01,6.8
+Kings Park (Vic.),2019-12-01,11.6
+St Albans - North,2019-12-01,12.4
+St Albans - South,2019-12-01,11.3
+Sunshine,2019-12-01,8.9
+Sunshine North,2019-12-01,10.8
+Sunshine West,2019-12-01,10.2
+Sydenham,2019-12-01,5.4
+Taylors Lakes,2019-12-01,3
+Altona,2019-12-01,3.4
+Altona Meadows,2019-12-01,5.2
+Altona North,2019-12-01,6.3
+Newport,2019-12-01,2.9
+Seabrook,2019-12-01,3.9
+Williamstown,2019-12-01,2.5
+Braybrook,2019-12-01,7.9
+Footscray,2019-12-01,6.5
+Maribyrnong,2019-12-01,2.6
+Seddon - Kingsville,2019-12-01,3.1
+West Footscray - Tottenham,2019-12-01,5.2
+Yarraville,2019-12-01,2.8
+Bacchus Marsh,2019-12-01,5.9
+Hillside,2019-12-01,3.3
+Melton,2019-12-01,11.5
+Melton South,2019-12-01,10.9
+Melton West,2019-12-01,9.1
+Rockbank - Mount Cottrell,2019-12-01,8.5
+Taylors Hill,2019-12-01,3.5
+Burnside,2019-12-01,NA
+Burnside Heights,2019-12-01,NA
+Caroline Springs,2019-12-01,NA
+Hoppers Crossing - North,2019-12-01,6
+Hoppers Crossing - South,2019-12-01,7.5
+Laverton,2019-12-01,6.1
+Tarneit,2019-12-01,3.9
+Truganina,2019-12-01,3.4
+Werribee - South,2019-12-01,6.7
+Wyndham Vale,2019-12-01,7
+Point Cook - East,2019-12-01,NA
+Point Cook - North,2019-12-01,NA
+Point Cook - South,2019-12-01,NA
+Werribee - East,2019-12-01,NA
+Werribee - West,2019-12-01,NA
+Carrum Downs,2019-12-01,5.6
+Frankston,2019-12-01,9.5
+Frankston North,2019-12-01,12.6
+Frankston South,2019-12-01,2.7
+Langwarrin,2019-12-01,3.4
+Seaford (Vic.),2019-12-01,6.4
+Skye - Sandhurst,2019-12-01,2.8
+Dromana,2019-12-01,4.2
+Flinders,2019-12-01,1.4
+Hastings - Somers,2019-12-01,6.2
+Mornington,2019-12-01,4.1
+Mount Eliza,2019-12-01,1
+Mount Martha,2019-12-01,1.7
+Point Nepean,2019-12-01,4.9
+Rosebud - McCrae,2019-12-01,8.7
+Somerville,2019-12-01,3.5
+Ararat,2019-12-01,6.2
+Ararat Region,2019-12-01,3.1
+Horsham,2019-12-01,4.5
+Horsham Region,2019-12-01,2.5
+Nhill Region,2019-12-01,4.6
+St Arnaud,2019-12-01,4.9
+Stawell,2019-12-01,5.4
+West Wimmera,2019-12-01,3
+Yarriambiack,2019-12-01,5.1
+Irymple,2019-12-01,2.6
+Merbein,2019-12-01,5.1
+Mildura Region,2019-12-01,2.3
+Red Cliffs,2019-12-01,5.1
+Mildura - North,2019-12-01,NA
+Mildura - South,2019-12-01,NA
+Buloke,2019-12-01,4.1
+Gannawarra,2019-12-01,3.5
+Kerang,2019-12-01,5.9
+Robinvale,2019-12-01,3.5
+Swan Hill,2019-12-01,4.6
+Swan Hill Region,2019-12-01,3.8
+Echuca,2019-12-01,3.5
+Kyabram,2019-12-01,3.5
+Lockington - Gunbower,2019-12-01,2.4
+Rochester,2019-12-01,3
+Rushworth,2019-12-01,4.6
+Cobram,2019-12-01,4
+Moira,2019-12-01,2.6
+Numurkah,2019-12-01,3.6
+Yarrawonga,2019-12-01,3.1
+Mooroopna,2019-12-01,5.4
+Shepparton - North,2019-12-01,4.1
+Shepparton - South,2019-12-01,4.7
+Shepparton Region - East,2019-12-01,2.1
+Shepparton Region - West,2019-12-01,3.2
+Glenelg (Vic.),2019-12-01,2.7
+Hamilton (Vic.),2019-12-01,3.7
+Portland,2019-12-01,5.4
+Southern Grampians,2019-12-01,2
+Camperdown,2019-12-01,3.2
+Colac,2019-12-01,3
+Colac Region,2019-12-01,1.9
+Corangamite - North,2019-12-01,3.1
+Corangamite - South,2019-12-01,1.5
+Otway,2019-12-01,1.8
+Moyne - East,2019-12-01,2.2
+Moyne - West,2019-12-01,1.9
+Warrnambool - North,2019-12-01,3.1
+Warrnambool - South,2019-12-01,3.6
