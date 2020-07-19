@@ -127,7 +127,7 @@ selected_regions <- c("City of Moonee Valley", "Greater Melbourne")
 jobseeker_large_first <- jobseeker_joined %>% 
     filter(month  == jobseeker_first) %>% 
     mutate(month = format(month, "%b %Y")) %>% 
-    mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
+    mutate(data_type = if_else(data_type == "total",
                                "recipients_first", "of_pop_first")) %>% 
     pivot_wider(names_from = data_type, values_from = values) %>% 
     select(-month)
@@ -135,7 +135,7 @@ jobseeker_large_first <- jobseeker_joined %>%
 jobseeker_large_current <- jobseeker_joined %>% 
     filter(month == jobseeker_month) %>% 
     mutate(month = format(month, "%b %Y")) %>% 
-    mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
+    mutate(data_type = if_else(data_type == "total",
                                "recipients_last", "of_pop_last")) %>%  
     pivot_wider(names_from = data_type, values_from = values) %>% 
     select(-region, -month) 
@@ -434,7 +434,7 @@ body <- dashboardBody(
                 fluidRow(
                     box(title = 'Jobeeker and Youth Allowance:',
                         tags$body(HTML(glue("The <b>JobSeeker</b> payment replaced the Newstart allowance in March 2020 and is available to Australian residents aged between 22 and 65 years, who are unemployed and looking for work or are unable to do their usual work for a short period. ",
-                                            "<b>Youth Allowance</b> is available to those aged between 16 and 21 years looking for full time work, as well as others who are studying or doing an apprenticeship. Not all of these recipients are unemployed. To be unemployed, one must be actively looking for work."))), width = 12),
+                                            "<b>Youth Allowance</b> is available to those aged between 16 and 21 years looking for full time work, as well as others who are studying or doing an apprenticeship. Not all of these recipients are unemployed. To be unemployed, one must be actively looking for work. The data here only includes those who are not students nor apprentices."))), width = 12),
                     box(title = 'Unemployment and labour force',
                         tags$body(HTML(glue("Unemployment and labour force data is from the Small Area Labour Markets publication. ",
                                             "The <b> labour force</b> is the population aged 15 years and over that are either in work, or actively looking for work in a region. ",
@@ -473,7 +473,7 @@ server <- function(input, output) {
     jobseeker_joined_filtered <- reactive({
         jobseeker_joined %>% 
             filter(data_type == input$js_graph_input) %>% 
-            filter(region %in% input$js_region_input)
+            filter(region %in% input$js_region_input) 
     })
     
     output$jobseeker_large_table <- renderDT(jobseeker_large,
@@ -499,7 +499,8 @@ server <- function(input, output) {
         plot_ly() %>% 
             add_trace(data = jobs_index, x = ~date, y = ~values, name = "Jobs", mode = "lines+markers") %>% 
             add_trace(data = wages_index, x = ~date, y = ~values, name = "Wages", mode = "lines+markers") %>% 
-            layout(xaxis = list(title = 'Date'), yaxis = list(title = "Change % (from 14 March)"))
+            layout(xaxis = list(title = 'Date'), yaxis = list(title = "Change % (from 14 March)")) %>%
+            layout(hovermode = "x unified")
     })
     
     # jobs wages plotly change line
@@ -507,7 +508,8 @@ server <- function(input, output) {
         plot_ly() %>% 
             add_trace(data = jobs_wages_by_age_data_males_filtered(), x = ~age_group, y = ~latest_week, type = 'bar', name = 'Males') %>% 
             add_trace(data = jobs_wages_by_age_data_females_filtered(), x = ~age_group, y = ~latest_week, type = 'bar', name = 'Females') %>% 
-            layout(xaxis = list(title = 'Age'), yaxis = list(title = "Change % (from 14 March)"))
+            layout(xaxis = list(title = 'Age'), yaxis = list(title = "Change % (from 14 March)")) %>%
+            layout(hovermode = "x unified")
     })
     
     # jobseeker lines
@@ -515,7 +517,8 @@ server <- function(input, output) {
         plot_ly() %>% 
             add_trace(data = jobseeker_joined_filtered(), x = ~month, y = ~values,
                       mode = "lines+markers", color = ~region) %>% 
-            layout(xaxis = list(title = 'Month'), yaxis = list(title = "Value"))
+            layout(xaxis = list(title = 'Month'), yaxis = list(title = "Value")) %>%
+            layout(hovermode = "x unified")
     })
     
     # salm lines
@@ -523,7 +526,8 @@ server <- function(input, output) {
         plot_ly() %>% 
             add_trace(data = salm_chart_data_filtered(), x = ~date, y = ~values,
                       mode = "lines+markers", color = ~region) %>% 
-            layout(xaxis = list(title = 'Month'), yaxis = list(title = "Value"))
+            layout(xaxis = list(title = 'Month'), yaxis = list(title = "Value")) %>%
+            layout(hovermode = "x unified")
     })
     
     # maps #####################################################

@@ -4,26 +4,26 @@
 # libraries
 pacman::p_load(tidyverse, readxl, janitor, scales, sf, rmapshaper, lubridate, RColorBrewer)
 
-# don't use purrr on this as the files are the same, cant' work out month
+# don't use purrr on this as the files are the same, cant' work out month - note the dates in the excel file
 data_mar20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipients-monthly-profile-march-2020.xlsx",
                          sheet = "Table 4 - By SA2", skip = 6) %>%
   clean_names() %>% remove_empty() %>%
-  mutate(month = "2020-03-01")
+  mutate(month = "2020-03-27")
 
 data_apr20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipients-monthly-profile-april-2020.xlsx",
                          sheet = "Table 4 - By SA2", skip = 6) %>%
   clean_names() %>% remove_empty() %>%
-  mutate(month = "2020-04-01")
+  mutate(month = "2020-04-24")
 
 data_may20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipients-monthly-profile-may-2020.xlsx",
                          sheet = "Table 4 - By SA2", skip = 6) %>%
   clean_names() %>% remove_empty() %>%
-  mutate(month = "2020-05-01")
+  mutate(month = "2020-05-29")
 
 data_jun20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipients-june-2020.xlsx",
                          sheet = "Table 4 - By SA2", skip = 6) %>%
   clean_names() %>% remove_empty() %>%
-  mutate(month = "2020-06-01")
+  mutate(month = "2020-06-26")
 
 
 ### merge it all
@@ -130,13 +130,13 @@ joined_ages <- bind_rows(mv_sa2_age, lga_age, vic_age, gm_age) %>%
 
 # join to the ages for the app table
 jobseeker_joined <- left_join(jobseeker_all, joined_ages) %>% 
-  mutate(pct_15_64 = round(total_js_ya/age15_64*100, 1)) %>% 
+  mutate(pct_15_64 = round(total/age15_64*100, 1)) %>% 
   mutate(region = factor(region, levels = c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Ponds",
                                             "Airport West", "Keilor East", "Niddrie - Essendon West", "Strathmore",
-                                            "City of Moonee Valley", "Greater Melbourne", "Victoria")))
+                                            "City of Moonee Valley", "Greater Melbourne", "Victoria"))) %>% 
+  select(-job_seeker_payment, -youth_allowance_other, -age15_64) %>% 
+  pivot_longer(cols = -(region:month), names_to = "data_type", values_to = "values")
 write_csv(jobseeker_joined, "app_data/jobseeker_joined.csv")
-
-# mutate(month = format(month, "%b %Y"))
 
 # spatial data - already simplified #############################
 sa2_greater <- st_read("data_in/shp/sa2_2016_gmel.shp") %>% 
