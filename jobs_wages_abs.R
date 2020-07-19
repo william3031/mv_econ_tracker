@@ -5,7 +5,6 @@
 pacman::p_load(tidyverse, readxl, ggrepel, janitor, scales, glue, lubridate)
 
 # dates for glue
-latest_week <- "27 June"
 abs_publication_date <- "15 July 2020"
 
 # read in raw data - VICTORIAN DATA
@@ -18,6 +17,15 @@ weekly_wages_data_raw <- read_excel("data_in/6160055001_do004_150720.xlsx", shee
   clean_names() %>% 
   filter(state_or_territory == "2. VIC") %>% 
   mutate(type = "Wages")
+
+# date for glue - latest week for map below
+abs_col_names <- colnames(weekly_jobs_data_raw)
+
+abs_latest_numeric <- abs_col_names[length(abs_col_names) -1] %>% 
+  str_remove(., "x")  %>% as.numeric(.)
+
+latest_week <- as.Date(abs_latest_numeric, origin = "1899-12-30") %>% 
+  format(., format = "%d %B")
 
 #filter and join
 weekly_jobs_data <- weekly_jobs_data_raw %>% 
@@ -44,8 +52,7 @@ jobs_wages_index <- bind_rows(weekly_jobs_data_raw, weekly_wages_data_raw) %>%
   select(-industry_division, -sex, -age_group) %>% 
   pivot_longer(cols = -type, names_to = "date", values_to = "values") %>% 
   mutate(date = str_remove(date, "x")) %>% 
-  mutate(date = excel_numeric_to_date(as.numeric(as.character(date)),
-                                      date_system = "modern")) %>% 
+  mutate(date = excel_numeric_to_date(as.numeric(as.character(date)), date_system = "modern")) %>% 
   mutate(values = as.numeric(values)) %>% 
   mutate(values = round(values, 1)) %>% 
   filter(date >= "2020-03-14") %>% 

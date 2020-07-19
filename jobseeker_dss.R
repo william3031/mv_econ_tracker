@@ -121,7 +121,7 @@ jobseeker_large <- bind_cols(jobseeker_large_first, jobseeker_large_current)
 # tmap
 tmap_mode("view")
 tm_shape(js_map_join, bbox = tmaptools::bb(mv_shp)) +
-  tm_fill("values") +
+  tm_fill("percentage") +
   tm_borders(alpha = 0.5, col = "grey") +
   tm_shape(mv_shp) +
   tm_borders(alpha = 0.5, col = "purple", lwd = 2)

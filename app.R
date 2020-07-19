@@ -21,16 +21,17 @@ options(scipen = 999)
 # data #########
 ## dates -------------------------------------------------------------------------------------------------------------
 #abs
-abs_latest_week <- "27 June"
 abs_publication_date <- "15 July 2020"
 # jobkeeper
-jobkeeper_date <- "24 June 2020"
+jobkeeper_publication_date <- "24 June 2020"
 jobkeeper_text <- "Numbers are based on the total number of <b>processed applications for organisations</b> for the April fortnights – 30 March 2020 to 26 April 2020 (as at midnight 3 June 2020)"
 #jobseeker
-jobseeker_update <- "17 July 2020"
+jobseeker_publication_date <- "17 July 2020"
+# salm
+salm_publication_date <- "27 March 2020"
 
 
-## jobs and wages ####
+## jobs and wages data ####
 jobs_wages_index <- read_csv("app_data/jobs_wages_index.csv")
 
 jobs_wages_by_age_data <- read_csv("app_data/jobs_wages_by_age_data.csv")  %>% 
@@ -43,6 +44,17 @@ jobs_index <- jobs_wages_index %>%
 wages_index <- jobs_wages_index %>% 
     filter(type == "Wages")
 
+abs_col_names <- colnames(weekly_jobs_data_raw)
+
+abs_latest_numeric <- jobs_wages_index %>% 
+    str_remove(., "x")  %>% as.numeric(.)
+
+latest_week <- jobs_wages_index %>% 
+    tail(1) %>% 
+    select(date) %>% 
+    pull() %>% 
+    format(., format = "%d %B") 
+
 # jobs and wages by age and gender graph
 jobs_wages_list <- c("Jobs", "Wages")
 
@@ -52,7 +64,7 @@ jobs_wages_by_age_data_males <- jobs_wages_by_age_data %>%
 jobs_wages_by_age_data_females <- jobs_wages_by_age_data %>% 
     filter(sex == "Females") 
 
-## jobkeeper #### 
+## jobkeeper data #### 
 # mv shapefile
 mv_shp <- st_read("app_data/shp/mvcc_boundary.shp")
 
@@ -75,7 +87,7 @@ jk_mv_postcodes <- jk_raw %>%
     mutate(count = comma(count)) %>% 
     rename(Postcode = postcode, Count = count)
 
-## jobseeker #################################
+## jobseeker data #################################
 jobseeker_table_long <- read_csv("app_data/jobseeker_table_long.csv")
 
 sa2_greater <- st_read("app_data/shp/sa2_2016_gmel.shp") %>% 
@@ -94,7 +106,8 @@ jobseeker_month_formatted <- format(ymd(jobseeker_month), "%b %Y")
 
 jobseeker_table_filtered <- jobseeker_table_long %>% 
     filter(month == jobseeker_month) %>% 
-    filter(data_type == "Percentage aged 15-64 on either JobSeeker or Youth Allowance")
+    filter(data_type == "Percentage aged 15-64 on either JobSeeker or Youth Allowance") %>% 
+    rename(percentage = values)
 
 js_map_join <- left_join(sa2_greater, jobseeker_table_filtered)
 
@@ -124,6 +137,23 @@ jobseeker_large_current <- jobseeker_joined %>%
 
 jobseeker_large <- bind_cols(jobseeker_large_first, jobseeker_large_current) 
 
+# salm data ##########################
+sa2_vic_current <- read_csv("app_data/salm_unemp_current_sa2.csv")
+
+unemp_rate_map_join <- left_join(sa2_greater, sa2_vic_current) 
+
+sa2_col_names <- colnames(sa2data)
+
+salm_current_numeric <- sa2_col_names[length(sa2_col_names)] %>% 
+    str_remove(., "x")  %>% 
+    as.numeric(.)
+
+salm_current_month <- sa2_vic_current %>% 
+    tail(1) %>% 
+    select(date) %>% 
+    pull() %>% 
+    format(., format = "%B %Y")
+    
 # the app ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # dashboard input
@@ -168,7 +198,8 @@ body <- dashboardBody(
     tabItems(
         tabItem(tabName = "home",
                 fluidRow(
-                    box(title = 'MV Economic tracker', tags$body(HTML("Click the tabs on the left</br>",
+                    box(title = 'MV Economic tracker',
+                        tags$body(HTML("Click the tabs on the left</br>",
                                                                       "</br> More to be added </br>",
                                                                       "</br> Last updated: 17 July 2020")), width = 12)
                 )
@@ -176,12 +207,14 @@ body <- dashboardBody(
         ## abs data ####
         tabItem(tabName = "jobs_wages_vic",
                 fluidRow(
-                    box(title = 'Jobs and wages (Victoria)', tags$body(HTML(glue("Percentage change from 14 March to {abs_latest_week}."))), width = 12)
+                    box(title = 'Jobs and wages (Victoria)',
+                        tags$body(HTML(glue("Percentage change from 14 March to {abs_latest_week}."))), width = 12)
                 ),
                 fluidRow(plotlyOutput("jobs_wages_line")
                 ),
                 fluidRow(
-                    box(title = 'Source:', tags$body(HTML(glue("ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia </br>",
+                    box(title = 'Source:',
+                        tags$body(HTML(glue("ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia </br>",
                                                          "Last updated {abs_publication_date}"))), width = 12)
                 ),
         ),
@@ -199,25 +232,29 @@ body <- dashboardBody(
                 fluidRow(plotlyOutput("jobs_wages_age_bar")
                 ),
                 fluidRow(
-                    box(title = 'Source:', tags$body(HTML(glue("ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia </br>",
+                    box(title = 'Source:',
+                        tags$body(HTML(glue("ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia </br>",
                                                               "Last updated {abs_publication_date}"))), width = 12),
                 ),
         ),
-        ## jobkeeper data ####
+        ## jobkeeper ####
         tabItem(tabName = "jobkeeper_map",
                 fluidRow(
-                    box(title = 'Jobkeeper data (all postcodes)', tags$body(HTML(glue("{jobkeeper_text}</br>",
-                                                                                      "</br>Click on the map to see the counts."))), width = 12)
+                    box(title = 'Jobkeeper data (all postcodes)',
+                        tags$body(HTML(glue("{jobkeeper_text}</br>",
+                                            "</br>Click on the map to see the counts."))), width = 12)
                 ),
                 fluidRow(tmapOutput("jobkeeper_pc_map")
                 ),
-                box(title = 'Source:', tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
-                                                            "Last updated {jobkeeper_date}</br>",
+                box(title = 'Source:',
+                    tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
+                                                            "Last updated {jobkeeper_publication_date}</br>",
                                                             "Note: Postcode polygons have been simplified."))), width = 12)
         ),
         tabItem(tabName = "jobkeeper_table",
                 fluidRow(
-                    box(title = 'Jobkeeper data (MV postcodes)', tags$body(HTML(glue("{jobkeeper_text}</br>",
+                    box(title = 'Jobkeeper data (MV postcodes)',
+                        tags$body(HTML(glue("{jobkeeper_text}</br>",
                                                                              "</br> Noting that:</br>",
                                                                              "* 3031 Flemington (partly in the City of Melbourne) and Kensington (mostly in the City of Melbourne)</br>",
                                                                              "* 3032 Ascot Vale and Travancore, as well as Maribyrnong (City of Maribyrnong) </br>",
@@ -230,20 +267,23 @@ body <- dashboardBody(
                 ),
                 fluidRow(DTOutput("jobkeeper_mv_table")
                 ),
-                box(title = 'Source:', tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
-                                                          "Last updated {jobkeeper_date}"))), width = 12)
+                box(title = 'Source:',
+                    tags$body(HTML(glue("Treasury JobKeeper postcode data </br>",
+                                                          "Last updated {jobkeeper_publication_date}"))), width = 12)
         ),
-        ## jobseeker data ####
+        ## jobseeker####
         tabItem(tabName = "jobseeker_map",
                 fluidRow(
-                    box(title = 'Jobseeker data (SA2)', tags$body(HTML(glue("Percentage aged 15-64 on either JobSeeker or Youth Allowance for {jobseeker_month_formatted}.</br>",
+                    box(title = 'Jobseeker data (SA2)',
+                        tags$body(HTML(glue("Percentage of the population aged 15-64 on either JobSeeker or Youth Allowance for {jobseeker_month_formatted}.</br>",
                                                                             "</br>Click on the map to see the percentages."))), width = 12)
                 ),
                 fluidRow(tmapOutput("jobseeker_map")
                 ),
-                box(title = 'Sources:', tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
+                box(title = 'Sources:',
+                    tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
                                                             "ABS, 3235.0 - Regional Population by Age and Sex (2018)</br>",
-                                                            "Last updated {jobseeker_update}"))), width = 12)
+                                                            "Last updated {jobseeker_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "jobseeker_graph",
                 fluidRow(
@@ -264,34 +304,45 @@ body <- dashboardBody(
                 ),
                 fluidRow(plotlyOutput("jobseeker_lines")
                 ),
-                box(title = 'Sources:', tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
+                box(title = 'Sources:',
+                    tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
                                                             "ABS, 3235.0 - Regional Population by Age and Sex (2018)</br>",
-                                                            "Last updated {jobseeker_update}"))), width = 12)
+                                                            "Last updated {jobseeker_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "jobseeker_table",
                 fluidRow(
-                    box(title = 'JobSeeker and Youth Allowance recipients', tags$body(HTML("Total recipients and normalised to 15-64 y.o. population.")), width = 12)
+                    box(title = 'JobSeeker and Youth Allowance recipients',
+                        tags$body(HTML("Total recipients and normalised to 15-64 y.o. population.")), width = 12)
                 ),
                 fluidRow(DTOutput("jobseeker_large_table")
                 ),
                 box(title = 'Sources:', tags$body(HTML(glue("Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile </br>",
                                                             "ABS, 3235.0 - Regional Population by Age and Sex (2018)</br>",
-                                                            "Last updated {jobseeker_update}"))), width = 12)
+                                                            "Last updated {jobseeker_publication_date}"))), width = 12)
         ),
         ## salm data ####
         tabItem(tabName = "unemp_map",
                 fluidRow(
-                    box(title = 'Labour force and unemployment data (SA2)', tags$body(HTML("text")), width = 12)
-                )
+                    box(title = 'Labour force and unemployment data (SA2)',
+                        tags$body(HTML(glue("Smoothed unemployment rate (%), {salm_current_month}</br>",
+                                            "</br>Click on the map to see the unemployment rate."))), width = 12)
+                ),
+                fluidRow(tmapOutput("salm_unemp_map")
+                ),
+                box(title = 'Sources:',
+                    tags$body(HTML(glue("Department of Education, Skills and Employment, Small Area Labour Markets publication. </br>",
+                                        "Last updated {salm_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "unemp_table",
                 fluidRow(
-                    box(title = 'Labour force and unemployment table', tags$body(HTML("text")), width = 12)
+                    box(title = 'Labour force and unemployment table',
+                        tags$body(HTML("text")), width = 12)
                 )
         ),
         tabItem(tabName = "notes",
                 fluidRow(
-                    box(title = 'Notes', tags$body(HTML("text")), width = 12)
+                    box(title = 'Notes',
+                        tags$body(HTML("text")), width = 12)
                 )
         )
     )
@@ -363,7 +414,16 @@ server <- function(input, output) {
     output$jobseeker_map <- renderTmap({
         tmap_mode("view")
         tm_shape(js_map_join, bbox = tmaptools::bb(mv_shp)) +
-            tm_fill("values") +
+            tm_fill("percentage") +
+            tm_borders(alpha = 0.5, col = "grey") +
+            tm_shape(mv_shp) +
+            tm_borders(alpha = 0.5, col = "purple", lwd = 2)
+    })
+    
+    output$salm_unemp_map <- renderTmap({
+        tmap_mode("view")
+        tm_shape(unemp_rate_map_join, bbox = tmaptools::bb(mv_shp)) +
+            tm_fill("rate") +
             tm_borders(alpha = 0.5, col = "grey") +
             tm_shape(mv_shp) +
             tm_borders(alpha = 0.5, col = "purple", lwd = 2)
