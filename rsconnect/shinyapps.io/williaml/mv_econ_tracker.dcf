@@ -1,0 +1,12 @@
+name: mv_econ_tracker
+title: mv_econ_tracker
+username:
+account: williaml
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2590701
+bundleId: 3409926
+url: https://williaml.shinyapps.io/mv_econ_tracker/
+when: 1595198987.14318
+asMultiple: FALSE
+asStatic: FALSE

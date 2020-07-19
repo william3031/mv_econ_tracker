@@ -334,7 +334,8 @@ body <- dashboardBody(
         tabItem(tabName = "jobseeker_graph",
                 fluidRow(
                     box(title = 'JobSeeker and Youth Allowance recipients',
-                        tags$body(HTML("Total recipients and normalised to the 15-64 y.o. population.")), width = 12)
+                        tags$body(HTML("Total recipients and normalised to the 15-64 y.o. population. ",
+                                       "SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.")), width = 12)
                 ),
                 fluidRow(
                     box(selectInput(inputId = "js_graph_input",
@@ -361,7 +362,8 @@ body <- dashboardBody(
         tabItem(tabName = "jobseeker_table",
                 fluidRow(
                     box(title = 'JobSeeker and Youth Allowance recipients',
-                        tags$body(HTML("Total recipients and normalised to 15-64 y.o. population.")), width = 12)
+                        tags$body(HTML("Total recipients and normalised to 15-64 y.o. population. ",
+                                       "SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.")), width = 12)
                 ),
                 fluidRow(DTOutput("jobseeker_large_table")
                 ),
@@ -389,7 +391,8 @@ body <- dashboardBody(
         tabItem(tabName = "unemp_graph",
                 fluidRow(
                     box(title = 'Unemployment and labour force',
-                        tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force</br>"))), width = 12)
+                        tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force. ",
+                                            "SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne."))), width = 12)
                 ),
                 fluidRow(
                     box(selectInput(inputId = "salm_data_input",
@@ -414,7 +417,8 @@ body <- dashboardBody(
         tabItem(tabName = "unemp_table",
                 fluidRow(
                     box(title = 'Labour force and unemployment table',
-                        tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force - {salm_current_month}</br>"))), width = 12)
+                        tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force - {salm_current_month}. </br>",
+                                            "SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne."))), width = 12)
                 ),
                 fluidRow(DTOutput("salm_large_table")
                 ),
