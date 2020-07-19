@@ -95,7 +95,8 @@ jobseeker_table_long <- read_csv("app_data/jobseeker_table_long.csv")
 sa2_greater <- st_read("app_data/shp/sa2_2016_gmel.shp") %>% 
     select(-sa2_code)
 
-js_data_list <- c("Total JobSeeker and Youth allowance recipients", "Percentage aged 15-64 on either JobSeeker or Youth Allowance")
+js_data_list <- c("Percentage aged 15-64 on either JobSeeker or Youth Allowance",
+                  "Total JobSeeker and Youth allowance recipients")
 
 js_month_list <- jobseeker_table_long %>% 
     distinct(month) %>% 
@@ -232,7 +233,8 @@ body <- dashboardBody(
                 fluidRow(
                     box(title = 'Economic data tracker',
                         tags$body(HTML(glue("Click the tabs on the left for detailed information.</br>",
-                                       "</br>Last updated: {date_updated}"))), width = 12)
+                                            "</br> Some maps and graphs may take a little while to load. </br>",
+                                            "</br>Last updated: {date_updated}"))), width = 12)
                 ),
                 fluidRow(
                     valueBoxOutput("vbox_jobkeep"),
@@ -417,7 +419,7 @@ body <- dashboardBody(
         tabItem(tabName = "unemp_table",
                 fluidRow(
                     box(title = 'Labour force and unemployment table',
-                        tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force - {salm_current_month}. </br>",
+                        tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force - {salm_current_month}. ",
                                             "SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne."))), width = 12)
                 ),
                 fluidRow(DTOutput("salm_large_table")
