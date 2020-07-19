@@ -135,7 +135,9 @@ jobseeker_joined <- left_join(jobseeker_all, joined_ages) %>%
                                             "Airport West", "Keilor East", "Niddrie - Essendon West", "Strathmore",
                                             "City of Moonee Valley", "Greater Melbourne", "Victoria"))) %>% 
   select(-job_seeker_payment, -youth_allowance_other, -age15_64) %>% 
-  pivot_longer(cols = -(region:month), names_to = "data_type", values_to = "values")
+  pivot_longer(cols = -(region:month), names_to = "data_type", values_to = "values") %>% 
+  mutate(data_type = if_else(data_type == "total", "Total JobSeeker and Youth allowance recipients",
+                             "Percentage aged 15-64 on either JobSeeker or Youth Allowance"))
 write_csv(jobseeker_joined, "app_data/jobseeker_joined.csv")
 
 # spatial data - already simplified #############################

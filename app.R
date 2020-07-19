@@ -127,7 +127,7 @@ selected_regions <- c("City of Moonee Valley", "Greater Melbourne")
 jobseeker_large_first <- jobseeker_joined %>% 
     filter(month  == jobseeker_first) %>% 
     mutate(month = format(month, "%b %Y")) %>% 
-    mutate(data_type = if_else(data_type == "total",
+    mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
                                "recipients_first", "of_pop_first")) %>% 
     pivot_wider(names_from = data_type, values_from = values) %>% 
     select(-month)
@@ -135,7 +135,7 @@ jobseeker_large_first <- jobseeker_joined %>%
 jobseeker_large_current <- jobseeker_joined %>% 
     filter(month == jobseeker_month) %>% 
     mutate(month = format(month, "%b %Y")) %>% 
-    mutate(data_type = if_else(data_type == "total",
+    mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
                                "recipients_last", "of_pop_last")) %>%  
     pivot_wider(names_from = data_type, values_from = values) %>% 
     select(-region, -month) 
