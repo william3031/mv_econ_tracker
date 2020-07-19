@@ -136,9 +136,9 @@ jobseeker_large <- bind_cols(jobseeker_large_first, jobseeker_large_current) %>%
 # rename the columns - do it this way!!!
 colnames(jobseeker_large) <- c("Region",
                                paste0("Recipients ", jobseeker_first_month_formatted),
-                               paste0("As % of 15-64 pop.", jobseeker_first_month_formatted),
+                               paste0("As % of 15-64 pop. ", jobseeker_first_month_formatted),
                                paste0("Recipients ", jobseeker_month_formatted),
-                               paste0("As % of 15-64 pop.", jobseeker_month_formatted))
+                               paste0("As % of 15-64 pop. ", jobseeker_month_formatted))
 
 # salm data ##########################
 sa2_vic_current_unemp_rate <- read_csv("app_data/salm_unemp_rate_current_sa2.csv")
@@ -206,7 +206,7 @@ body <- dashboardBody(
                 fluidRow(
                     box(title = 'MV Economic tracker',
                         tags$body(HTML("Click the tabs on the left</br>",
-                                                                      "</br> More to be added </br>",
+                                                                      "</br> Dashboard summary to be added </br>",
                                                                       "</br> Last updated: 17 July 2020")), width = 12)
                 )
         ),
@@ -294,7 +294,7 @@ body <- dashboardBody(
         tabItem(tabName = "jobseeker_graph",
                 fluidRow(
                     box(title = 'JobSeeker and Youth Allowance recipients',
-                        tags$body(HTML("Total recipients and normalised to 15-64 y.o. population.")), width = 12)
+                        tags$body(HTML("Total recipients and normalised to the 15-64 y.o. population.")), width = 12)
                 ),
                 fluidRow(
                     box(selectInput(inputId = "js_graph_input",
