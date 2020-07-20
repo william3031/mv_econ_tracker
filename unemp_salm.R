@@ -41,6 +41,15 @@ lga_data_labour_force <- read_excel(lga_data_path,
                                     sheet = "Smoothed LGA labour force", range = cell_rows(4:546)) %>% 
   clean_names() %>% 
   rename(lga_code = lga_code_2019_asgs, lga_name = local_government_area_lga_2019_asgs)
+
+# spatial data - already simplified #############################
+sa2_greater <- st_read("data_in/shp/sa2_2016_gmel.shp") %>% 
+  clean_names() 
+
+gr_melb_sa2_9digit_list <- sa2_greater %>% 
+  st_set_geometry(NULL) %>% 
+  select(sa2_code) %>% 
+  pull()
   
 #reshape data sa2 unemp rate ###########################################################
 sa2_vic_tidy_unemp_rate <- sa2_data_unemp_rate %>% 
@@ -60,7 +69,6 @@ write_csv(sa2_vic_current_unemp_rate, "app_data/salm_unemp_rate_current_sa2.csv"
 
 # spatial data - already simplified
 sa2_greater <- st_read("data_in/shp/sa2_2016_gmel.shp") %>% 
-  select(-sa2_code) %>% 
   clean_names() 
 
 # join for app
@@ -93,7 +101,7 @@ sa2_merge_data <- sa2_vic_tidy_unemp_rate %>%
   bind_cols(sa2_vic_tidy_labour_force[length(sa2_vic_tidy_labour_force)]) 
 
 sa2_merge_data_gm <- sa2_merge_data %>% 
-  filter(sa2_code >= 206011105 & sa2_code <= 214021385) %>% 
+  filter(sa2_code %in% gr_melb_sa2_9digit_list) %>% 
   group_by(date) %>% 
   select(-unemp_rate) %>% 
   replace_na(list(unemployed = 0, labour_force = 0)) %>% 

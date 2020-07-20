@@ -25,6 +25,21 @@ data_jun20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipien
   clean_names() %>% remove_empty() %>%
   mutate(month = "2020-06-26")
 
+## simplication of the sa2_file
+#sa2_initial <- st_read("data_in/shp/sa2_2016_gmelb.shp") %>% # already deleted, but is an export from gisdb
+#  clean_names() %>% 
+#  select(sa2_code = sa2_mainco, sa2_5digit, sa2_name = sa2_name_2) %>% 
+#  ms_simplify()
+#st_write(sa2_initial, "data_in/shp/sa2_2016_gmel.shp", delete_layer = TRUE)
+
+# spatial data - already simplified #############################
+sa2_greater <- st_read("data_in/shp/sa2_2016_gmel.shp") %>% 
+  clean_names() 
+
+gr_melb_sa2_5digit_list <- sa2_greater %>% 
+  st_set_geometry(NULL) %>% 
+  select(sa2_5digit) %>% 
+  pull()
 
 ### merge it all
 jobseeker_merge <- bind_rows(data_mar20, data_apr20, data_may20, data_jun20) %>% 
@@ -46,7 +61,7 @@ jobseeker_merge_mv <- jobseeker_merge_sa2 %>%
   mutate(region = "City of Moonee Valley")
 
 jobseeker_merge_gm <- jobseeker_merge %>% 
-  filter((sa2 >= 21105 & sa2 <= 21385)| sa2 >= 21424 & sa2 <= 21468) %>% 
+  filter(sa2 %in% gr_melb_sa2_5digit_list) %>% 
   group_by(month)  %>% 
   summarise(job_seeker_payment = sum(job_seeker_payment), youth_allowance_other = sum(youth_allowance_other), total = sum(total)) %>% 
   mutate(region = "Greater Melbourne")
@@ -139,11 +154,6 @@ jobseeker_joined <- left_join(jobseeker_all, joined_ages) %>%
   mutate(data_type = if_else(data_type == "total", "Total JobSeeker and Youth allowance recipients",
                              "Percentage aged 15-64 on either JobSeeker or Youth Allowance"))
 write_csv(jobseeker_joined, "app_data/jobseeker_joined.csv")
-
-# spatial data - already simplified #############################
-sa2_greater <- st_read("data_in/shp/sa2_2016_gmel.shp") %>% 
-  select(-sa2_code) %>% 
-  clean_names() 
 
 js_data_list <- c("Total JobSeeker and Youth allowance recipients", "Percentage aged 15-64 on either JobSeeker or Youth Allowance", 
              "JobSeeker payment recipients", "Youth Allowance recipients")
