@@ -554,7 +554,8 @@ server <- function(input, output) {
                     popup.format=list(count=list(digits=0))) +
             tm_borders(alpha = 0.5, col = "grey") +
             tm_shape(mv_shp) +
-            tm_borders(alpha = 0.5, col = "purple", lwd = 2)
+            tm_borders(alpha = 0.5, col = "purple", lwd = 2) +
+            tm_basemap(NULL)
     })
     
     output$jobseeker_map <- renderTmap({
@@ -566,7 +567,8 @@ server <- function(input, output) {
                     popup.format=list(percentage=list(digits=1, suffix = "%"))) +
             tm_borders(alpha = 0.5, col = "grey") +
             tm_shape(mv_shp) +
-            tm_borders(alpha = 0.5, col = "purple", lwd = 2)
+            tm_borders(alpha = 0.5, col = "purple", lwd = 2) +
+            tm_basemap(NULL)
     })
     
     output$salm_unemp_map <- renderTmap({
@@ -578,7 +580,8 @@ server <- function(input, output) {
                     popup.format=list(rate=list(digits=1, suffix = "%"))) +
             tm_borders(alpha = 0.5, col = "grey") +
             tm_shape(mv_shp) +
-            tm_borders(alpha = 0.5, col = "purple", lwd = 2)
+            tm_borders(alpha = 0.5, col = "purple", lwd = 2) +
+            tm_basemap(NULL)
     })
     
     # valueboxes #############
