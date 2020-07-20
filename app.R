@@ -13,6 +13,7 @@ library(DT)
 library(RColorBrewer)
 library(sf)
 library(lubridate)
+library(shinycssloaders)
 
 #disable scientific notation
 options(scipen = 999)
@@ -233,13 +234,15 @@ body <- dashboardBody(
                 fluidRow(
                     box(title = 'Economic data tracker',
                         tags$body(HTML(glue("Click the tabs on the left for detailed information.</br>",
-                                            "</br> Some maps and graphs may take a little while to load. </br>",
                                             "</br>Last updated: {date_updated}"))), width = 12)
                 ),
                 fluidRow(
-                    valueBoxOutput("vbox_jobkeep"),
-                    valueBoxOutput("vbox_jobseek"),
-                    valueBoxOutput("vbox_unemp_rate")
+                    valueBoxOutput("vbox_jobkeep")  %>% 
+                        withSpinner(color="#31788F", type = getOption("spinner.type", default = 8)),
+                    valueBoxOutput("vbox_jobseek")  %>% 
+                        withSpinner(color="#31788F", type = getOption("spinner.type", default = 8)),
+                    valueBoxOutput("vbox_unemp_rate")  %>% 
+                        withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 fluidRow(
                     helpText("*Some postcodes are shared with areas outside of the municipality.")
@@ -251,7 +254,8 @@ body <- dashboardBody(
                     box(title = 'Jobs and wages (Victoria)',
                         tags$body(HTML(glue("Weekly payroll jobs and wages data for Victoria. Percentage change from 14 March to {abs_latest_week}."))), width = 12)
                 ),
-                fluidRow(plotlyOutput("jobs_wages_line")
+                fluidRow(plotlyOutput("jobs_wages_line") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 fluidRow(
                     box(title = 'Source:',
@@ -271,7 +275,8 @@ body <- dashboardBody(
                                     choices = jobs_wages_list),
                     ),
                 ),
-                fluidRow(plotlyOutput("jobs_wages_age_bar")
+                fluidRow(plotlyOutput("jobs_wages_age_bar") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 fluidRow(
                     box(title = 'Source:',
@@ -287,7 +292,8 @@ body <- dashboardBody(
                         tags$body(HTML(glue("{jobkeeper_text}</br>",
                                             "</br>Click on the map to see the counts."))), width = 12)
                 ),
-                fluidRow(tmapOutput("jobkeeper_pc_map")
+                fluidRow(tmapOutput("jobkeeper_pc_map") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 box(title = 'Source:',
                     tags$a(href="https://treasury.gov.au/coronavirus/jobkeeper/data", target="_blank",
@@ -309,7 +315,8 @@ body <- dashboardBody(
                                                                              "* 3041 Essendon Fields, Essendon North, Strathmore and Strathmore Heights </br>",
                                                                              "* 3042 Airport West and Niddrie, as well as Keilor Park (City of Brimbank)"))), width = 12)
                 ),
-                fluidRow(DTOutput("jobkeeper_mv_table")
+                fluidRow(DTOutput("jobkeeper_mv_table") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 box(title = 'Source:',
                     tags$a(href="https://treasury.gov.au/coronavirus/jobkeeper/data", target="_blank",
@@ -324,7 +331,8 @@ body <- dashboardBody(
                         tags$body(HTML(glue("Percentage of the population aged 15-64 on either JobSeeker or Youth Allowance (excluding students and apprentices) for {jobseeker_month_formatted}.</br>",
                                                                             "</br>Click on the map to see the percentages."))), width = 12)
                 ),
-                fluidRow(tmapOutput("jobseeker_map")
+                fluidRow(tmapOutput("jobseeker_map") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 box(title = 'Sources:',
                     tags$a(href="https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile", target="_blank",
@@ -352,7 +360,8 @@ body <- dashboardBody(
                                            inline = TRUE),
                     ),
                 ),
-                fluidRow(plotlyOutput("jobseeker_lines")
+                fluidRow(plotlyOutput("jobseeker_lines") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 box(title = 'Sources:',
                     tags$a(href="https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile", target="_blank",
@@ -367,7 +376,8 @@ body <- dashboardBody(
                         tags$body(HTML("Total recipients and normalised to 15-64 y.o. population. ",
                                        "SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.")), width = 12)
                 ),
-                fluidRow(DTOutput("jobseeker_large_table")
+                fluidRow(DTOutput("jobseeker_large_table") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 box(title = 'Sources:', 
                     tags$a(href="https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile", target="_blank",
@@ -383,7 +393,8 @@ body <- dashboardBody(
                         tags$body(HTML(glue("Smoothed unemployment rate (%), {salm_current_month}</br>",
                                             "</br>Click on the map to see the unemployment rate."))), width = 12)
                 ),
-                fluidRow(tmapOutput("salm_unemp_map")
+                fluidRow(tmapOutput("salm_unemp_map") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 box(title = 'Sources:',
                     tags$a(href="https://www.employment.gov.au/small-area-labour-markets-publication-0", target="_blank",
@@ -409,7 +420,8 @@ body <- dashboardBody(
                                            inline = TRUE),
                     ),
                 ),
-                fluidRow(plotlyOutput("salm_lines")
+                fluidRow(plotlyOutput("salm_lines") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 box(title = 'Sources:',
                     tags$a(href="https://www.employment.gov.au/small-area-labour-markets-publication-0", target="_blank",
@@ -422,7 +434,8 @@ body <- dashboardBody(
                         tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force - {salm_current_month}. ",
                                             "SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne."))), width = 12)
                 ),
-                fluidRow(DTOutput("salm_large_table")
+                fluidRow(DTOutput("salm_large_table") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 box(title = 'Sources:', 
                     tags$a(href="https://www.employment.gov.au/small-area-labour-markets-publication-0", target="_blank",
