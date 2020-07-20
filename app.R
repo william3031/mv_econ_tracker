@@ -548,6 +548,7 @@ server <- function(input, output) {
         tmap_mode("view")
         tm_shape(jk_join, bbox = tmaptools::bb(mv_shp)) +
             tm_fill("count",
+                    title = "Recipients",
                     popup.vars = c("Recipients " = "count"),
                     popup.format=list(count=list(digits=0))) +
             tm_borders(alpha = 0.5, col = "grey") +
@@ -559,6 +560,7 @@ server <- function(input, output) {
         tmap_mode("view")
         tm_shape(js_map_join, bbox = tmaptools::bb(mv_shp)) +
             tm_fill("percentage",
+                    title = "% of 15-64y.o. population",
                     popup.vars = c("15-64y.o. " = "percentage"),
                     popup.format=list(percentage=list(digits=1, suffix = "%"))) +
             tm_borders(alpha = 0.5, col = "grey") +
@@ -570,6 +572,7 @@ server <- function(input, output) {
         tmap_mode("view")
         tm_shape(unemp_rate_map_join, bbox = tmaptools::bb(mv_shp)) +
             tm_fill("rate",
+                    title = "Unemployment rate",
                     popup.vars = c("Unemployment rate " = "rate"),
                     popup.format=list(rate=list(digits=1, suffix = "%"))) +
             tm_borders(alpha = 0.5, col = "grey") +
