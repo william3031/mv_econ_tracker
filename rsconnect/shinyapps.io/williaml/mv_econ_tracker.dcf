@@ -5,8 +5,8 @@ account: williaml
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2590701
-bundleId: 3410626
+bundleId: 3410700
 url: https://williaml.shinyapps.io/mv_econ_tracker/
-when: 1595219454.85388
+when: 1595221940.22813
 asMultiple: FALSE
 asStatic: FALSE

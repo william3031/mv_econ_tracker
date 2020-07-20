@@ -239,10 +239,8 @@ body <- dashboardBody(
                 fluidRow(
                     valueBoxOutput("vbox_jobkeep")  %>% 
                         withSpinner(color="#31788F", type = getOption("spinner.type", default = 8)),
-                    valueBoxOutput("vbox_jobseek")  %>% 
-                        withSpinner(color="#31788F", type = getOption("spinner.type", default = 8)),
-                    valueBoxOutput("vbox_unemp_rate")  %>% 
-                        withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
+                    valueBoxOutput("vbox_jobseek"),
+                    valueBoxOutput("vbox_unemp_rate")
                 ),
                 fluidRow(
                     helpText("*Some postcodes are shared with areas outside of the municipality.")
