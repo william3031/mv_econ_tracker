@@ -345,7 +345,7 @@ body <- dashboardBody(
                 fluidRow(
                     box(title = 'JobSeeker and Youth Allowance (excluding students and apprentices) recipients',
                         tags$body(HTML("Total recipients and normalised to the 15-64 y.o. population. ",
-                                       "SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.")), width = 12)
+                                       "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.")), width = 12)
                 ),
                 fluidRow(
                     box(selectInput(inputId = "js_graph_input",
@@ -374,7 +374,7 @@ body <- dashboardBody(
                 fluidRow(
                     box(title = 'JobSeeker and Youth Allowance (excluding students and apprentices) recipients',
                         tags$body(HTML("Total recipients and normalised to 15-64 y.o. population. ",
-                                       "SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.")), width = 12)
+                                       "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.")), width = 12)
                 ),
                 fluidRow(DTOutput("jobseeker_large_table") %>% 
                              withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
@@ -405,7 +405,7 @@ body <- dashboardBody(
                 fluidRow(
                     box(title = 'Unemployment and labour force',
                         tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force. ",
-                                            "SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne."))), width = 12)
+                                            "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne."))), width = 12)
                 ),
                 fluidRow(
                     box(selectInput(inputId = "salm_data_input",
@@ -432,7 +432,7 @@ body <- dashboardBody(
                 fluidRow(
                     box(title = 'Labour force and unemployment table',
                         tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force - {salm_current_month}. ",
-                                            "SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne."))), width = 12)
+                                            "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne."))), width = 12)
                 ),
                 fluidRow(DTOutput("salm_large_table") %>% 
                              withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
@@ -452,7 +452,7 @@ body <- dashboardBody(
                         tags$body(HTML(glue("Unemployment and labour force data is from the Small Area Labour Markets publication. ",
                                             "The <b> labour force</b> is the population aged 15 years and over that are either in work, or actively looking for work in a region. ",
                                             "The <b> number of unemployed </b> is the part of the labour force that are looking for work. ",
-                                            "The <b> unemployment rate </b> is calculated as the <i>number of unemployed</i> divided by the <i>number in the labour force</i>, multiplied by 100."))), width = 12),
+                                            "The <b> unemployment rate </b> is calculated as the <b>number of unemployed / number in the labour force * 100</b>."))), width = 12),
                     box(title = 'More information:',
                         tags$body(HTML("Contact the Research and Facilities team if you have any queries.")), width = 12)
                 )
@@ -580,7 +580,7 @@ server <- function(input, output) {
     
     output$vbox_jobseek <- renderValueBox({
         valueBox(value = tags$p(js_mv_num, style = "font-size: 150%;"),
-                 subtitle = glue("Jobseeker and Youth Allowance recipients ({jobseeker_month_long})"),
+                 subtitle = glue("Jobseeker and Youth Allowance (excluding students and apprentices) recipients ({jobseeker_month_long})"),
                  width = 4, color = "yellow")
     })
     
