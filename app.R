@@ -547,7 +547,9 @@ server <- function(input, output) {
     output$jobkeeper_pc_map <- renderTmap({
         tmap_mode("view")
         tm_shape(jk_join, bbox = tmaptools::bb(mv_shp)) +
-            tm_fill("count") +
+            tm_fill("count",
+                    popup.vars = c("Recipients " = "count"),
+                    popup.format=list(count=list(digits=0))) +
             tm_borders(alpha = 0.5, col = "grey") +
             tm_shape(mv_shp) +
             tm_borders(alpha = 0.5, col = "purple", lwd = 2)
@@ -556,7 +558,9 @@ server <- function(input, output) {
     output$jobseeker_map <- renderTmap({
         tmap_mode("view")
         tm_shape(js_map_join, bbox = tmaptools::bb(mv_shp)) +
-            tm_fill("percentage") +
+            tm_fill("percentage",
+                    popup.vars = c("% 15-64y.o. " = "percentage"),
+                    popup.format=list(percentage=list(digits=1))) +
             tm_borders(alpha = 0.5, col = "grey") +
             tm_shape(mv_shp) +
             tm_borders(alpha = 0.5, col = "purple", lwd = 2)
@@ -565,7 +569,9 @@ server <- function(input, output) {
     output$salm_unemp_map <- renderTmap({
         tmap_mode("view")
         tm_shape(unemp_rate_map_join, bbox = tmaptools::bb(mv_shp)) +
-            tm_fill("rate") +
+            tm_fill("rate",
+                    popup.vars = c("Unemployment rate % " = "rate"),
+                    popup.format=list(rate=list(digits=1))) +
             tm_borders(alpha = 0.5, col = "grey") +
             tm_shape(mv_shp) +
             tm_borders(alpha = 0.5, col = "purple", lwd = 2)
