@@ -191,7 +191,7 @@ unemp_rate_mv_num <- salm_table_data %>%
 # dashboard input
 header <- dashboardHeader(
     title = "MV Economic Tracker",
-    titleWidth = 300,
+    titleWidth = 250,
     tags$li(a(img(src = 'mvcc_logo.jpg',
                   height = "45px"),
               style = "padding-top:2px; padding-bottom:2px;"),
