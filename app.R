@@ -321,7 +321,7 @@ body <- dashboardBody(
         tabItem(tabName = "jobseeker_map",
                 fluidRow(
                     box(title = 'Jobseeker data (SA2)',
-                        tags$body(HTML(glue("Percentage of the population aged 15-64 on either JobSeeker or Youth Allowance for {jobseeker_month_formatted}.</br>",
+                        tags$body(HTML(glue("Percentage of the population aged 15-64 on either JobSeeker or Youth Allowance (excluding students and apprentices) for {jobseeker_month_formatted}.</br>",
                                                                             "</br>Click on the map to see the percentages."))), width = 12)
                 ),
                 fluidRow(tmapOutput("jobseeker_map")
@@ -335,7 +335,7 @@ body <- dashboardBody(
         ),
         tabItem(tabName = "jobseeker_graph",
                 fluidRow(
-                    box(title = 'JobSeeker and Youth Allowance recipients',
+                    box(title = 'JobSeeker and Youth Allowance (excluding students and apprentices) recipients',
                         tags$body(HTML("Total recipients and normalised to the 15-64 y.o. population. ",
                                        "SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.")), width = 12)
                 ),
@@ -363,7 +363,7 @@ body <- dashboardBody(
         ),
         tabItem(tabName = "jobseeker_table",
                 fluidRow(
-                    box(title = 'JobSeeker and Youth Allowance recipients',
+                    box(title = 'JobSeeker and Youth Allowance (excluding students and apprentices) recipients',
                         tags$body(HTML("Total recipients and normalised to 15-64 y.o. population. ",
                                        "SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.")), width = 12)
                 ),
