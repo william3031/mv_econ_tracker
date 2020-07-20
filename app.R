@@ -513,7 +513,8 @@ server <- function(input, output) {
             add_trace(data = jobs_index, x = ~date, y = ~values, name = "Jobs", mode = "lines+markers") %>% 
             add_trace(data = wages_index, x = ~date, y = ~values, name = "Wages", mode = "lines+markers") %>% 
             layout(xaxis = list(title = 'Date'), yaxis = list(title = "Change % (from 14 March)")) %>%
-            layout(hovermode = "x unified")
+            layout(hovermode = "x unified",
+                   xaxis = list(type = 'date', tickformat = "%d %b"))
     })
     
     # jobs wages plotly change line
@@ -531,7 +532,8 @@ server <- function(input, output) {
             add_trace(data = jobseeker_joined_filtered(), x = ~month, y = ~values,
                       mode = "lines+markers", color = ~region) %>% 
             layout(xaxis = list(title = 'Month'), yaxis = list(title = "Value")) %>%
-            layout(hovermode = "x unified")
+            layout(hovermode = "x unified",
+                   xaxis = list(type = 'date', tickformat = "%b %Y"))
     })
     
     # salm lines
@@ -540,7 +542,8 @@ server <- function(input, output) {
             add_trace(data = salm_chart_data_filtered(), x = ~date, y = ~values,
                       mode = "lines+markers", color = ~region) %>% 
             layout(xaxis = list(title = 'Month'), yaxis = list(title = "Value")) %>%
-            layout(hovermode = "x unified")
+            layout(hovermode = "x unified",
+                   xaxis = list(type = 'date', tickformat = "%b %Y"))
     })
     
     # maps #####################################################
