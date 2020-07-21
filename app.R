@@ -397,7 +397,7 @@ body <- dashboardBody(
                 box(title = 'Sources:',
                     tags$a(href="https://www.employment.gov.au/small-area-labour-markets-publication-0", target="_blank",
                            "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
-                    tags$body(HTML(glue("Last updated {salm_publication_date}"))), width = 12)
+                    tags$body(HTML(glue("</br>Last updated {salm_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "unemp_graph",
                 fluidRow(
@@ -424,7 +424,7 @@ body <- dashboardBody(
                 box(title = 'Sources:',
                     tags$a(href="https://www.employment.gov.au/small-area-labour-markets-publication-0", target="_blank",
                            "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
-                    tags$body(HTML(glue("Last updated {salm_publication_date}"))), width = 12)
+                    tags$body(HTML(glue("</br>Last updated {salm_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "unemp_table",
                 fluidRow(
@@ -438,7 +438,7 @@ body <- dashboardBody(
                 box(title = 'Sources:', 
                     tags$a(href="https://www.employment.gov.au/small-area-labour-markets-publication-0", target="_blank",
                            "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
-                    tags$body(HTML(glue("Last updated {salm_publication_date}"))), width = 12)
+                    tags$body(HTML(glue("</br>Last updated {salm_publication_date}"))), width = 12)
         ),
         ## Notes ####
         tabItem(tabName = "notes",
