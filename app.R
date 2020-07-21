@@ -250,7 +250,8 @@ body <- dashboardBody(
         tabItem(tabName = "jobs_wages_vic",
                 fluidRow(
                     box(title = 'Jobs and wages (Victoria)',
-                        tags$body(HTML(glue("Weekly payroll jobs and wages data for Victoria. Percentage change from 14 March to {abs_latest_week}."))), width = 12)
+                        tags$body(HTML(glue("Weekly payroll jobs and wages data for Victoria. Percentage change from 14 March to {abs_latest_week}.</br>",
+                                            "</br>Hover over the graph to see values."))), width = 12)
                 ),
                 fluidRow(plotlyOutput("jobs_wages_line") %>% 
                              withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
@@ -265,7 +266,8 @@ body <- dashboardBody(
         tabItem(tabName = "jobs_wages_age",
                 fluidRow(
                     box(title = 'Jobs and wages (Victoria)',
-                        tags$body(HTML(glue("Weekly payroll jobs and wages data for Victoria. Percentage change from 14 March to {abs_latest_week} by age and gender for all industries."))), width = 12)
+                        tags$body(HTML(glue("Weekly payroll jobs and wages data for Victoria. Percentage change from 14 March to {abs_latest_week} by age and gender for all industries.</br>",
+                                            "</br>Hover over the graph to see values."))), width = 12)
                 ),
                 fluidRow(
                     box(selectInput(inputId = "jobs_wages_input",
@@ -326,7 +328,7 @@ body <- dashboardBody(
         tabItem(tabName = "jobseeker_map",
                 fluidRow(
                     box(title = 'Jobseeker data (SA2)',
-                        tags$body(HTML(glue("Percentage of the population aged 15-64 on either JobSeeker or Youth Allowance (excluding students and apprentices) for {jobseeker_month_formatted}.</br>",
+                        tags$body(HTML(glue("Percentage of the population aged 15-64 on either JobSeeker or Youth Allowance (excluding students and apprentices) for <b>{jobseeker_month_formatted}</b>.</br>",
                                                                             "</br>Click on the map to see the percentages."))), width = 12)
                 ),
                 fluidRow(tmapOutput("jobseeker_map") %>% 
@@ -343,7 +345,8 @@ body <- dashboardBody(
                 fluidRow(
                     box(title = 'JobSeeker and Youth Allowance (excluding students and apprentices) recipients',
                         tags$body(HTML("Total recipients and normalised to the 15-64 y.o. population. ",
-                                       "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.")), width = 12)
+                                       "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>",
+                                       "</br>Hover over the graph to see values.")), width = 12)
                 ),
                 fluidRow(
                     box(selectInput(inputId = "js_graph_input",
@@ -388,7 +391,7 @@ body <- dashboardBody(
         tabItem(tabName = "unemp_map",
                 fluidRow(
                     box(title = 'Labour force and unemployment data (SA2)',
-                        tags$body(HTML(glue("Smoothed unemployment rate (%), {salm_current_month}</br>",
+                        tags$body(HTML(glue("Smoothed unemployment rate (%), <b>{salm_current_month}</b></br>",
                                             "</br>Click on the map to see the unemployment rate."))), width = 12)
                 ),
                 fluidRow(tmapOutput("salm_unemp_map") %>% 
@@ -403,7 +406,8 @@ body <- dashboardBody(
                 fluidRow(
                     box(title = 'Unemployment and labour force',
                         tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force. ",
-                                            "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne."))), width = 12)
+                                            "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>",
+                                            "</br>Hover over the graph to see values."))), width = 12)
                 ),
                 fluidRow(
                     box(selectInput(inputId = "salm_data_input",
@@ -429,7 +433,7 @@ body <- dashboardBody(
         tabItem(tabName = "unemp_table",
                 fluidRow(
                     box(title = 'Labour force and unemployment table',
-                        tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force - {salm_current_month}. ",
+                        tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force - <b>{salm_current_month}</b>. ",
                                             "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne."))), width = 12)
                 ),
                 fluidRow(DTOutput("salm_large_table") %>% 
