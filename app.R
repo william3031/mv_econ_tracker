@@ -453,9 +453,9 @@ body <- dashboardBody(
         # timeline #### 
         tabItem(tabName = "timeline",
                 tags$head(
-                    tags$style(HTML(".vis-item.Federal { color: green; background-color: yellow; border-color: green; }")),
-                    tags$style(HTML(".vis-item.State { color: white; background-color: navy; border-color: navy; }")),
-                    tags$style(HTML(".vis-item.Local { color: white; background-color: #41B6E6; border-color: blue; }"))
+                    tags$style(HTML(".vis-item.Federal { color: #00843D; background-color: #FFCD00; border-color: #00843D; }")),
+                    tags$style(HTML(".vis-item.State { color: white; background-color: #155DA4; border-color: #155DA4; }")),
+                    tags$style(HTML(".vis-item.Local { color: white; background-color: #41B6E6; border-color: #004F71; }"))
                 ),
                 fluidRow(
                     box(title = 'Timeline of key events',
