@@ -14,6 +14,7 @@ library(RColorBrewer)
 library(sf)
 library(lubridate)
 library(shinycssloaders)
+library(timevis)
 
 #disable scientific notation
 options(scipen = 999)
@@ -185,6 +186,10 @@ unemp_rate_mv_num <- salm_table_data %>%
     filter(Region == "City of Moonee Valley") %>% 
     select(`Unemployment rate %`) %>% 
     pull()
+
+# timeline ############
+timeline_data <- read_csv("data_in/timeline.csv") %>% 
+    mutate(start = dmy(start))
     
 # the app ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -221,6 +226,7 @@ sidebar <- dashboardSidebar(
                  menuSubItem("Unemployment graph", tabName = "unemp_graph"),
                  menuSubItem("Unemployment table", tabName = "unemp_table")
         ),
+        menuItem("Timeline of key events", tabName = "timeline"),
         menuItem("Notes", tabName = "notes")
     )
 )
@@ -444,6 +450,21 @@ body <- dashboardBody(
                            "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
                     tags$body(HTML(glue("</br>Last updated {salm_publication_date}"))), width = 12)
         ),
+        # timeline #### 
+        tabItem(tabName = "timeline",
+                tags$head(
+                    tags$style(HTML(".vis-item.Federal { color: green; background-color: yellow; border-color: green; }")),
+                    tags$style(HTML(".vis-item.State { color: white; background-color: navy; border-color: navy; }")),
+                    tags$style(HTML(".vis-item.Local { color: white; background-color: #41B6E6; border-color: blue; }"))
+                ),
+                fluidRow(
+                    box(title = 'Timeline of key events',
+                        tags$body(HTML("This section shows some of the key events since the start of the pandemic. Zoom in for more detail.")), width = 12),
+                    timevisOutput("timeline")  %>% 
+                        withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
+                )
+        ),
+        
         ## Notes ####
         tabItem(tabName = "notes",
                 fluidRow(
@@ -457,7 +478,7 @@ body <- dashboardBody(
                                             "The <b> unemployment rate </b> is calculated as the <b>number of unemployed / number in the labour force * 100</b>."))), width = 12),
                     box(title = 'More information:',
                         tags$body(HTML("Contact the Research and Facilities team if you have any queries.")), width = 12)
-                )
+                ),
         )
     )
 )
@@ -605,6 +626,11 @@ server <- function(input, output) {
         valueBox(value = tags$p(glue("{unemp_rate_mv_num}%"), style = "font-size: 150%;"),
                  subtitle = glue("Unemployment rate % ({salm_current_month})"),
                  width = 4, color = "yellow")
+    })
+    
+    ## timeline #####
+    output$timeline <- renderTimevis({
+        timevis(timeline_data)
     })
 
 }
