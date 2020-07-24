@@ -108,8 +108,6 @@ js_month_list <- jobseeker_table_long %>%
 jobseeker_month <- js_month_list[1]
 jobseeker_month_formatted <- format(ymd(jobseeker_month), "%b %Y")
 jobseeker_month_long <- format(ymd(jobseeker_month), "%B %Y")
-jobseeker_first <- js_month_list[length(js_month_list)]
-jobseeker_first_month_formatted <- format(ymd(jobseeker_first), "%b %Y")
 
 jobseeker_table_filtered <- jobseeker_table_long %>% 
     filter(month == jobseeker_month) %>% 
@@ -118,13 +116,28 @@ jobseeker_table_filtered <- jobseeker_table_long %>%
 
 js_map_join <- left_join(sa2_greater, jobseeker_table_filtered, by = "sa2_name")
 
-jobseeker_joined <- read_csv("app_data/jobseeker_joined.csv")
 
 region_list <- c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Ponds",
                  "Airport West", "Keilor East", "Niddrie - Essendon West", "Strathmore",
                  "City of Moonee Valley", "Greater Melbourne")
 
 selected_regions <- c("City of Moonee Valley", "Greater Melbourne")
+
+jobseeker_joined <- read_csv("app_data/jobseeker_joined.csv")
+
+js_mv_num <- jobseeker_joined %>% 
+    filter(month == jobseeker_month) %>% 
+    filter(region == "City of Moonee Valley") %>% 
+    filter(data_type == "Total JobSeeker and Youth allowance recipients") %>% 
+    select(values) %>% 
+    mutate(values = format(values, big.mark = ",")) %>% 
+    pull()
+
+jobseeker_month <- js_month_list[1]
+jobseeker_month_formatted <- format(ymd(jobseeker_month), "%b %Y")
+jobseeker_month_long <- format(ymd(jobseeker_month), "%B %Y")
+jobseeker_first <- js_month_list[length(js_month_list)]
+jobseeker_first_month_formatted <- format(ymd(jobseeker_first), "%b %Y")
 
 jobseeker_large_first <- jobseeker_joined %>% 
     filter(month  == jobseeker_first) %>% 
@@ -154,14 +167,6 @@ colnames(jobseeker_large) <- c("Region",
                                paste0("Recipients ", jobseeker_month_formatted),
                                paste0("As % of 15-64 pop. ", jobseeker_month_formatted),
                                "Change")
-
-js_mv_num <- jobseeker_joined %>% 
-    filter(month == jobseeker_month) %>% 
-    filter(region == "City of Moonee Valley") %>% 
-    filter(data_type == "Total JobSeeker and Youth allowance recipients") %>% 
-    select(values) %>% 
-    mutate(values = format(values, big.mark = ",")) %>% 
-    pull()
 
 # salm data ##########################
 sa2_vic_current_unemp_rate <- read_csv("app_data/salm_unemp_rate_current_sa2.csv")

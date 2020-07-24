@@ -169,14 +169,38 @@ js_month_list <- jobseeker_table_long %>%
   pull()
 
 jobseeker_month <- js_month_list[1]
+jobseeker_month_formatted <- format(ymd(jobseeker_month), "%b %Y")
+jobseeker_month_long <- format(ymd(jobseeker_month), "%B %Y")
 jobseeker_first <- js_month_list[length(js_month_list)]
+jobseeker_first_month_formatted <- format(ymd(jobseeker_first), "%b %Y")
 
+jobseeker_large_first <- jobseeker_joined %>% 
+  filter(month  == jobseeker_first) %>% 
+  mutate(month = format(month, "%b %Y")) %>% 
+  mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
+                             "recipients_first", "of_pop_first")) %>% 
+  pivot_wider(names_from = data_type, values_from = values) %>% 
+  select(-month)
 
-# tmap
-tmap_mode("view")
-tm_shape(js_map_join, bbox = tmaptools::bb(mv_shp)) +
-  tm_fill("percentage") +
-  tm_borders(alpha = 0.5, col = "grey") +
-  tm_shape(mv_shp) +
-  tm_borders(alpha = 0.5, col = "purple", lwd = 2)
+jobseeker_large_current <- jobseeker_joined %>% 
+  filter(month == jobseeker_month) %>% 
+  mutate(month = format(month, "%b %Y")) %>% 
+  mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
+                             "recipients_last", "of_pop_last")) %>%  
+  pivot_wider(names_from = data_type, values_from = values) %>% 
+  select(-region, -month) 
+
+jobseeker_large <- bind_cols(jobseeker_large_first, jobseeker_large_current) %>% 
+  mutate(recipients_change = recipients_last - recipients_first) %>% 
+  mutate(recipients_first = format(recipients_first, big.mark = ",")) %>% 
+  mutate(recipients_last = format(recipients_last, big.mark = ",")) %>% 
+  mutate(recipients_change = format(recipients_change, big.mark = ","))
+# rename the columns - do it this way!!!
+colnames(jobseeker_large) <- c("Region",
+                               paste0("Recipients ", jobseeker_first_month_formatted),
+                               paste0("As % of 15-64 pop. ", jobseeker_first_month_formatted),
+                               paste0("Recipients ", jobseeker_month_formatted),
+                               paste0("As % of 15-64 pop. ", jobseeker_month_formatted),
+                               "Change")
+
 
