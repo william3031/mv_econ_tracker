@@ -481,6 +481,11 @@ body <- dashboardBody(
                                             "The <b> labour force</b> is the population aged 15 years and over that are either in work, or actively looking for work in a region. ",
                                             "The <b> number of unemployed </b> is the part of the labour force that are looking for work. ",
                                             "The <b> unemployment rate </b> is calculated as the <b>number of unemployed / number in the labour force * 100</b>."))), width = 12),
+                    box(title = 'Frequency of updates',
+                        tags$body(HTML(glue("* Jobs and wages data for Victoria (updated fortnightly)</br>",
+                                            "* Jobkeeper recipients (ad hoc)</br>",
+                                            "* JobSeeker and Youth Allowance recipients (updated monthly)</br>",
+                                            "* Unemployment and labour force data (updated quarterly)"))), width = 12),
                     box(title = 'More information:',
                         tags$body(HTML("Contact the Research and Facilities team if you have any queries.")), width = 12)
                 ),
