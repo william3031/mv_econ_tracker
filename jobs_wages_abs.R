@@ -2,18 +2,19 @@
 # ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia
 
 # libraries
-pacman::p_load(tidyverse, readxl, ggrepel, janitor, scales, glue, lubridate)
+pacman::p_load(tidyverse, readxl, ggrepel, janitor, scales, glue, lubridate, plotly)
 
 # dates for glue
-abs_publication_date <- "15 July 2020"
+abs_publication_date <- "28 July 2020"
+abs_path <- "data_in/6160055001_do004.xlsx"
 
 # read in raw data - VICTORIAN DATA
-weekly_jobs_data_raw <- read_excel("data_in/6160055001_do004_150720.xlsx", sheet = "Payroll jobs index", skip = 5) %>% 
+weekly_jobs_data_raw <- read_excel(abs_path, sheet = "Payroll jobs index", skip = 5) %>% 
   clean_names() %>% 
   filter(state_or_territory == "2. VIC") %>% 
   mutate(type = "Jobs")
 
-weekly_wages_data_raw <- read_excel("data_in/6160055001_do004_150720.xlsx", sheet = "Total wages index", skip = 5) %>% 
+weekly_wages_data_raw <- read_excel(abs_path, sheet = "Total wages index", skip = 5) %>% 
   clean_names() %>% 
   filter(state_or_territory == "2. VIC") %>% 
   mutate(type = "Wages")
