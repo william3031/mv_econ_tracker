@@ -68,10 +68,17 @@ jobs_wages_by_age_data <- weekly_abs_data %>%
   filter(industry_division == "All industries")
 write_csv(jobs_wages_by_age_data, "app_data/jobs_wages_by_age_data.csv")
 
+# by industry - victoria
+jobs_wages_by_industry <- weekly_abs_data %>% 
+  filter(sex == "Persons") %>% 
+  mutate(latest_week = round(latest_week - 100, 1)) %>% 
+  filter(age_group == "All ages") %>% 
+  select(-sex, -age_group)
+write_csv(jobs_wages_by_industry, "app_data/jobs_wages_by_industry.csv")
 
 # for plotly first graph
 jobs_index <- jobs_wages_index %>% 
-  filter(type == "Jobs")
+  filter(type == "Jobs") 
 
 wages_index <- jobs_wages_index %>% 
   filter(type == "Wages")
@@ -81,7 +88,7 @@ plot_ly() %>%
   add_trace(data = wages_index, x = ~date, y = ~values, name = "Wages", mode = "lines+markers") %>% 
   layout(xaxis = list(title = 'Date'), yaxis = list(title = "Change % (from 14 March)"))
 
-
+# graph 2
 jobs_wages_by_age_data_males <- jobs_wages_by_age_data %>% 
   filter(sex == "Males") %>% 
   filter(type == "Jobs") # change this
@@ -94,3 +101,10 @@ plot_ly() %>%
   add_trace(data = jobs_wages_by_age_data_males, x = ~age_group, y = ~latest_week, type = 'bar', name = 'Males') %>% 
   add_trace(data = jobs_wages_by_age_data_females, x = ~age_group, y = ~latest_week, type = 'bar', name = 'Females') %>% 
   layout(xaxis = list(title = 'Date'), yaxis = list(title = "Change % (from 14 March)"))
+
+# graph 3
+jobs_wages_by_industry %>% 
+  mutate(industry_division = factor(industry_division))
+
+
+

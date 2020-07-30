@@ -63,6 +63,18 @@ jobs_wages_by_age_data_males <- jobs_wages_by_age_data %>%
 jobs_wages_by_age_data_females <- jobs_wages_by_age_data %>% 
     filter(sex == "Females") 
 
+# jobs and ages industry graph
+jobs_wages_by_industry <- read_csv("app_data/jobs_wages_by_industry.csv") %>% 
+    mutate(industry_division = factor(industry_division,
+           levels = c("Wholesale trade", "Transport, postal & warehousing", "Retail trade",
+                      "Rental, hiring & real estate services", "Public administration & safety",
+                      "Professional, scientific & technical services", "Other services", "Mining", "Manufacturing",
+                      "Information media & telecommunications", "Health care & social assistance",
+                      "Financial & insurance services", "Electricity, gas, water & waste services", "Education & training",
+                      "Construction", "Arts & recreation services", "All industries", "Agriculture, forestry & fishing",
+                      "Administrative & support services", "Accommodation & food services")
+))
+
 ## jobkeeper data #### 
 # mv shapefile
 mv_shp <- st_read("app_data/shp/mvcc_boundary.shp")
@@ -215,7 +227,8 @@ sidebar <- dashboardSidebar(
         menuItem("Home", tabName = "home"),
         menuItem("Jobs and wages (Vic.)",
                  menuSubItem("Change for all industries", tabName = "jobs_wages_vic"),
-                 menuSubItem("Change by age and gender", tabName = "jobs_wages_age")
+                 menuSubItem("Change by age and gender", tabName = "jobs_wages_age"),
+                 menuSubItem("Change by industry", tabName = "jobs_wages_industry")
         ),
         menuItem("Jobkeeper",
                  menuSubItem("Jobkeeper map", tabName = "jobkeeper_map"),
@@ -295,6 +308,30 @@ body <- dashboardBody(
                                "ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia"),
                         tags$body(HTML(glue("</br>Last updated {abs_publication_date}"))), width = 12)
                 ),
+        
+        ),
+        tabItem(tabName = "jobs_wages_industry",
+                fluidRow(
+                    box(title = 'Jobs and wages (Victoria)',
+                        tags$body(HTML(glue("Weekly payroll jobs and wages data for Victoria. Percentage change from 14 March to {abs_latest_week} by industry.</br>",
+                                            "</br>Hover over the graph to see values."))), width = 12)
+                ),
+                fluidRow(
+                    box(selectInput(inputId = "jobs_wages_input2",
+                                    label = "Select the data type",
+                                    choices = jobs_wages_list),
+                    ),
+                ),
+                fluidRow(plotlyOutput("jobs_wages_industry_bar") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
+                ),
+                fluidRow(
+                    box(title = 'Source:',
+                        tags$a(href="https://www.abs.gov.au/ausstats/abs@.nsf/mf/6160.0.55.001", target="_blank",
+                               "ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia"),
+                        tags$body(HTML(glue("</br>Last updated {abs_publication_date}"))), width = 12)
+                ),
+                
         ),
         ## jobkeeper ####
         tabItem(tabName = "jobkeeper_map",
@@ -509,6 +546,11 @@ server <- function(input, output) {
             filter(type == input$jobs_wages_input)
     })
     
+    jobs_wages_industry_filtered <- reactive({
+        jobs_wages_by_industry %>% 
+            filter(type == input$jobs_wages_input2)
+    })
+    
     # jobkeeper data
     output$jobkeeper_mv_table <- renderDT(jk_mv_postcodes,
                                           options = list(dom = 't',
@@ -556,6 +598,14 @@ server <- function(input, output) {
             add_trace(data = jobs_wages_by_age_data_males_filtered(), x = ~age_group, y = ~latest_week, type = 'bar', name = 'Males') %>% 
             add_trace(data = jobs_wages_by_age_data_females_filtered(), x = ~age_group, y = ~latest_week, type = 'bar', name = 'Females') %>% 
             layout(xaxis = list(title = 'Age'), yaxis = list(title = "Change % (from 14 March)")) %>%
+            layout(hovermode = "x unified")
+    })
+    
+    # jobs wages industry  plotly bar
+    output$jobs_wages_industry_bar <- renderPlotly({
+        plot_ly() %>% 
+            add_trace(data = jobs_wages_industry_filtered(), y = ~industry_division, x = ~latest_week, type = 'bar', orientation = 'h') %>% 
+            layout(yaxis = list(title = 'Industry'), xaxis = list(title = "Change % (from 14 March)")) %>%
             layout(hovermode = "x unified")
     })
     
