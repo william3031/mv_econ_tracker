@@ -71,8 +71,8 @@ jobs_wages_by_industry <- read_csv("app_data/jobs_wages_by_industry.csv") %>%
                       "Professional, scientific & technical services", "Other services", "Mining", "Manufacturing",
                       "Information media & telecommunications", "Health care & social assistance",
                       "Financial & insurance services", "Electricity, gas, water & waste services", "Education & training",
-                      "Construction", "Arts & recreation services", "All industries", "Agriculture, forestry & fishing",
-                      "Administrative & support services", "Accommodation & food services")
+                      "Construction", "Arts & recreation services", "Agriculture, forestry & fishing",
+                      "Administrative & support services", "Accommodation & food services", "All industries")
 ))
 
 ## jobkeeper data #### 
