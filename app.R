@@ -299,7 +299,7 @@ body <- dashboardBody(
                     box(selectInput(inputId = "jobs_wages_input",
                                     label = "Select the data type",
                                     choices = jobs_wages_list),
-                    ),
+                        width = 12),
                 ),
                 fluidRow(plotlyOutput("jobs_wages_age_bar") %>% 
                              withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
@@ -322,7 +322,7 @@ body <- dashboardBody(
                     box(selectInput(inputId = "jobs_wages_input2",
                                     label = "Select the data type",
                                     choices = jobs_wages_list),
-                    ),
+                        width = 12),
                 ),
                 fluidRow(plotlyOutput("jobs_wages_industry_bar") %>% 
                              withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
