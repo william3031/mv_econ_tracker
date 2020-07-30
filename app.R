@@ -64,16 +64,18 @@ jobs_wages_by_age_data_females <- jobs_wages_by_age_data %>%
     filter(sex == "Females") 
 
 # jobs and ages industry graph
+industry_levels <- c("All industries", "Agriculture, forestry & fishing", "Mining",
+                     "Manufacturing", "Electricity, gas, water & waste services", "Construction", "Wholesale trade", "Retail trade",
+                     "Accommodation & food services", "Transport, postal & warehousing", "Information media & telecommunications",
+                     "Financial & insurance services", "Rental, hiring & real estate services",
+                     "Professional, scientific & technical services", "Administrative & support services",
+                     "Public administration & safety", "Education & training", "Health care & social assistance",
+                     "Arts & recreation services", "Other services")
+
+industry_levels_rev <- rev(industry_levels)
+
 jobs_wages_by_industry <- read_csv("app_data/jobs_wages_by_industry.csv") %>% 
-    mutate(industry_division = factor(industry_division,
-           levels = c("Wholesale trade", "Transport, postal & warehousing", "Retail trade",
-                      "Rental, hiring & real estate services", "Public administration & safety",
-                      "Professional, scientific & technical services", "Other services", "Mining", "Manufacturing",
-                      "Information media & telecommunications", "Health care & social assistance",
-                      "Financial & insurance services", "Electricity, gas, water & waste services", "Education & training",
-                      "Construction", "Arts & recreation services", "Agriculture, forestry & fishing",
-                      "Administrative & support services", "Accommodation & food services", "All industries")
-))
+    mutate(industry_division = factor(industry_division, levels = industry_levels_rev))
 
 ## jobkeeper data #### 
 # mv shapefile
