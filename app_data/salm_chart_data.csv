@@ -97,19 +97,22 @@ Ascot Vale,2018-09-01,No. of unemployed,721
 Ascot Vale,2018-09-01,Labour force,9721
 Ascot Vale,2018-12-01,Unemployment rate %,7
 Ascot Vale,2018-12-01,No. of unemployed,676
-Ascot Vale,2018-12-01,Labour force,9713
+Ascot Vale,2018-12-01,Labour force,9714
 Ascot Vale,2019-03-01,Unemployment rate %,7.5
 Ascot Vale,2019-03-01,No. of unemployed,731
-Ascot Vale,2019-03-01,Labour force,9803
+Ascot Vale,2019-03-01,Labour force,9805
 Ascot Vale,2019-06-01,Unemployment rate %,8
 Ascot Vale,2019-06-01,No. of unemployed,789
-Ascot Vale,2019-06-01,Labour force,9877
+Ascot Vale,2019-06-01,Labour force,9880
 Ascot Vale,2019-09-01,Unemployment rate %,8.3
 Ascot Vale,2019-09-01,No. of unemployed,834
-Ascot Vale,2019-09-01,Labour force,10031
+Ascot Vale,2019-09-01,Labour force,10033
 Ascot Vale,2019-12-01,Unemployment rate %,8.7
 Ascot Vale,2019-12-01,No. of unemployed,880
 Ascot Vale,2019-12-01,Labour force,10169
+Ascot Vale,2020-03-01,Unemployment rate %,8.3
+Ascot Vale,2020-03-01,No. of unemployed,855
+Ascot Vale,2020-03-01,Labour force,10303
 Essendon - Aberfeldie,2010-12-01,Unemployment rate %,2.6
 Essendon - Aberfeldie,2010-12-01,No. of unemployed,395
 Essendon - Aberfeldie,2010-12-01,Labour force,15372
@@ -205,22 +208,25 @@ Essendon - Aberfeldie,2018-06-01,No. of unemployed,637
 Essendon - Aberfeldie,2018-06-01,Labour force,18504
 Essendon - Aberfeldie,2018-09-01,Unemployment rate %,3.4
 Essendon - Aberfeldie,2018-09-01,No. of unemployed,625
-Essendon - Aberfeldie,2018-09-01,Labour force,18487
+Essendon - Aberfeldie,2018-09-01,Labour force,18488
 Essendon - Aberfeldie,2018-12-01,Unemployment rate %,3.2
 Essendon - Aberfeldie,2018-12-01,No. of unemployed,585
-Essendon - Aberfeldie,2018-12-01,Labour force,18469
+Essendon - Aberfeldie,2018-12-01,Labour force,18471
 Essendon - Aberfeldie,2019-03-01,Unemployment rate %,3.4
 Essendon - Aberfeldie,2019-03-01,No. of unemployed,625
-Essendon - Aberfeldie,2019-03-01,Labour force,18639
+Essendon - Aberfeldie,2019-03-01,Labour force,18642
 Essendon - Aberfeldie,2019-06-01,Unemployment rate %,3.5
 Essendon - Aberfeldie,2019-06-01,No. of unemployed,654
-Essendon - Aberfeldie,2019-06-01,Labour force,18777
+Essendon - Aberfeldie,2019-06-01,Labour force,18782
 Essendon - Aberfeldie,2019-09-01,Unemployment rate %,3.4
 Essendon - Aberfeldie,2019-09-01,No. of unemployed,657
-Essendon - Aberfeldie,2019-09-01,Labour force,19066
+Essendon - Aberfeldie,2019-09-01,Labour force,19070
 Essendon - Aberfeldie,2019-12-01,Unemployment rate %,3.5
 Essendon - Aberfeldie,2019-12-01,No. of unemployed,681
 Essendon - Aberfeldie,2019-12-01,Labour force,19325
+Essendon - Aberfeldie,2020-03-01,Unemployment rate %,3.3
+Essendon - Aberfeldie,2020-03-01,No. of unemployed,651
+Essendon - Aberfeldie,2020-03-01,Labour force,19577
 Flemington,2010-12-01,Unemployment rate %,10.9
 Flemington,2010-12-01,No. of unemployed,571
 Flemington,2010-12-01,Labour force,5261
@@ -316,22 +322,25 @@ Flemington,2018-06-01,No. of unemployed,813
 Flemington,2018-06-01,Labour force,6433
 Flemington,2018-09-01,Unemployment rate %,12.6
 Flemington,2018-09-01,No. of unemployed,811
-Flemington,2018-09-01,Labour force,6446
+Flemington,2018-09-01,Labour force,6447
 Flemington,2018-12-01,Unemployment rate %,12.1
 Flemington,2018-12-01,No. of unemployed,782
-Flemington,2018-12-01,Labour force,6459
+Flemington,2018-12-01,Labour force,6460
 Flemington,2019-03-01,Unemployment rate %,12.9
 Flemington,2019-03-01,No. of unemployed,840
-Flemington,2019-03-01,Labour force,6519
+Flemington,2019-03-01,Labour force,6520
 Flemington,2019-06-01,Unemployment rate %,13.1
 Flemington,2019-06-01,No. of unemployed,863
-Flemington,2019-06-01,Labour force,6568
+Flemington,2019-06-01,Labour force,6569
 Flemington,2019-09-01,Unemployment rate %,13
 Flemington,2019-09-01,No. of unemployed,865
-Flemington,2019-09-01,Labour force,6670
+Flemington,2019-09-01,Labour force,6671
 Flemington,2019-12-01,Unemployment rate %,13.2
-Flemington,2019-12-01,No. of unemployed,892
+Flemington,2019-12-01,No. of unemployed,891
 Flemington,2019-12-01,Labour force,6761
+Flemington,2020-03-01,Unemployment rate %,12.5
+Flemington,2020-03-01,No. of unemployed,856
+Flemington,2020-03-01,Labour force,6849
 Moonee Ponds,2010-12-01,Unemployment rate %,2.5
 Moonee Ponds,2010-12-01,No. of unemployed,215
 Moonee Ponds,2010-12-01,Labour force,8523
@@ -427,22 +436,25 @@ Moonee Ponds,2018-06-01,No. of unemployed,403
 Moonee Ponds,2018-06-01,Labour force,9506
 Moonee Ponds,2018-09-01,Unemployment rate %,4.1
 Moonee Ponds,2018-09-01,No. of unemployed,389
-Moonee Ponds,2018-09-01,Labour force,9491
+Moonee Ponds,2018-09-01,Labour force,9492
 Moonee Ponds,2018-12-01,Unemployment rate %,3.7
 Moonee Ponds,2018-12-01,No. of unemployed,353
 Moonee Ponds,2018-12-01,Labour force,9476
 Moonee Ponds,2019-03-01,Unemployment rate %,3.8
-Moonee Ponds,2019-03-01,No. of unemployed,360
-Moonee Ponds,2019-03-01,Labour force,9563
+Moonee Ponds,2019-03-01,No. of unemployed,361
+Moonee Ponds,2019-03-01,Labour force,9564
 Moonee Ponds,2019-06-01,Unemployment rate %,3.8
-Moonee Ponds,2019-06-01,No. of unemployed,368
-Moonee Ponds,2019-06-01,Labour force,9637
+Moonee Ponds,2019-06-01,No. of unemployed,369
+Moonee Ponds,2019-06-01,Labour force,9639
 Moonee Ponds,2019-09-01,Unemployment rate %,3.7
-Moonee Ponds,2019-09-01,No. of unemployed,362
-Moonee Ponds,2019-09-01,Labour force,9789
+Moonee Ponds,2019-09-01,No. of unemployed,363
+Moonee Ponds,2019-09-01,Labour force,9791
 Moonee Ponds,2019-12-01,Unemployment rate %,3.8
-Moonee Ponds,2019-12-01,No. of unemployed,379
+Moonee Ponds,2019-12-01,No. of unemployed,380
 Moonee Ponds,2019-12-01,Labour force,9926
+Moonee Ponds,2020-03-01,Unemployment rate %,3.6
+Moonee Ponds,2020-03-01,No. of unemployed,365
+Moonee Ponds,2020-03-01,Labour force,10059
 Airport West,2010-12-01,Unemployment rate %,4.8
 Airport West,2010-12-01,No. of unemployed,180
 Airport West,2010-12-01,Labour force,3759
@@ -541,19 +553,22 @@ Airport West,2018-09-01,No. of unemployed,170
 Airport West,2018-09-01,Labour force,4422
 Airport West,2018-12-01,Unemployment rate %,3.6
 Airport West,2018-12-01,No. of unemployed,160
-Airport West,2018-12-01,Labour force,4436
+Airport West,2018-12-01,Labour force,4437
 Airport West,2019-03-01,Unemployment rate %,3.5
 Airport West,2019-03-01,No. of unemployed,157
 Airport West,2019-03-01,Labour force,4472
 Airport West,2019-06-01,Unemployment rate %,3.8
 Airport West,2019-06-01,No. of unemployed,170
-Airport West,2019-06-01,Labour force,4525
+Airport West,2019-06-01,Labour force,4526
 Airport West,2019-09-01,Unemployment rate %,3.8
 Airport West,2019-09-01,No. of unemployed,172
-Airport West,2019-09-01,Labour force,4521
+Airport West,2019-09-01,Labour force,4522
 Airport West,2019-12-01,Unemployment rate %,4
 Airport West,2019-12-01,No. of unemployed,181
 Airport West,2019-12-01,Labour force,4575
+Airport West,2020-03-01,Unemployment rate %,4.1
+Airport West,2020-03-01,No. of unemployed,189
+Airport West,2020-03-01,Labour force,4658
 Keilor East,2010-12-01,Unemployment rate %,4.3
 Keilor East,2010-12-01,No. of unemployed,530
 Keilor East,2010-12-01,Labour force,12277
@@ -652,19 +667,22 @@ Keilor East,2018-09-01,No. of unemployed,462
 Keilor East,2018-09-01,Labour force,13737
 Keilor East,2018-12-01,Unemployment rate %,3.2
 Keilor East,2018-12-01,No. of unemployed,434
-Keilor East,2018-12-01,Labour force,13726
+Keilor East,2018-12-01,Labour force,13727
 Keilor East,2019-03-01,Unemployment rate %,3
 Keilor East,2019-03-01,No. of unemployed,419
-Keilor East,2019-03-01,Labour force,13835
+Keilor East,2019-03-01,Labour force,13837
 Keilor East,2019-06-01,Unemployment rate %,3.1
 Keilor East,2019-06-01,No. of unemployed,440
-Keilor East,2019-06-01,Labour force,13996
+Keilor East,2019-06-01,Labour force,13999
 Keilor East,2019-09-01,Unemployment rate %,3.2
 Keilor East,2019-09-01,No. of unemployed,448
-Keilor East,2019-09-01,Labour force,13977
+Keilor East,2019-09-01,Labour force,13980
 Keilor East,2019-12-01,Unemployment rate %,3.3
 Keilor East,2019-12-01,No. of unemployed,469
 Keilor East,2019-12-01,Labour force,14137
+Keilor East,2020-03-01,Unemployment rate %,3.4
+Keilor East,2020-03-01,No. of unemployed,487
+Keilor East,2020-03-01,Labour force,14390
 Niddrie - Essendon West,2010-12-01,Unemployment rate %,3.3
 Niddrie - Essendon West,2010-12-01,No. of unemployed,112
 Niddrie - Essendon West,2010-12-01,Labour force,3444
@@ -763,19 +781,22 @@ Niddrie - Essendon West,2018-09-01,No. of unemployed,80
 Niddrie - Essendon West,2018-09-01,Labour force,4234
 Niddrie - Essendon West,2018-12-01,Unemployment rate %,1.8
 Niddrie - Essendon West,2018-12-01,No. of unemployed,75
-Niddrie - Essendon West,2018-12-01,Labour force,4247
+Niddrie - Essendon West,2018-12-01,Labour force,4248
 Niddrie - Essendon West,2019-03-01,Unemployment rate %,1.8
 Niddrie - Essendon West,2019-03-01,No. of unemployed,76
-Niddrie - Essendon West,2019-03-01,Labour force,4281
+Niddrie - Essendon West,2019-03-01,Labour force,4282
 Niddrie - Essendon West,2019-06-01,Unemployment rate %,2
 Niddrie - Essendon West,2019-06-01,No. of unemployed,87
-Niddrie - Essendon West,2019-06-01,Labour force,4336
+Niddrie - Essendon West,2019-06-01,Labour force,4337
 Niddrie - Essendon West,2019-09-01,Unemployment rate %,2.2
 Niddrie - Essendon West,2019-09-01,No. of unemployed,96
 Niddrie - Essendon West,2019-09-01,Labour force,4337
 Niddrie - Essendon West,2019-12-01,Unemployment rate %,2.3
 Niddrie - Essendon West,2019-12-01,No. of unemployed,103
 Niddrie - Essendon West,2019-12-01,Labour force,4393
+Niddrie - Essendon West,2020-03-01,Unemployment rate %,2.3
+Niddrie - Essendon West,2020-03-01,No. of unemployed,105
+Niddrie - Essendon West,2020-03-01,Labour force,4477
 Strathmore,2010-12-01,Unemployment rate %,2.5
 Strathmore,2010-12-01,No. of unemployed,128
 Strathmore,2010-12-01,Labour force,5160
@@ -877,16 +898,19 @@ Strathmore,2018-12-01,No. of unemployed,97
 Strathmore,2018-12-01,Labour force,5833
 Strathmore,2019-03-01,Unemployment rate %,1.6
 Strathmore,2019-03-01,No. of unemployed,96
-Strathmore,2019-03-01,Labour force,5879
+Strathmore,2019-03-01,Labour force,5880
 Strathmore,2019-06-01,Unemployment rate %,1.6
 Strathmore,2019-06-01,No. of unemployed,98
-Strathmore,2019-06-01,Labour force,5953
+Strathmore,2019-06-01,Labour force,5955
 Strathmore,2019-09-01,Unemployment rate %,1.6
 Strathmore,2019-09-01,No. of unemployed,98
-Strathmore,2019-09-01,Labour force,5952
+Strathmore,2019-09-01,Labour force,5953
 Strathmore,2019-12-01,Unemployment rate %,1.7
 Strathmore,2019-12-01,No. of unemployed,100
-Strathmore,2019-12-01,Labour force,6026
+Strathmore,2019-12-01,Labour force,6027
+Strathmore,2020-03-01,Unemployment rate %,1.7
+Strathmore,2020-03-01,No. of unemployed,104
+Strathmore,2020-03-01,Labour force,6140
 City of Moonee Valley,2010-12-01,Unemployment rate %,4.4
 City of Moonee Valley,2010-12-01,No. of unemployed,2755
 City of Moonee Valley,2010-12-01,Labour force,62324
@@ -982,22 +1006,25 @@ City of Moonee Valley,2018-06-01,No. of unemployed,3485
 City of Moonee Valley,2018-06-01,Labour force,72262
 City of Moonee Valley,2018-09-01,Unemployment rate %,4.6
 City of Moonee Valley,2018-09-01,No. of unemployed,3353
-City of Moonee Valley,2018-09-01,Labour force,72359
+City of Moonee Valley,2018-09-01,Labour force,72362
 City of Moonee Valley,2018-12-01,Unemployment rate %,4.4
 City of Moonee Valley,2018-12-01,No. of unemployed,3163
-City of Moonee Valley,2018-12-01,Labour force,72360
+City of Moonee Valley,2018-12-01,Labour force,72367
 City of Moonee Valley,2019-03-01,Unemployment rate %,4.5
 City of Moonee Valley,2019-03-01,No. of unemployed,3304
-City of Moonee Valley,2019-03-01,Labour force,72991
+City of Moonee Valley,2019-03-01,Labour force,73002
 City of Moonee Valley,2019-06-01,Unemployment rate %,4.7
-City of Moonee Valley,2019-06-01,No. of unemployed,3468
-City of Moonee Valley,2019-06-01,Labour force,73673
-City of Moonee Valley,2019-09-01,Unemployment rate %,4.8
+City of Moonee Valley,2019-06-01,No. of unemployed,3469
+City of Moonee Valley,2019-06-01,Labour force,73689
+City of Moonee Valley,2019-09-01,Unemployment rate %,4.7
 City of Moonee Valley,2019-09-01,No. of unemployed,3532
-City of Moonee Valley,2019-09-01,Labour force,74348
+City of Moonee Valley,2019-09-01,Labour force,74362
 City of Moonee Valley,2019-12-01,Unemployment rate %,4.9
-City of Moonee Valley,2019-12-01,No. of unemployed,3686
-City of Moonee Valley,2019-12-01,Labour force,75319
+City of Moonee Valley,2019-12-01,No. of unemployed,3685
+City of Moonee Valley,2019-12-01,Labour force,75320
+City of Moonee Valley,2020-03-01,Unemployment rate %,4.7
+City of Moonee Valley,2020-03-01,No. of unemployed,3610
+City of Moonee Valley,2020-03-01,Labour force,76464
 Greater Melbourne,2010-12-01,Unemployment rate %,5
 Greater Melbourne,2010-12-01,No. of unemployed,98457
 Greater Melbourne,2010-12-01,Labour force,1968566
@@ -1092,20 +1119,23 @@ Greater Melbourne,2018-06-01,Unemployment rate %,5.6
 Greater Melbourne,2018-06-01,No. of unemployed,131495
 Greater Melbourne,2018-06-01,Labour force,2330394
 Greater Melbourne,2018-09-01,Unemployment rate %,5.3
-Greater Melbourne,2018-09-01,No. of unemployed,123168
-Greater Melbourne,2018-09-01,Labour force,2339856
+Greater Melbourne,2018-09-01,No. of unemployed,123174
+Greater Melbourne,2018-09-01,Labour force,2339938
 Greater Melbourne,2018-12-01,Unemployment rate %,4.9
-Greater Melbourne,2018-12-01,No. of unemployed,115894
-Greater Melbourne,2018-12-01,Labour force,2353805
+Greater Melbourne,2018-12-01,No. of unemployed,115907
+Greater Melbourne,2018-12-01,Labour force,2354032
 Greater Melbourne,2019-03-01,Unemployment rate %,4.7
-Greater Melbourne,2019-03-01,No. of unemployed,112469
-Greater Melbourne,2019-03-01,Labour force,2371946
+Greater Melbourne,2019-03-01,No. of unemployed,112485
+Greater Melbourne,2019-03-01,Labour force,2372324
 Greater Melbourne,2019-06-01,Unemployment rate %,4.7
-Greater Melbourne,2019-06-01,No. of unemployed,111898
-Greater Melbourne,2019-06-01,Labour force,2393946
+Greater Melbourne,2019-06-01,No. of unemployed,111921
+Greater Melbourne,2019-06-01,Labour force,2394464
 Greater Melbourne,2019-09-01,Unemployment rate %,4.8
-Greater Melbourne,2019-09-01,No. of unemployed,115123
-Greater Melbourne,2019-09-01,Labour force,2420515
+Greater Melbourne,2019-09-01,No. of unemployed,115137
+Greater Melbourne,2019-09-01,Labour force,2420955
 Greater Melbourne,2019-12-01,Unemployment rate %,4.9
-Greater Melbourne,2019-12-01,No. of unemployed,119506
-Greater Melbourne,2019-12-01,Labour force,2442269
+Greater Melbourne,2019-12-01,No. of unemployed,119505
+Greater Melbourne,2019-12-01,Labour force,2442311
+Greater Melbourne,2020-03-01,Unemployment rate %,5.2
+Greater Melbourne,2020-03-01,No. of unemployed,147079
+Greater Melbourne,2020-03-01,Labour force,2844633

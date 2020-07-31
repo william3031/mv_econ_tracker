@@ -4,8 +4,8 @@
 # libraries
 pacman::p_load(tidyverse, readxl, lubridate, janitor, tsibble, sf)
 
-sa2_data_path <- "data_in/SALM Smoothed SA2 Datafiles (ASGS 2016) - December quarter 2019.xlsx"
-lga_data_path <- "data_in/SALM Smoothed LGA Datafiles (ASGS 2019) - December quarter 2019.xlsx"
+sa2_data_path <- "data_in/SALM Smoothed SA2 Datafiles (ASGS 2016) - March quarter 2020.xlsx"
+lga_data_path <- "data_in/SALM Smoothed LGA Datafiles (ASGS 2019) - March quarter 2020.xlsx"
 
 #import files  sa2 unemployment
 sa2_data_unemp_rate <- read_excel(sa2_data_path,
@@ -53,6 +53,7 @@ gr_melb_sa2_9digit_list <- sa2_greater %>%
   
 #reshape data sa2 unemp rate ###########################################################
 sa2_vic_tidy_unemp_rate <- sa2_data_unemp_rate %>% 
+  mutate_at(vars(starts_with("x")), funs(as.numeric)) %>% 
   pivot_longer(cols = -(sa2_name:sa2_code), names_to = "date", values_to = "values")  %>%
   mutate(date = str_remove(date, "x")) %>% 
   mutate(date = as.numeric(date)) %>% 
@@ -76,6 +77,7 @@ unemp_rate_map_join <- left_join(sa2_greater, sa2_vic_current_unemp_rate)
 
 # for unemployment and labour force sa2 vic ##################################
 sa2_vic_tidy_unemployment <- sa2_data_unemployment %>% 
+  mutate_at(vars(starts_with("x")), funs(as.numeric)) %>% 
   pivot_longer(cols = -(sa2_name:sa2_code), names_to = "date", values_to = "values")  %>%
   mutate(date = str_remove(date, "x")) %>% 
   mutate(date = as.numeric(date)) %>% 
@@ -86,6 +88,7 @@ sa2_vic_tidy_unemployment <- sa2_data_unemployment %>%
   rename(unemployed = values)
 
 sa2_vic_tidy_labour_force <- sa2_data_labour_force %>% 
+  mutate_at(vars(starts_with("x")), funs(as.numeric)) %>% 
   pivot_longer(cols = -(sa2_name:sa2_code), names_to = "date", values_to = "values")  %>%
   mutate(date = str_remove(date, "x")) %>% 
   mutate(date = as.numeric(date)) %>% 
@@ -111,6 +114,7 @@ sa2_merge_data_gm <- sa2_merge_data %>%
 
 # for unemployment and labour force lga vic ##################################
 lga_mv_tidy_unemployment <- lga_data_unemployment %>% 
+  mutate_at(vars(starts_with("x")), funs(as.numeric)) %>% 
   pivot_longer(cols = -(lga_name:lga_code), names_to = "date", values_to = "values")  %>%
   filter(lga_name == "Moonee Valley (C)") %>% 
   mutate(date = str_remove(date, "x")) %>% 
@@ -121,6 +125,7 @@ lga_mv_tidy_unemployment <- lga_data_unemployment %>%
   rename(unemployed = values)
 
 lga_mv_tidy_labour_force <- lga_data_labour_force %>% 
+  mutate_at(vars(starts_with("x")), funs(as.numeric)) %>% 
   pivot_longer(cols = -(lga_name:lga_code), names_to = "date", values_to = "values")  %>%
   filter(lga_name == "Moonee Valley (C)") %>% 
   mutate(date = str_remove(date, "x")) %>% 

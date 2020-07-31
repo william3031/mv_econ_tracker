@@ -32,7 +32,7 @@ jobkeeper_text <- "Numbers are based on the total number of <b>processed applica
 #jobseeker
 jobseeker_publication_date <- "17 July 2020"
 # salm
-salm_publication_date <- "27 March 2020"
+salm_publication_date <- "31 July 2020"
 
 
 ## jobs and wages data ####
