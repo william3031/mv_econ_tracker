@@ -155,7 +155,18 @@ salm_data_list <- c("Unemployment rate %", "No. of unemployed", "Labour force")
 salm_chart_data <- salm_large %>% 
   rename(`Unemployment rate %` = unemp_rate, `No. of unemployed` = unemployed, `Labour force` = labour_force) %>% 
   pivot_longer(-(region:date), names_to = "data_type", values_to = "values")
-write_csv(salm_chart_data, "app_data/salm_chart_data.csv")
+
+salm_chart_rate_data <- salm_chart_data %>% 
+  filter(data_type == "Unemployment rate %")
+write_csv(salm_chart_rate_data, "app_data/salm_chart_rate_data.csv")
+
+salm_chart_unemp_data <- salm_chart_data %>% 
+  filter(data_type == "No. of unemployed")
+write_csv(salm_chart_unemp_data, "app_data/salm_chart_unemp_data.csv")
+
+salm_chart_lf_data <- salm_chart_data %>% 
+  filter(data_type == "Labour force")
+write_csv(salm_chart_lf_data, "app_data/salm_chart_lf_data.csv")
 
 salm_table_data <- salm_large %>% 
   filter(date == salm_current_month) %>% 

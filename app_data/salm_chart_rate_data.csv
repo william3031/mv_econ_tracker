@@ -1,0 +1,381 @@
+region,date,data_type,values
+Ascot Vale,2010-12-01,Unemployment rate %,7.3
+Ascot Vale,2011-03-01,Unemployment rate %,7.2
+Ascot Vale,2011-06-01,Unemployment rate %,6.7
+Ascot Vale,2011-09-01,Unemployment rate %,6.2
+Ascot Vale,2011-12-01,Unemployment rate %,6.2
+Ascot Vale,2012-03-01,Unemployment rate %,6.6
+Ascot Vale,2012-06-01,Unemployment rate %,7.3
+Ascot Vale,2012-09-01,Unemployment rate %,7.6
+Ascot Vale,2012-12-01,Unemployment rate %,7.3
+Ascot Vale,2013-03-01,Unemployment rate %,7.4
+Ascot Vale,2013-06-01,Unemployment rate %,7.9
+Ascot Vale,2013-09-01,Unemployment rate %,8.8
+Ascot Vale,2013-12-01,Unemployment rate %,9.7
+Ascot Vale,2014-03-01,Unemployment rate %,10.6
+Ascot Vale,2014-06-01,Unemployment rate %,10.3
+Ascot Vale,2014-09-01,Unemployment rate %,10.2
+Ascot Vale,2014-12-01,Unemployment rate %,10.7
+Ascot Vale,2015-03-01,Unemployment rate %,10.1
+Ascot Vale,2015-06-01,Unemployment rate %,10.3
+Ascot Vale,2015-09-01,Unemployment rate %,10
+Ascot Vale,2015-12-01,Unemployment rate %,9.1
+Ascot Vale,2016-03-01,Unemployment rate %,8.6
+Ascot Vale,2016-06-01,Unemployment rate %,8.2
+Ascot Vale,2016-09-01,Unemployment rate %,7.8
+Ascot Vale,2016-12-01,Unemployment rate %,8
+Ascot Vale,2017-03-01,Unemployment rate %,7.8
+Ascot Vale,2017-06-01,Unemployment rate %,8.3
+Ascot Vale,2017-09-01,Unemployment rate %,8.7
+Ascot Vale,2017-12-01,Unemployment rate %,8.5
+Ascot Vale,2018-03-01,Unemployment rate %,8.4
+Ascot Vale,2018-06-01,Unemployment rate %,7.7
+Ascot Vale,2018-09-01,Unemployment rate %,7.4
+Ascot Vale,2018-12-01,Unemployment rate %,7
+Ascot Vale,2019-03-01,Unemployment rate %,7.5
+Ascot Vale,2019-06-01,Unemployment rate %,8
+Ascot Vale,2019-09-01,Unemployment rate %,8.3
+Ascot Vale,2019-12-01,Unemployment rate %,8.7
+Ascot Vale,2020-03-01,Unemployment rate %,8.3
+Essendon - Aberfeldie,2010-12-01,Unemployment rate %,2.6
+Essendon - Aberfeldie,2011-03-01,Unemployment rate %,2.5
+Essendon - Aberfeldie,2011-06-01,Unemployment rate %,2.4
+Essendon - Aberfeldie,2011-09-01,Unemployment rate %,2.4
+Essendon - Aberfeldie,2011-12-01,Unemployment rate %,2.4
+Essendon - Aberfeldie,2012-03-01,Unemployment rate %,2.8
+Essendon - Aberfeldie,2012-06-01,Unemployment rate %,3.1
+Essendon - Aberfeldie,2012-09-01,Unemployment rate %,3.3
+Essendon - Aberfeldie,2012-12-01,Unemployment rate %,3.2
+Essendon - Aberfeldie,2013-03-01,Unemployment rate %,3.2
+Essendon - Aberfeldie,2013-06-01,Unemployment rate %,3.5
+Essendon - Aberfeldie,2013-09-01,Unemployment rate %,3.8
+Essendon - Aberfeldie,2013-12-01,Unemployment rate %,4.1
+Essendon - Aberfeldie,2014-03-01,Unemployment rate %,4.5
+Essendon - Aberfeldie,2014-06-01,Unemployment rate %,4.4
+Essendon - Aberfeldie,2014-09-01,Unemployment rate %,4.3
+Essendon - Aberfeldie,2014-12-01,Unemployment rate %,4.3
+Essendon - Aberfeldie,2015-03-01,Unemployment rate %,4
+Essendon - Aberfeldie,2015-06-01,Unemployment rate %,3.9
+Essendon - Aberfeldie,2015-09-01,Unemployment rate %,3.8
+Essendon - Aberfeldie,2015-12-01,Unemployment rate %,3.6
+Essendon - Aberfeldie,2016-03-01,Unemployment rate %,3.6
+Essendon - Aberfeldie,2016-06-01,Unemployment rate %,3.6
+Essendon - Aberfeldie,2016-09-01,Unemployment rate %,3.5
+Essendon - Aberfeldie,2016-12-01,Unemployment rate %,3.6
+Essendon - Aberfeldie,2017-03-01,Unemployment rate %,3.5
+Essendon - Aberfeldie,2017-06-01,Unemployment rate %,3.7
+Essendon - Aberfeldie,2017-09-01,Unemployment rate %,3.9
+Essendon - Aberfeldie,2017-12-01,Unemployment rate %,3.7
+Essendon - Aberfeldie,2018-03-01,Unemployment rate %,3.7
+Essendon - Aberfeldie,2018-06-01,Unemployment rate %,3.4
+Essendon - Aberfeldie,2018-09-01,Unemployment rate %,3.4
+Essendon - Aberfeldie,2018-12-01,Unemployment rate %,3.2
+Essendon - Aberfeldie,2019-03-01,Unemployment rate %,3.4
+Essendon - Aberfeldie,2019-06-01,Unemployment rate %,3.5
+Essendon - Aberfeldie,2019-09-01,Unemployment rate %,3.4
+Essendon - Aberfeldie,2019-12-01,Unemployment rate %,3.5
+Essendon - Aberfeldie,2020-03-01,Unemployment rate %,3.3
+Flemington,2010-12-01,Unemployment rate %,10.9
+Flemington,2011-03-01,Unemployment rate %,10.6
+Flemington,2011-06-01,Unemployment rate %,9.9
+Flemington,2011-09-01,Unemployment rate %,9.3
+Flemington,2011-12-01,Unemployment rate %,9.2
+Flemington,2012-03-01,Unemployment rate %,9.8
+Flemington,2012-06-01,Unemployment rate %,10.7
+Flemington,2012-09-01,Unemployment rate %,11.1
+Flemington,2012-12-01,Unemployment rate %,10.8
+Flemington,2013-03-01,Unemployment rate %,10.9
+Flemington,2013-06-01,Unemployment rate %,11.7
+Flemington,2013-09-01,Unemployment rate %,12.9
+Flemington,2013-12-01,Unemployment rate %,14.1
+Flemington,2014-03-01,Unemployment rate %,15.1
+Flemington,2014-06-01,Unemployment rate %,14.6
+Flemington,2014-09-01,Unemployment rate %,14.3
+Flemington,2014-12-01,Unemployment rate %,14.6
+Flemington,2015-03-01,Unemployment rate %,13.9
+Flemington,2015-06-01,Unemployment rate %,14
+Flemington,2015-09-01,Unemployment rate %,13.6
+Flemington,2015-12-01,Unemployment rate %,12.7
+Flemington,2016-03-01,Unemployment rate %,12.5
+Flemington,2016-06-01,Unemployment rate %,12.3
+Flemington,2016-09-01,Unemployment rate %,12
+Flemington,2016-12-01,Unemployment rate %,12.3
+Flemington,2017-03-01,Unemployment rate %,12.1
+Flemington,2017-06-01,Unemployment rate %,12.7
+Flemington,2017-09-01,Unemployment rate %,13.4
+Flemington,2017-12-01,Unemployment rate %,13.2
+Flemington,2018-03-01,Unemployment rate %,13.1
+Flemington,2018-06-01,Unemployment rate %,12.6
+Flemington,2018-09-01,Unemployment rate %,12.6
+Flemington,2018-12-01,Unemployment rate %,12.1
+Flemington,2019-03-01,Unemployment rate %,12.9
+Flemington,2019-06-01,Unemployment rate %,13.1
+Flemington,2019-09-01,Unemployment rate %,13
+Flemington,2019-12-01,Unemployment rate %,13.2
+Flemington,2020-03-01,Unemployment rate %,12.5
+Moonee Ponds,2010-12-01,Unemployment rate %,2.5
+Moonee Ponds,2011-03-01,Unemployment rate %,2.5
+Moonee Ponds,2011-06-01,Unemployment rate %,2.5
+Moonee Ponds,2011-09-01,Unemployment rate %,2.5
+Moonee Ponds,2011-12-01,Unemployment rate %,2.5
+Moonee Ponds,2012-03-01,Unemployment rate %,2.9
+Moonee Ponds,2012-06-01,Unemployment rate %,3.2
+Moonee Ponds,2012-09-01,Unemployment rate %,3.3
+Moonee Ponds,2012-12-01,Unemployment rate %,3.2
+Moonee Ponds,2013-03-01,Unemployment rate %,3.2
+Moonee Ponds,2013-06-01,Unemployment rate %,3.4
+Moonee Ponds,2013-09-01,Unemployment rate %,3.9
+Moonee Ponds,2013-12-01,Unemployment rate %,4.4
+Moonee Ponds,2014-03-01,Unemployment rate %,4.8
+Moonee Ponds,2014-06-01,Unemployment rate %,4.7
+Moonee Ponds,2014-09-01,Unemployment rate %,4.6
+Moonee Ponds,2014-12-01,Unemployment rate %,4.9
+Moonee Ponds,2015-03-01,Unemployment rate %,5
+Moonee Ponds,2015-06-01,Unemployment rate %,5.4
+Moonee Ponds,2015-09-01,Unemployment rate %,5.4
+Moonee Ponds,2015-12-01,Unemployment rate %,4.9
+Moonee Ponds,2016-03-01,Unemployment rate %,4.5
+Moonee Ponds,2016-06-01,Unemployment rate %,4.1
+Moonee Ponds,2016-09-01,Unemployment rate %,3.9
+Moonee Ponds,2016-12-01,Unemployment rate %,4
+Moonee Ponds,2017-03-01,Unemployment rate %,4
+Moonee Ponds,2017-06-01,Unemployment rate %,4.2
+Moonee Ponds,2017-09-01,Unemployment rate %,4.4
+Moonee Ponds,2017-12-01,Unemployment rate %,4.5
+Moonee Ponds,2018-03-01,Unemployment rate %,4.5
+Moonee Ponds,2018-06-01,Unemployment rate %,4.2
+Moonee Ponds,2018-09-01,Unemployment rate %,4.1
+Moonee Ponds,2018-12-01,Unemployment rate %,3.7
+Moonee Ponds,2019-03-01,Unemployment rate %,3.8
+Moonee Ponds,2019-06-01,Unemployment rate %,3.8
+Moonee Ponds,2019-09-01,Unemployment rate %,3.7
+Moonee Ponds,2019-12-01,Unemployment rate %,3.8
+Moonee Ponds,2020-03-01,Unemployment rate %,3.6
+Airport West,2010-12-01,Unemployment rate %,4.8
+Airport West,2011-03-01,Unemployment rate %,4.5
+Airport West,2011-06-01,Unemployment rate %,4.2
+Airport West,2011-09-01,Unemployment rate %,4.2
+Airport West,2011-12-01,Unemployment rate %,4.3
+Airport West,2012-03-01,Unemployment rate %,4.5
+Airport West,2012-06-01,Unemployment rate %,4.3
+Airport West,2012-09-01,Unemployment rate %,3.7
+Airport West,2012-12-01,Unemployment rate %,3.3
+Airport West,2013-03-01,Unemployment rate %,3
+Airport West,2013-06-01,Unemployment rate %,3.3
+Airport West,2013-09-01,Unemployment rate %,4.1
+Airport West,2013-12-01,Unemployment rate %,4.5
+Airport West,2014-03-01,Unemployment rate %,4.8
+Airport West,2014-06-01,Unemployment rate %,4.8
+Airport West,2014-09-01,Unemployment rate %,4.5
+Airport West,2014-12-01,Unemployment rate %,4.3
+Airport West,2015-03-01,Unemployment rate %,4
+Airport West,2015-06-01,Unemployment rate %,4
+Airport West,2015-09-01,Unemployment rate %,4
+Airport West,2015-12-01,Unemployment rate %,4
+Airport West,2016-03-01,Unemployment rate %,4.2
+Airport West,2016-06-01,Unemployment rate %,4.3
+Airport West,2016-09-01,Unemployment rate %,4.5
+Airport West,2016-12-01,Unemployment rate %,4.8
+Airport West,2017-03-01,Unemployment rate %,5
+Airport West,2017-06-01,Unemployment rate %,5.1
+Airport West,2017-09-01,Unemployment rate %,5.2
+Airport West,2017-12-01,Unemployment rate %,5
+Airport West,2018-03-01,Unemployment rate %,4.7
+Airport West,2018-06-01,Unemployment rate %,4.3
+Airport West,2018-09-01,Unemployment rate %,3.8
+Airport West,2018-12-01,Unemployment rate %,3.6
+Airport West,2019-03-01,Unemployment rate %,3.5
+Airport West,2019-06-01,Unemployment rate %,3.8
+Airport West,2019-09-01,Unemployment rate %,3.8
+Airport West,2019-12-01,Unemployment rate %,4
+Airport West,2020-03-01,Unemployment rate %,4.1
+Keilor East,2010-12-01,Unemployment rate %,4.3
+Keilor East,2011-03-01,Unemployment rate %,4.1
+Keilor East,2011-06-01,Unemployment rate %,3.7
+Keilor East,2011-09-01,Unemployment rate %,3.4
+Keilor East,2011-12-01,Unemployment rate %,3.4
+Keilor East,2012-03-01,Unemployment rate %,3.6
+Keilor East,2012-06-01,Unemployment rate %,3.5
+Keilor East,2012-09-01,Unemployment rate %,3.2
+Keilor East,2012-12-01,Unemployment rate %,2.9
+Keilor East,2013-03-01,Unemployment rate %,2.6
+Keilor East,2013-06-01,Unemployment rate %,2.8
+Keilor East,2013-09-01,Unemployment rate %,3.2
+Keilor East,2013-12-01,Unemployment rate %,3.6
+Keilor East,2014-03-01,Unemployment rate %,4
+Keilor East,2014-06-01,Unemployment rate %,4.2
+Keilor East,2014-09-01,Unemployment rate %,4.3
+Keilor East,2014-12-01,Unemployment rate %,4.2
+Keilor East,2015-03-01,Unemployment rate %,3.9
+Keilor East,2015-06-01,Unemployment rate %,3.9
+Keilor East,2015-09-01,Unemployment rate %,3.8
+Keilor East,2015-12-01,Unemployment rate %,3.8
+Keilor East,2016-03-01,Unemployment rate %,4
+Keilor East,2016-06-01,Unemployment rate %,4
+Keilor East,2016-09-01,Unemployment rate %,3.9
+Keilor East,2016-12-01,Unemployment rate %,4
+Keilor East,2017-03-01,Unemployment rate %,4
+Keilor East,2017-06-01,Unemployment rate %,4.1
+Keilor East,2017-09-01,Unemployment rate %,4.2
+Keilor East,2017-12-01,Unemployment rate %,4.2
+Keilor East,2018-03-01,Unemployment rate %,4
+Keilor East,2018-06-01,Unemployment rate %,3.7
+Keilor East,2018-09-01,Unemployment rate %,3.4
+Keilor East,2018-12-01,Unemployment rate %,3.2
+Keilor East,2019-03-01,Unemployment rate %,3
+Keilor East,2019-06-01,Unemployment rate %,3.1
+Keilor East,2019-09-01,Unemployment rate %,3.2
+Keilor East,2019-12-01,Unemployment rate %,3.3
+Keilor East,2020-03-01,Unemployment rate %,3.4
+Niddrie - Essendon West,2010-12-01,Unemployment rate %,3.3
+Niddrie - Essendon West,2011-03-01,Unemployment rate %,3.2
+Niddrie - Essendon West,2011-06-01,Unemployment rate %,2.9
+Niddrie - Essendon West,2011-09-01,Unemployment rate %,2.7
+Niddrie - Essendon West,2011-12-01,Unemployment rate %,2.7
+Niddrie - Essendon West,2012-03-01,Unemployment rate %,2.5
+Niddrie - Essendon West,2012-06-01,Unemployment rate %,2.3
+Niddrie - Essendon West,2012-09-01,Unemployment rate %,2
+Niddrie - Essendon West,2012-12-01,Unemployment rate %,1.8
+Niddrie - Essendon West,2013-03-01,Unemployment rate %,1.9
+Niddrie - Essendon West,2013-06-01,Unemployment rate %,2.2
+Niddrie - Essendon West,2013-09-01,Unemployment rate %,2.6
+Niddrie - Essendon West,2013-12-01,Unemployment rate %,2.8
+Niddrie - Essendon West,2014-03-01,Unemployment rate %,3.2
+Niddrie - Essendon West,2014-06-01,Unemployment rate %,3.2
+Niddrie - Essendon West,2014-09-01,Unemployment rate %,3.2
+Niddrie - Essendon West,2014-12-01,Unemployment rate %,3.1
+Niddrie - Essendon West,2015-03-01,Unemployment rate %,2.7
+Niddrie - Essendon West,2015-06-01,Unemployment rate %,2.7
+Niddrie - Essendon West,2015-09-01,Unemployment rate %,2.7
+Niddrie - Essendon West,2015-12-01,Unemployment rate %,2.8
+Niddrie - Essendon West,2016-03-01,Unemployment rate %,2.9
+Niddrie - Essendon West,2016-06-01,Unemployment rate %,2.8
+Niddrie - Essendon West,2016-09-01,Unemployment rate %,2.7
+Niddrie - Essendon West,2016-12-01,Unemployment rate %,2.5
+Niddrie - Essendon West,2017-03-01,Unemployment rate %,2.4
+Niddrie - Essendon West,2017-06-01,Unemployment rate %,2.4
+Niddrie - Essendon West,2017-09-01,Unemployment rate %,2.5
+Niddrie - Essendon West,2017-12-01,Unemployment rate %,2.5
+Niddrie - Essendon West,2018-03-01,Unemployment rate %,2.3
+Niddrie - Essendon West,2018-06-01,Unemployment rate %,2.1
+Niddrie - Essendon West,2018-09-01,Unemployment rate %,1.9
+Niddrie - Essendon West,2018-12-01,Unemployment rate %,1.8
+Niddrie - Essendon West,2019-03-01,Unemployment rate %,1.8
+Niddrie - Essendon West,2019-06-01,Unemployment rate %,2
+Niddrie - Essendon West,2019-09-01,Unemployment rate %,2.2
+Niddrie - Essendon West,2019-12-01,Unemployment rate %,2.3
+Niddrie - Essendon West,2020-03-01,Unemployment rate %,2.3
+Strathmore,2010-12-01,Unemployment rate %,2.5
+Strathmore,2011-03-01,Unemployment rate %,2.3
+Strathmore,2011-06-01,Unemployment rate %,2
+Strathmore,2011-09-01,Unemployment rate %,1.9
+Strathmore,2011-12-01,Unemployment rate %,1.8
+Strathmore,2012-03-01,Unemployment rate %,1.8
+Strathmore,2012-06-01,Unemployment rate %,1.8
+Strathmore,2012-09-01,Unemployment rate %,1.7
+Strathmore,2012-12-01,Unemployment rate %,1.6
+Strathmore,2013-03-01,Unemployment rate %,1.6
+Strathmore,2013-06-01,Unemployment rate %,1.8
+Strathmore,2013-09-01,Unemployment rate %,2.1
+Strathmore,2013-12-01,Unemployment rate %,2.3
+Strathmore,2014-03-01,Unemployment rate %,2.5
+Strathmore,2014-06-01,Unemployment rate %,2.5
+Strathmore,2014-09-01,Unemployment rate %,2.5
+Strathmore,2014-12-01,Unemployment rate %,2.3
+Strathmore,2015-03-01,Unemployment rate %,2.1
+Strathmore,2015-06-01,Unemployment rate %,2.1
+Strathmore,2015-09-01,Unemployment rate %,2.1
+Strathmore,2015-12-01,Unemployment rate %,2.1
+Strathmore,2016-03-01,Unemployment rate %,2.1
+Strathmore,2016-06-01,Unemployment rate %,2
+Strathmore,2016-09-01,Unemployment rate %,1.9
+Strathmore,2016-12-01,Unemployment rate %,2
+Strathmore,2017-03-01,Unemployment rate %,2
+Strathmore,2017-06-01,Unemployment rate %,2
+Strathmore,2017-09-01,Unemployment rate %,2
+Strathmore,2017-12-01,Unemployment rate %,1.9
+Strathmore,2018-03-01,Unemployment rate %,1.8
+Strathmore,2018-06-01,Unemployment rate %,1.7
+Strathmore,2018-09-01,Unemployment rate %,1.7
+Strathmore,2018-12-01,Unemployment rate %,1.7
+Strathmore,2019-03-01,Unemployment rate %,1.6
+Strathmore,2019-06-01,Unemployment rate %,1.6
+Strathmore,2019-09-01,Unemployment rate %,1.6
+Strathmore,2019-12-01,Unemployment rate %,1.7
+Strathmore,2020-03-01,Unemployment rate %,1.7
+City of Moonee Valley,2010-12-01,Unemployment rate %,4.4
+City of Moonee Valley,2011-03-01,Unemployment rate %,4.3
+City of Moonee Valley,2011-06-01,Unemployment rate %,4
+City of Moonee Valley,2011-09-01,Unemployment rate %,3.8
+City of Moonee Valley,2011-12-01,Unemployment rate %,3.8
+City of Moonee Valley,2012-03-01,Unemployment rate %,4.1
+City of Moonee Valley,2012-06-01,Unemployment rate %,4.3
+City of Moonee Valley,2012-09-01,Unemployment rate %,4.4
+City of Moonee Valley,2012-12-01,Unemployment rate %,4.2
+City of Moonee Valley,2013-03-01,Unemployment rate %,4.1
+City of Moonee Valley,2013-06-01,Unemployment rate %,4.5
+City of Moonee Valley,2013-09-01,Unemployment rate %,5
+City of Moonee Valley,2013-12-01,Unemployment rate %,5.5
+City of Moonee Valley,2014-03-01,Unemployment rate %,6
+City of Moonee Valley,2014-06-01,Unemployment rate %,5.9
+City of Moonee Valley,2014-09-01,Unemployment rate %,5.8
+City of Moonee Valley,2014-12-01,Unemployment rate %,5.9
+City of Moonee Valley,2015-03-01,Unemployment rate %,5.6
+City of Moonee Valley,2015-06-01,Unemployment rate %,5.6
+City of Moonee Valley,2015-09-01,Unemployment rate %,5.5
+City of Moonee Valley,2015-12-01,Unemployment rate %,5.2
+City of Moonee Valley,2016-03-01,Unemployment rate %,5.1
+City of Moonee Valley,2016-06-01,Unemployment rate %,5
+City of Moonee Valley,2016-09-01,Unemployment rate %,4.8
+City of Moonee Valley,2016-12-01,Unemployment rate %,4.9
+City of Moonee Valley,2017-03-01,Unemployment rate %,4.9
+City of Moonee Valley,2017-06-01,Unemployment rate %,5.1
+City of Moonee Valley,2017-09-01,Unemployment rate %,5.3
+City of Moonee Valley,2017-12-01,Unemployment rate %,5.2
+City of Moonee Valley,2018-03-01,Unemployment rate %,5.2
+City of Moonee Valley,2018-06-01,Unemployment rate %,4.8
+City of Moonee Valley,2018-09-01,Unemployment rate %,4.6
+City of Moonee Valley,2018-12-01,Unemployment rate %,4.4
+City of Moonee Valley,2019-03-01,Unemployment rate %,4.5
+City of Moonee Valley,2019-06-01,Unemployment rate %,4.7
+City of Moonee Valley,2019-09-01,Unemployment rate %,4.7
+City of Moonee Valley,2019-12-01,Unemployment rate %,4.9
+City of Moonee Valley,2020-03-01,Unemployment rate %,4.7
+Greater Melbourne,2010-12-01,Unemployment rate %,5
+Greater Melbourne,2011-03-01,Unemployment rate %,4.9
+Greater Melbourne,2011-06-01,Unemployment rate %,4.7
+Greater Melbourne,2011-09-01,Unemployment rate %,4.8
+Greater Melbourne,2011-12-01,Unemployment rate %,5
+Greater Melbourne,2012-03-01,Unemployment rate %,5.2
+Greater Melbourne,2012-06-01,Unemployment rate %,5.4
+Greater Melbourne,2012-09-01,Unemployment rate %,5.4
+Greater Melbourne,2012-12-01,Unemployment rate %,5.4
+Greater Melbourne,2013-03-01,Unemployment rate %,5.5
+Greater Melbourne,2013-06-01,Unemployment rate %,5.6
+Greater Melbourne,2013-09-01,Unemployment rate %,5.7
+Greater Melbourne,2013-12-01,Unemployment rate %,6
+Greater Melbourne,2014-03-01,Unemployment rate %,6.2
+Greater Melbourne,2014-06-01,Unemployment rate %,6.3
+Greater Melbourne,2014-09-01,Unemployment rate %,6.5
+Greater Melbourne,2014-12-01,Unemployment rate %,6.6
+Greater Melbourne,2015-03-01,Unemployment rate %,6.5
+Greater Melbourne,2015-06-01,Unemployment rate %,6.4
+Greater Melbourne,2015-09-01,Unemployment rate %,6.3
+Greater Melbourne,2015-12-01,Unemployment rate %,6.1
+Greater Melbourne,2016-03-01,Unemployment rate %,6
+Greater Melbourne,2016-06-01,Unemployment rate %,5.9
+Greater Melbourne,2016-09-01,Unemployment rate %,5.7
+Greater Melbourne,2016-12-01,Unemployment rate %,5.8
+Greater Melbourne,2017-03-01,Unemployment rate %,5.8
+Greater Melbourne,2017-06-01,Unemployment rate %,6
+Greater Melbourne,2017-09-01,Unemployment rate %,6.1
+Greater Melbourne,2017-12-01,Unemployment rate %,6
+Greater Melbourne,2018-03-01,Unemployment rate %,5.9
+Greater Melbourne,2018-06-01,Unemployment rate %,5.6
+Greater Melbourne,2018-09-01,Unemployment rate %,5.3
+Greater Melbourne,2018-12-01,Unemployment rate %,4.9
+Greater Melbourne,2019-03-01,Unemployment rate %,4.7
+Greater Melbourne,2019-06-01,Unemployment rate %,4.7
+Greater Melbourne,2019-09-01,Unemployment rate %,4.8
+Greater Melbourne,2019-12-01,Unemployment rate %,4.9
+Greater Melbourne,2020-03-01,Unemployment rate %,5.2

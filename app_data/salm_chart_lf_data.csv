@@ -1,0 +1,381 @@
+region,date,data_type,values
+Ascot Vale,2010-12-01,Labour force,8526
+Ascot Vale,2011-03-01,Labour force,8549
+Ascot Vale,2011-06-01,Labour force,8565
+Ascot Vale,2011-09-01,Labour force,8573
+Ascot Vale,2011-12-01,Labour force,8562
+Ascot Vale,2012-03-01,Labour force,8594
+Ascot Vale,2012-06-01,Labour force,8666
+Ascot Vale,2012-09-01,Labour force,8713
+Ascot Vale,2012-12-01,Labour force,8737
+Ascot Vale,2013-03-01,Labour force,8707
+Ascot Vale,2013-06-01,Labour force,8643
+Ascot Vale,2013-09-01,Labour force,8590
+Ascot Vale,2013-12-01,Labour force,8567
+Ascot Vale,2014-03-01,Labour force,8613
+Ascot Vale,2014-06-01,Labour force,8663
+Ascot Vale,2014-09-01,Labour force,8732
+Ascot Vale,2014-12-01,Labour force,8797
+Ascot Vale,2015-03-01,Labour force,8857
+Ascot Vale,2015-06-01,Labour force,8915
+Ascot Vale,2015-09-01,Labour force,8981
+Ascot Vale,2015-12-01,Labour force,9003
+Ascot Vale,2016-03-01,Labour force,8970
+Ascot Vale,2016-06-01,Labour force,8990
+Ascot Vale,2016-09-01,Labour force,9029
+Ascot Vale,2016-12-01,Labour force,9100
+Ascot Vale,2017-03-01,Labour force,9233
+Ascot Vale,2017-06-01,Labour force,9349
+Ascot Vale,2017-09-01,Labour force,9452
+Ascot Vale,2017-12-01,Labour force,9588
+Ascot Vale,2018-03-01,Labour force,9680
+Ascot Vale,2018-06-01,Labour force,9728
+Ascot Vale,2018-09-01,Labour force,9721
+Ascot Vale,2018-12-01,Labour force,9714
+Ascot Vale,2019-03-01,Labour force,9805
+Ascot Vale,2019-06-01,Labour force,9880
+Ascot Vale,2019-09-01,Labour force,10033
+Ascot Vale,2019-12-01,Labour force,10169
+Ascot Vale,2020-03-01,Labour force,10303
+Essendon - Aberfeldie,2010-12-01,Labour force,15372
+Essendon - Aberfeldie,2011-03-01,Labour force,15437
+Essendon - Aberfeldie,2011-06-01,Labour force,15491
+Essendon - Aberfeldie,2011-09-01,Labour force,15530
+Essendon - Aberfeldie,2011-12-01,Labour force,15535
+Essendon - Aberfeldie,2012-03-01,Labour force,15617
+Essendon - Aberfeldie,2012-06-01,Labour force,15771
+Essendon - Aberfeldie,2012-09-01,Labour force,15880
+Essendon - Aberfeldie,2012-12-01,Labour force,15947
+Essendon - Aberfeldie,2013-03-01,Labour force,15927
+Essendon - Aberfeldie,2013-06-01,Labour force,15843
+Essendon - Aberfeldie,2013-09-01,Labour force,15783
+Essendon - Aberfeldie,2013-12-01,Labour force,15777
+Essendon - Aberfeldie,2014-03-01,Labour force,15890
+Essendon - Aberfeldie,2014-06-01,Labour force,16012
+Essendon - Aberfeldie,2014-09-01,Labour force,16165
+Essendon - Aberfeldie,2014-12-01,Labour force,16313
+Essendon - Aberfeldie,2015-03-01,Labour force,16444
+Essendon - Aberfeldie,2015-06-01,Labour force,16569
+Essendon - Aberfeldie,2015-09-01,Labour force,16710
+Essendon - Aberfeldie,2015-12-01,Labour force,16770
+Essendon - Aberfeldie,2016-03-01,Labour force,16785
+Essendon - Aberfeldie,2016-06-01,Labour force,16901
+Essendon - Aberfeldie,2016-09-01,Labour force,17054
+Essendon - Aberfeldie,2016-12-01,Labour force,17268
+Essendon - Aberfeldie,2017-03-01,Labour force,17533
+Essendon - Aberfeldie,2017-06-01,Labour force,17765
+Essendon - Aberfeldie,2017-09-01,Labour force,17973
+Essendon - Aberfeldie,2017-12-01,Labour force,18245
+Essendon - Aberfeldie,2018-03-01,Labour force,18416
+Essendon - Aberfeldie,2018-06-01,Labour force,18504
+Essendon - Aberfeldie,2018-09-01,Labour force,18488
+Essendon - Aberfeldie,2018-12-01,Labour force,18471
+Essendon - Aberfeldie,2019-03-01,Labour force,18642
+Essendon - Aberfeldie,2019-06-01,Labour force,18782
+Essendon - Aberfeldie,2019-09-01,Labour force,19070
+Essendon - Aberfeldie,2019-12-01,Labour force,19325
+Essendon - Aberfeldie,2020-03-01,Labour force,19577
+Flemington,2010-12-01,Labour force,5261
+Flemington,2011-03-01,Labour force,5312
+Flemington,2011-06-01,Labour force,5359
+Flemington,2011-09-01,Labour force,5401
+Flemington,2011-12-01,Labour force,5431
+Flemington,2012-03-01,Labour force,5477
+Flemington,2012-06-01,Labour force,5547
+Flemington,2012-09-01,Labour force,5601
+Flemington,2012-12-01,Labour force,5641
+Flemington,2013-03-01,Labour force,5651
+Flemington,2013-06-01,Labour force,5638
+Flemington,2013-09-01,Labour force,5633
+Flemington,2013-12-01,Labour force,5648
+Flemington,2014-03-01,Labour force,5680
+Flemington,2014-06-01,Labour force,5715
+Flemington,2014-09-01,Labour force,5762
+Flemington,2014-12-01,Labour force,5806
+Flemington,2015-03-01,Labour force,5840
+Flemington,2015-06-01,Labour force,5872
+Flemington,2015-09-01,Labour force,5909
+Flemington,2015-12-01,Labour force,5917
+Flemington,2016-03-01,Labour force,5913
+Flemington,2016-06-01,Labour force,5944
+Flemington,2016-09-01,Labour force,5988
+Flemington,2016-12-01,Labour force,6054
+Flemington,2017-03-01,Labour force,6124
+Flemington,2017-06-01,Labour force,6183
+Flemington,2017-09-01,Labour force,6233
+Flemington,2017-12-01,Labour force,6305
+Flemington,2018-03-01,Labour force,6384
+Flemington,2018-06-01,Labour force,6433
+Flemington,2018-09-01,Labour force,6447
+Flemington,2018-12-01,Labour force,6460
+Flemington,2019-03-01,Labour force,6520
+Flemington,2019-06-01,Labour force,6569
+Flemington,2019-09-01,Labour force,6671
+Flemington,2019-12-01,Labour force,6761
+Flemington,2020-03-01,Labour force,6849
+Moonee Ponds,2010-12-01,Labour force,8523
+Moonee Ponds,2011-03-01,Labour force,8538
+Moonee Ponds,2011-06-01,Labour force,8546
+Moonee Ponds,2011-09-01,Labour force,8547
+Moonee Ponds,2011-12-01,Labour force,8528
+Moonee Ponds,2012-03-01,Labour force,8587
+Moonee Ponds,2012-06-01,Labour force,8684
+Moonee Ponds,2012-09-01,Labour force,8757
+Moonee Ponds,2012-12-01,Labour force,8808
+Moonee Ponds,2013-03-01,Labour force,8793
+Moonee Ponds,2013-06-01,Labour force,8744
+Moonee Ponds,2013-09-01,Labour force,8707
+Moonee Ponds,2013-12-01,Labour force,8699
+Moonee Ponds,2014-03-01,Labour force,8713
+Moonee Ponds,2014-06-01,Labour force,8732
+Moonee Ponds,2014-09-01,Labour force,8768
+Moonee Ponds,2014-12-01,Labour force,8800
+Moonee Ponds,2015-03-01,Labour force,8825
+Moonee Ponds,2015-06-01,Labour force,8847
+Moonee Ponds,2015-09-01,Labour force,8878
+Moonee Ponds,2015-12-01,Labour force,8865
+Moonee Ponds,2016-03-01,Labour force,8837
+Moonee Ponds,2016-06-01,Labour force,8860
+Moonee Ponds,2016-09-01,Labour force,8904
+Moonee Ponds,2016-12-01,Labour force,8978
+Moonee Ponds,2017-03-01,Labour force,9091
+Moonee Ponds,2017-06-01,Labour force,9187
+Moonee Ponds,2017-09-01,Labour force,9269
+Moonee Ponds,2017-12-01,Labour force,9385
+Moonee Ponds,2018-03-01,Labour force,9467
+Moonee Ponds,2018-06-01,Labour force,9506
+Moonee Ponds,2018-09-01,Labour force,9492
+Moonee Ponds,2018-12-01,Labour force,9476
+Moonee Ponds,2019-03-01,Labour force,9564
+Moonee Ponds,2019-06-01,Labour force,9639
+Moonee Ponds,2019-09-01,Labour force,9791
+Moonee Ponds,2019-12-01,Labour force,9926
+Moonee Ponds,2020-03-01,Labour force,10059
+Airport West,2010-12-01,Labour force,3759
+Airport West,2011-03-01,Labour force,3783
+Airport West,2011-06-01,Labour force,3803
+Airport West,2011-09-01,Labour force,3797
+Airport West,2011-12-01,Labour force,3817
+Airport West,2012-03-01,Labour force,3860
+Airport West,2012-06-01,Labour force,3876
+Airport West,2012-09-01,Labour force,3897
+Airport West,2012-12-01,Labour force,3856
+Airport West,2013-03-01,Labour force,3783
+Airport West,2013-06-01,Labour force,3747
+Airport West,2013-09-01,Labour force,3787
+Airport West,2013-12-01,Labour force,3851
+Airport West,2014-03-01,Labour force,3942
+Airport West,2014-06-01,Labour force,3990
+Airport West,2014-09-01,Labour force,4013
+Airport West,2014-12-01,Labour force,4049
+Airport West,2015-03-01,Labour force,4044
+Airport West,2015-06-01,Labour force,4066
+Airport West,2015-09-01,Labour force,4051
+Airport West,2015-12-01,Labour force,4042
+Airport West,2016-03-01,Labour force,4057
+Airport West,2016-06-01,Labour force,4084
+Airport West,2016-09-01,Labour force,4154
+Airport West,2016-12-01,Labour force,4239
+Airport West,2017-03-01,Labour force,4297
+Airport West,2017-06-01,Labour force,4356
+Airport West,2017-09-01,Labour force,4381
+Airport West,2017-12-01,Labour force,4388
+Airport West,2018-03-01,Labour force,4393
+Airport West,2018-06-01,Labour force,4395
+Airport West,2018-09-01,Labour force,4422
+Airport West,2018-12-01,Labour force,4437
+Airport West,2019-03-01,Labour force,4472
+Airport West,2019-06-01,Labour force,4526
+Airport West,2019-09-01,Labour force,4522
+Airport West,2019-12-01,Labour force,4575
+Airport West,2020-03-01,Labour force,4658
+Keilor East,2010-12-01,Labour force,12277
+Keilor East,2011-03-01,Labour force,12366
+Keilor East,2011-06-01,Labour force,12440
+Keilor East,2011-09-01,Labour force,12432
+Keilor East,2011-12-01,Labour force,12506
+Keilor East,2012-03-01,Labour force,12663
+Keilor East,2012-06-01,Labour force,12727
+Keilor East,2012-09-01,Labour force,12812
+Keilor East,2012-12-01,Labour force,12687
+Keilor East,2013-03-01,Labour force,12453
+Keilor East,2013-06-01,Labour force,12339
+Keilor East,2013-09-01,Labour force,12477
+Keilor East,2013-12-01,Labour force,12696
+Keilor East,2014-03-01,Labour force,12932
+Keilor East,2014-06-01,Labour force,13030
+Keilor East,2014-09-01,Labour force,13044
+Keilor East,2014-12-01,Labour force,13103
+Keilor East,2015-03-01,Labour force,13052
+Keilor East,2015-06-01,Labour force,13092
+Keilor East,2015-09-01,Labour force,13011
+Keilor East,2015-12-01,Labour force,12952
+Keilor East,2016-03-01,Labour force,12951
+Keilor East,2016-06-01,Labour force,12986
+Keilor East,2016-09-01,Labour force,13156
+Keilor East,2016-12-01,Labour force,13372
+Keilor East,2017-03-01,Labour force,13538
+Keilor East,2017-06-01,Labour force,13709
+Keilor East,2017-09-01,Labour force,13773
+Keilor East,2017-12-01,Labour force,13784
+Keilor East,2018-03-01,Labour force,13748
+Keilor East,2018-06-01,Labour force,13701
+Keilor East,2018-09-01,Labour force,13737
+Keilor East,2018-12-01,Labour force,13727
+Keilor East,2019-03-01,Labour force,13837
+Keilor East,2019-06-01,Labour force,13999
+Keilor East,2019-09-01,Labour force,13980
+Keilor East,2019-12-01,Labour force,14137
+Keilor East,2020-03-01,Labour force,14390
+Niddrie - Essendon West,2010-12-01,Labour force,3444
+Niddrie - Essendon West,2011-03-01,Labour force,3466
+Niddrie - Essendon West,2011-06-01,Labour force,3485
+Niddrie - Essendon West,2011-09-01,Labour force,3480
+Niddrie - Essendon West,2011-12-01,Labour force,3500
+Niddrie - Essendon West,2012-03-01,Labour force,3553
+Niddrie - Essendon West,2012-06-01,Labour force,3580
+Niddrie - Essendon West,2012-09-01,Labour force,3612
+Niddrie - Essendon West,2012-12-01,Labour force,3583
+Niddrie - Essendon West,2013-03-01,Labour force,3526
+Niddrie - Essendon West,2013-06-01,Labour force,3502
+Niddrie - Essendon West,2013-09-01,Labour force,3553
+Niddrie - Essendon West,2013-12-01,Labour force,3627
+Niddrie - Essendon West,2014-03-01,Labour force,3726
+Niddrie - Essendon West,2014-06-01,Labour force,3785
+Niddrie - Essendon West,2014-09-01,Labour force,3819
+Niddrie - Essendon West,2014-12-01,Labour force,3866
+Niddrie - Essendon West,2015-03-01,Labour force,3860
+Niddrie - Essendon West,2015-06-01,Labour force,3882
+Niddrie - Essendon West,2015-09-01,Labour force,3868
+Niddrie - Essendon West,2015-12-01,Labour force,3859
+Niddrie - Essendon West,2016-03-01,Labour force,3873
+Niddrie - Essendon West,2016-06-01,Labour force,3898
+Niddrie - Essendon West,2016-09-01,Labour force,3965
+Niddrie - Essendon West,2016-12-01,Labour force,4048
+Niddrie - Essendon West,2017-03-01,Labour force,4106
+Niddrie - Essendon West,2017-06-01,Labour force,4165
+Niddrie - Essendon West,2017-09-01,Labour force,4192
+Niddrie - Essendon West,2017-12-01,Labour force,4202
+Niddrie - Essendon West,2018-03-01,Labour force,4207
+Niddrie - Essendon West,2018-06-01,Labour force,4208
+Niddrie - Essendon West,2018-09-01,Labour force,4234
+Niddrie - Essendon West,2018-12-01,Labour force,4248
+Niddrie - Essendon West,2019-03-01,Labour force,4282
+Niddrie - Essendon West,2019-06-01,Labour force,4337
+Niddrie - Essendon West,2019-09-01,Labour force,4337
+Niddrie - Essendon West,2019-12-01,Labour force,4393
+Niddrie - Essendon West,2020-03-01,Labour force,4477
+Strathmore,2010-12-01,Labour force,5160
+Strathmore,2011-03-01,Labour force,5195
+Strathmore,2011-06-01,Labour force,5226
+Strathmore,2011-09-01,Labour force,5221
+Strathmore,2011-12-01,Labour force,5252
+Strathmore,2012-03-01,Labour force,5313
+Strathmore,2012-06-01,Labour force,5336
+Strathmore,2012-09-01,Labour force,5366
+Strathmore,2012-12-01,Labour force,5307
+Strathmore,2013-03-01,Labour force,5207
+Strathmore,2013-06-01,Labour force,5156
+Strathmore,2013-09-01,Labour force,5213
+Strathmore,2013-12-01,Labour force,5304
+Strathmore,2014-03-01,Labour force,5382
+Strathmore,2014-06-01,Labour force,5402
+Strathmore,2014-09-01,Labour force,5386
+Strathmore,2014-12-01,Labour force,5389
+Strathmore,2015-03-01,Labour force,5367
+Strathmore,2015-06-01,Labour force,5383
+Strathmore,2015-09-01,Labour force,5349
+Strathmore,2015-12-01,Labour force,5324
+Strathmore,2016-03-01,Labour force,5335
+Strathmore,2016-06-01,Labour force,5361
+Strathmore,2016-09-01,Labour force,5444
+Strathmore,2016-12-01,Labour force,5546
+Strathmore,2017-03-01,Labour force,5633
+Strathmore,2017-06-01,Labour force,5722
+Strathmore,2017-09-01,Labour force,5766
+Strathmore,2017-12-01,Labour force,5788
+Strathmore,2018-03-01,Labour force,5790
+Strathmore,2018-06-01,Labour force,5787
+Strathmore,2018-09-01,Labour force,5820
+Strathmore,2018-12-01,Labour force,5833
+Strathmore,2019-03-01,Labour force,5880
+Strathmore,2019-06-01,Labour force,5955
+Strathmore,2019-09-01,Labour force,5953
+Strathmore,2019-12-01,Labour force,6027
+Strathmore,2020-03-01,Labour force,6140
+City of Moonee Valley,2010-12-01,Labour force,62324
+City of Moonee Valley,2011-03-01,Labour force,62647
+City of Moonee Valley,2011-06-01,Labour force,62917
+City of Moonee Valley,2011-09-01,Labour force,62981
+City of Moonee Valley,2011-12-01,Labour force,63130
+City of Moonee Valley,2012-03-01,Labour force,63665
+City of Moonee Valley,2012-06-01,Labour force,64188
+City of Moonee Valley,2012-09-01,Labour force,64640
+City of Moonee Valley,2012-12-01,Labour force,64566
+City of Moonee Valley,2013-03-01,Labour force,64048
+City of Moonee Valley,2013-06-01,Labour force,63613
+City of Moonee Valley,2013-09-01,Labour force,63744
+City of Moonee Valley,2013-12-01,Labour force,64170
+City of Moonee Valley,2014-03-01,Labour force,64879
+City of Moonee Valley,2014-06-01,Labour force,65330
+City of Moonee Valley,2014-09-01,Labour force,65688
+City of Moonee Valley,2014-12-01,Labour force,66123
+City of Moonee Valley,2015-03-01,Labour force,66289
+City of Moonee Valley,2015-06-01,Labour force,66626
+City of Moonee Valley,2015-09-01,Labour force,66757
+City of Moonee Valley,2015-12-01,Labour force,66733
+City of Moonee Valley,2016-03-01,Labour force,66721
+City of Moonee Valley,2016-06-01,Labour force,67023
+City of Moonee Valley,2016-09-01,Labour force,67694
+City of Moonee Valley,2016-12-01,Labour force,68606
+City of Moonee Valley,2017-03-01,Labour force,69556
+City of Moonee Valley,2017-06-01,Labour force,70437
+City of Moonee Valley,2017-09-01,Labour force,71040
+City of Moonee Valley,2017-12-01,Labour force,71686
+City of Moonee Valley,2018-03-01,Labour force,72085
+City of Moonee Valley,2018-06-01,Labour force,72262
+City of Moonee Valley,2018-09-01,Labour force,72362
+City of Moonee Valley,2018-12-01,Labour force,72367
+City of Moonee Valley,2019-03-01,Labour force,73002
+City of Moonee Valley,2019-06-01,Labour force,73689
+City of Moonee Valley,2019-09-01,Labour force,74362
+City of Moonee Valley,2019-12-01,Labour force,75320
+City of Moonee Valley,2020-03-01,Labour force,76464
+Greater Melbourne,2010-12-01,Labour force,1968566
+Greater Melbourne,2011-03-01,Labour force,1976752
+Greater Melbourne,2011-06-01,Labour force,1984856
+Greater Melbourne,2011-09-01,Labour force,1991341
+Greater Melbourne,2011-12-01,Labour force,1996431
+Greater Melbourne,2012-03-01,Labour force,2001185
+Greater Melbourne,2012-06-01,Labour force,2011552
+Greater Melbourne,2012-09-01,Labour force,2019000
+Greater Melbourne,2012-12-01,Labour force,2026609
+Greater Melbourne,2013-03-01,Labour force,2039141
+Greater Melbourne,2013-06-01,Labour force,2047203
+Greater Melbourne,2013-09-01,Labour force,2054928
+Greater Melbourne,2013-12-01,Labour force,2062885
+Greater Melbourne,2014-03-01,Labour force,2066207
+Greater Melbourne,2014-06-01,Labour force,2068229
+Greater Melbourne,2014-09-01,Labour force,2078785
+Greater Melbourne,2014-12-01,Labour force,2091939
+Greater Melbourne,2015-03-01,Labour force,2109541
+Greater Melbourne,2015-06-01,Labour force,2126064
+Greater Melbourne,2015-09-01,Labour force,2138765
+Greater Melbourne,2015-12-01,Labour force,2152693
+Greater Melbourne,2016-03-01,Labour force,2165272
+Greater Melbourne,2016-06-01,Labour force,2180739
+Greater Melbourne,2016-09-01,Labour force,2198777
+Greater Melbourne,2016-12-01,Labour force,2220107
+Greater Melbourne,2017-03-01,Labour force,2242395
+Greater Melbourne,2017-06-01,Labour force,2267133
+Greater Melbourne,2017-09-01,Labour force,2287917
+Greater Melbourne,2017-12-01,Labour force,2304459
+Greater Melbourne,2018-03-01,Labour force,2319510
+Greater Melbourne,2018-06-01,Labour force,2330394
+Greater Melbourne,2018-09-01,Labour force,2339938
+Greater Melbourne,2018-12-01,Labour force,2354032
+Greater Melbourne,2019-03-01,Labour force,2372324
+Greater Melbourne,2019-06-01,Labour force,2394464
+Greater Melbourne,2019-09-01,Labour force,2420955
+Greater Melbourne,2019-12-01,Labour force,2442311
+Greater Melbourne,2020-03-01,Labour force,2844633

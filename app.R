@@ -135,8 +135,11 @@ region_list <- c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Po
                  "City of Moonee Valley", "Greater Melbourne")
 
 selected_regions <- c("City of Moonee Valley", "Greater Melbourne")
+selected_sa2 <- c("Flemington", "Moonee Ponds", "Keilor East")
 
 jobseeker_joined <- read_csv("app_data/jobseeker_joined.csv")
+jobseeker_joined_rate <- read_csv("app_data/jobseeker_joined_rate.csv")
+jobseeker_joined_total <- read_csv("app_data/jobseeker_joined_total.csv")
 
 js_mv_num <- jobseeker_joined %>% 
     filter(month == jobseeker_month) %>% 
@@ -194,7 +197,9 @@ salm_current_month <- sa2_vic_current_unemp_rate %>%
 
 salm_data_list <- c("Unemployment rate %", "No. of unemployed", "Labour force")
 
-salm_chart_data <- read_csv("app_data/salm_chart_data.csv")
+salm_chart_rate_data <- read_csv("app_data/salm_chart_rate_data.csv")
+salm_chart_unemp_data <- read_csv("app_data/salm_chart_unemp_data.csv")
+salm_chart_lf_data <- read_csv("app_data/salm_chart_lf_data.csv")
 
 salm_table_data <- read_csv("app_data/salm_table_data.csv") %>% 
     mutate(`No. of unemployed` = format(`No. of unemployed`, big.mark = ","),
@@ -237,12 +242,15 @@ sidebar <- dashboardSidebar(
         ),
         menuItem("Jobseeker and Youth Allowance",
                  menuSubItem("Jobseeker map", tabName = "jobseeker_map"),
-                 menuSubItem("Jobseeker graph", tabName = "jobseeker_graph"),
+                 menuSubItem("Jobseeker rate graph", tabName = "jobseeker_rate_graph"),
+                 menuSubItem("Jobseeker totals graph", tabName = "jobseeker_total_graph"),
                  menuSubItem("Jobseeker table", tabName = "jobseeker_table")
         ),
         menuItem("Unemployment and labour force",
                  menuSubItem("Unemployment rate map", tabName = "unemp_map"),
-                 menuSubItem("Unemployment graph", tabName = "unemp_graph"),
+                 menuSubItem("Unemployment rate graph", tabName = "salm_rate_graph"),
+                 menuSubItem("Number of unemployed graph", tabName = "salm_unemp_graph"),
+                 menuSubItem("Labour force graph", tabName = "salm_lf_graph"),
                  menuSubItem("Unemployment table", tabName = "unemp_table")
         ),
         menuItem("Timeline of key events", tabName = "timeline"),
@@ -390,7 +398,7 @@ body <- dashboardBody(
                            "ABS, 3235.0 - Regional Population by Age and Sex (2018)"),
                     tags$body(HTML(glue("</br>Last updated {jobseeker_publication_date}"))), width = 12)
         ),
-        tabItem(tabName = "jobseeker_graph",
+        tabItem(tabName = "jobseeker_rate_graph",
                 fluidRow(
                     box(title = 'JobSeeker and Youth Allowance (excluding students and apprentices) recipients',
                         tags$body(HTML("Total recipients and normalised to the 15-64 y.o. population. ",
@@ -398,19 +406,38 @@ body <- dashboardBody(
                                        "</br>Hover over the graph to see values.")), width = 12)
                 ),
                 fluidRow(
-                    box(selectInput(inputId = "js_graph_input",
-                                    label = "Select the data type",
-                                    choices = js_data_list,
-                                    selected = "Percentage aged 15-64 on either JobSeeker or Youth Allowance"),
-                    ),
-                    box(checkboxGroupInput(inputId = "js_region_input",
+                    box(checkboxGroupInput(inputId = "js_region_rate_input",
                                            label = "Select the regions",
                                            choices = region_list,
                                            selected = selected_regions,
                                            inline = TRUE),
-                    ),
+                    width = 12),
                 ),
-                fluidRow(plotlyOutput("jobseeker_lines") %>% 
+                fluidRow(plotlyOutput("jobseeker_rate_lines") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
+                ),
+                box(title = 'Sources:',
+                    tags$a(href="https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile", target="_blank",
+                           "Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile; "),
+                    tags$a(href="https://www.abs.gov.au/AUSSTATS/abs@.nsf/mf/3235.0", target="_blank",
+                           "ABS, 3235.0 - Regional Population by Age and Sex (2018)"),
+                    tags$body(HTML(glue("</br>Last updated {jobseeker_publication_date}"))), width = 12)
+        ),
+        tabItem(tabName = "jobseeker_total_graph",
+                fluidRow(
+                    box(title = 'JobSeeker and Youth Allowance (excluding students and apprentices) recipients',
+                        tags$body(HTML("The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>",
+                                       "</br>Hover over the graph to see values.")), width = 12)
+                ),
+                fluidRow(
+                    box(checkboxGroupInput(inputId = "js_region_total_input",
+                                           label = "Select the regions",
+                                           choices = region_list,
+                                           selected = selected_sa2,
+                                           inline = TRUE),
+                    width = 12),
+                ),
+                fluidRow(plotlyOutput("jobseeker_total_lines") %>% 
                              withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 box(title = 'Sources:',
@@ -451,27 +478,65 @@ body <- dashboardBody(
                            "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
                     tags$body(HTML(glue("</br>Last updated {salm_publication_date}"))), width = 12)
         ),
-        tabItem(tabName = "unemp_graph",
+        tabItem(tabName = "salm_rate_graph",
                 fluidRow(
-                    box(title = 'Unemployment and labour force',
-                        tags$body(HTML(glue("Unemployment rate, number of unemployed and labour force. ",
-                                            "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>",
+                    box(title = 'Unemployment Rate (%)',
+                        tags$body(HTML(glue("The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>",
                                             "</br>Hover over the graph to see values."))), width = 12)
                 ),
                 fluidRow(
-                    box(selectInput(inputId = "salm_data_input",
-                                    label = "Select the data type",
-                                    choices = salm_data_list,
-                                    selected = "Unemployment rate %"),
-                    ),
-                    box(checkboxGroupInput(inputId = "salm_region_input",
+                    box(checkboxGroupInput(inputId = "salm_region_rate_input",
                                            label = "Select the regions",
                                            choices = region_list,
                                            selected = selected_regions,
                                            inline = TRUE),
-                    ),
+                    width = 12),
                 ),
-                fluidRow(plotlyOutput("salm_lines") %>% 
+                fluidRow(plotlyOutput("salm_rate_lines") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
+                ),
+                box(title = 'Sources:',
+                    tags$a(href="https://www.employment.gov.au/small-area-labour-markets-publication-0", target="_blank",
+                           "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
+                    tags$body(HTML(glue("</br>Last updated {salm_publication_date}"))), width = 12)
+        ),
+        tabItem(tabName = "salm_unemp_graph",
+                fluidRow(
+                    box(title = 'Number of unemployed',
+                        tags$body(HTML(glue("The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>",
+                                            "</br>Hover over the graph to see values."))), width = 12)
+                ),
+                fluidRow(
+                    box(checkboxGroupInput(inputId = "salm_region_unemp_input",
+                                           label = "Select the regions",
+                                           choices = region_list,
+                                           selected = selected_sa2,
+                                           inline = TRUE),
+                        width = 12),
+                ),
+                fluidRow(plotlyOutput("salm_unemp_lines") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
+                ),
+                box(title = 'Sources:',
+                    tags$a(href="https://www.employment.gov.au/small-area-labour-markets-publication-0", target="_blank",
+                           "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
+                    tags$body(HTML(glue("</br>Last updated {salm_publication_date}"))), width = 12)
+        ),
+        tabItem(tabName = "salm_lf_graph",
+                fluidRow(
+                    box(title = 'Labour force',
+                        tags$body(HTML(glue("The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>",
+                                            "</br>Hover over the graph to see values."))), width = 12)
+                ),
+                fluidRow(
+                    box(checkboxGroupInput(inputId = "salm_region_lf_input",
+                                           label = "Select the regions",
+                                           choices = region_list,
+                                           selected = selected_sa2,
+                                           inline = TRUE),
+                        width = 12),
+                ),
+                fluidRow(plotlyOutput("salm_lf_lines") %>% 
                              withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 box(title = 'Sources:',
@@ -559,10 +624,14 @@ server <- function(input, output) {
                                           ))
     
     # jobseeker data   
-    jobseeker_joined_filtered <- reactive({
-        jobseeker_joined %>% 
-            filter(data_type == input$js_graph_input) %>% 
-            filter(region %in% input$js_region_input) 
+    jobseeker_joined_rate_filtered <- reactive({
+        jobseeker_joined_rate %>% 
+            filter(region %in% input$js_region_rate_input) 
+    })
+    
+    jobseeker_joined_total_filtered <- reactive({
+        jobseeker_joined_total %>% 
+            filter(region %in% input$js_region_total_input) 
     })
     
     output$jobseeker_large_table <- renderDT(jobseeker_large,
@@ -571,10 +640,19 @@ server <- function(input, output) {
                                              ))
     
     # salm data
-    salm_chart_data_filtered <- reactive({
-        salm_chart_data %>% 
-            filter(data_type == input$salm_data_input) %>% 
-            filter(region %in% input$salm_region_input)
+    salm_chart_rate_data_filtered <- reactive({
+        salm_chart_rate_data %>% 
+            filter(region %in% input$salm_region_rate_input)
+    })
+    
+    salm_chart_unemp_data_filtered <- reactive({
+        salm_chart_unemp_data %>% 
+            filter(region %in% input$salm_region_unemp_input)
+    })
+    
+    salm_chart_lf_data_filtered <- reactive({
+        salm_chart_lf_data %>% 
+            filter(region %in% input$salm_region_lf_input)
     })
     
     output$salm_large_table <- renderDT(salm_table_data,
@@ -616,21 +694,48 @@ server <- function(input, output) {
     })
     
     # jobseeker lines
-    output$jobseeker_lines <- renderPlotly({
+    output$jobseeker_rate_lines <- renderPlotly({
         plot_ly() %>% 
-            add_trace(data = jobseeker_joined_filtered(), x = ~month, y = ~values,
-                      mode = "lines+markers", color = ~region) %>% 
-            layout(xaxis = list(title = 'Month'), yaxis = list(title = "Value")) %>%
+            add_trace(data = jobseeker_joined_rate_filtered(), x = ~month, y = ~values,
+                      mode = "lines+markers", color = ~region, hovertemplate = paste("%{y:.1f}%")) %>% 
+            layout(xaxis = list(title = 'Month'), yaxis = list(title = "Percentage of 15-64 y.o.")) %>%
+            layout(hovermode = "x unified",
+                   xaxis = list(type = 'date', tickformat = "%b %Y"))
+    })
+    
+    output$jobseeker_total_lines <- renderPlotly({
+        plot_ly() %>% 
+            add_trace(data = jobseeker_joined_total_filtered(), x = ~month, y = ~values,
+                      mode = "lines+markers", color = ~region, hovertemplate = paste("%{y:,.0f}")) %>% 
+            layout(xaxis = list(title = 'Month'), yaxis = list(title = "Count")) %>%
             layout(hovermode = "x unified",
                    xaxis = list(type = 'date', tickformat = "%b %Y"))
     })
     
     # salm lines
-    output$salm_lines <- renderPlotly({
+    output$salm_rate_lines <- renderPlotly({
         plot_ly() %>% 
-            add_trace(data = salm_chart_data_filtered(), x = ~date, y = ~values,
-                      mode = "lines+markers", color = ~region) %>% 
-            layout(xaxis = list(title = 'Month'), yaxis = list(title = "Value")) %>%
+            add_trace(data = salm_chart_rate_data_filtered(), x = ~date, y = ~values,
+                      mode = "lines+markers", color = ~region, hovertemplate = paste("%{y:.1f}%")) %>% 
+            layout(xaxis = list(title = 'Month'), yaxis = list(title = "Unemployment rate (%)")) %>%
+            layout(hovermode = "x unified",
+                   xaxis = list(type = 'date', tickformat = "%b %Y"))
+    })
+    
+    output$salm_unemp_lines <- renderPlotly({
+        plot_ly() %>% 
+            add_trace(data = salm_chart_unemp_data_filtered(), x = ~date, y = ~values,
+                      mode = "lines+markers", color = ~region, hovertemplate = paste("%{y:,.0f}")) %>% 
+            layout(xaxis = list(title = 'Month'), yaxis = list(title = "Count")) %>%
+            layout(hovermode = "x unified",
+                   xaxis = list(type = 'date', tickformat = "%b %Y"))
+    })
+    
+    output$salm_lf_lines <- renderPlotly({
+        plot_ly() %>% 
+            add_trace(data = salm_chart_lf_data_filtered(), x = ~date, y = ~values,
+                      mode = "lines+markers", color = ~region, hovertemplate = paste("%{y:,.0f}")) %>% 
+            layout(xaxis = list(title = 'Month'), yaxis = list(title = "Count")) %>%
             layout(hovermode = "x unified",
                    xaxis = list(type = 'date', tickformat = "%b %Y"))
     })

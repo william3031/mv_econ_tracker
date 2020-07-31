@@ -155,6 +155,14 @@ jobseeker_joined <- left_join(jobseeker_all, joined_ages) %>%
                              "Percentage aged 15-64 on either JobSeeker or Youth Allowance"))
 write_csv(jobseeker_joined, "app_data/jobseeker_joined.csv")
 
+jobseeker_joined_rate <- jobseeker_joined %>% 
+  filter(data_type == "Percentage aged 15-64 on either JobSeeker or Youth Allowance")
+write_csv(jobseeker_joined_rate, "app_data/jobseeker_joined_rate.csv")
+
+jobseeker_joined_total <- jobseeker_joined %>% 
+  filter(data_type == "Total JobSeeker and Youth allowance recipients")
+write_csv(jobseeker_joined_total, "app_data/jobseeker_joined_total.csv")
+
 js_data_list <- c("Total JobSeeker and Youth allowance recipients", "Percentage aged 15-64 on either JobSeeker or Youth Allowance", 
              "JobSeeker payment recipients", "Youth Allowance recipients")
 
