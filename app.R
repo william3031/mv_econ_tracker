@@ -34,7 +34,6 @@ jobseeker_publication_date <- "17 July 2020"
 # salm
 salm_publication_date <- "31 July 2020"
 
-
 ## jobs and wages data ####
 jobs_wages_index <- read_csv("app_data/jobs_wages_index.csv")
 
@@ -587,8 +586,10 @@ server <- function(input, output) {
     # jobs wages plotly change line
     output$jobs_wages_line <- renderPlotly({
         plot_ly() %>% 
-            add_trace(data = jobs_index, x = ~date, y = ~values, name = "Jobs", mode = "lines+markers") %>% 
-            add_trace(data = wages_index, x = ~date, y = ~values, name = "Wages", mode = "lines+markers") %>% 
+            add_trace(data = jobs_index, x = ~date, y = ~values, name = "Jobs",
+                      mode = "lines+markers", hovertemplate = paste("%{y:.1f}%")) %>% 
+            add_trace(data = wages_index, x = ~date, y = ~values, name = "Wages",
+                      mode = "lines+markers", hovertemplate = paste("%{y:.1f}%")) %>% 
             layout(xaxis = list(title = 'Date'), yaxis = list(title = "Change % (from 14 March)")) %>%
             layout(hovermode = "x unified",
                    xaxis = list(type = 'date', tickformat = "%d %b"))
@@ -597,8 +598,10 @@ server <- function(input, output) {
     # jobs wages plotly change line
     output$jobs_wages_age_bar <- renderPlotly({
         plot_ly() %>% 
-            add_trace(data = jobs_wages_by_age_data_males_filtered(), x = ~age_group, y = ~latest_week, type = 'bar', name = 'Males') %>% 
-            add_trace(data = jobs_wages_by_age_data_females_filtered(), x = ~age_group, y = ~latest_week, type = 'bar', name = 'Females') %>% 
+            add_trace(data = jobs_wages_by_age_data_males_filtered(), x = ~age_group, y = ~latest_week,
+                      type = 'bar', name = 'Males', hovertemplate = paste("%{y:.1f}%")) %>% 
+            add_trace(data = jobs_wages_by_age_data_females_filtered(), x = ~age_group, y = ~latest_week,
+                      type = 'bar', name = 'Females', hovertemplate = paste("%{y:.1f}%")) %>% 
             layout(xaxis = list(title = 'Age'), yaxis = list(title = "Change % (from 14 March)")) %>%
             layout(hovermode = "x unified")
     })
@@ -606,13 +609,14 @@ server <- function(input, output) {
     # jobs wages industry  plotly bar
     output$jobs_wages_industry_bar <- renderPlotly({
         plot_ly() %>% 
-            add_trace(data = jobs_wages_industry_filtered(), y = ~industry_division, x = ~latest_week, type = 'bar', orientation = 'h') %>% 
+            add_trace(data = jobs_wages_industry_filtered(), y = ~industry_division, x = ~latest_week,
+                      type = 'bar', orientation = 'h', hovertemplate = paste("%{x:.1f}%"), name = 'Change') %>% 
             layout(yaxis = list(title = 'Industry'), xaxis = list(title = "Change % (from 14 March)")) %>%
             layout(hovermode = "x unified")
     })
     
     # jobseeker lines
-    output$jobseeker_lines <- renderPlotly({
+    output$jobseeker_rate_lines <- renderPlotly({
         plot_ly() %>% 
             add_trace(data = jobseeker_joined_filtered(), x = ~month, y = ~values,
                       mode = "lines+markers", color = ~region) %>% 
