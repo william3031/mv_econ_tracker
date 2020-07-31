@@ -616,7 +616,7 @@ server <- function(input, output) {
     })
     
     # jobseeker lines
-    output$jobseeker_rate_lines <- renderPlotly({
+    output$jobseeker_lines <- renderPlotly({
         plot_ly() %>% 
             add_trace(data = jobseeker_joined_filtered(), x = ~month, y = ~values,
                       mode = "lines+markers", color = ~region) %>% 
