@@ -33,6 +33,8 @@ jobkeeper_text <- "Numbers are based on the total number of <b>processed applica
 jobseeker_publication_date <- "17 July 2020"
 # salm
 salm_publication_date <- "31 July 2020"
+# region text
+region_text <- "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>"
 
 ## jobs and wages data ####
 jobs_wages_index <- read_csv("app_data/jobs_wages_index.csv")
@@ -210,9 +212,9 @@ unemp_rate_mv_num <- salm_table_data %>%
     select(`Unemployment rate %`) %>% 
     pull()
 
-# timeline ############
-timeline_data <- read_csv("data_in/timeline.csv") %>% 
-    mutate(start = dmy(start))
+## timeline ############
+#timeline_data <- read_csv("data_in/timeline.csv") %>% 
+#    mutate(start = dmy(start))
     
 # the app ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -249,11 +251,11 @@ sidebar <- dashboardSidebar(
         menuItem("Unemployment and labour force",
                  menuSubItem("Unemployment rate map", tabName = "unemp_map"),
                  menuSubItem("Unemployment rate graph", tabName = "salm_rate_graph"),
-                 menuSubItem("Number of unemployed graph", tabName = "salm_unemp_graph"),
                  menuSubItem("Labour force graph", tabName = "salm_lf_graph"),
+                 menuSubItem("Number of unemployed graph", tabName = "salm_unemp_graph"),
                  menuSubItem("Unemployment table", tabName = "unemp_table")
         ),
-        menuItem("Timeline of key events", tabName = "timeline"),
+        #menuItem("Timeline of key events", tabName = "timeline"),
         menuItem("Notes", tabName = "notes")
     )
 )
@@ -402,7 +404,7 @@ body <- dashboardBody(
                 fluidRow(
                     box(title = 'JobSeeker and Youth Allowance (excluding students and apprentices) recipients',
                         tags$body(HTML("Total recipients and normalised to the 15-64 y.o. population. ",
-                                       "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>",
+                                       region_text,
                                        "</br>Hover over the graph to see values.")), width = 12)
                 ),
                 fluidRow(
@@ -426,7 +428,7 @@ body <- dashboardBody(
         tabItem(tabName = "jobseeker_total_graph",
                 fluidRow(
                     box(title = 'JobSeeker and Youth Allowance (excluding students and apprentices) recipients',
-                        tags$body(HTML("The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>",
+                        tags$body(HTML(region_text,
                                        "</br>Hover over the graph to see values.")), width = 12)
                 ),
                 fluidRow(
@@ -481,7 +483,7 @@ body <- dashboardBody(
         tabItem(tabName = "salm_rate_graph",
                 fluidRow(
                     box(title = 'Unemployment Rate (%)',
-                        tags$body(HTML(glue("The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>",
+                        tags$body(HTML(glue(region_text,
                                             "</br>Hover over the graph to see values."))), width = 12)
                 ),
                 fluidRow(
@@ -500,32 +502,11 @@ body <- dashboardBody(
                            "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
                     tags$body(HTML(glue("</br>Last updated {salm_publication_date}"))), width = 12)
         ),
-        tabItem(tabName = "salm_unemp_graph",
-                fluidRow(
-                    box(title = 'Number of unemployed',
-                        tags$body(HTML(glue("The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>",
-                                            "</br>Hover over the graph to see values."))), width = 12)
-                ),
-                fluidRow(
-                    box(checkboxGroupInput(inputId = "salm_region_unemp_input",
-                                           label = "Select the regions",
-                                           choices = region_list,
-                                           selected = selected_sa2,
-                                           inline = TRUE),
-                        width = 12),
-                ),
-                fluidRow(plotlyOutput("salm_unemp_lines") %>% 
-                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
-                ),
-                box(title = 'Sources:',
-                    tags$a(href="https://www.employment.gov.au/small-area-labour-markets-publication-0", target="_blank",
-                           "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
-                    tags$body(HTML(glue("</br>Last updated {salm_publication_date}"))), width = 12)
-        ),
         tabItem(tabName = "salm_lf_graph",
                 fluidRow(
-                    box(title = 'Labour force',
-                        tags$body(HTML(glue("The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>",
+                    box(title = 'Number or people in the labour force',
+                        tags$body(HTML(glue(region_text,
+                                            "</br>The labour force is made up of people aged over 15 years that either have a job or are looking for one.</br>",
                                             "</br>Hover over the graph to see values."))), width = 12)
                 ),
                 fluidRow(
@@ -537,6 +518,29 @@ body <- dashboardBody(
                         width = 12),
                 ),
                 fluidRow(plotlyOutput("salm_lf_lines") %>% 
+                             withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
+                ),
+                box(title = 'Sources:',
+                    tags$a(href="https://www.employment.gov.au/small-area-labour-markets-publication-0", target="_blank",
+                           "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
+                    tags$body(HTML(glue("</br>Last updated {salm_publication_date}"))), width = 12)
+        ),
+        tabItem(tabName = "salm_unemp_graph",
+                fluidRow(
+                    box(title = 'Number of unemployed',
+                        tags$body(HTML(glue(region_text,
+                                            "</br>The number of unemployed is made of those in the labour force that are looking for work.</br>",
+                                            "</br>Hover over the graph to see values."))), width = 12)
+                ),
+                fluidRow(
+                    box(checkboxGroupInput(inputId = "salm_region_unemp_input",
+                                           label = "Select the regions",
+                                           choices = region_list,
+                                           selected = selected_sa2,
+                                           inline = TRUE),
+                        width = 12),
+                ),
+                fluidRow(plotlyOutput("salm_unemp_lines") %>% 
                              withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
                 ),
                 box(title = 'Sources:',
@@ -799,10 +803,10 @@ server <- function(input, output) {
                  width = 4, color = "yellow")
     })
     
-    ## timeline #####
-    output$timeline <- renderTimevis({
-        timevis(timeline_data)
-    })
+    ### timeline #####
+    #output$timeline <- renderTimevis({
+    #    timevis(timeline_data)
+    #})
 
 }
 
