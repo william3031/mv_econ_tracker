@@ -84,6 +84,7 @@ jobs_wages_by_industry <- read_csv("app_data/jobs_wages_by_industry.csv") %>%
 mv_shp <- st_read("app_data/shp/mvcc_boundary.shp")
 
 # jobkeeper data
+jk_raw <- read_csv("app_data/jk_raw.csv")
 postcodes_jk <- st_read("app_data/shp/postcodes_simplified.shp")
 
 # postcode map data
