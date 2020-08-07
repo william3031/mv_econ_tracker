@@ -631,6 +631,7 @@ server <- function(input, output) {
     
     # jobkeeper data
     output$jobkeeper_mv_table <- renderDT(jk_mv_postcodes,
+                                          rownames = FALSE,
                                           options = list(dom = 't',
                                                          columnDefs = list(list(className = 'dt-right', targets = "_all"))
                                           ))
@@ -647,8 +648,9 @@ server <- function(input, output) {
     })
     
     output$jobseeker_large_table <- renderDT(jobseeker_large,
+                                             rownames = FALSE,
                                              options = list(dom = 't',
-                                                            columnDefs = list(list(className = 'dt-right', targets = c(2, 4, 6)))
+                                                            columnDefs = list(list(className = 'dt-right', targets = "_all"))
                                              ))
     
     # salm data
@@ -668,8 +670,9 @@ server <- function(input, output) {
     })
     
     output$salm_large_table <- renderDT(salm_table_data,
+                                        rownames = FALSE,
                                         options = list(dom = 't',
-                                                       columnDefs = list(list(className = 'dt-right', targets = c(3, 4)))
+                                                       columnDefs = list(list(className = 'dt-right', targets = "_all"))
                                         ))
     
     # graphs ###############################################
