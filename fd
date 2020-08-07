@@ -1,0 +1,299 @@
+[33mcommit 6a4de8f5b7870dd37e73fbae5a99ed24cd987533[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Aug 7 16:25:58 2020 +1000
+
+    to delete
+
+[33mcommit d73597d5103e0d35ff7e6bed5cbb2351dc2128b2[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Aug 7 16:20:23 2020 +1000
+
+    fixed jobkeeper
+
+[33mcommit f00d1d4d2a243ebffbcb7eab8634221a3ce5ba25[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Aug 7 16:12:36 2020 +1000
+
+    jobkeeper data
+
+[33mcommit 6be7b42258484dc850b10ea03e83dc7c7776bd5f[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Aug 7 09:51:03 2020 +1000
+
+    removed timeline. added labour force deets
+
+[33mcommit 6b4c7ca8f8b37e5f0378f5949fa18b841ed2465e[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Jul 31 16:11:43 2020 +1000
+
+    extra salm file deleted
+
+[33mcommit 47efcbf9058dd2081bea4415ce0eae7b5e674cc1[m[33m ([m[1;32msplit[m[33m)[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Jul 31 16:09:16 2020 +1000
+
+    split graphs
+
+[33mcommit 7b59e1e59aff1ae0e81b73b7a0c8b4accef4286f[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Jul 31 15:31:16 2020 +1000
+
+    fixed seeker lines
+
+[33mcommit 8ba823551789c15a3e24cf23cebee22602e46690[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Jul 31 15:24:46 2020 +1000
+
+    traces jobseeker
+
+[33mcommit 133877c30605e27bd602a77cb069cb6635c73152[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Jul 31 14:47:06 2020 +1000
+
+    updated salm data
+
+[33mcommit 931069162254f8a4eadd50d40fe4b390fbffaa3f[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Jul 31 09:58:58 2020 +1000
+
+    wider select input
+
+[33mcommit 516e0f44a571b279ac40181f0812616ea1783c59[m
+Author: william3031 <williamlai5@gmail.com>
+Date:   Thu Jul 30 22:36:58 2020 +1000
+
+    industry order
+
+[33mcommit 78c73cf2791adae0850bdcde7f2efebbc116d3d7[m
+Author: william3031 <williamlai5@gmail.com>
+Date:   Thu Jul 30 20:19:08 2020 +1000
+
+    industry order
+
+[33mcommit 73a17b0efbf1679574462c5b74e52e328400281d[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Thu Jul 30 16:58:28 2020 +1000
+
+    added industry graph
+
+[33mcommit 94b5610b6c8faa2bc5d184f9e632f4d4b0e31894[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Tue Jul 28 12:17:14 2020 +1000
+
+    updated data
+
+[33mcommit e25b6742d51597627dd965590345162ae5ffaf29[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Jul 24 12:16:37 2020 +1000
+
+    freq of updates text
+
+[33mcommit 9f6202feefd9ebac74f26571b994dcfaffbba8a0[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Jul 24 11:18:25 2020 +1000
+
+    timeline correction
+
+[33mcommit 33c187f1429638025068226c2887cfbcf9fd59ce[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Wed Jul 22 13:22:00 2020 +1000
+
+    timeline update
+
+[33mcommit 11bf00042cf816b67dc5184bf09065ab45809257[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Wed Jul 22 12:21:30 2020 +1000
+
+    timeline added
+
+[33mcommit 198cf8887d9e274cc0719419c140b2d7e400325e[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Wed Jul 22 08:31:19 2020 +1000
+
+    added text
+
+[33mcommit 85dba4a4aabb97ae5dd3b6cded50e20671f62af4[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Tue Jul 21 10:18:31 2020 +1000
+
+    extra line break
+
+[33mcommit 2ccebf02901e667ef5b3501279dc48b7d4404a1a[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Tue Jul 21 09:47:20 2020 +1000
+
+    basemaps removed
+
+[33mcommit 57b6bb050f698d5792c06d5e6956d527cb2c60fa[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Tue Jul 21 09:08:33 2020 +1000
+
+    one spinner on home
+
+[33mcommit ce1c4d86b9ad937d96b2f9b985d3efafa5a48bf7[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 15:09:11 2020 +1000
+
+    plotly date formats
+
+[33mcommit d6baeec7614288131824696fa2270da2093ecd4a[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 14:22:21 2020 +1000
+
+    tmap titles
+
+[33mcommit c63b39a1b72828b3cfb66f71c56e088eab1b572e[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 14:17:03 2020 +1000
+
+    tmap popup suffix
+
+[33mcommit 27d5f4e0b76556f2e138fd06c4a7047c75f66d26[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 14:11:53 2020 +1000
+
+    tmap popups
+
+[33mcommit b34d094f65512f3239299acba11110aec4284e17[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 13:42:13 2020 +1000
+
+    header width
+
+[33mcommit 96f5b8d49f990278223949b000451311ab551260[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 11:46:57 2020 +1000
+
+    text fixes
+
+[33mcommit 4389415a3317489a3a84e7aeca4f88c3fc151bd5[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 11:23:21 2020 +1000
+
+    spinners added
+
+[33mcommit 7e887ee7d33f73e5bbda8633933f25555991ad0b[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 10:56:15 2020 +1000
+
+    youth allowance text added
+
+[33mcommit 99f0af2a28a93bfe71820c0b6943b6898cc1fb19[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 10:36:43 2020 +1000
+
+    sa2 filtering fixed
+
+[33mcommit 1bb97d1c704b1771a0bbf689b3c8cff2701770d0[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 09:57:57 2020 +1000
+
+    jobseeker table really fixed
+
+[33mcommit 8e1f1a714eaf0bac8169c8dd5182bd8a3abdc32e[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 09:46:26 2020 +1000
+
+    fixed jobseeker table
+
+[33mcommit 21f23dedc4beccf61b81e82d7806f43ad5df3529[m
+Author: William Lai <44103957+william3031@users.noreply.github.com>
+Date:   Mon Jul 20 09:13:51 2020 +1000
+
+    Update README.md
+
+[33mcommit f73518e68e651874ee55a1d1cb1e4c67c46d86de[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 09:12:35 2020 +1000
+
+    extra text
+
+[33mcommit 8e03c7dc36a60c2143b20daaa2107548cd0a83e3[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 09:03:09 2020 +1000
+
+    text fixes
+
+[33mcommit 190deeb8b1a01b88a24d8caf9517f4eeb448ed5d[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Mon Jul 20 08:36:28 2020 +1000
+
+    added notes
+
+[33mcommit 43ac16f10ca2df2d1510456c9f9093b3e1ef44c5[m
+Author: william3031 <williamlai5@gmail.com>
+Date:   Sun Jul 19 21:08:27 2020 +1000
+
+    links added
+
+[33mcommit b8eaeb9d9b89156d9da860f679f7f5945a50d3ca[m
+Author: william3031 <williamlai5@gmail.com>
+Date:   Sun Jul 19 20:31:03 2020 +1000
+
+    valueboxes added
+
+[33mcommit 86c64335ee175f6dfb9c88a2fcb6bae5451ec10c[m
+Author: william3031 <williamlai5@gmail.com>
+Date:   Sun Jul 19 16:58:00 2020 +1000
+
+    tables fixed
+
+[33mcommit ef61920d30381058e86a0af370ef43637f7b5e6e[m
+Author: william3031 <williamlai5@gmail.com>
+Date:   Sun Jul 19 16:48:23 2020 +1000
+
+    salm data
+
+[33mcommit 608ea703d065bddd92f94b721b6bc96cd4d488e2[m
+Author: william3031 <williamlai5@gmail.com>
+Date:   Sun Jul 19 13:14:45 2020 +1000
+
+    salm map
+
+[33mcommit 2a4156ff2937f19363c0bca2369f0a978d270489[m
+Author: william3031 <williamlai5@gmail.com>
+Date:   Sat Jul 18 21:41:19 2020 +1000
+
+    started on salm
+
+[33mcommit ccceaf6de9a46b4745d2658539083b788ee60c77[m
+Author: william3031 <williamlai5@gmail.com>
+Date:   Sat Jul 18 12:36:59 2020 +1000
+
+    postcode text
+
+[33mcommit 0224ab662f457567e1e6d4f13787dc89b9187911[m
+Author: william3031 <williamlai5@gmail.com>
+Date:   Sat Jul 18 12:35:08 2020 +1000
+
+    updated postcode text
+
+[33mcommit 696e251f9e50fb66cfad485a139253c3c2bac64f[m
+Author: william3031 <williamlai5@gmail.com>
+Date:   Fri Jul 17 21:03:31 2020 +1000
+
+    jobseeker fixed
+
+[33mcommit fa634a69b7e13dc097f32eb36135de76bab8b438[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Jul 17 17:42:06 2020 +1000
+
+    need to fix graph
+
+[33mcommit e7f2ebe0b1b0ec803f2f5e47d48c7305bb99227b[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Jul 17 15:59:48 2020 +1000
+
+    hacked map jobseeker
+
+[33mcommit 52e0fb0413ed1974a5f725320586833167b3c126[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Jul 17 15:04:22 2020 +1000
+
+    shiny join issues
+
+[33mcommit f15617df3d8ccbcaf0c3f66ae8bb0afbd271b1e7[m
+Author: William Lai <Wlai@mvcc.vic.gov.au>
+Date:   Fri Jul 17 12:30:27 2020 +1000
+
+    j

@@ -8,6 +8,7 @@ pacman::p_load(tidyverse, readxl, janitor, scales, sf, rmapshaper, tmap, tmaptoo
 # read in data
 jk_raw <- read_excel("data_in/JobKeeper-data-20200731.xlsx", sheet = "Data", skip = 1) %>% 
   clean_names()
+write_csv(jk_raw, "app_data/jk_raw.csv")
 
 jk_colnames <- colnames(jk_raw1)
 

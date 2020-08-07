@@ -14,7 +14,7 @@ library(RColorBrewer)
 library(sf)
 library(lubridate)
 library(shinycssloaders)
-library(timevis)
+#library(timevis)
 
 #disable scientific notation
 options(scipen = 999)
@@ -84,6 +84,7 @@ jobs_wages_by_industry <- read_csv("app_data/jobs_wages_by_industry.csv") %>%
 mv_shp <- st_read("app_data/shp/mvcc_boundary.shp")
 
 # jobkeeper data
+jk_raw <- read_csv("app_data/jk_raw.csv")
 postcodes_jk <- st_read("app_data/shp/postcodes_simplified.shp")
 
 # postcode map data
@@ -570,20 +571,20 @@ body <- dashboardBody(
                            "Department of Education, Skills and Employment, Small Area Labour Markets publication"),
                     tags$body(HTML(glue("</br>Last updated {salm_publication_date}"))), width = 12)
         ),
-        # timeline #### 
-        tabItem(tabName = "timeline",
-                tags$head(
-                    tags$style(HTML(".vis-item.Federal { color: #00843D; background-color: #FFCD00; border-color: #00843D; }")),
-                    tags$style(HTML(".vis-item.State { color: white; background-color: #155DA4; border-color: #155DA4; }")),
-                    tags$style(HTML(".vis-item.Local { color: white; background-color: #41B6E6; border-color: #004F71; }"))
-                ),
-                fluidRow(
-                    box(title = 'Timeline of key events',
-                        tags$body(HTML("This section shows some of the key events since the start of the pandemic. Zoom in for more detail.")), width = 12),
-                    timevisOutput("timeline")  %>% 
-                        withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
-                )
-        ),
+        ## timeline #### 
+        #tabItem(tabName = "timeline",
+        #        tags$head(
+        #            tags$style(HTML(".vis-item.Federal { color: #00843D; background-color: #FFCD00; border-color: #00843D; }")),
+        #            tags$style(HTML(".vis-item.State { color: white; background-color: #155DA4; border-color: #155DA4; }")),
+        #            tags$style(HTML(".vis-item.Local { color: white; background-color: #41B6E6; border-color: #004F71; }"))
+        #        ),
+        #        fluidRow(
+        #            box(title = 'Timeline of key events',
+        #                tags$body(HTML("This section shows some of the key events since the start of the pandemic. Zoom in for more detail.")), width = 12),
+        #            timevisOutput("timeline")  %>% 
+        #                withSpinner(color="#31788F", type = getOption("spinner.type", default = 8))
+        #        )
+        #),
         
         ## Notes ####
         tabItem(tabName = "notes",
