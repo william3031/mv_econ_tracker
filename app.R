@@ -28,7 +28,6 @@ abs_publication_date <- "28 July 2020"
 # jobkeeper
 jobkeeper_publication_date <- "31 July 2020"
 jobkeeper_data_date <- "May 2020"
-jobkeeper_text <- "Numbers are based on the total number of <b>processed applications for organisations</b> for April and May."
 jobkeeper_map_text <- "Numbers are based on the total number of <b>processed applications for organisations for May 2020</b>."
 #jobseeker
 jobseeker_publication_date <- "17 July 2020"
@@ -373,7 +372,7 @@ body <- dashboardBody(
         tabItem(tabName = "jobkeeper_table",
                 fluidRow(
                     box(title = 'Jobkeeper data (MV postcodes)',
-                        tags$body(HTML(glue("{jobkeeper_text}</br>",
+                        tags$body(HTML(glue("Numbers are based on the total number of <b>processed applications for organisations</b></br>",
                                                                              "</br> Noting that:</br>",
                                                                              "* 3031 Flemington (partly in the City of Melbourne) and Kensington (mostly in the City of Melbourne)</br>",
                                                                              "* 3032 Ascot Vale and Travancore, as well as Maribyrnong (City of Maribyrnong) </br>",
