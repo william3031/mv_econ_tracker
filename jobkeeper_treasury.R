@@ -6,27 +6,36 @@
 pacman::p_load(tidyverse, readxl, janitor, scales, sf, rmapshaper, tmap, tmaptools, leaflet)
 
 # read in data
-jk_raw <- read_excel("data_in/jobkeeper-data.xlsx", sheet = "Data") %>% 
-  clean_names() %>% 
-  rename(count = april_application_count) %>%  # change as needed
+jk_raw <- read_excel("data_in/JobKeeper-data-20200731.xlsx", sheet = "Data", skip = 1) %>% 
+  clean_names()
+
+jk_colnames <- colnames(jk_raw1)
+
+jk_map_data <- jk_raw %>% 
+  select(postcode, jk_colnames[length(jk_colnames)]) %>% 
+  rename(count = jk_colnames[length(jk_colnames)]) %>%  # change as needed
   filter(!is.na(count))
-write_csv(jk_raw, "app_data/jk_raw.csv")
+write_csv(jk_map_data, "app_data/jk_map_data.csv")
 
 # join to selected postcodes and export # simplify the postcode file first!!!!!!!!!!!!!!!!!!!!!
 postcodes_jk <- st_read("data_in/shp/postcodes_simplified.shp") 
 
-jk_join <- left_join(postcodes_jk, jk_raw) %>%  
+jk_join <- left_join(postcodes_jk, jk_map_data) %>%  
   filter(!is.na(count)) 
 
-
-# perhaps just match to postcodes and have a table? #####################
 jk_mv_postcodes <- jk_raw %>% 
+  pivot_longer(-postcode, names_to = "month", values_to = "count") %>% 
+  mutate(month = str_remove_all(month, "_application_count")) %>% 
+  mutate(month = str_to_title(month)) %>% 
+  mutate(count = as.integer(count)) %>% 
+  pivot_wider(postcode, names_from = month, values_from = count) %>% 
   mutate(postcode = str_trim(postcode)) %>%
   filter(postcode != "TOTAL") %>% 
   filter(postcode %in% c("3031", "3032", "3033", "3034", "3039", "3040", "3041", "3042")) %>% 
   adorn_totals() %>% 
-  mutate(count = comma(count)) %>% 
-  rename(Postcode = postcode, Count = count)
+  mutate_at(vars(-postcode), ~format((.), nsmall = 0 )) %>% 
+  mutate_at(vars(-postcode), ~prettyNum((.), big.mark =',')) %>% 
+  rename(Postcode = postcode)
 
 ## postcodes were simplified first using rmapshaper
 #pex <- st_read("data_in/shp/postcodes_ex.shp") %>% 

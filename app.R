@@ -26,9 +26,10 @@ date_updated <- format(Sys.time(), '%d %B %Y')
 #abs
 abs_publication_date <- "28 July 2020"
 # jobkeeper
-jobkeeper_publication_date <- "24 June 2020"
-jobkeeper_data_date <- "April 2020"
-jobkeeper_text <- "Numbers are based on the total number of <b>processed applications for organisations</b> for the April fortnights – 30 March 2020 to 26 April 2020 (as at midnight 3 June 2020)"
+jobkeeper_publication_date <- "31 July 2020"
+jobkeeper_data_date <- "May 2020"
+jobkeeper_text <- "Numbers are based on the total number of <b>processed applications for organisations</b> for April and May."
+jobkeeper_map_text <- "Numbers are based on the total number of <b>processed applications for organisations for May 2020</b>."
 #jobseeker
 jobseeker_publication_date <- "17 July 2020"
 # salm
@@ -85,25 +86,33 @@ mv_shp <- st_read("app_data/shp/mvcc_boundary.shp")
 # jobkeeper data
 postcodes_jk <- st_read("app_data/shp/postcodes_simplified.shp")
 
-# raw data
-jk_raw <- read_csv("app_data/jk_raw.csv")
+# postcode map data
+jk_map_data <- read_csv("app_data/jk_map_data.csv")
 
 # join to shp
-jk_join <- left_join(postcodes_jk, jk_raw) %>%  
+jk_join <- left_join(postcodes_jk, jk_map_data) %>%  
     filter(!is.na(count)) 
 
 # mv postcodes
 jk_mv_postcodes <- jk_raw %>% 
+    pivot_longer(-postcode, names_to = "month", values_to = "count") %>% 
+    mutate(month = str_remove_all(month, "_application_count")) %>% 
+    mutate(month = str_to_title(month)) %>% 
+    mutate(count = as.integer(count)) %>% 
+    pivot_wider(postcode, names_from = month, values_from = count) %>% 
     mutate(postcode = str_trim(postcode)) %>%
     filter(postcode != "TOTAL") %>% 
     filter(postcode %in% c("3031", "3032", "3033", "3034", "3039", "3040", "3041", "3042")) %>% 
     adorn_totals() %>% 
-    mutate(count = format(count, big.mark = ",")) %>% 
-    rename(Postcode = postcode, Count = count)
+    mutate_at(vars(-postcode), ~format((.), nsmall = 0 )) %>% 
+    mutate_at(vars(-postcode), ~prettyNum((.), big.mark =',')) %>% 
+    rename(Postcode = postcode)
+
+jk_mv_select_month <- colnames(jk_mv_postcodes[length(jk_mv_postcodes)])
 
 jk_mv_num <- jk_mv_postcodes %>% 
     filter(Postcode == "Total") %>% 
-    select(Count) %>% 
+    select(jk_mv_select_month) %>% 
     pull()
 
 ## jobseeker data #################################
@@ -348,7 +357,7 @@ body <- dashboardBody(
         tabItem(tabName = "jobkeeper_map",
                 fluidRow(
                     box(title = 'Jobkeeper data (all postcodes)',
-                        tags$body(HTML(glue("{jobkeeper_text}</br>",
+                        tags$body(HTML(glue("{jobkeeper_map_text}</br>",
                                             "</br>Click on the map to see the counts."))), width = 12)
                 ),
                 fluidRow(tmapOutput("jobkeeper_pc_map") %>% 
@@ -380,8 +389,7 @@ body <- dashboardBody(
                 box(title = 'Source:',
                     tags$a(href="https://treasury.gov.au/coronavirus/jobkeeper/data", target="_blank",
                            "Treasury JobKeeper postcode data"),
-                    tags$body(HTML(glue("</br>Last updated {jobkeeper_publication_date}</br>",
-                                        "Note: Postcode polygons have been simplified."))), width = 12)
+                    tags$body(HTML(glue("</br>Last updated {jobkeeper_publication_date}</br>"))), width = 12)
         ),
         ## jobseeker####
         tabItem(tabName = "jobseeker_map",
@@ -590,7 +598,7 @@ body <- dashboardBody(
                                             "The <b> unemployment rate </b> is calculated as the <b>number of unemployed / number in the labour force * 100</b>."))), width = 12),
                     box(title = 'Frequency of updates',
                         tags$body(HTML(glue("* Jobs and wages data for Victoria (updated fortnightly)</br>",
-                                            "* Jobkeeper recipients (ad hoc)</br>",
+                                            "* Jobkeeper recipients (updated monthly)</br>",
                                             "* JobSeeker and Youth Allowance recipients (updated monthly)</br>",
                                             "* Unemployment and labour force data (updated quarterly)"))), width = 12),
                     box(title = 'More information:',
@@ -624,7 +632,7 @@ server <- function(input, output) {
     # jobkeeper data
     output$jobkeeper_mv_table <- renderDT(jk_mv_postcodes,
                                           options = list(dom = 't',
-                                                         columnDefs = list(list(className = 'dt-right', targets = 2))
+                                                         columnDefs = list(list(className = 'dt-right', targets = "_all"))
                                           ))
     
     # jobseeker data   
@@ -750,6 +758,7 @@ server <- function(input, output) {
         tm_shape(jk_join, bbox = tmaptools::bb(mv_shp)) +
             tm_fill("count",
                     title = "Recipients",
+                    breaks = c(0, 1250, 2500, 3750, 5000, 6250, 7500),
                     popup.vars = c("Recipients " = "count"),
                     popup.format=list(count=list(digits=0))) +
             tm_borders(alpha = 0.5, col = "grey") +
