@@ -5,7 +5,6 @@
 pacman::p_load(tidyverse, readxl, ggrepel, janitor, scales, glue, lubridate, plotly)
 
 # dates for glue
-abs_publication_date <- "28 July 2020"
 abs_path <- "data_in/6160055001_do004.xlsx"
 
 # read in raw data - VICTORIAN DATA
