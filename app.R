@@ -24,7 +24,7 @@ options(scipen = 999)
 # date updated
 date_updated <- format(Sys.time(), '%d %B %Y')
 #abs
-abs_publication_date <- "28 July 2020"
+abs_publication_date <- "11 August 2020"
 # jobkeeper
 jobkeeper_publication_date <- "31 July 2020"
 jobkeeper_data_date <- "May 2020"
