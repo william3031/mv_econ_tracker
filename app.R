@@ -30,7 +30,7 @@ jobkeeper_publication_date <- "31 July 2020"
 jobkeeper_data_date <- "May 2020"
 jobkeeper_map_text <- glue("Numbers are based on the total number of <b>processed applications for organisations for {jobkeeper_data_date}</b>.")
 #jobseeker
-jobseeker_publication_date <- "17 July 2020"
+jobseeker_publication_date <- "14 August 2020"
 # salm
 salm_publication_date <- "31 July 2020"
 # region text
