@@ -25,6 +25,14 @@ data_jun20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipien
   clean_names() %>% remove_empty() %>%
   mutate(month = "2020-06-26")
 
+data_jul20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-monthly-profile-july-2020.xlsx",
+                         sheet = "Table 4 - By SA2", skip = 6) %>%
+  clean_names() %>% remove_empty() %>%
+  mutate(month = "2020-07-31")
+
+# update the mohths in the bind rows below
+
+  
 ## simplication of the sa2_file
 #sa2_initial <- st_read("data_in/shp/sa2_2016_gmelb.shp") %>% # already deleted, but is an export from gisdb
 #  clean_names() %>% 
@@ -41,8 +49,8 @@ gr_melb_sa2_5digit_list <- sa2_greater %>%
   select(sa2_5digit) %>% 
   pull()
 
-### merge it all
-jobseeker_merge <- bind_rows(data_mar20, data_apr20, data_may20, data_jun20) %>% 
+### merge it all - update here
+jobseeker_merge <- bind_rows(data_mar20, data_apr20, data_may20, data_jun20, data_jul20) %>% 
   mutate(job_seeker_payment = parse_number(job_seeker_payment), youth_allowance_other = parse_number(youth_allowance_other)) %>% 
   mutate(month = ymd(month)) %>%
   mutate(total = job_seeker_payment + youth_allowance_other) %>% 

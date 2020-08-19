@@ -8979,3 +8979,2248 @@ sa2,sa2_name,month,data_type,values
 21480,Warrnambool - South,2020-06-26,Total JobSeeker and Youth allowance recipients,944
 21480,Warrnambool - South,2020-06-26,Population aged 15-64,8282
 21480,Warrnambool - South,2020-06-26,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.4
+21001,Alfredton,2020-07-31,JobSeeker payment recipients,482
+21001,Alfredton,2020-07-31,Youth Allowance recipients,99
+21001,Alfredton,2020-07-31,Total JobSeeker and Youth allowance recipients,581
+21001,Alfredton,2020-07-31,Population aged 15-64,8525
+21001,Alfredton,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.8
+21002,Ballarat,2020-07-31,JobSeeker payment recipients,688
+21002,Ballarat,2020-07-31,Youth Allowance recipients,73
+21002,Ballarat,2020-07-31,Total JobSeeker and Youth allowance recipients,761
+21002,Ballarat,2020-07-31,Population aged 15-64,7728
+21002,Ballarat,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.8
+21003,Ballarat - North,2020-07-31,JobSeeker payment recipients,1450
+21003,Ballarat - North,2020-07-31,Youth Allowance recipients,177
+21003,Ballarat - North,2020-07-31,Total JobSeeker and Youth allowance recipients,1627
+21003,Ballarat - North,2020-07-31,Population aged 15-64,15369
+21003,Ballarat - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.6
+21004,Ballarat - South,2020-07-31,JobSeeker payment recipients,1968
+21004,Ballarat - South,2020-07-31,Youth Allowance recipients,329
+21004,Ballarat - South,2020-07-31,Total JobSeeker and Youth allowance recipients,2297
+21004,Ballarat - South,2020-07-31,Population aged 15-64,16435
+21004,Ballarat - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14
+21005,Buninyong,2020-07-31,JobSeeker payment recipients,297
+21005,Buninyong,2020-07-31,Youth Allowance recipients,27
+21005,Buninyong,2020-07-31,Total JobSeeker and Youth allowance recipients,324
+21005,Buninyong,2020-07-31,Population aged 15-64,4867
+21005,Buninyong,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.7
+21006,Delacombe,2020-07-31,JobSeeker payment recipients,521
+21006,Delacombe,2020-07-31,Youth Allowance recipients,96
+21006,Delacombe,2020-07-31,Total JobSeeker and Youth allowance recipients,617
+21006,Delacombe,2020-07-31,Population aged 15-64,5063
+21006,Delacombe,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.2
+21007,Smythes Creek,2020-07-31,JobSeeker payment recipients,145
+21007,Smythes Creek,2020-07-31,Youth Allowance recipients,19
+21007,Smythes Creek,2020-07-31,Total JobSeeker and Youth allowance recipients,164
+21007,Smythes Creek,2020-07-31,Population aged 15-64,2611
+21007,Smythes Creek,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.3
+21008,Wendouree - Miners Rest,2020-07-31,JobSeeker payment recipients,1125
+21008,Wendouree - Miners Rest,2020-07-31,Youth Allowance recipients,182
+21008,Wendouree - Miners Rest,2020-07-31,Total JobSeeker and Youth allowance recipients,1307
+21008,Wendouree - Miners Rest,2020-07-31,Population aged 15-64,9043
+21008,Wendouree - Miners Rest,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.5
+21009,Bacchus Marsh Region,2020-07-31,JobSeeker payment recipients,331
+21009,Bacchus Marsh Region,2020-07-31,Youth Allowance recipients,27
+21009,Bacchus Marsh Region,2020-07-31,Total JobSeeker and Youth allowance recipients,358
+21009,Bacchus Marsh Region,2020-07-31,Population aged 15-64,3879
+21009,Bacchus Marsh Region,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.2
+21010,Creswick - Clunes,2020-07-31,JobSeeker payment recipients,529
+21010,Creswick - Clunes,2020-07-31,Youth Allowance recipients,61
+21010,Creswick - Clunes,2020-07-31,Total JobSeeker and Youth allowance recipients,590
+21010,Creswick - Clunes,2020-07-31,Population aged 15-64,4679
+21010,Creswick - Clunes,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.6
+21011,Daylesford,2020-07-31,JobSeeker payment recipients,644
+21011,Daylesford,2020-07-31,Youth Allowance recipients,41
+21011,Daylesford,2020-07-31,Total JobSeeker and Youth allowance recipients,685
+21011,Daylesford,2020-07-31,Population aged 15-64,5558
+21011,Daylesford,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.3
+21012,Gordon (Vic.),2020-07-31,JobSeeker payment recipients,251
+21012,Gordon (Vic.),2020-07-31,Youth Allowance recipients,31
+21012,Gordon (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,282
+21012,Gordon (Vic.),2020-07-31,Population aged 15-64,3724
+21012,Gordon (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.6
+21013,Avoca,2020-07-31,JobSeeker payment recipients,247
+21013,Avoca,2020-07-31,Youth Allowance recipients,19
+21013,Avoca,2020-07-31,Total JobSeeker and Youth allowance recipients,266
+21013,Avoca,2020-07-31,Population aged 15-64,1871
+21013,Avoca,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.2
+21014,Beaufort,2020-07-31,JobSeeker payment recipients,249
+21014,Beaufort,2020-07-31,Youth Allowance recipients,30
+21014,Beaufort,2020-07-31,Total JobSeeker and Youth allowance recipients,279
+21014,Beaufort,2020-07-31,Population aged 15-64,2666
+21014,Beaufort,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.5
+21015,Golden Plains - North,2020-07-31,JobSeeker payment recipients,330
+21015,Golden Plains - North,2020-07-31,Youth Allowance recipients,48
+21015,Golden Plains - North,2020-07-31,Total JobSeeker and Youth allowance recipients,378
+21015,Golden Plains - North,2020-07-31,Population aged 15-64,2952
+21015,Golden Plains - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.8
+21016,Maryborough (Vic.),2020-07-31,JobSeeker payment recipients,701
+21016,Maryborough (Vic.),2020-07-31,Youth Allowance recipients,113
+21016,Maryborough (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,814
+21016,Maryborough (Vic.),2020-07-31,Population aged 15-64,4377
+21016,Maryborough (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,18.6
+21017,Maryborough Region,2020-07-31,JobSeeker payment recipients,499
+21017,Maryborough Region,2020-07-31,Youth Allowance recipients,50
+21017,Maryborough Region,2020-07-31,Total JobSeeker and Youth allowance recipients,549
+21017,Maryborough Region,2020-07-31,Population aged 15-64,3146
+21017,Maryborough Region,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,17.5
+21018,Bendigo,2020-07-31,JobSeeker payment recipients,1384
+21018,Bendigo,2020-07-31,Youth Allowance recipients,194
+21018,Bendigo,2020-07-31,Total JobSeeker and Youth allowance recipients,1578
+21018,Bendigo,2020-07-31,Population aged 15-64,9661
+21018,Bendigo,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,16.3
+21019,California Gully - Eaglehawk,2020-07-31,JobSeeker payment recipients,1009
+21019,California Gully - Eaglehawk,2020-07-31,Youth Allowance recipients,169
+21019,California Gully - Eaglehawk,2020-07-31,Total JobSeeker and Youth allowance recipients,1178
+21019,California Gully - Eaglehawk,2020-07-31,Population aged 15-64,7963
+21019,California Gully - Eaglehawk,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.8
+21020,East Bendigo - Kennington,2020-07-31,JobSeeker payment recipients,734
+21020,East Bendigo - Kennington,2020-07-31,Youth Allowance recipients,119
+21020,East Bendigo - Kennington,2020-07-31,Total JobSeeker and Youth allowance recipients,853
+21020,East Bendigo - Kennington,2020-07-31,Population aged 15-64,8295
+21020,East Bendigo - Kennington,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.3
+21021,Flora Hill - Spring Gully,2020-07-31,JobSeeker payment recipients,595
+21021,Flora Hill - Spring Gully,2020-07-31,Youth Allowance recipients,96
+21021,Flora Hill - Spring Gully,2020-07-31,Total JobSeeker and Youth allowance recipients,691
+21021,Flora Hill - Spring Gully,2020-07-31,Population aged 15-64,6408
+21021,Flora Hill - Spring Gully,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.8
+21022,Kangaroo Flat - Golden Square,2020-07-31,JobSeeker payment recipients,1331
+21022,Kangaroo Flat - Golden Square,2020-07-31,Youth Allowance recipients,189
+21022,Kangaroo Flat - Golden Square,2020-07-31,Total JobSeeker and Youth allowance recipients,1520
+21022,Kangaroo Flat - Golden Square,2020-07-31,Population aged 15-64,12463
+21022,Kangaroo Flat - Golden Square,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.2
+21023,Maiden Gully,2020-07-31,JobSeeker payment recipients,158
+21023,Maiden Gully,2020-07-31,Youth Allowance recipients,28
+21023,Maiden Gully,2020-07-31,Total JobSeeker and Youth allowance recipients,186
+21023,Maiden Gully,2020-07-31,Population aged 15-64,3429
+21023,Maiden Gully,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.4
+21024,Strathfieldsaye,2020-07-31,JobSeeker payment recipients,253
+21024,Strathfieldsaye,2020-07-31,Youth Allowance recipients,43
+21024,Strathfieldsaye,2020-07-31,Total JobSeeker and Youth allowance recipients,296
+21024,Strathfieldsaye,2020-07-31,Population aged 15-64,5872
+21024,Strathfieldsaye,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5
+21025,White Hills - Ascot,2020-07-31,JobSeeker payment recipients,672
+21025,White Hills - Ascot,2020-07-31,Youth Allowance recipients,114
+21025,White Hills - Ascot,2020-07-31,Total JobSeeker and Youth allowance recipients,786
+21025,White Hills - Ascot,2020-07-31,Population aged 15-64,8475
+21025,White Hills - Ascot,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.3
+21026,Bendigo Region - South,2020-07-31,JobSeeker payment recipients,285
+21026,Bendigo Region - South,2020-07-31,Youth Allowance recipients,38
+21026,Bendigo Region - South,2020-07-31,Total JobSeeker and Youth allowance recipients,323
+21026,Bendigo Region - South,2020-07-31,Population aged 15-64,4984
+21026,Bendigo Region - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.5
+21027,Castlemaine,2020-07-31,JobSeeker payment recipients,634
+21027,Castlemaine,2020-07-31,Youth Allowance recipients,67
+21027,Castlemaine,2020-07-31,Total JobSeeker and Youth allowance recipients,701
+21027,Castlemaine,2020-07-31,Population aged 15-64,6611
+21027,Castlemaine,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.6
+21028,Castlemaine Region,2020-07-31,JobSeeker payment recipients,560
+21028,Castlemaine Region,2020-07-31,Youth Allowance recipients,43
+21028,Castlemaine Region,2020-07-31,Total JobSeeker and Youth allowance recipients,603
+21028,Castlemaine Region,2020-07-31,Population aged 15-64,5240
+21028,Castlemaine Region,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.5
+21029,Heathcote,2020-07-31,JobSeeker payment recipients,420
+21029,Heathcote,2020-07-31,Youth Allowance recipients,30
+21029,Heathcote,2020-07-31,Total JobSeeker and Youth allowance recipients,450
+21029,Heathcote,2020-07-31,Population aged 15-64,2666
+21029,Heathcote,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,16.9
+21030,Kyneton,2020-07-31,JobSeeker payment recipients,480
+21030,Kyneton,2020-07-31,Youth Allowance recipients,50
+21030,Kyneton,2020-07-31,Total JobSeeker and Youth allowance recipients,530
+21030,Kyneton,2020-07-31,Population aged 15-64,6150
+21030,Kyneton,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.6
+21031,Woodend,2020-07-31,JobSeeker payment recipients,230
+21031,Woodend,2020-07-31,Youth Allowance recipients,24
+21031,Woodend,2020-07-31,Total JobSeeker and Youth allowance recipients,254
+21031,Woodend,2020-07-31,Population aged 15-64,4520
+21031,Woodend,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.6
+21032,Bendigo Region - North,2020-07-31,JobSeeker payment recipients,247
+21032,Bendigo Region - North,2020-07-31,Youth Allowance recipients,18
+21032,Bendigo Region - North,2020-07-31,Total JobSeeker and Youth allowance recipients,265
+21032,Bendigo Region - North,2020-07-31,Population aged 15-64,2816
+21032,Bendigo Region - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.4
+21033,Loddon,2020-07-31,JobSeeker payment recipients,503
+21033,Loddon,2020-07-31,Youth Allowance recipients,45
+21033,Loddon,2020-07-31,Total JobSeeker and Youth allowance recipients,548
+21033,Loddon,2020-07-31,Population aged 15-64,3982
+21033,Loddon,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13.8
+21034,Bannockburn,2020-07-31,JobSeeker payment recipients,223
+21034,Bannockburn,2020-07-31,Youth Allowance recipients,30
+21034,Bannockburn,2020-07-31,Total JobSeeker and Youth allowance recipients,253
+21034,Bannockburn,2020-07-31,Population aged 15-64,4510
+21034,Bannockburn,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.6
+21035,Golden Plains - South,2020-07-31,JobSeeker payment recipients,288
+21035,Golden Plains - South,2020-07-31,Youth Allowance recipients,44
+21035,Golden Plains - South,2020-07-31,Total JobSeeker and Youth allowance recipients,332
+21035,Golden Plains - South,2020-07-31,Population aged 15-64,4658
+21035,Golden Plains - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.1
+21036,Winchelsea,2020-07-31,JobSeeker payment recipients,300
+21036,Winchelsea,2020-07-31,Youth Allowance recipients,22
+21036,Winchelsea,2020-07-31,Total JobSeeker and Youth allowance recipients,322
+21036,Winchelsea,2020-07-31,Population aged 15-64,3671
+21036,Winchelsea,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.8
+21037,Belmont,2020-07-31,JobSeeker payment recipients,782
+21037,Belmont,2020-07-31,Youth Allowance recipients,110
+21037,Belmont,2020-07-31,Total JobSeeker and Youth allowance recipients,892
+21037,Belmont,2020-07-31,Population aged 15-64,9225
+21037,Belmont,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.7
+21038,Corio - Norlane,2020-07-31,JobSeeker payment recipients,2986
+21038,Corio - Norlane,2020-07-31,Youth Allowance recipients,442
+21038,Corio - Norlane,2020-07-31,Total JobSeeker and Youth allowance recipients,3428
+21038,Corio - Norlane,2020-07-31,Population aged 15-64,17985
+21038,Corio - Norlane,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,19.1
+21039,Geelong,2020-07-31,JobSeeker payment recipients,978
+21039,Geelong,2020-07-31,Youth Allowance recipients,116
+21039,Geelong,2020-07-31,Total JobSeeker and Youth allowance recipients,1094
+21039,Geelong,2020-07-31,Population aged 15-64,9378
+21039,Geelong,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.7
+21040,Geelong West - Hamlyn Heights,2020-07-31,JobSeeker payment recipients,1056
+21040,Geelong West - Hamlyn Heights,2020-07-31,Youth Allowance recipients,120
+21040,Geelong West - Hamlyn Heights,2020-07-31,Total JobSeeker and Youth allowance recipients,1176
+21040,Geelong West - Hamlyn Heights,2020-07-31,Population aged 15-64,13815
+21040,Geelong West - Hamlyn Heights,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.5
+21041,Grovedale,2020-07-31,JobSeeker payment recipients,1330
+21041,Grovedale,2020-07-31,Youth Allowance recipients,207
+21041,Grovedale,2020-07-31,Total JobSeeker and Youth allowance recipients,1537
+21041,Grovedale,2020-07-31,Population aged 15-64,17899
+21041,Grovedale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.6
+21042,Highton,2020-07-31,JobSeeker payment recipients,706
+21042,Highton,2020-07-31,Youth Allowance recipients,101
+21042,Highton,2020-07-31,Total JobSeeker and Youth allowance recipients,807
+21042,Highton,2020-07-31,Population aged 15-64,15271
+21042,Highton,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.3
+21043,Lara,2020-07-31,JobSeeker payment recipients,926
+21043,Lara,2020-07-31,Youth Allowance recipients,122
+21043,Lara,2020-07-31,Total JobSeeker and Youth allowance recipients,1048
+21043,Lara,2020-07-31,Population aged 15-64,13338
+21043,Lara,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.9
+21044,Leopold,2020-07-31,JobSeeker payment recipients,604
+21044,Leopold,2020-07-31,Youth Allowance recipients,66
+21044,Leopold,2020-07-31,Total JobSeeker and Youth allowance recipients,670
+21044,Leopold,2020-07-31,Population aged 15-64,8470
+21044,Leopold,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.9
+21045,Newcomb - Moolap,2020-07-31,JobSeeker payment recipients,1259
+21045,Newcomb - Moolap,2020-07-31,Youth Allowance recipients,159
+21045,Newcomb - Moolap,2020-07-31,Total JobSeeker and Youth allowance recipients,1418
+21045,Newcomb - Moolap,2020-07-31,Population aged 15-64,9288
+21045,Newcomb - Moolap,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,15.3
+21046,Newtown (Vic.),2020-07-31,JobSeeker payment recipients,363
+21046,Newtown (Vic.),2020-07-31,Youth Allowance recipients,37
+21046,Newtown (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,400
+21046,Newtown (Vic.),2020-07-31,Population aged 15-64,6815
+21046,Newtown (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.9
+21047,North Geelong - Bell Park,2020-07-31,JobSeeker payment recipients,1028
+21047,North Geelong - Bell Park,2020-07-31,Youth Allowance recipients,120
+21047,North Geelong - Bell Park,2020-07-31,Total JobSeeker and Youth allowance recipients,1148
+21047,North Geelong - Bell Park,2020-07-31,Population aged 15-64,9408
+21047,North Geelong - Bell Park,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.2
+21048,Clifton Springs,2020-07-31,JobSeeker payment recipients,869
+21048,Clifton Springs,2020-07-31,Youth Allowance recipients,106
+21048,Clifton Springs,2020-07-31,Total JobSeeker and Youth allowance recipients,975
+21048,Clifton Springs,2020-07-31,Population aged 15-64,8599
+21048,Clifton Springs,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.3
+21049,Lorne - Anglesea,2020-07-31,JobSeeker payment recipients,240
+21049,Lorne - Anglesea,2020-07-31,Youth Allowance recipients,24
+21049,Lorne - Anglesea,2020-07-31,Total JobSeeker and Youth allowance recipients,264
+21049,Lorne - Anglesea,2020-07-31,Population aged 15-64,3135
+21049,Lorne - Anglesea,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.4
+21050,Ocean Grove - Barwon Heads,2020-07-31,JobSeeker payment recipients,1080
+21050,Ocean Grove - Barwon Heads,2020-07-31,Youth Allowance recipients,108
+21050,Ocean Grove - Barwon Heads,2020-07-31,Total JobSeeker and Youth allowance recipients,1188
+21050,Ocean Grove - Barwon Heads,2020-07-31,Population aged 15-64,16098
+21050,Ocean Grove - Barwon Heads,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.4
+21051,Portarlington,2020-07-31,JobSeeker payment recipients,619
+21051,Portarlington,2020-07-31,Youth Allowance recipients,49
+21051,Portarlington,2020-07-31,Total JobSeeker and Youth allowance recipients,668
+21051,Portarlington,2020-07-31,Population aged 15-64,4084
+21051,Portarlington,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,16.4
+21052,Point Lonsdale - Queenscliff,2020-07-31,JobSeeker payment recipients,158
+21052,Point Lonsdale - Queenscliff,2020-07-31,Youth Allowance recipients,14
+21052,Point Lonsdale - Queenscliff,2020-07-31,Total JobSeeker and Youth allowance recipients,172
+21052,Point Lonsdale - Queenscliff,2020-07-31,Population aged 15-64,2135
+21052,Point Lonsdale - Queenscliff,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.1
+21053,Torquay,2020-07-31,JobSeeker payment recipients,885
+21053,Torquay,2020-07-31,Youth Allowance recipients,92
+21053,Torquay,2020-07-31,Total JobSeeker and Youth allowance recipients,977
+21053,Torquay,2020-07-31,Population aged 15-64,12889
+21053,Torquay,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.6
+21054,Alexandra,2020-07-31,JobSeeker payment recipients,396
+21054,Alexandra,2020-07-31,Youth Allowance recipients,44
+21054,Alexandra,2020-07-31,Total JobSeeker and Youth allowance recipients,440
+21054,Alexandra,2020-07-31,Population aged 15-64,3717
+21054,Alexandra,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.8
+21055,Euroa,2020-07-31,JobSeeker payment recipients,367
+21055,Euroa,2020-07-31,Youth Allowance recipients,39
+21055,Euroa,2020-07-31,Total JobSeeker and Youth allowance recipients,406
+21055,Euroa,2020-07-31,Population aged 15-64,3520
+21055,Euroa,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.5
+21056,Kilmore - Broadford,2020-07-31,JobSeeker payment recipients,903
+21056,Kilmore - Broadford,2020-07-31,Youth Allowance recipients,106
+21056,Kilmore - Broadford,2020-07-31,Total JobSeeker and Youth allowance recipients,1009
+21056,Kilmore - Broadford,2020-07-31,Population aged 15-64,9472
+21056,Kilmore - Broadford,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.7
+21057,Mansfield (Vic.),2020-07-31,JobSeeker payment recipients,491
+21057,Mansfield (Vic.),2020-07-31,Youth Allowance recipients,38
+21057,Mansfield (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,529
+21057,Mansfield (Vic.),2020-07-31,Population aged 15-64,5413
+21057,Mansfield (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.8
+21058,Nagambie,2020-07-31,JobSeeker payment recipients,257
+21058,Nagambie,2020-07-31,Youth Allowance recipients,19
+21058,Nagambie,2020-07-31,Total JobSeeker and Youth allowance recipients,276
+21058,Nagambie,2020-07-31,Population aged 15-64,2508
+21058,Nagambie,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11
+21059,Seymour,2020-07-31,JobSeeker payment recipients,571
+21059,Seymour,2020-07-31,Youth Allowance recipients,63
+21059,Seymour,2020-07-31,Total JobSeeker and Youth allowance recipients,634
+21059,Seymour,2020-07-31,Population aged 15-64,4079
+21059,Seymour,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,15.5
+21060,Seymour Region,2020-07-31,JobSeeker payment recipients,170
+21060,Seymour Region,2020-07-31,Youth Allowance recipients,17
+21060,Seymour Region,2020-07-31,Total JobSeeker and Youth allowance recipients,187
+21060,Seymour Region,2020-07-31,Population aged 15-64,2999
+21060,Seymour Region,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.2
+21062,Yea,2020-07-31,JobSeeker payment recipients,243
+21062,Yea,2020-07-31,Youth Allowance recipients,33
+21062,Yea,2020-07-31,Total JobSeeker and Youth allowance recipients,276
+21062,Yea,2020-07-31,Population aged 15-64,2120
+21062,Yea,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13
+21063,Benalla,2020-07-31,JobSeeker payment recipients,606
+21063,Benalla,2020-07-31,Youth Allowance recipients,75
+21063,Benalla,2020-07-31,Total JobSeeker and Youth allowance recipients,681
+21063,Benalla,2020-07-31,Population aged 15-64,5925
+21063,Benalla,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.5
+21064,Benalla Region,2020-07-31,JobSeeker payment recipients,216
+21064,Benalla Region,2020-07-31,Youth Allowance recipients,17
+21064,Benalla Region,2020-07-31,Total JobSeeker and Youth allowance recipients,233
+21064,Benalla Region,2020-07-31,Population aged 15-64,2207
+21064,Benalla Region,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.6
+21065,Rutherglen,2020-07-31,JobSeeker payment recipients,199
+21065,Rutherglen,2020-07-31,Youth Allowance recipients,18
+21065,Rutherglen,2020-07-31,Total JobSeeker and Youth allowance recipients,217
+21065,Rutherglen,2020-07-31,Population aged 15-64,2403
+21065,Rutherglen,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9
+21066,Wangaratta,2020-07-31,JobSeeker payment recipients,1048
+21066,Wangaratta,2020-07-31,Youth Allowance recipients,173
+21066,Wangaratta,2020-07-31,Total JobSeeker and Youth allowance recipients,1221
+21066,Wangaratta,2020-07-31,Population aged 15-64,11311
+21066,Wangaratta,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.8
+21067,Wangaratta Region,2020-07-31,JobSeeker payment recipients,406
+21067,Wangaratta Region,2020-07-31,Youth Allowance recipients,28
+21067,Wangaratta Region,2020-07-31,Total JobSeeker and Youth allowance recipients,434
+21067,Wangaratta Region,2020-07-31,Population aged 15-64,5883
+21067,Wangaratta Region,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.4
+21068,Beechworth,2020-07-31,JobSeeker payment recipients,211
+21068,Beechworth,2020-07-31,Youth Allowance recipients,23
+21068,Beechworth,2020-07-31,Total JobSeeker and Youth allowance recipients,234
+21068,Beechworth,2020-07-31,Population aged 15-64,2875
+21068,Beechworth,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.1
+21069,Bright - Mount Beauty,2020-07-31,JobSeeker payment recipients,524
+21069,Bright - Mount Beauty,2020-07-31,Youth Allowance recipients,64
+21069,Bright - Mount Beauty,2020-07-31,Total JobSeeker and Youth allowance recipients,588
+21069,Bright - Mount Beauty,2020-07-31,Population aged 15-64,5074
+21069,Bright - Mount Beauty,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.6
+21070,Chiltern - Indigo Valley,2020-07-31,JobSeeker payment recipients,162
+21070,Chiltern - Indigo Valley,2020-07-31,Youth Allowance recipients,15
+21070,Chiltern - Indigo Valley,2020-07-31,Total JobSeeker and Youth allowance recipients,177
+21070,Chiltern - Indigo Valley,2020-07-31,Population aged 15-64,2005
+21070,Chiltern - Indigo Valley,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.8
+21071,Myrtleford,2020-07-31,JobSeeker payment recipients,264
+21071,Myrtleford,2020-07-31,Youth Allowance recipients,25
+21071,Myrtleford,2020-07-31,Total JobSeeker and Youth allowance recipients,289
+21071,Myrtleford,2020-07-31,Population aged 15-64,2869
+21071,Myrtleford,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.1
+21072,Towong,2020-07-31,JobSeeker payment recipients,304
+21072,Towong,2020-07-31,Youth Allowance recipients,23
+21072,Towong,2020-07-31,Total JobSeeker and Youth allowance recipients,327
+21072,Towong,2020-07-31,Population aged 15-64,3439
+21072,Towong,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.5
+21073,West Wodonga,2020-07-31,JobSeeker payment recipients,797
+21073,West Wodonga,2020-07-31,Youth Allowance recipients,143
+21073,West Wodonga,2020-07-31,Total JobSeeker and Youth allowance recipients,940
+21073,West Wodonga,2020-07-31,Population aged 15-64,9902
+21073,West Wodonga,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.5
+21074,Wodonga,2020-07-31,JobSeeker payment recipients,1562
+21074,Wodonga,2020-07-31,Youth Allowance recipients,278
+21074,Wodonga,2020-07-31,Total JobSeeker and Youth allowance recipients,1840
+21074,Wodonga,2020-07-31,Population aged 15-64,16628
+21074,Wodonga,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.1
+21075,Yackandandah,2020-07-31,JobSeeker payment recipients,137
+21075,Yackandandah,2020-07-31,Youth Allowance recipients,15
+21075,Yackandandah,2020-07-31,Total JobSeeker and Youth allowance recipients,152
+21075,Yackandandah,2020-07-31,Population aged 15-64,2823
+21075,Yackandandah,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.4
+21076,Drouin,2020-07-31,JobSeeker payment recipients,1032
+21076,Drouin,2020-07-31,Youth Allowance recipients,120
+21076,Drouin,2020-07-31,Total JobSeeker and Youth allowance recipients,1152
+21076,Drouin,2020-07-31,Population aged 15-64,10733
+21076,Drouin,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.7
+21077,Mount Baw Baw Region,2020-07-31,JobSeeker payment recipients,352
+21077,Mount Baw Baw Region,2020-07-31,Youth Allowance recipients,30
+21077,Mount Baw Baw Region,2020-07-31,Total JobSeeker and Youth allowance recipients,382
+21077,Mount Baw Baw Region,2020-07-31,Population aged 15-64,3738
+21077,Mount Baw Baw Region,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.2
+21078,Trafalgar (Vic.),2020-07-31,JobSeeker payment recipients,352
+21078,Trafalgar (Vic.),2020-07-31,Youth Allowance recipients,34
+21078,Trafalgar (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,386
+21078,Trafalgar (Vic.),2020-07-31,Population aged 15-64,4886
+21078,Trafalgar (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.9
+21079,Warragul,2020-07-31,JobSeeker payment recipients,950
+21079,Warragul,2020-07-31,Youth Allowance recipients,141
+21079,Warragul,2020-07-31,Total JobSeeker and Youth allowance recipients,1091
+21079,Warragul,2020-07-31,Population aged 15-64,12186
+21079,Warragul,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9
+21081,Bairnsdale,2020-07-31,JobSeeker payment recipients,982
+21081,Bairnsdale,2020-07-31,Youth Allowance recipients,162
+21081,Bairnsdale,2020-07-31,Total JobSeeker and Youth allowance recipients,1144
+21081,Bairnsdale,2020-07-31,Population aged 15-64,8851
+21081,Bairnsdale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.9
+21082,Bruthen - Omeo,2020-07-31,JobSeeker payment recipients,462
+21082,Bruthen - Omeo,2020-07-31,Youth Allowance recipients,37
+21082,Bruthen - Omeo,2020-07-31,Total JobSeeker and Youth allowance recipients,499
+21082,Bruthen - Omeo,2020-07-31,Population aged 15-64,4715
+21082,Bruthen - Omeo,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.6
+21084,Lakes Entrance,2020-07-31,JobSeeker payment recipients,866
+21084,Lakes Entrance,2020-07-31,Youth Allowance recipients,76
+21084,Lakes Entrance,2020-07-31,Total JobSeeker and Youth allowance recipients,942
+21084,Lakes Entrance,2020-07-31,Population aged 15-64,5448
+21084,Lakes Entrance,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,17.3
+21085,Orbost,2020-07-31,JobSeeker payment recipients,618
+21085,Orbost,2020-07-31,Youth Allowance recipients,48
+21085,Orbost,2020-07-31,Total JobSeeker and Youth allowance recipients,666
+21085,Orbost,2020-07-31,Population aged 15-64,3571
+21085,Orbost,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,18.7
+21086,Paynesville,2020-07-31,JobSeeker payment recipients,391
+21086,Paynesville,2020-07-31,Youth Allowance recipients,40
+21086,Paynesville,2020-07-31,Total JobSeeker and Youth allowance recipients,431
+21086,Paynesville,2020-07-31,Population aged 15-64,3303
+21086,Paynesville,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13
+21087,Foster,2020-07-31,JobSeeker payment recipients,540
+21087,Foster,2020-07-31,Youth Allowance recipients,41
+21087,Foster,2020-07-31,Total JobSeeker and Youth allowance recipients,581
+21087,Foster,2020-07-31,Population aged 15-64,5001
+21087,Foster,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.6
+21089,Korumburra,2020-07-31,JobSeeker payment recipients,507
+21089,Korumburra,2020-07-31,Youth Allowance recipients,44
+21089,Korumburra,2020-07-31,Total JobSeeker and Youth allowance recipients,551
+21089,Korumburra,2020-07-31,Population aged 15-64,5713
+21089,Korumburra,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.6
+21090,Leongatha,2020-07-31,JobSeeker payment recipients,496
+21090,Leongatha,2020-07-31,Youth Allowance recipients,54
+21090,Leongatha,2020-07-31,Total JobSeeker and Youth allowance recipients,550
+21090,Leongatha,2020-07-31,Population aged 15-64,6559
+21090,Leongatha,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.4
+21091,Phillip Island,2020-07-31,JobSeeker payment recipients,960
+21091,Phillip Island,2020-07-31,Youth Allowance recipients,85
+21091,Phillip Island,2020-07-31,Total JobSeeker and Youth allowance recipients,1045
+21091,Phillip Island,2020-07-31,Population aged 15-64,6405
+21091,Phillip Island,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,16.3
+21093,Wonthaggi - Inverloch,2020-07-31,JobSeeker payment recipients,1763
+21093,Wonthaggi - Inverloch,2020-07-31,Youth Allowance recipients,186
+21093,Wonthaggi - Inverloch,2020-07-31,Total JobSeeker and Youth allowance recipients,1949
+21093,Wonthaggi - Inverloch,2020-07-31,Population aged 15-64,13287
+21093,Wonthaggi - Inverloch,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.7
+21094,Churchill,2020-07-31,JobSeeker payment recipients,775
+21094,Churchill,2020-07-31,Youth Allowance recipients,103
+21094,Churchill,2020-07-31,Total JobSeeker and Youth allowance recipients,878
+21094,Churchill,2020-07-31,Population aged 15-64,7496
+21094,Churchill,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.7
+21095,Moe - Newborough,2020-07-31,JobSeeker payment recipients,1640
+21095,Moe - Newborough,2020-07-31,Youth Allowance recipients,205
+21095,Moe - Newborough,2020-07-31,Total JobSeeker and Youth allowance recipients,1845
+21095,Moe - Newborough,2020-07-31,Population aged 15-64,10323
+21095,Moe - Newborough,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,17.9
+21096,Morwell,2020-07-31,JobSeeker payment recipients,1785
+21096,Morwell,2020-07-31,Youth Allowance recipients,238
+21096,Morwell,2020-07-31,Total JobSeeker and Youth allowance recipients,2023
+21096,Morwell,2020-07-31,Population aged 15-64,8557
+21096,Morwell,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,23.6
+21097,Traralgon,2020-07-31,JobSeeker payment recipients,1664
+21097,Traralgon,2020-07-31,Youth Allowance recipients,263
+21097,Traralgon,2020-07-31,Total JobSeeker and Youth allowance recipients,1927
+21097,Traralgon,2020-07-31,Population aged 15-64,17796
+21097,Traralgon,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.8
+21098,Yallourn North - Glengarry,2020-07-31,JobSeeker payment recipients,248
+21098,Yallourn North - Glengarry,2020-07-31,Youth Allowance recipients,28
+21098,Yallourn North - Glengarry,2020-07-31,Total JobSeeker and Youth allowance recipients,276
+21098,Yallourn North - Glengarry,2020-07-31,Population aged 15-64,3066
+21098,Yallourn North - Glengarry,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9
+21100,Longford - Loch Sport,2020-07-31,JobSeeker payment recipients,360
+21100,Longford - Loch Sport,2020-07-31,Youth Allowance recipients,25
+21100,Longford - Loch Sport,2020-07-31,Total JobSeeker and Youth allowance recipients,385
+21100,Longford - Loch Sport,2020-07-31,Population aged 15-64,2643
+21100,Longford - Loch Sport,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.6
+21101,Maffra,2020-07-31,JobSeeker payment recipients,760
+21101,Maffra,2020-07-31,Youth Allowance recipients,97
+21101,Maffra,2020-07-31,Total JobSeeker and Youth allowance recipients,857
+21101,Maffra,2020-07-31,Population aged 15-64,8566
+21101,Maffra,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10
+21102,Rosedale,2020-07-31,JobSeeker payment recipients,224
+21102,Rosedale,2020-07-31,Youth Allowance recipients,21
+21102,Rosedale,2020-07-31,Total JobSeeker and Youth allowance recipients,245
+21102,Rosedale,2020-07-31,Population aged 15-64,3328
+21102,Rosedale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.4
+21103,Sale,2020-07-31,JobSeeker payment recipients,1021
+21103,Sale,2020-07-31,Youth Allowance recipients,188
+21103,Sale,2020-07-31,Total JobSeeker and Youth allowance recipients,1209
+21103,Sale,2020-07-31,Population aged 15-64,9340
+21103,Sale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.9
+21104,Yarram,2020-07-31,JobSeeker payment recipients,386
+21104,Yarram,2020-07-31,Youth Allowance recipients,28
+21104,Yarram,2020-07-31,Total JobSeeker and Youth allowance recipients,414
+21104,Yarram,2020-07-31,Population aged 15-64,3184
+21104,Yarram,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13
+21105,Brunswick,2020-07-31,JobSeeker payment recipients,2043
+21105,Brunswick,2020-07-31,Youth Allowance recipients,92
+21105,Brunswick,2020-07-31,Total JobSeeker and Youth allowance recipients,2135
+21105,Brunswick,2020-07-31,Population aged 15-64,23201
+21105,Brunswick,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.2
+21106,Brunswick East,2020-07-31,JobSeeker payment recipients,874
+21106,Brunswick East,2020-07-31,Youth Allowance recipients,65
+21106,Brunswick East,2020-07-31,Total JobSeeker and Youth allowance recipients,939
+21106,Brunswick East,2020-07-31,Population aged 15-64,10633
+21106,Brunswick East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.8
+21107,Brunswick West,2020-07-31,JobSeeker payment recipients,1058
+21107,Brunswick West,2020-07-31,Youth Allowance recipients,69
+21107,Brunswick West,2020-07-31,Total JobSeeker and Youth allowance recipients,1127
+21107,Brunswick West,2020-07-31,Population aged 15-64,11399
+21107,Brunswick West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.9
+21108,Coburg,2020-07-31,JobSeeker payment recipients,1852
+21108,Coburg,2020-07-31,Youth Allowance recipients,131
+21108,Coburg,2020-07-31,Total JobSeeker and Youth allowance recipients,1983
+21108,Coburg,2020-07-31,Population aged 15-64,20354
+21108,Coburg,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.7
+21109,Pascoe Vale South,2020-07-31,JobSeeker payment recipients,469
+21109,Pascoe Vale South,2020-07-31,Youth Allowance recipients,37
+21109,Pascoe Vale South,2020-07-31,Total JobSeeker and Youth allowance recipients,506
+21109,Pascoe Vale South,2020-07-31,Population aged 15-64,7350
+21109,Pascoe Vale South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.9
+21110,Alphington - Fairfield,2020-07-31,JobSeeker payment recipients,477
+21110,Alphington - Fairfield,2020-07-31,Youth Allowance recipients,22
+21110,Alphington - Fairfield,2020-07-31,Total JobSeeker and Youth allowance recipients,499
+21110,Alphington - Fairfield,2020-07-31,Population aged 15-64,7036
+21110,Alphington - Fairfield,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.1
+21111,Northcote,2020-07-31,JobSeeker payment recipients,1499
+21111,Northcote,2020-07-31,Youth Allowance recipients,66
+21111,Northcote,2020-07-31,Total JobSeeker and Youth allowance recipients,1565
+21111,Northcote,2020-07-31,Population aged 15-64,19809
+21111,Northcote,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.9
+21112,Thornbury,2020-07-31,JobSeeker payment recipients,1359
+21112,Thornbury,2020-07-31,Youth Allowance recipients,67
+21112,Thornbury,2020-07-31,Total JobSeeker and Youth allowance recipients,1426
+21112,Thornbury,2020-07-31,Population aged 15-64,14486
+21112,Thornbury,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.8
+21113,Ascot Vale,2020-07-31,JobSeeker payment recipients,984
+21113,Ascot Vale,2020-07-31,Youth Allowance recipients,74
+21113,Ascot Vale,2020-07-31,Total JobSeeker and Youth allowance recipients,1058
+21113,Ascot Vale,2020-07-31,Population aged 15-64,11570
+21113,Ascot Vale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.1
+21114,Essendon - Aberfeldie,2020-07-31,JobSeeker payment recipients,1216
+21114,Essendon - Aberfeldie,2020-07-31,Youth Allowance recipients,65
+21114,Essendon - Aberfeldie,2020-07-31,Total JobSeeker and Youth allowance recipients,1281
+21114,Essendon - Aberfeldie,2020-07-31,Population aged 15-64,21515
+21114,Essendon - Aberfeldie,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6
+21115,Flemington,2020-07-31,JobSeeker payment recipients,965
+21115,Flemington,2020-07-31,Youth Allowance recipients,79
+21115,Flemington,2020-07-31,Total JobSeeker and Youth allowance recipients,1044
+21115,Flemington,2020-07-31,Population aged 15-64,8517
+21115,Flemington,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.3
+21116,Moonee Ponds,2020-07-31,JobSeeker payment recipients,722
+21116,Moonee Ponds,2020-07-31,Youth Allowance recipients,31
+21116,Moonee Ponds,2020-07-31,Total JobSeeker and Youth allowance recipients,753
+21116,Moonee Ponds,2020-07-31,Population aged 15-64,10966
+21116,Moonee Ponds,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.9
+21117,Carlton,2020-07-31,JobSeeker payment recipients,1124
+21117,Carlton,2020-07-31,Youth Allowance recipients,65
+21117,Carlton,2020-07-31,Total JobSeeker and Youth allowance recipients,1189
+21117,Carlton,2020-07-31,Population aged 15-64,20767
+21117,Carlton,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.7
+21118,Docklands,2020-07-31,JobSeeker payment recipients,578
+21118,Docklands,2020-07-31,Youth Allowance recipients,14
+21118,Docklands,2020-07-31,Total JobSeeker and Youth allowance recipients,592
+21118,Docklands,2020-07-31,Population aged 15-64,12909
+21118,Docklands,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.6
+21119,East Melbourne,2020-07-31,JobSeeker payment recipients,229
+21119,East Melbourne,2020-07-31,Youth Allowance recipients,5
+21119,East Melbourne,2020-07-31,Total JobSeeker and Youth allowance recipients,234
+21119,East Melbourne,2020-07-31,Population aged 15-64,4371
+21119,East Melbourne,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.4
+21121,Kensington (Vic.),2020-07-31,JobSeeker payment recipients,665
+21121,Kensington (Vic.),2020-07-31,Youth Allowance recipients,38
+21121,Kensington (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,703
+21121,Kensington (Vic.),2020-07-31,Population aged 15-64,9088
+21121,Kensington (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.7
+21122,Melbourne,2020-07-31,JobSeeker payment recipients,1815
+21122,Melbourne,2020-07-31,Youth Allowance recipients,98
+21122,Melbourne,2020-07-31,Total JobSeeker and Youth allowance recipients,1913
+21122,Melbourne,2020-07-31,Population aged 15-64,45882
+21122,Melbourne,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.2
+21123,North Melbourne,2020-07-31,JobSeeker payment recipients,1649
+21123,North Melbourne,2020-07-31,Youth Allowance recipients,76
+21123,North Melbourne,2020-07-31,Total JobSeeker and Youth allowance recipients,1725
+21123,North Melbourne,2020-07-31,Population aged 15-64,21404
+21123,North Melbourne,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.1
+21124,Parkville,2020-07-31,JobSeeker payment recipients,320
+21124,Parkville,2020-07-31,Youth Allowance recipients,17
+21124,Parkville,2020-07-31,Total JobSeeker and Youth allowance recipients,337
+21124,Parkville,2020-07-31,Population aged 15-64,6937
+21124,Parkville,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.9
+21125,South Yarra - West,2020-07-31,JobSeeker payment recipients,264
+21125,South Yarra - West,2020-07-31,Youth Allowance recipients,6
+21125,South Yarra - West,2020-07-31,Total JobSeeker and Youth allowance recipients,270
+21125,South Yarra - West,2020-07-31,Population aged 15-64,5148
+21125,South Yarra - West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.2
+21126,Southbank,2020-07-31,JobSeeker payment recipients,942
+21126,Southbank,2020-07-31,Youth Allowance recipients,48
+21126,Southbank,2020-07-31,Total JobSeeker and Youth allowance recipients,990
+21126,Southbank,2020-07-31,Population aged 15-64,21598
+21126,Southbank,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.6
+21128,Albert Park,2020-07-31,JobSeeker payment recipients,599
+21128,Albert Park,2020-07-31,Youth Allowance recipients,22
+21128,Albert Park,2020-07-31,Total JobSeeker and Youth allowance recipients,621
+21128,Albert Park,2020-07-31,Population aged 15-64,11866
+21128,Albert Park,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.2
+21129,Elwood,2020-07-31,JobSeeker payment recipients,896
+21129,Elwood,2020-07-31,Youth Allowance recipients,35
+21129,Elwood,2020-07-31,Total JobSeeker and Youth allowance recipients,931
+21129,Elwood,2020-07-31,Population aged 15-64,12882
+21129,Elwood,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.2
+21130,Port Melbourne,2020-07-31,JobSeeker payment recipients,807
+21130,Port Melbourne,2020-07-31,Youth Allowance recipients,32
+21130,Port Melbourne,2020-07-31,Total JobSeeker and Youth allowance recipients,839
+21130,Port Melbourne,2020-07-31,Population aged 15-64,12676
+21130,Port Melbourne,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.6
+21132,South Melbourne,2020-07-31,JobSeeker payment recipients,845
+21132,South Melbourne,2020-07-31,Youth Allowance recipients,39
+21132,South Melbourne,2020-07-31,Total JobSeeker and Youth allowance recipients,884
+21132,South Melbourne,2020-07-31,Population aged 15-64,9841
+21132,South Melbourne,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9
+21133,St Kilda,2020-07-31,JobSeeker payment recipients,2228
+21133,St Kilda,2020-07-31,Youth Allowance recipients,86
+21133,St Kilda,2020-07-31,Total JobSeeker and Youth allowance recipients,2314
+21133,St Kilda,2020-07-31,Population aged 15-64,24543
+21133,St Kilda,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.4
+21134,St Kilda East,2020-07-31,JobSeeker payment recipients,1124
+21134,St Kilda East,2020-07-31,Youth Allowance recipients,54
+21134,St Kilda East,2020-07-31,Total JobSeeker and Youth allowance recipients,1178
+21134,St Kilda East,2020-07-31,Population aged 15-64,14274
+21134,St Kilda East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.3
+21135,Armadale,2020-07-31,JobSeeker payment recipients,351
+21135,Armadale,2020-07-31,Youth Allowance recipients,10
+21135,Armadale,2020-07-31,Total JobSeeker and Youth allowance recipients,361
+21135,Armadale,2020-07-31,Population aged 15-64,7161
+21135,Armadale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5
+21136,Prahran - Windsor,2020-07-31,JobSeeker payment recipients,1268
+21136,Prahran - Windsor,2020-07-31,Youth Allowance recipients,48
+21136,Prahran - Windsor,2020-07-31,Total JobSeeker and Youth allowance recipients,1316
+21136,Prahran - Windsor,2020-07-31,Population aged 15-64,17564
+21136,Prahran - Windsor,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.5
+21137,South Yarra - East,2020-07-31,JobSeeker payment recipients,1210
+21137,South Yarra - East,2020-07-31,Youth Allowance recipients,62
+21137,South Yarra - East,2020-07-31,Total JobSeeker and Youth allowance recipients,1272
+21137,South Yarra - East,2020-07-31,Population aged 15-64,20303
+21137,South Yarra - East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.3
+21138,Toorak,2020-07-31,JobSeeker payment recipients,471
+21138,Toorak,2020-07-31,Youth Allowance recipients,16
+21138,Toorak,2020-07-31,Total JobSeeker and Youth allowance recipients,487
+21138,Toorak,2020-07-31,Population aged 15-64,9049
+21138,Toorak,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.4
+21139,Abbotsford,2020-07-31,JobSeeker payment recipients,571
+21139,Abbotsford,2020-07-31,Youth Allowance recipients,22
+21139,Abbotsford,2020-07-31,Total JobSeeker and Youth allowance recipients,593
+21139,Abbotsford,2020-07-31,Population aged 15-64,8247
+21139,Abbotsford,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.2
+21140,Carlton North - Princes Hill,2020-07-31,JobSeeker payment recipients,577
+21140,Carlton North - Princes Hill,2020-07-31,Youth Allowance recipients,26
+21140,Carlton North - Princes Hill,2020-07-31,Total JobSeeker and Youth allowance recipients,603
+21140,Carlton North - Princes Hill,2020-07-31,Population aged 15-64,6848
+21140,Carlton North - Princes Hill,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.8
+21141,Collingwood,2020-07-31,JobSeeker payment recipients,1019
+21141,Collingwood,2020-07-31,Youth Allowance recipients,76
+21141,Collingwood,2020-07-31,Total JobSeeker and Youth allowance recipients,1095
+21141,Collingwood,2020-07-31,Population aged 15-64,8451
+21141,Collingwood,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13
+21142,Fitzroy,2020-07-31,JobSeeker payment recipients,979
+21142,Fitzroy,2020-07-31,Youth Allowance recipients,49
+21142,Fitzroy,2020-07-31,Total JobSeeker and Youth allowance recipients,1028
+21142,Fitzroy,2020-07-31,Population aged 15-64,9218
+21142,Fitzroy,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.2
+21143,Fitzroy North,2020-07-31,JobSeeker payment recipients,838
+21143,Fitzroy North,2020-07-31,Youth Allowance recipients,33
+21143,Fitzroy North,2020-07-31,Total JobSeeker and Youth allowance recipients,871
+21143,Fitzroy North,2020-07-31,Population aged 15-64,10093
+21143,Fitzroy North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.6
+21144,Richmond (Vic.),2020-07-31,JobSeeker payment recipients,2010
+21144,Richmond (Vic.),2020-07-31,Youth Allowance recipients,96
+21144,Richmond (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,2106
+21144,Richmond (Vic.),2020-07-31,Population aged 15-64,27685
+21144,Richmond (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.6
+21145,Yarra - North,2020-07-31,JobSeeker payment recipients,457
+21145,Yarra - North,2020-07-31,Youth Allowance recipients,27
+21145,Yarra - North,2020-07-31,Total JobSeeker and Youth allowance recipients,484
+21145,Yarra - North,2020-07-31,Population aged 15-64,7157
+21145,Yarra - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.8
+21146,Ashburton (Vic.),2020-07-31,JobSeeker payment recipients,246
+21146,Ashburton (Vic.),2020-07-31,Youth Allowance recipients,15
+21146,Ashburton (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,261
+21146,Ashburton (Vic.),2020-07-31,Population aged 15-64,5346
+21146,Ashburton (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.9
+21147,Balwyn,2020-07-31,JobSeeker payment recipients,510
+21147,Balwyn,2020-07-31,Youth Allowance recipients,25
+21147,Balwyn,2020-07-31,Total JobSeeker and Youth allowance recipients,535
+21147,Balwyn,2020-07-31,Population aged 15-64,10976
+21147,Balwyn,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.9
+21148,Balwyn North,2020-07-31,JobSeeker payment recipients,584
+21148,Balwyn North,2020-07-31,Youth Allowance recipients,30
+21148,Balwyn North,2020-07-31,Total JobSeeker and Youth allowance recipients,614
+21148,Balwyn North,2020-07-31,Population aged 15-64,14211
+21148,Balwyn North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.3
+21149,Camberwell,2020-07-31,JobSeeker payment recipients,566
+21149,Camberwell,2020-07-31,Youth Allowance recipients,27
+21149,Camberwell,2020-07-31,Total JobSeeker and Youth allowance recipients,593
+21149,Camberwell,2020-07-31,Population aged 15-64,14775
+21149,Camberwell,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4
+21150,Glen Iris - East,2020-07-31,JobSeeker payment recipients,365
+21150,Glen Iris - East,2020-07-31,Youth Allowance recipients,26
+21150,Glen Iris - East,2020-07-31,Total JobSeeker and Youth allowance recipients,391
+21150,Glen Iris - East,2020-07-31,Population aged 15-64,11529
+21150,Glen Iris - East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,3.4
+21151,Hawthorn,2020-07-31,JobSeeker payment recipients,834
+21151,Hawthorn,2020-07-31,Youth Allowance recipients,39
+21151,Hawthorn,2020-07-31,Total JobSeeker and Youth allowance recipients,873
+21151,Hawthorn,2020-07-31,Population aged 15-64,19349
+21151,Hawthorn,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.5
+21152,Hawthorn East,2020-07-31,JobSeeker payment recipients,540
+21152,Hawthorn East,2020-07-31,Youth Allowance recipients,18
+21152,Hawthorn East,2020-07-31,Total JobSeeker and Youth allowance recipients,558
+21152,Hawthorn East,2020-07-31,Population aged 15-64,12148
+21152,Hawthorn East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.6
+21153,Kew,2020-07-31,JobSeeker payment recipients,839
+21153,Kew,2020-07-31,Youth Allowance recipients,49
+21153,Kew,2020-07-31,Total JobSeeker and Youth allowance recipients,888
+21153,Kew,2020-07-31,Population aged 15-64,18115
+21153,Kew,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.9
+21154,Kew East,2020-07-31,JobSeeker payment recipients,202
+21154,Kew East,2020-07-31,Youth Allowance recipients,14
+21154,Kew East,2020-07-31,Total JobSeeker and Youth allowance recipients,216
+21154,Kew East,2020-07-31,Population aged 15-64,4475
+21154,Kew East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.8
+21155,Surrey Hills (West) - Canterbury,2020-07-31,JobSeeker payment recipients,390
+21155,Surrey Hills (West) - Canterbury,2020-07-31,Youth Allowance recipients,20
+21155,Surrey Hills (West) - Canterbury,2020-07-31,Total JobSeeker and Youth allowance recipients,410
+21155,Surrey Hills (West) - Canterbury,2020-07-31,Population aged 15-64,11159
+21155,Surrey Hills (West) - Canterbury,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,3.7
+21156,Bulleen,2020-07-31,JobSeeker payment recipients,520
+21156,Bulleen,2020-07-31,Youth Allowance recipients,19
+21156,Bulleen,2020-07-31,Total JobSeeker and Youth allowance recipients,539
+21156,Bulleen,2020-07-31,Population aged 15-64,7260
+21156,Bulleen,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.4
+21157,Doncaster,2020-07-31,JobSeeker payment recipients,1274
+21157,Doncaster,2020-07-31,Youth Allowance recipients,69
+21157,Doncaster,2020-07-31,Total JobSeeker and Youth allowance recipients,1343
+21157,Doncaster,2020-07-31,Population aged 15-64,15207
+21157,Doncaster,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.8
+21159,Templestowe,2020-07-31,JobSeeker payment recipients,635
+21159,Templestowe,2020-07-31,Youth Allowance recipients,47
+21159,Templestowe,2020-07-31,Total JobSeeker and Youth allowance recipients,682
+21159,Templestowe,2020-07-31,Population aged 15-64,10996
+21159,Templestowe,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.2
+21160,Templestowe Lower,2020-07-31,JobSeeker payment recipients,576
+21160,Templestowe Lower,2020-07-31,Youth Allowance recipients,36
+21160,Templestowe Lower,2020-07-31,Total JobSeeker and Youth allowance recipients,612
+21160,Templestowe Lower,2020-07-31,Population aged 15-64,8537
+21160,Templestowe Lower,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.2
+21161,Blackburn,2020-07-31,JobSeeker payment recipients,852
+21161,Blackburn,2020-07-31,Youth Allowance recipients,40
+21161,Blackburn,2020-07-31,Total JobSeeker and Youth allowance recipients,892
+21161,Blackburn,2020-07-31,Population aged 15-64,15087
+21161,Blackburn,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.9
+21162,Blackburn South,2020-07-31,JobSeeker payment recipients,404
+21162,Blackburn South,2020-07-31,Youth Allowance recipients,36
+21162,Blackburn South,2020-07-31,Total JobSeeker and Youth allowance recipients,440
+21162,Blackburn South,2020-07-31,Population aged 15-64,6949
+21162,Blackburn South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.3
+21163,Box Hill,2020-07-31,JobSeeker payment recipients,1045
+21163,Box Hill,2020-07-31,Youth Allowance recipients,61
+21163,Box Hill,2020-07-31,Total JobSeeker and Youth allowance recipients,1106
+21163,Box Hill,2020-07-31,Population aged 15-64,16656
+21163,Box Hill,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.6
+21164,Box Hill North,2020-07-31,JobSeeker payment recipients,667
+21164,Box Hill North,2020-07-31,Youth Allowance recipients,39
+21164,Box Hill North,2020-07-31,Total JobSeeker and Youth allowance recipients,706
+21164,Box Hill North,2020-07-31,Population aged 15-64,12733
+21164,Box Hill North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.5
+21165,Burwood,2020-07-31,JobSeeker payment recipients,513
+21165,Burwood,2020-07-31,Youth Allowance recipients,37
+21165,Burwood,2020-07-31,Total JobSeeker and Youth allowance recipients,550
+21165,Burwood,2020-07-31,Population aged 15-64,10805
+21165,Burwood,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.1
+21166,Burwood East,2020-07-31,JobSeeker payment recipients,469
+21166,Burwood East,2020-07-31,Youth Allowance recipients,17
+21166,Burwood East,2020-07-31,Total JobSeeker and Youth allowance recipients,486
+21166,Burwood East,2020-07-31,Population aged 15-64,7122
+21166,Burwood East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.8
+21167,Surrey Hills (East) - Mont Albert,2020-07-31,JobSeeker payment recipients,304
+21167,Surrey Hills (East) - Mont Albert,2020-07-31,Youth Allowance recipients,13
+21167,Surrey Hills (East) - Mont Albert,2020-07-31,Total JobSeeker and Youth allowance recipients,317
+21167,Surrey Hills (East) - Mont Albert,2020-07-31,Population aged 15-64,7063
+21167,Surrey Hills (East) - Mont Albert,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.5
+21168,Beaumaris,2020-07-31,JobSeeker payment recipients,376
+21168,Beaumaris,2020-07-31,Youth Allowance recipients,22
+21168,Beaumaris,2020-07-31,Total JobSeeker and Youth allowance recipients,398
+21168,Beaumaris,2020-07-31,Population aged 15-64,8861
+21168,Beaumaris,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.5
+21169,Brighton (Vic.),2020-07-31,JobSeeker payment recipients,617
+21169,Brighton (Vic.),2020-07-31,Youth Allowance recipients,25
+21169,Brighton (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,642
+21169,Brighton (Vic.),2020-07-31,Population aged 15-64,15464
+21169,Brighton (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.2
+21170,Brighton East,2020-07-31,JobSeeker payment recipients,474
+21170,Brighton East,2020-07-31,Youth Allowance recipients,21
+21170,Brighton East,2020-07-31,Total JobSeeker and Youth allowance recipients,495
+21170,Brighton East,2020-07-31,Population aged 15-64,10216
+21170,Brighton East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.8
+21171,Cheltenham - Highett (West),2020-07-31,JobSeeker payment recipients,499
+21171,Cheltenham - Highett (West),2020-07-31,Youth Allowance recipients,42
+21171,Cheltenham - Highett (West),2020-07-31,Total JobSeeker and Youth allowance recipients,541
+21171,Cheltenham - Highett (West),2020-07-31,Population aged 15-64,7840
+21171,Cheltenham - Highett (West),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.9
+21172,Hampton,2020-07-31,JobSeeker payment recipients,666
+21172,Hampton,2020-07-31,Youth Allowance recipients,47
+21172,Hampton,2020-07-31,Total JobSeeker and Youth allowance recipients,713
+21172,Hampton,2020-07-31,Population aged 15-64,12322
+21172,Hampton,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.8
+21173,Sandringham - Black Rock,2020-07-31,JobSeeker payment recipients,543
+21173,Sandringham - Black Rock,2020-07-31,Youth Allowance recipients,35
+21173,Sandringham - Black Rock,2020-07-31,Total JobSeeker and Youth allowance recipients,578
+21173,Sandringham - Black Rock,2020-07-31,Population aged 15-64,11123
+21173,Sandringham - Black Rock,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.2
+21174,Bentleigh - McKinnon,2020-07-31,JobSeeker payment recipients,852
+21174,Bentleigh - McKinnon,2020-07-31,Youth Allowance recipients,61
+21174,Bentleigh - McKinnon,2020-07-31,Total JobSeeker and Youth allowance recipients,913
+21174,Bentleigh - McKinnon,2020-07-31,Population aged 15-64,16232
+21174,Bentleigh - McKinnon,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.6
+21176,Carnegie,2020-07-31,JobSeeker payment recipients,775
+21176,Carnegie,2020-07-31,Youth Allowance recipients,37
+21176,Carnegie,2020-07-31,Total JobSeeker and Youth allowance recipients,812
+21176,Carnegie,2020-07-31,Population aged 15-64,14511
+21176,Carnegie,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.6
+21177,Caulfield - North,2020-07-31,JobSeeker payment recipients,838
+21177,Caulfield - North,2020-07-31,Youth Allowance recipients,56
+21177,Caulfield - North,2020-07-31,Total JobSeeker and Youth allowance recipients,894
+21177,Caulfield - North,2020-07-31,Population aged 15-64,15290
+21177,Caulfield - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.8
+21178,Caulfield - South,2020-07-31,JobSeeker payment recipients,674
+21178,Caulfield - South,2020-07-31,Youth Allowance recipients,40
+21178,Caulfield - South,2020-07-31,Total JobSeeker and Youth allowance recipients,714
+21178,Caulfield - South,2020-07-31,Population aged 15-64,11974
+21178,Caulfield - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6
+21179,Elsternwick,2020-07-31,JobSeeker payment recipients,499
+21179,Elsternwick,2020-07-31,Youth Allowance recipients,29
+21179,Elsternwick,2020-07-31,Total JobSeeker and Youth allowance recipients,528
+21179,Elsternwick,2020-07-31,Population aged 15-64,8429
+21179,Elsternwick,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.3
+21180,Hughesdale,2020-07-31,JobSeeker payment recipients,333
+21180,Hughesdale,2020-07-31,Youth Allowance recipients,21
+21180,Hughesdale,2020-07-31,Total JobSeeker and Youth allowance recipients,354
+21180,Hughesdale,2020-07-31,Population aged 15-64,5800
+21180,Hughesdale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.1
+21181,Murrumbeena,2020-07-31,JobSeeker payment recipients,397
+21181,Murrumbeena,2020-07-31,Youth Allowance recipients,20
+21181,Murrumbeena,2020-07-31,Total JobSeeker and Youth allowance recipients,417
+21181,Murrumbeena,2020-07-31,Population aged 15-64,7051
+21181,Murrumbeena,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.9
+21182,Ormond - Glen Huntly,2020-07-31,JobSeeker payment recipients,586
+21182,Ormond - Glen Huntly,2020-07-31,Youth Allowance recipients,34
+21182,Ormond - Glen Huntly,2020-07-31,Total JobSeeker and Youth allowance recipients,620
+21182,Ormond - Glen Huntly,2020-07-31,Population aged 15-64,10564
+21182,Ormond - Glen Huntly,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.9
+21183,Aspendale Gardens - Waterways,2020-07-31,JobSeeker payment recipients,319
+21183,Aspendale Gardens - Waterways,2020-07-31,Youth Allowance recipients,36
+21183,Aspendale Gardens - Waterways,2020-07-31,Total JobSeeker and Youth allowance recipients,355
+21183,Aspendale Gardens - Waterways,2020-07-31,Population aged 15-64,6517
+21183,Aspendale Gardens - Waterways,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.4
+21185,Carrum - Patterson Lakes,2020-07-31,JobSeeker payment recipients,625
+21185,Carrum - Patterson Lakes,2020-07-31,Youth Allowance recipients,39
+21185,Carrum - Patterson Lakes,2020-07-31,Total JobSeeker and Youth allowance recipients,664
+21185,Carrum - Patterson Lakes,2020-07-31,Population aged 15-64,8143
+21185,Carrum - Patterson Lakes,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.2
+21186,Chelsea - Bonbeach,2020-07-31,JobSeeker payment recipients,736
+21186,Chelsea - Bonbeach,2020-07-31,Youth Allowance recipients,44
+21186,Chelsea - Bonbeach,2020-07-31,Total JobSeeker and Youth allowance recipients,780
+21186,Chelsea - Bonbeach,2020-07-31,Population aged 15-64,9976
+21186,Chelsea - Bonbeach,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.8
+21187,Chelsea Heights,2020-07-31,JobSeeker payment recipients,246
+21187,Chelsea Heights,2020-07-31,Youth Allowance recipients,23
+21187,Chelsea Heights,2020-07-31,Total JobSeeker and Youth allowance recipients,269
+21187,Chelsea Heights,2020-07-31,Population aged 15-64,3598
+21187,Chelsea Heights,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.5
+21188,Cheltenham - Highett (East),2020-07-31,JobSeeker payment recipients,1082
+21188,Cheltenham - Highett (East),2020-07-31,Youth Allowance recipients,74
+21188,Cheltenham - Highett (East),2020-07-31,Total JobSeeker and Youth allowance recipients,1156
+21188,Cheltenham - Highett (East),2020-07-31,Population aged 15-64,15816
+21188,Cheltenham - Highett (East),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.3
+21189,Edithvale - Aspendale,2020-07-31,JobSeeker payment recipients,537
+21189,Edithvale - Aspendale,2020-07-31,Youth Allowance recipients,31
+21189,Edithvale - Aspendale,2020-07-31,Total JobSeeker and Youth allowance recipients,568
+21189,Edithvale - Aspendale,2020-07-31,Population aged 15-64,8862
+21189,Edithvale - Aspendale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.4
+21190,Mentone,2020-07-31,JobSeeker payment recipients,621
+21190,Mentone,2020-07-31,Youth Allowance recipients,34
+21190,Mentone,2020-07-31,Total JobSeeker and Youth allowance recipients,655
+21190,Mentone,2020-07-31,Population aged 15-64,9149
+21190,Mentone,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.2
+21191,Moorabbin - Heatherton,2020-07-31,JobSeeker payment recipients,412
+21191,Moorabbin - Heatherton,2020-07-31,Youth Allowance recipients,44
+21191,Moorabbin - Heatherton,2020-07-31,Total JobSeeker and Youth allowance recipients,456
+21191,Moorabbin - Heatherton,2020-07-31,Population aged 15-64,6286
+21191,Moorabbin - Heatherton,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.3
+21193,Mordialloc - Parkdale,2020-07-31,JobSeeker payment recipients,871
+21193,Mordialloc - Parkdale,2020-07-31,Youth Allowance recipients,56
+21193,Mordialloc - Parkdale,2020-07-31,Total JobSeeker and Youth allowance recipients,927
+21193,Mordialloc - Parkdale,2020-07-31,Population aged 15-64,14200
+21193,Mordialloc - Parkdale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.5
+21194,Malvern - Glen Iris,2020-07-31,JobSeeker payment recipients,640
+21194,Malvern - Glen Iris,2020-07-31,Youth Allowance recipients,39
+21194,Malvern - Glen Iris,2020-07-31,Total JobSeeker and Youth allowance recipients,679
+21194,Malvern - Glen Iris,2020-07-31,Population aged 15-64,14362
+21194,Malvern - Glen Iris,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.7
+21195,Malvern East,2020-07-31,JobSeeker payment recipients,711
+21195,Malvern East,2020-07-31,Youth Allowance recipients,43
+21195,Malvern East,2020-07-31,Total JobSeeker and Youth allowance recipients,754
+21195,Malvern East,2020-07-31,Population aged 15-64,16256
+21195,Malvern East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.6
+21196,Bundoora - East,2020-07-31,JobSeeker payment recipients,441
+21196,Bundoora - East,2020-07-31,Youth Allowance recipients,41
+21196,Bundoora - East,2020-07-31,Total JobSeeker and Youth allowance recipients,482
+21196,Bundoora - East,2020-07-31,Population aged 15-64,6725
+21196,Bundoora - East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.2
+21197,Greensborough,2020-07-31,JobSeeker payment recipients,805
+21197,Greensborough,2020-07-31,Youth Allowance recipients,59
+21197,Greensborough,2020-07-31,Total JobSeeker and Youth allowance recipients,864
+21197,Greensborough,2020-07-31,Population aged 15-64,13869
+21197,Greensborough,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.2
+21198,Heidelberg - Rosanna,2020-07-31,JobSeeker payment recipients,586
+21198,Heidelberg - Rosanna,2020-07-31,Youth Allowance recipients,35
+21198,Heidelberg - Rosanna,2020-07-31,Total JobSeeker and Youth allowance recipients,621
+21198,Heidelberg - Rosanna,2020-07-31,Population aged 15-64,10085
+21198,Heidelberg - Rosanna,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.2
+21199,Heidelberg West,2020-07-31,JobSeeker payment recipients,1305
+21199,Heidelberg West,2020-07-31,Youth Allowance recipients,104
+21199,Heidelberg West,2020-07-31,Total JobSeeker and Youth allowance recipients,1409
+21199,Heidelberg West,2020-07-31,Population aged 15-64,10488
+21199,Heidelberg West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13.4
+21200,Ivanhoe,2020-07-31,JobSeeker payment recipients,441
+21200,Ivanhoe,2020-07-31,Youth Allowance recipients,15
+21200,Ivanhoe,2020-07-31,Total JobSeeker and Youth allowance recipients,456
+21200,Ivanhoe,2020-07-31,Population aged 15-64,8772
+21200,Ivanhoe,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.2
+21201,Ivanhoe East - Eaglemont,2020-07-31,JobSeeker payment recipients,222
+21201,Ivanhoe East - Eaglemont,2020-07-31,Youth Allowance recipients,11
+21201,Ivanhoe East - Eaglemont,2020-07-31,Total JobSeeker and Youth allowance recipients,233
+21201,Ivanhoe East - Eaglemont,2020-07-31,Population aged 15-64,5240
+21201,Ivanhoe East - Eaglemont,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.4
+21202,Montmorency - Briar Hill,2020-07-31,JobSeeker payment recipients,672
+21202,Montmorency - Briar Hill,2020-07-31,Youth Allowance recipients,39
+21202,Montmorency - Briar Hill,2020-07-31,Total JobSeeker and Youth allowance recipients,711
+21202,Montmorency - Briar Hill,2020-07-31,Population aged 15-64,10688
+21202,Montmorency - Briar Hill,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.7
+21203,Viewbank - Yallambie,2020-07-31,JobSeeker payment recipients,740
+21203,Viewbank - Yallambie,2020-07-31,Youth Allowance recipients,49
+21203,Viewbank - Yallambie,2020-07-31,Total JobSeeker and Youth allowance recipients,789
+21203,Viewbank - Yallambie,2020-07-31,Population aged 15-64,11765
+21203,Viewbank - Yallambie,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.7
+21204,Watsonia,2020-07-31,JobSeeker payment recipients,476
+21204,Watsonia,2020-07-31,Youth Allowance recipients,36
+21204,Watsonia,2020-07-31,Total JobSeeker and Youth allowance recipients,512
+21204,Watsonia,2020-07-31,Population aged 15-64,6113
+21204,Watsonia,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.4
+21205,Kingsbury,2020-07-31,JobSeeker payment recipients,503
+21205,Kingsbury,2020-07-31,Youth Allowance recipients,34
+21205,Kingsbury,2020-07-31,Total JobSeeker and Youth allowance recipients,537
+21205,Kingsbury,2020-07-31,Population aged 15-64,10136
+21205,Kingsbury,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.3
+21207,Reservoir - East,2020-07-31,JobSeeker payment recipients,2079
+21207,Reservoir - East,2020-07-31,Youth Allowance recipients,155
+21207,Reservoir - East,2020-07-31,Total JobSeeker and Youth allowance recipients,2234
+21207,Reservoir - East,2020-07-31,Population aged 15-64,20079
+21207,Reservoir - East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.1
+21208,Reservoir - West,2020-07-31,JobSeeker payment recipients,1632
+21208,Reservoir - West,2020-07-31,Youth Allowance recipients,110
+21208,Reservoir - West,2020-07-31,Total JobSeeker and Youth allowance recipients,1742
+21208,Reservoir - West,2020-07-31,Population aged 15-64,16840
+21208,Reservoir - West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.3
+21209,Eltham,2020-07-31,JobSeeker payment recipients,750
+21209,Eltham,2020-07-31,Youth Allowance recipients,55
+21209,Eltham,2020-07-31,Total JobSeeker and Youth allowance recipients,805
+21209,Eltham,2020-07-31,Population aged 15-64,15758
+21209,Eltham,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.1
+21210,Hurstbridge,2020-07-31,JobSeeker payment recipients,142
+21210,Hurstbridge,2020-07-31,Youth Allowance recipients,22
+21210,Hurstbridge,2020-07-31,Total JobSeeker and Youth allowance recipients,164
+21210,Hurstbridge,2020-07-31,Population aged 15-64,2427
+21210,Hurstbridge,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.8
+21211,Kinglake,2020-07-31,JobSeeker payment recipients,219
+21211,Kinglake,2020-07-31,Youth Allowance recipients,22
+21211,Kinglake,2020-07-31,Total JobSeeker and Youth allowance recipients,241
+21211,Kinglake,2020-07-31,Population aged 15-64,2844
+21211,Kinglake,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.5
+21212,Panton Hill - St Andrews,2020-07-31,JobSeeker payment recipients,227
+21212,Panton Hill - St Andrews,2020-07-31,Youth Allowance recipients,17
+21212,Panton Hill - St Andrews,2020-07-31,Total JobSeeker and Youth allowance recipients,244
+21212,Panton Hill - St Andrews,2020-07-31,Population aged 15-64,3655
+21212,Panton Hill - St Andrews,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.7
+21213,Plenty - Yarrambat,2020-07-31,JobSeeker payment recipients,297
+21213,Plenty - Yarrambat,2020-07-31,Youth Allowance recipients,22
+21213,Plenty - Yarrambat,2020-07-31,Total JobSeeker and Youth allowance recipients,319
+21213,Plenty - Yarrambat,2020-07-31,Population aged 15-64,6623
+21213,Plenty - Yarrambat,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.8
+21214,Research - North Warrandyte,2020-07-31,JobSeeker payment recipients,204
+21214,Research - North Warrandyte,2020-07-31,Youth Allowance recipients,14
+21214,Research - North Warrandyte,2020-07-31,Total JobSeeker and Youth allowance recipients,218
+21214,Research - North Warrandyte,2020-07-31,Population aged 15-64,4676
+21214,Research - North Warrandyte,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.7
+21215,Wattle Glen - Diamond Creek,2020-07-31,JobSeeker payment recipients,470
+21215,Wattle Glen - Diamond Creek,2020-07-31,Youth Allowance recipients,54
+21215,Wattle Glen - Diamond Creek,2020-07-31,Total JobSeeker and Youth allowance recipients,524
+21215,Wattle Glen - Diamond Creek,2020-07-31,Population aged 15-64,9982
+21215,Wattle Glen - Diamond Creek,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.2
+21216,Bundoora - North,2020-07-31,JobSeeker payment recipients,338
+21216,Bundoora - North,2020-07-31,Youth Allowance recipients,35
+21216,Bundoora - North,2020-07-31,Total JobSeeker and Youth allowance recipients,373
+21216,Bundoora - North,2020-07-31,Population aged 15-64,6255
+21216,Bundoora - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6
+21217,Bundoora - West,2020-07-31,JobSeeker payment recipients,409
+21217,Bundoora - West,2020-07-31,Youth Allowance recipients,35
+21217,Bundoora - West,2020-07-31,Total JobSeeker and Youth allowance recipients,444
+21217,Bundoora - West,2020-07-31,Population aged 15-64,4413
+21217,Bundoora - West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.1
+21219,Lalor,2020-07-31,JobSeeker payment recipients,1884
+21219,Lalor,2020-07-31,Youth Allowance recipients,165
+21219,Lalor,2020-07-31,Total JobSeeker and Youth allowance recipients,2049
+21219,Lalor,2020-07-31,Population aged 15-64,15703
+21219,Lalor,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13
+21220,Mill Park - North,2020-07-31,JobSeeker payment recipients,1163
+21220,Mill Park - North,2020-07-31,Youth Allowance recipients,127
+21220,Mill Park - North,2020-07-31,Total JobSeeker and Youth allowance recipients,1290
+21220,Mill Park - North,2020-07-31,Population aged 15-64,13406
+21220,Mill Park - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.6
+21221,Mill Park - South,2020-07-31,JobSeeker payment recipients,796
+21221,Mill Park - South,2020-07-31,Youth Allowance recipients,74
+21221,Mill Park - South,2020-07-31,Total JobSeeker and Youth allowance recipients,870
+21221,Mill Park - South,2020-07-31,Population aged 15-64,8698
+21221,Mill Park - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10
+21223,Thomastown,2020-07-31,JobSeeker payment recipients,1675
+21223,Thomastown,2020-07-31,Youth Allowance recipients,122
+21223,Thomastown,2020-07-31,Total JobSeeker and Youth allowance recipients,1797
+21223,Thomastown,2020-07-31,Population aged 15-64,13648
+21223,Thomastown,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13.2
+21224,Wallan,2020-07-31,JobSeeker payment recipients,1165
+21224,Wallan,2020-07-31,Youth Allowance recipients,143
+21224,Wallan,2020-07-31,Total JobSeeker and Youth allowance recipients,1308
+21224,Wallan,2020-07-31,Population aged 15-64,12340
+21224,Wallan,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.6
+21225,Whittlesea,2020-07-31,JobSeeker payment recipients,437
+21225,Whittlesea,2020-07-31,Youth Allowance recipients,54
+21225,Whittlesea,2020-07-31,Total JobSeeker and Youth allowance recipients,491
+21225,Whittlesea,2020-07-31,Population aged 15-64,5521
+21225,Whittlesea,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.9
+21226,Airport West,2020-07-31,JobSeeker payment recipients,440
+21226,Airport West,2020-07-31,Youth Allowance recipients,35
+21226,Airport West,2020-07-31,Total JobSeeker and Youth allowance recipients,475
+21226,Airport West,2020-07-31,Population aged 15-64,5341
+21226,Airport West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.9
+21228,Keilor,2020-07-31,JobSeeker payment recipients,369
+21228,Keilor,2020-07-31,Youth Allowance recipients,28
+21228,Keilor,2020-07-31,Total JobSeeker and Youth allowance recipients,397
+21228,Keilor,2020-07-31,Population aged 15-64,5470
+21228,Keilor,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.3
+21229,Keilor East,2020-07-31,JobSeeker payment recipients,1242
+21229,Keilor East,2020-07-31,Youth Allowance recipients,119
+21229,Keilor East,2020-07-31,Total JobSeeker and Youth allowance recipients,1361
+21229,Keilor East,2020-07-31,Population aged 15-64,16818
+21229,Keilor East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.1
+21230,Niddrie - Essendon West,2020-07-31,JobSeeker payment recipients,295
+21230,Niddrie - Essendon West,2020-07-31,Youth Allowance recipients,21
+21230,Niddrie - Essendon West,2020-07-31,Total JobSeeker and Youth allowance recipients,316
+21230,Niddrie - Essendon West,2020-07-31,Population aged 15-64,4974
+21230,Niddrie - Essendon West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.4
+21231,Strathmore,2020-07-31,JobSeeker payment recipients,345
+21231,Strathmore,2020-07-31,Youth Allowance recipients,31
+21231,Strathmore,2020-07-31,Total JobSeeker and Youth allowance recipients,376
+21231,Strathmore,2020-07-31,Population aged 15-64,6760
+21231,Strathmore,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.6
+21232,Gisborne,2020-07-31,JobSeeker payment recipients,412
+21232,Gisborne,2020-07-31,Youth Allowance recipients,44
+21232,Gisborne,2020-07-31,Total JobSeeker and Youth allowance recipients,456
+21232,Gisborne,2020-07-31,Population aged 15-64,8601
+21232,Gisborne,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.3
+21233,Macedon,2020-07-31,JobSeeker payment recipients,95
+21233,Macedon,2020-07-31,Youth Allowance recipients,5
+21233,Macedon,2020-07-31,Total JobSeeker and Youth allowance recipients,100
+21233,Macedon,2020-07-31,Population aged 15-64,2139
+21233,Macedon,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.7
+21234,Riddells Creek,2020-07-31,JobSeeker payment recipients,133
+21234,Riddells Creek,2020-07-31,Youth Allowance recipients,16
+21234,Riddells Creek,2020-07-31,Total JobSeeker and Youth allowance recipients,149
+21234,Riddells Creek,2020-07-31,Population aged 15-64,2784
+21234,Riddells Creek,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.4
+21235,Romsey,2020-07-31,JobSeeker payment recipients,430
+21235,Romsey,2020-07-31,Youth Allowance recipients,39
+21235,Romsey,2020-07-31,Total JobSeeker and Youth allowance recipients,469
+21235,Romsey,2020-07-31,Population aged 15-64,6368
+21235,Romsey,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.4
+21236,Coburg North,2020-07-31,JobSeeker payment recipients,560
+21236,Coburg North,2020-07-31,Youth Allowance recipients,36
+21236,Coburg North,2020-07-31,Total JobSeeker and Youth allowance recipients,596
+21236,Coburg North,2020-07-31,Population aged 15-64,5928
+21236,Coburg North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.1
+21237,Fawkner,2020-07-31,JobSeeker payment recipients,1030
+21237,Fawkner,2020-07-31,Youth Allowance recipients,92
+21237,Fawkner,2020-07-31,Total JobSeeker and Youth allowance recipients,1122
+21237,Fawkner,2020-07-31,Population aged 15-64,9256
+21237,Fawkner,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.1
+21239,Pascoe Vale,2020-07-31,JobSeeker payment recipients,1262
+21239,Pascoe Vale,2020-07-31,Youth Allowance recipients,102
+21239,Pascoe Vale,2020-07-31,Total JobSeeker and Youth allowance recipients,1364
+21239,Pascoe Vale,2020-07-31,Population aged 15-64,18187
+21239,Pascoe Vale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.5
+21240,Sunbury,2020-07-31,JobSeeker payment recipients,682
+21240,Sunbury,2020-07-31,Youth Allowance recipients,76
+21240,Sunbury,2020-07-31,Total JobSeeker and Youth allowance recipients,758
+21240,Sunbury,2020-07-31,Population aged 15-64,9026
+21240,Sunbury,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.4
+21241,Sunbury - South,2020-07-31,JobSeeker payment recipients,1687
+21241,Sunbury - South,2020-07-31,Youth Allowance recipients,189
+21241,Sunbury - South,2020-07-31,Total JobSeeker and Youth allowance recipients,1876
+21241,Sunbury - South,2020-07-31,Population aged 15-64,19583
+21241,Sunbury - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.6
+21242,Broadmeadows,2020-07-31,JobSeeker payment recipients,1746
+21242,Broadmeadows,2020-07-31,Youth Allowance recipients,172
+21242,Broadmeadows,2020-07-31,Total JobSeeker and Youth allowance recipients,1918
+21242,Broadmeadows,2020-07-31,Population aged 15-64,9639
+21242,Broadmeadows,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,19.9
+21243,Campbellfield - Coolaroo,2020-07-31,JobSeeker payment recipients,1804
+21243,Campbellfield - Coolaroo,2020-07-31,Youth Allowance recipients,188
+21243,Campbellfield - Coolaroo,2020-07-31,Total JobSeeker and Youth allowance recipients,1992
+21243,Campbellfield - Coolaroo,2020-07-31,Population aged 15-64,10831
+21243,Campbellfield - Coolaroo,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,18.4
+21245,Gladstone Park - Westmeadows,2020-07-31,JobSeeker payment recipients,1338
+21245,Gladstone Park - Westmeadows,2020-07-31,Youth Allowance recipients,114
+21245,Gladstone Park - Westmeadows,2020-07-31,Total JobSeeker and Youth allowance recipients,1452
+21245,Gladstone Park - Westmeadows,2020-07-31,Population aged 15-64,12043
+21245,Gladstone Park - Westmeadows,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.1
+21246,Greenvale - Bulla,2020-07-31,JobSeeker payment recipients,1116
+21246,Greenvale - Bulla,2020-07-31,Youth Allowance recipients,97
+21246,Greenvale - Bulla,2020-07-31,Total JobSeeker and Youth allowance recipients,1213
+21246,Greenvale - Bulla,2020-07-31,Population aged 15-64,13674
+21246,Greenvale - Bulla,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.9
+21247,Meadow Heights,2020-07-31,JobSeeker payment recipients,1846
+21247,Meadow Heights,2020-07-31,Youth Allowance recipients,239
+21247,Meadow Heights,2020-07-31,Total JobSeeker and Youth allowance recipients,2085
+21247,Meadow Heights,2020-07-31,Population aged 15-64,10652
+21247,Meadow Heights,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,19.6
+21249,Roxburgh Park - Somerton,2020-07-31,JobSeeker payment recipients,2536
+21249,Roxburgh Park - Somerton,2020-07-31,Youth Allowance recipients,312
+21249,Roxburgh Park - Somerton,2020-07-31,Total JobSeeker and Youth allowance recipients,2848
+21249,Roxburgh Park - Somerton,2020-07-31,Population aged 15-64,16707
+21249,Roxburgh Park - Somerton,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,17
+21250,Tullamarine,2020-07-31,JobSeeker payment recipients,599
+21250,Tullamarine,2020-07-31,Youth Allowance recipients,44
+21250,Tullamarine,2020-07-31,Total JobSeeker and Youth allowance recipients,643
+21250,Tullamarine,2020-07-31,Population aged 15-64,4527
+21250,Tullamarine,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.2
+21251,Bayswater,2020-07-31,JobSeeker payment recipients,787
+21251,Bayswater,2020-07-31,Youth Allowance recipients,88
+21251,Bayswater,2020-07-31,Total JobSeeker and Youth allowance recipients,875
+21251,Bayswater,2020-07-31,Population aged 15-64,8443
+21251,Bayswater,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.4
+21254,Knoxfield - Scoresby,2020-07-31,JobSeeker payment recipients,806
+21254,Knoxfield - Scoresby,2020-07-31,Youth Allowance recipients,41
+21254,Knoxfield - Scoresby,2020-07-31,Total JobSeeker and Youth allowance recipients,847
+21254,Knoxfield - Scoresby,2020-07-31,Population aged 15-64,11212
+21254,Knoxfield - Scoresby,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.6
+21255,Lysterfield,2020-07-31,JobSeeker payment recipients,203
+21255,Lysterfield,2020-07-31,Youth Allowance recipients,17
+21255,Lysterfield,2020-07-31,Total JobSeeker and Youth allowance recipients,220
+21255,Lysterfield,2020-07-31,Population aged 15-64,5160
+21255,Lysterfield,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.3
+21256,Rowville - Central,2020-07-31,JobSeeker payment recipients,696
+21256,Rowville - Central,2020-07-31,Youth Allowance recipients,62
+21256,Rowville - Central,2020-07-31,Total JobSeeker and Youth allowance recipients,758
+21256,Rowville - Central,2020-07-31,Population aged 15-64,11216
+21256,Rowville - Central,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.8
+21257,Rowville - North,2020-07-31,JobSeeker payment recipients,296
+21257,Rowville - North,2020-07-31,Youth Allowance recipients,29
+21257,Rowville - North,2020-07-31,Total JobSeeker and Youth allowance recipients,325
+21257,Rowville - North,2020-07-31,Population aged 15-64,5684
+21257,Rowville - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.7
+21258,Rowville - South,2020-07-31,JobSeeker payment recipients,415
+21258,Rowville - South,2020-07-31,Youth Allowance recipients,44
+21258,Rowville - South,2020-07-31,Total JobSeeker and Youth allowance recipients,459
+21258,Rowville - South,2020-07-31,Population aged 15-64,7634
+21258,Rowville - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6
+21259,Wantirna,2020-07-31,JobSeeker payment recipients,639
+21259,Wantirna,2020-07-31,Youth Allowance recipients,53
+21259,Wantirna,2020-07-31,Total JobSeeker and Youth allowance recipients,692
+21259,Wantirna,2020-07-31,Population aged 15-64,9259
+21259,Wantirna,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.5
+21260,Wantirna South,2020-07-31,JobSeeker payment recipients,733
+21260,Wantirna South,2020-07-31,Youth Allowance recipients,60
+21260,Wantirna South,2020-07-31,Total JobSeeker and Youth allowance recipients,793
+21260,Wantirna South,2020-07-31,Population aged 15-64,12400
+21260,Wantirna South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.4
+21261,Donvale - Park Orchards,2020-07-31,JobSeeker payment recipients,529
+21261,Donvale - Park Orchards,2020-07-31,Youth Allowance recipients,31
+21261,Donvale - Park Orchards,2020-07-31,Total JobSeeker and Youth allowance recipients,560
+21261,Donvale - Park Orchards,2020-07-31,Population aged 15-64,10675
+21261,Donvale - Park Orchards,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.2
+21262,Warrandyte - Wonga Park,2020-07-31,JobSeeker payment recipients,318
+21262,Warrandyte - Wonga Park,2020-07-31,Youth Allowance recipients,22
+21262,Warrandyte - Wonga Park,2020-07-31,Total JobSeeker and Youth allowance recipients,340
+21262,Warrandyte - Wonga Park,2020-07-31,Population aged 15-64,7110
+21262,Warrandyte - Wonga Park,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.8
+21263,Bayswater North,2020-07-31,JobSeeker payment recipients,639
+21263,Bayswater North,2020-07-31,Youth Allowance recipients,71
+21263,Bayswater North,2020-07-31,Total JobSeeker and Youth allowance recipients,710
+21263,Bayswater North,2020-07-31,Population aged 15-64,8612
+21263,Bayswater North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.2
+21265,Croydon Hills - Warranwood,2020-07-31,JobSeeker payment recipients,623
+21265,Croydon Hills - Warranwood,2020-07-31,Youth Allowance recipients,49
+21265,Croydon Hills - Warranwood,2020-07-31,Total JobSeeker and Youth allowance recipients,672
+21265,Croydon Hills - Warranwood,2020-07-31,Population aged 15-64,12648
+21265,Croydon Hills - Warranwood,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.3
+21266,Ringwood,2020-07-31,JobSeeker payment recipients,1213
+21266,Ringwood,2020-07-31,Youth Allowance recipients,90
+21266,Ringwood,2020-07-31,Total JobSeeker and Youth allowance recipients,1303
+21266,Ringwood,2020-07-31,Population aged 15-64,12166
+21266,Ringwood,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.7
+21267,Ringwood East,2020-07-31,JobSeeker payment recipients,1004
+21267,Ringwood East,2020-07-31,Youth Allowance recipients,88
+21267,Ringwood East,2020-07-31,Total JobSeeker and Youth allowance recipients,1092
+21267,Ringwood East,2020-07-31,Population aged 15-64,13845
+21267,Ringwood East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.9
+21268,Ringwood North,2020-07-31,JobSeeker payment recipients,321
+21268,Ringwood North,2020-07-31,Youth Allowance recipients,32
+21268,Ringwood North,2020-07-31,Total JobSeeker and Youth allowance recipients,353
+21268,Ringwood North,2020-07-31,Population aged 15-64,6402
+21268,Ringwood North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.5
+21269,Forest Hill,2020-07-31,JobSeeker payment recipients,485
+21269,Forest Hill,2020-07-31,Youth Allowance recipients,37
+21269,Forest Hill,2020-07-31,Total JobSeeker and Youth allowance recipients,522
+21269,Forest Hill,2020-07-31,Population aged 15-64,7232
+21269,Forest Hill,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.2
+21270,Mitcham (Vic.),2020-07-31,JobSeeker payment recipients,719
+21270,Mitcham (Vic.),2020-07-31,Youth Allowance recipients,42
+21270,Mitcham (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,761
+21270,Mitcham (Vic.),2020-07-31,Population aged 15-64,11470
+21270,Mitcham (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.6
+21271,Nunawading,2020-07-31,JobSeeker payment recipients,536
+21271,Nunawading,2020-07-31,Youth Allowance recipients,39
+21271,Nunawading,2020-07-31,Total JobSeeker and Youth allowance recipients,575
+21271,Nunawading,2020-07-31,Population aged 15-64,8378
+21271,Nunawading,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.9
+21272,Vermont,2020-07-31,JobSeeker payment recipients,355
+21272,Vermont,2020-07-31,Youth Allowance recipients,30
+21272,Vermont,2020-07-31,Total JobSeeker and Youth allowance recipients,385
+21272,Vermont,2020-07-31,Population aged 15-64,6838
+21272,Vermont,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.6
+21273,Vermont South,2020-07-31,JobSeeker payment recipients,415
+21273,Vermont South,2020-07-31,Youth Allowance recipients,30
+21273,Vermont South,2020-07-31,Total JobSeeker and Youth allowance recipients,445
+21273,Vermont South,2020-07-31,Population aged 15-64,7514
+21273,Vermont South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.9
+21274,Belgrave - Selby,2020-07-31,JobSeeker payment recipients,552
+21274,Belgrave - Selby,2020-07-31,Youth Allowance recipients,65
+21274,Belgrave - Selby,2020-07-31,Total JobSeeker and Youth allowance recipients,617
+21274,Belgrave - Selby,2020-07-31,Population aged 15-64,7084
+21274,Belgrave - Selby,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.7
+21275,Chirnside Park,2020-07-31,JobSeeker payment recipients,481
+21275,Chirnside Park,2020-07-31,Youth Allowance recipients,50
+21275,Chirnside Park,2020-07-31,Total JobSeeker and Youth allowance recipients,531
+21275,Chirnside Park,2020-07-31,Population aged 15-64,7083
+21275,Chirnside Park,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.5
+21276,Healesville - Yarra Glen,2020-07-31,JobSeeker payment recipients,713
+21276,Healesville - Yarra Glen,2020-07-31,Youth Allowance recipients,93
+21276,Healesville - Yarra Glen,2020-07-31,Total JobSeeker and Youth allowance recipients,806
+21276,Healesville - Yarra Glen,2020-07-31,Population aged 15-64,9009
+21276,Healesville - Yarra Glen,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.9
+21277,Kilsyth,2020-07-31,JobSeeker payment recipients,441
+21277,Kilsyth,2020-07-31,Youth Allowance recipients,51
+21277,Kilsyth,2020-07-31,Total JobSeeker and Youth allowance recipients,492
+21277,Kilsyth,2020-07-31,Population aged 15-64,5999
+21277,Kilsyth,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.2
+21278,Lilydale - Coldstream,2020-07-31,JobSeeker payment recipients,962
+21278,Lilydale - Coldstream,2020-07-31,Youth Allowance recipients,102
+21278,Lilydale - Coldstream,2020-07-31,Total JobSeeker and Youth allowance recipients,1064
+21278,Lilydale - Coldstream,2020-07-31,Population aged 15-64,12996
+21278,Lilydale - Coldstream,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.2
+21279,Monbulk - Silvan,2020-07-31,JobSeeker payment recipients,251
+21279,Monbulk - Silvan,2020-07-31,Youth Allowance recipients,23
+21279,Monbulk - Silvan,2020-07-31,Total JobSeeker and Youth allowance recipients,274
+21279,Monbulk - Silvan,2020-07-31,Population aged 15-64,3694
+21279,Monbulk - Silvan,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.4
+21280,Montrose,2020-07-31,JobSeeker payment recipients,258
+21280,Montrose,2020-07-31,Youth Allowance recipients,18
+21280,Montrose,2020-07-31,Total JobSeeker and Youth allowance recipients,276
+21280,Montrose,2020-07-31,Population aged 15-64,4492
+21280,Montrose,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.1
+21281,Mooroolbark,2020-07-31,JobSeeker payment recipients,1116
+21281,Mooroolbark,2020-07-31,Youth Allowance recipients,150
+21281,Mooroolbark,2020-07-31,Total JobSeeker and Youth allowance recipients,1266
+21281,Mooroolbark,2020-07-31,Population aged 15-64,15681
+21281,Mooroolbark,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.1
+21282,Mount Dandenong - Olinda,2020-07-31,JobSeeker payment recipients,426
+21282,Mount Dandenong - Olinda,2020-07-31,Youth Allowance recipients,26
+21282,Mount Dandenong - Olinda,2020-07-31,Total JobSeeker and Youth allowance recipients,452
+21282,Mount Dandenong - Olinda,2020-07-31,Population aged 15-64,6471
+21282,Mount Dandenong - Olinda,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7
+21283,Mount Evelyn,2020-07-31,JobSeeker payment recipients,369
+21283,Mount Evelyn,2020-07-31,Youth Allowance recipients,55
+21283,Mount Evelyn,2020-07-31,Total JobSeeker and Youth allowance recipients,424
+21283,Mount Evelyn,2020-07-31,Population aged 15-64,6835
+21283,Mount Evelyn,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.2
+21284,Upwey - Tecoma,2020-07-31,JobSeeker payment recipients,474
+21284,Upwey - Tecoma,2020-07-31,Youth Allowance recipients,58
+21284,Upwey - Tecoma,2020-07-31,Total JobSeeker and Youth allowance recipients,532
+21284,Upwey - Tecoma,2020-07-31,Population aged 15-64,6930
+21284,Upwey - Tecoma,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.7
+21285,Wandin - Seville,2020-07-31,JobSeeker payment recipients,306
+21285,Wandin - Seville,2020-07-31,Youth Allowance recipients,35
+21285,Wandin - Seville,2020-07-31,Total JobSeeker and Youth allowance recipients,341
+21285,Wandin - Seville,2020-07-31,Population aged 15-64,5294
+21285,Wandin - Seville,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.4
+21286,Yarra Valley,2020-07-31,JobSeeker payment recipients,1079
+21286,Yarra Valley,2020-07-31,Youth Allowance recipients,124
+21286,Yarra Valley,2020-07-31,Total JobSeeker and Youth allowance recipients,1203
+21286,Yarra Valley,2020-07-31,Population aged 15-64,10770
+21286,Yarra Valley,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.2
+21287,Beaconsfield - Officer,2020-07-31,JobSeeker payment recipients,961
+21287,Beaconsfield - Officer,2020-07-31,Youth Allowance recipients,102
+21287,Beaconsfield - Officer,2020-07-31,Total JobSeeker and Youth allowance recipients,1063
+21287,Beaconsfield - Officer,2020-07-31,Population aged 15-64,12152
+21287,Beaconsfield - Officer,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.7
+21288,Bunyip - Garfield,2020-07-31,JobSeeker payment recipients,364
+21288,Bunyip - Garfield,2020-07-31,Youth Allowance recipients,43
+21288,Bunyip - Garfield,2020-07-31,Total JobSeeker and Youth allowance recipients,407
+21288,Bunyip - Garfield,2020-07-31,Population aged 15-64,5838
+21288,Bunyip - Garfield,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7
+21289,Emerald - Cockatoo,2020-07-31,JobSeeker payment recipients,716
+21289,Emerald - Cockatoo,2020-07-31,Youth Allowance recipients,73
+21289,Emerald - Cockatoo,2020-07-31,Total JobSeeker and Youth allowance recipients,789
+21289,Emerald - Cockatoo,2020-07-31,Population aged 15-64,12362
+21289,Emerald - Cockatoo,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.4
+21290,Koo Wee Rup,2020-07-31,JobSeeker payment recipients,405
+21290,Koo Wee Rup,2020-07-31,Youth Allowance recipients,49
+21290,Koo Wee Rup,2020-07-31,Total JobSeeker and Youth allowance recipients,454
+21290,Koo Wee Rup,2020-07-31,Population aged 15-64,5158
+21290,Koo Wee Rup,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.8
+21291,Pakenham - North,2020-07-31,JobSeeker payment recipients,1344
+21291,Pakenham - North,2020-07-31,Youth Allowance recipients,168
+21291,Pakenham - North,2020-07-31,Total JobSeeker and Youth allowance recipients,1512
+21291,Pakenham - North,2020-07-31,Population aged 15-64,14150
+21291,Pakenham - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.7
+21292,Pakenham - South,2020-07-31,JobSeeker payment recipients,1988
+21292,Pakenham - South,2020-07-31,Youth Allowance recipients,299
+21292,Pakenham - South,2020-07-31,Total JobSeeker and Youth allowance recipients,2287
+21292,Pakenham - South,2020-07-31,Population aged 15-64,20430
+21292,Pakenham - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.2
+21293,Berwick - North,2020-07-31,JobSeeker payment recipients,953
+21293,Berwick - North,2020-07-31,Youth Allowance recipients,95
+21293,Berwick - North,2020-07-31,Total JobSeeker and Youth allowance recipients,1048
+21293,Berwick - North,2020-07-31,Population aged 15-64,15280
+21293,Berwick - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.9
+21294,Berwick - South,2020-07-31,JobSeeker payment recipients,1336
+21294,Berwick - South,2020-07-31,Youth Allowance recipients,168
+21294,Berwick - South,2020-07-31,Total JobSeeker and Youth allowance recipients,1504
+21294,Berwick - South,2020-07-31,Population aged 15-64,19017
+21294,Berwick - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.9
+21295,Doveton,2020-07-31,JobSeeker payment recipients,1206
+21295,Doveton,2020-07-31,Youth Allowance recipients,142
+21295,Doveton,2020-07-31,Total JobSeeker and Youth allowance recipients,1348
+21295,Doveton,2020-07-31,Population aged 15-64,8113
+21295,Doveton,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,16.6
+21297,Hallam,2020-07-31,JobSeeker payment recipients,950
+21297,Hallam,2020-07-31,Youth Allowance recipients,101
+21297,Hallam,2020-07-31,Total JobSeeker and Youth allowance recipients,1051
+21297,Hallam,2020-07-31,Population aged 15-64,7721
+21297,Hallam,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13.6
+21299,Narre Warren North,2020-07-31,JobSeeker payment recipients,258
+21299,Narre Warren North,2020-07-31,Youth Allowance recipients,23
+21299,Narre Warren North,2020-07-31,Total JobSeeker and Youth allowance recipients,281
+21299,Narre Warren North,2020-07-31,Population aged 15-64,5810
+21299,Narre Warren North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,4.8
+21300,Cranbourne,2020-07-31,JobSeeker payment recipients,1712
+21300,Cranbourne,2020-07-31,Youth Allowance recipients,213
+21300,Cranbourne,2020-07-31,Total JobSeeker and Youth allowance recipients,1925
+21300,Cranbourne,2020-07-31,Population aged 15-64,14120
+21300,Cranbourne,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13.6
+21301,Cranbourne East,2020-07-31,JobSeeker payment recipients,2671
+21301,Cranbourne East,2020-07-31,Youth Allowance recipients,325
+21301,Cranbourne East,2020-07-31,Total JobSeeker and Youth allowance recipients,2996
+21301,Cranbourne East,2020-07-31,Population aged 15-64,26864
+21301,Cranbourne East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.2
+21302,Cranbourne North,2020-07-31,JobSeeker payment recipients,1445
+21302,Cranbourne North,2020-07-31,Youth Allowance recipients,175
+21302,Cranbourne North,2020-07-31,Total JobSeeker and Youth allowance recipients,1620
+21302,Cranbourne North,2020-07-31,Population aged 15-64,16100
+21302,Cranbourne North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.1
+21303,Cranbourne South,2020-07-31,JobSeeker payment recipients,588
+21303,Cranbourne South,2020-07-31,Youth Allowance recipients,70
+21303,Cranbourne South,2020-07-31,Total JobSeeker and Youth allowance recipients,658
+21303,Cranbourne South,2020-07-31,Population aged 15-64,6760
+21303,Cranbourne South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.7
+21304,Cranbourne West,2020-07-31,JobSeeker payment recipients,1192
+21304,Cranbourne West,2020-07-31,Youth Allowance recipients,143
+21304,Cranbourne West,2020-07-31,Total JobSeeker and Youth allowance recipients,1335
+21304,Cranbourne West,2020-07-31,Population aged 15-64,12660
+21304,Cranbourne West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.5
+21305,Hampton Park - Lynbrook,2020-07-31,JobSeeker payment recipients,2147
+21305,Hampton Park - Lynbrook,2020-07-31,Youth Allowance recipients,246
+21305,Hampton Park - Lynbrook,2020-07-31,Total JobSeeker and Youth allowance recipients,2393
+21305,Hampton Park - Lynbrook,2020-07-31,Population aged 15-64,18719
+21305,Hampton Park - Lynbrook,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.8
+21306,Lynbrook - Lyndhurst,2020-07-31,JobSeeker payment recipients,821
+21306,Lynbrook - Lyndhurst,2020-07-31,Youth Allowance recipients,70
+21306,Lynbrook - Lyndhurst,2020-07-31,Total JobSeeker and Youth allowance recipients,891
+21306,Lynbrook - Lyndhurst,2020-07-31,Population aged 15-64,11598
+21306,Lynbrook - Lyndhurst,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.7
+21308,Pearcedale - Tooradin,2020-07-31,JobSeeker payment recipients,370
+21308,Pearcedale - Tooradin,2020-07-31,Youth Allowance recipients,50
+21308,Pearcedale - Tooradin,2020-07-31,Total JobSeeker and Youth allowance recipients,420
+21308,Pearcedale - Tooradin,2020-07-31,Population aged 15-64,5462
+21308,Pearcedale - Tooradin,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.7
+21309,Clarinda - Oakleigh South,2020-07-31,JobSeeker payment recipients,652
+21309,Clarinda - Oakleigh South,2020-07-31,Youth Allowance recipients,50
+21309,Clarinda - Oakleigh South,2020-07-31,Total JobSeeker and Youth allowance recipients,702
+21309,Clarinda - Oakleigh South,2020-07-31,Population aged 15-64,7986
+21309,Clarinda - Oakleigh South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.8
+21310,Clayton South,2020-07-31,JobSeeker payment recipients,724
+21310,Clayton South,2020-07-31,Youth Allowance recipients,37
+21310,Clayton South,2020-07-31,Total JobSeeker and Youth allowance recipients,761
+21310,Clayton South,2020-07-31,Population aged 15-64,9638
+21310,Clayton South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.9
+21311,Dandenong,2020-07-31,JobSeeker payment recipients,3285
+21311,Dandenong,2020-07-31,Youth Allowance recipients,288
+21311,Dandenong,2020-07-31,Total JobSeeker and Youth allowance recipients,3573
+21311,Dandenong,2020-07-31,Population aged 15-64,22961
+21311,Dandenong,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,15.6
+21312,Dandenong North,2020-07-31,JobSeeker payment recipients,1744
+21312,Dandenong North,2020-07-31,Youth Allowance recipients,154
+21312,Dandenong North,2020-07-31,Total JobSeeker and Youth allowance recipients,1898
+21312,Dandenong North,2020-07-31,Population aged 15-64,15498
+21312,Dandenong North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.2
+21313,Dingley Village,2020-07-31,JobSeeker payment recipients,395
+21313,Dingley Village,2020-07-31,Youth Allowance recipients,34
+21313,Dingley Village,2020-07-31,Total JobSeeker and Youth allowance recipients,429
+21313,Dingley Village,2020-07-31,Population aged 15-64,6580
+21313,Dingley Village,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.5
+21314,Keysborough,2020-07-31,JobSeeker payment recipients,1617
+21314,Keysborough,2020-07-31,Youth Allowance recipients,127
+21314,Keysborough,2020-07-31,Total JobSeeker and Youth allowance recipients,1744
+21314,Keysborough,2020-07-31,Population aged 15-64,20154
+21314,Keysborough,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.7
+21316,Noble Park North,2020-07-31,JobSeeker payment recipients,555
+21316,Noble Park North,2020-07-31,Youth Allowance recipients,47
+21316,Noble Park North,2020-07-31,Total JobSeeker and Youth allowance recipients,602
+21316,Noble Park North,2020-07-31,Population aged 15-64,5171
+21316,Noble Park North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.6
+21317,Springvale,2020-07-31,JobSeeker payment recipients,1719
+21317,Springvale,2020-07-31,Youth Allowance recipients,118
+21317,Springvale,2020-07-31,Total JobSeeker and Youth allowance recipients,1837
+21317,Springvale,2020-07-31,Population aged 15-64,16349
+21317,Springvale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.2
+21318,Springvale South,2020-07-31,JobSeeker payment recipients,1047
+21318,Springvale South,2020-07-31,Youth Allowance recipients,64
+21318,Springvale South,2020-07-31,Total JobSeeker and Youth allowance recipients,1111
+21318,Springvale South,2020-07-31,Population aged 15-64,9098
+21318,Springvale South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.2
+21319,Ashwood - Chadstone,2020-07-31,JobSeeker payment recipients,1019
+21319,Ashwood - Chadstone,2020-07-31,Youth Allowance recipients,59
+21319,Ashwood - Chadstone,2020-07-31,Total JobSeeker and Youth allowance recipients,1078
+21319,Ashwood - Chadstone,2020-07-31,Population aged 15-64,14054
+21319,Ashwood - Chadstone,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.7
+21320,Clayton,2020-07-31,JobSeeker payment recipients,804
+21320,Clayton,2020-07-31,Youth Allowance recipients,51
+21320,Clayton,2020-07-31,Total JobSeeker and Youth allowance recipients,855
+21320,Clayton,2020-07-31,Population aged 15-64,22534
+21320,Clayton,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,3.8
+21321,Glen Waverley - East,2020-07-31,JobSeeker payment recipients,809
+21321,Glen Waverley - East,2020-07-31,Youth Allowance recipients,45
+21321,Glen Waverley - East,2020-07-31,Total JobSeeker and Youth allowance recipients,854
+21321,Glen Waverley - East,2020-07-31,Population aged 15-64,13902
+21321,Glen Waverley - East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.1
+21322,Glen Waverley - West,2020-07-31,JobSeeker payment recipients,795
+21322,Glen Waverley - West,2020-07-31,Youth Allowance recipients,43
+21322,Glen Waverley - West,2020-07-31,Total JobSeeker and Youth allowance recipients,838
+21322,Glen Waverley - West,2020-07-31,Population aged 15-64,13880
+21322,Glen Waverley - West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6
+21323,Mount Waverley - North,2020-07-31,JobSeeker payment recipients,554
+21323,Mount Waverley - North,2020-07-31,Youth Allowance recipients,31
+21323,Mount Waverley - North,2020-07-31,Total JobSeeker and Youth allowance recipients,585
+21323,Mount Waverley - North,2020-07-31,Population aged 15-64,10533
+21323,Mount Waverley - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.6
+21324,Mount Waverley - South,2020-07-31,JobSeeker payment recipients,690
+21324,Mount Waverley - South,2020-07-31,Youth Allowance recipients,38
+21324,Mount Waverley - South,2020-07-31,Total JobSeeker and Youth allowance recipients,728
+21324,Mount Waverley - South,2020-07-31,Population aged 15-64,12840
+21324,Mount Waverley - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.7
+21325,Mulgrave,2020-07-31,JobSeeker payment recipients,941
+21325,Mulgrave,2020-07-31,Youth Allowance recipients,67
+21325,Mulgrave,2020-07-31,Total JobSeeker and Youth allowance recipients,1008
+21325,Mulgrave,2020-07-31,Population aged 15-64,13438
+21325,Mulgrave,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.5
+21326,Oakleigh - Huntingdale,2020-07-31,JobSeeker payment recipients,1020
+21326,Oakleigh - Huntingdale,2020-07-31,Youth Allowance recipients,70
+21326,Oakleigh - Huntingdale,2020-07-31,Total JobSeeker and Youth allowance recipients,1090
+21326,Oakleigh - Huntingdale,2020-07-31,Population aged 15-64,16477
+21326,Oakleigh - Huntingdale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.6
+21327,Wheelers Hill,2020-07-31,JobSeeker payment recipients,675
+21327,Wheelers Hill,2020-07-31,Youth Allowance recipients,37
+21327,Wheelers Hill,2020-07-31,Total JobSeeker and Youth allowance recipients,712
+21327,Wheelers Hill,2020-07-31,Population aged 15-64,12520
+21327,Wheelers Hill,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.7
+21328,Ardeer - Albion,2020-07-31,JobSeeker payment recipients,743
+21328,Ardeer - Albion,2020-07-31,Youth Allowance recipients,48
+21328,Ardeer - Albion,2020-07-31,Total JobSeeker and Youth allowance recipients,791
+21328,Ardeer - Albion,2020-07-31,Population aged 15-64,5895
+21328,Ardeer - Albion,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13.4
+21329,Cairnlea,2020-07-31,JobSeeker payment recipients,803
+21329,Cairnlea,2020-07-31,Youth Allowance recipients,52
+21329,Cairnlea,2020-07-31,Total JobSeeker and Youth allowance recipients,855
+21329,Cairnlea,2020-07-31,Population aged 15-64,7521
+21329,Cairnlea,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.4
+21330,Deer Park - Derrimut,2020-07-31,JobSeeker payment recipients,2179
+21330,Deer Park - Derrimut,2020-07-31,Youth Allowance recipients,166
+21330,Deer Park - Derrimut,2020-07-31,Total JobSeeker and Youth allowance recipients,2345
+21330,Deer Park - Derrimut,2020-07-31,Population aged 15-64,19027
+21330,Deer Park - Derrimut,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.3
+21331,Delahey,2020-07-31,JobSeeker payment recipients,739
+21331,Delahey,2020-07-31,Youth Allowance recipients,59
+21331,Delahey,2020-07-31,Total JobSeeker and Youth allowance recipients,798
+21331,Delahey,2020-07-31,Population aged 15-64,6299
+21331,Delahey,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.7
+21332,Keilor Downs,2020-07-31,JobSeeker payment recipients,993
+21332,Keilor Downs,2020-07-31,Youth Allowance recipients,89
+21332,Keilor Downs,2020-07-31,Total JobSeeker and Youth allowance recipients,1082
+21332,Keilor Downs,2020-07-31,Population aged 15-64,9127
+21332,Keilor Downs,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.9
+21333,Kings Park (Vic.),2020-07-31,JobSeeker payment recipients,1467
+21333,Kings Park (Vic.),2020-07-31,Youth Allowance recipients,136
+21333,Kings Park (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,1603
+21333,Kings Park (Vic.),2020-07-31,Population aged 15-64,9581
+21333,Kings Park (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,16.7
+21334,St Albans - North,2020-07-31,JobSeeker payment recipients,2320
+21334,St Albans - North,2020-07-31,Youth Allowance recipients,141
+21334,St Albans - North,2020-07-31,Total JobSeeker and Youth allowance recipients,2461
+21334,St Albans - North,2020-07-31,Population aged 15-64,14306
+21334,St Albans - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,17.2
+21335,St Albans - South,2020-07-31,JobSeeker payment recipients,2010
+21335,St Albans - South,2020-07-31,Youth Allowance recipients,120
+21335,St Albans - South,2020-07-31,Total JobSeeker and Youth allowance recipients,2130
+21335,St Albans - South,2020-07-31,Population aged 15-64,12575
+21335,St Albans - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,16.9
+21336,Sunshine,2020-07-31,JobSeeker payment recipients,911
+21336,Sunshine,2020-07-31,Youth Allowance recipients,61
+21336,Sunshine,2020-07-31,Total JobSeeker and Youth allowance recipients,972
+21336,Sunshine,2020-07-31,Population aged 15-64,7475
+21336,Sunshine,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13
+21337,Sunshine North,2020-07-31,JobSeeker payment recipients,1273
+21337,Sunshine North,2020-07-31,Youth Allowance recipients,79
+21337,Sunshine North,2020-07-31,Total JobSeeker and Youth allowance recipients,1352
+21337,Sunshine North,2020-07-31,Population aged 15-64,8445
+21337,Sunshine North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,16
+21338,Sunshine West,2020-07-31,JobSeeker payment recipients,1821
+21338,Sunshine West,2020-07-31,Youth Allowance recipients,148
+21338,Sunshine West,2020-07-31,Total JobSeeker and Youth allowance recipients,1969
+21338,Sunshine West,2020-07-31,Population aged 15-64,13225
+21338,Sunshine West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.9
+21339,Sydenham,2020-07-31,JobSeeker payment recipients,831
+21339,Sydenham,2020-07-31,Youth Allowance recipients,85
+21339,Sydenham,2020-07-31,Total JobSeeker and Youth allowance recipients,916
+21339,Sydenham,2020-07-31,Population aged 15-64,9083
+21339,Sydenham,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.1
+21340,Taylors Lakes,2020-07-31,JobSeeker payment recipients,882
+21340,Taylors Lakes,2020-07-31,Youth Allowance recipients,63
+21340,Taylors Lakes,2020-07-31,Total JobSeeker and Youth allowance recipients,945
+21340,Taylors Lakes,2020-07-31,Population aged 15-64,13150
+21340,Taylors Lakes,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.2
+21341,Altona,2020-07-31,JobSeeker payment recipients,590
+21341,Altona,2020-07-31,Youth Allowance recipients,32
+21341,Altona,2020-07-31,Total JobSeeker and Youth allowance recipients,622
+21341,Altona,2020-07-31,Population aged 15-64,8738
+21341,Altona,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.1
+21342,Altona Meadows,2020-07-31,JobSeeker payment recipients,1349
+21342,Altona Meadows,2020-07-31,Youth Allowance recipients,95
+21342,Altona Meadows,2020-07-31,Total JobSeeker and Youth allowance recipients,1444
+21342,Altona Meadows,2020-07-31,Population aged 15-64,13929
+21342,Altona Meadows,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.4
+21343,Altona North,2020-07-31,JobSeeker payment recipients,960
+21343,Altona North,2020-07-31,Youth Allowance recipients,71
+21343,Altona North,2020-07-31,Total JobSeeker and Youth allowance recipients,1031
+21343,Altona North,2020-07-31,Population aged 15-64,9470
+21343,Altona North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.9
+21344,Newport,2020-07-31,JobSeeker payment recipients,807
+21344,Newport,2020-07-31,Youth Allowance recipients,52
+21344,Newport,2020-07-31,Total JobSeeker and Youth allowance recipients,859
+21344,Newport,2020-07-31,Population aged 15-64,13181
+21344,Newport,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.5
+21345,Seabrook,2020-07-31,JobSeeker payment recipients,248
+21345,Seabrook,2020-07-31,Youth Allowance recipients,20
+21345,Seabrook,2020-07-31,Total JobSeeker and Youth allowance recipients,268
+21345,Seabrook,2020-07-31,Population aged 15-64,3728
+21345,Seabrook,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.2
+21346,Williamstown,2020-07-31,JobSeeker payment recipients,639
+21346,Williamstown,2020-07-31,Youth Allowance recipients,35
+21346,Williamstown,2020-07-31,Total JobSeeker and Youth allowance recipients,674
+21346,Williamstown,2020-07-31,Population aged 15-64,11104
+21346,Williamstown,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.1
+21347,Braybrook,2020-07-31,JobSeeker payment recipients,1793
+21347,Braybrook,2020-07-31,Youth Allowance recipients,114
+21347,Braybrook,2020-07-31,Total JobSeeker and Youth allowance recipients,1907
+21347,Braybrook,2020-07-31,Population aged 15-64,14692
+21347,Braybrook,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13
+21348,Footscray,2020-07-31,JobSeeker payment recipients,1699
+21348,Footscray,2020-07-31,Youth Allowance recipients,85
+21348,Footscray,2020-07-31,Total JobSeeker and Youth allowance recipients,1784
+21348,Footscray,2020-07-31,Population aged 15-64,14852
+21348,Footscray,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12
+21349,Maribyrnong,2020-07-31,JobSeeker payment recipients,823
+21349,Maribyrnong,2020-07-31,Youth Allowance recipients,49
+21349,Maribyrnong,2020-07-31,Total JobSeeker and Youth allowance recipients,872
+21349,Maribyrnong,2020-07-31,Population aged 15-64,10664
+21349,Maribyrnong,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.2
+21350,Seddon - Kingsville,2020-07-31,JobSeeker payment recipients,572
+21350,Seddon - Kingsville,2020-07-31,Youth Allowance recipients,34
+21350,Seddon - Kingsville,2020-07-31,Total JobSeeker and Youth allowance recipients,606
+21350,Seddon - Kingsville,2020-07-31,Population aged 15-64,7233
+21350,Seddon - Kingsville,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.4
+21351,West Footscray - Tottenham,2020-07-31,JobSeeker payment recipients,910
+21351,West Footscray - Tottenham,2020-07-31,Youth Allowance recipients,57
+21351,West Footscray - Tottenham,2020-07-31,Total JobSeeker and Youth allowance recipients,967
+21351,West Footscray - Tottenham,2020-07-31,Population aged 15-64,9247
+21351,West Footscray - Tottenham,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.5
+21352,Yarraville,2020-07-31,JobSeeker payment recipients,735
+21352,Yarraville,2020-07-31,Youth Allowance recipients,38
+21352,Yarraville,2020-07-31,Total JobSeeker and Youth allowance recipients,773
+21352,Yarraville,2020-07-31,Population aged 15-64,11477
+21352,Yarraville,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.7
+21353,Bacchus Marsh,2020-07-31,JobSeeker payment recipients,1196
+21353,Bacchus Marsh,2020-07-31,Youth Allowance recipients,134
+21353,Bacchus Marsh,2020-07-31,Total JobSeeker and Youth allowance recipients,1330
+21353,Bacchus Marsh,2020-07-31,Population aged 15-64,14232
+21353,Bacchus Marsh,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.3
+21355,Hillside,2020-07-31,JobSeeker payment recipients,1203
+21355,Hillside,2020-07-31,Youth Allowance recipients,128
+21355,Hillside,2020-07-31,Total JobSeeker and Youth allowance recipients,1331
+21355,Hillside,2020-07-31,Population aged 15-64,16928
+21355,Hillside,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.9
+21356,Melton,2020-07-31,JobSeeker payment recipients,1709
+21356,Melton,2020-07-31,Youth Allowance recipients,195
+21356,Melton,2020-07-31,Total JobSeeker and Youth allowance recipients,1904
+21356,Melton,2020-07-31,Population aged 15-64,12979
+21356,Melton,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.7
+21357,Melton South,2020-07-31,JobSeeker payment recipients,2464
+21357,Melton South,2020-07-31,Youth Allowance recipients,316
+21357,Melton South,2020-07-31,Total JobSeeker and Youth allowance recipients,2780
+21357,Melton South,2020-07-31,Population aged 15-64,18288
+21357,Melton South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,15.2
+21358,Melton West,2020-07-31,JobSeeker payment recipients,1568
+21358,Melton West,2020-07-31,Youth Allowance recipients,190
+21358,Melton West,2020-07-31,Total JobSeeker and Youth allowance recipients,1758
+21358,Melton West,2020-07-31,Population aged 15-64,13062
+21358,Melton West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13.5
+21359,Rockbank - Mount Cottrell,2020-07-31,JobSeeker payment recipients,551
+21359,Rockbank - Mount Cottrell,2020-07-31,Youth Allowance recipients,49
+21359,Rockbank - Mount Cottrell,2020-07-31,Total JobSeeker and Youth allowance recipients,600
+21359,Rockbank - Mount Cottrell,2020-07-31,Population aged 15-64,4964
+21359,Rockbank - Mount Cottrell,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.1
+21360,Taylors Hill,2020-07-31,JobSeeker payment recipients,974
+21360,Taylors Hill,2020-07-31,Youth Allowance recipients,84
+21360,Taylors Hill,2020-07-31,Total JobSeeker and Youth allowance recipients,1058
+21360,Taylors Hill,2020-07-31,Population aged 15-64,13788
+21360,Taylors Hill,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.7
+21361,Hoppers Crossing - North,2020-07-31,JobSeeker payment recipients,1290
+21361,Hoppers Crossing - North,2020-07-31,Youth Allowance recipients,110
+21361,Hoppers Crossing - North,2020-07-31,Total JobSeeker and Youth allowance recipients,1400
+21361,Hoppers Crossing - North,2020-07-31,Population aged 15-64,14303
+21361,Hoppers Crossing - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.8
+21362,Hoppers Crossing - South,2020-07-31,JobSeeker payment recipients,1479
+21362,Hoppers Crossing - South,2020-07-31,Youth Allowance recipients,132
+21362,Hoppers Crossing - South,2020-07-31,Total JobSeeker and Youth allowance recipients,1611
+21362,Hoppers Crossing - South,2020-07-31,Population aged 15-64,13436
+21362,Hoppers Crossing - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12
+21363,Laverton,2020-07-31,JobSeeker payment recipients,809
+21363,Laverton,2020-07-31,Youth Allowance recipients,60
+21363,Laverton,2020-07-31,Total JobSeeker and Youth allowance recipients,869
+21363,Laverton,2020-07-31,Population aged 15-64,7950
+21363,Laverton,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.9
+21365,Tarneit,2020-07-31,JobSeeker payment recipients,2586
+21365,Tarneit,2020-07-31,Youth Allowance recipients,220
+21365,Tarneit,2020-07-31,Total JobSeeker and Youth allowance recipients,2806
+21365,Tarneit,2020-07-31,Population aged 15-64,28404
+21365,Tarneit,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.9
+21366,Truganina,2020-07-31,JobSeeker payment recipients,1751
+21366,Truganina,2020-07-31,Youth Allowance recipients,122
+21366,Truganina,2020-07-31,Total JobSeeker and Youth allowance recipients,1873
+21366,Truganina,2020-07-31,Population aged 15-64,20516
+21366,Truganina,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.1
+21368,Werribee - South,2020-07-31,JobSeeker payment recipients,1016
+21368,Werribee - South,2020-07-31,Youth Allowance recipients,105
+21368,Werribee - South,2020-07-31,Total JobSeeker and Youth allowance recipients,1121
+21368,Werribee - South,2020-07-31,Population aged 15-64,8669
+21368,Werribee - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.9
+21369,Wyndham Vale,2020-07-31,JobSeeker payment recipients,1972
+21369,Wyndham Vale,2020-07-31,Youth Allowance recipients,257
+21369,Wyndham Vale,2020-07-31,Total JobSeeker and Youth allowance recipients,2229
+21369,Wyndham Vale,2020-07-31,Population aged 15-64,18088
+21369,Wyndham Vale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.3
+21370,Carrum Downs,2020-07-31,JobSeeker payment recipients,1445
+21370,Carrum Downs,2020-07-31,Youth Allowance recipients,171
+21370,Carrum Downs,2020-07-31,Total JobSeeker and Youth allowance recipients,1616
+21370,Carrum Downs,2020-07-31,Population aged 15-64,15035
+21370,Carrum Downs,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.7
+21371,Frankston,2020-07-31,JobSeeker payment recipients,2093
+21371,Frankston,2020-07-31,Youth Allowance recipients,253
+21371,Frankston,2020-07-31,Total JobSeeker and Youth allowance recipients,2346
+21371,Frankston,2020-07-31,Population aged 15-64,15978
+21371,Frankston,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.7
+21372,Frankston North,2020-07-31,JobSeeker payment recipients,1905
+21372,Frankston North,2020-07-31,Youth Allowance recipients,219
+21372,Frankston North,2020-07-31,Total JobSeeker and Youth allowance recipients,2124
+21372,Frankston North,2020-07-31,Population aged 15-64,12458
+21372,Frankston North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,17
+21373,Frankston South,2020-07-31,JobSeeker payment recipients,728
+21373,Frankston South,2020-07-31,Youth Allowance recipients,67
+21373,Frankston South,2020-07-31,Total JobSeeker and Youth allowance recipients,795
+21373,Frankston South,2020-07-31,Population aged 15-64,11610
+21373,Frankston South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.8
+21374,Langwarrin,2020-07-31,JobSeeker payment recipients,1162
+21374,Langwarrin,2020-07-31,Youth Allowance recipients,145
+21374,Langwarrin,2020-07-31,Total JobSeeker and Youth allowance recipients,1307
+21374,Langwarrin,2020-07-31,Population aged 15-64,16974
+21374,Langwarrin,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.7
+21375,Seaford (Vic.),2020-07-31,JobSeeker payment recipients,1326
+21375,Seaford (Vic.),2020-07-31,Youth Allowance recipients,112
+21375,Seaford (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,1438
+21375,Seaford (Vic.),2020-07-31,Population aged 15-64,11238
+21375,Seaford (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.8
+21376,Skye - Sandhurst,2020-07-31,JobSeeker payment recipients,591
+21376,Skye - Sandhurst,2020-07-31,Youth Allowance recipients,71
+21376,Skye - Sandhurst,2020-07-31,Total JobSeeker and Youth allowance recipients,662
+21376,Skye - Sandhurst,2020-07-31,Population aged 15-64,9654
+21376,Skye - Sandhurst,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.9
+21377,Dromana,2020-07-31,JobSeeker payment recipients,720
+21377,Dromana,2020-07-31,Youth Allowance recipients,77
+21377,Dromana,2020-07-31,Total JobSeeker and Youth allowance recipients,797
+21377,Dromana,2020-07-31,Population aged 15-64,7001
+21377,Dromana,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.4
+21378,Flinders,2020-07-31,JobSeeker payment recipients,181
+21378,Flinders,2020-07-31,Youth Allowance recipients,7
+21378,Flinders,2020-07-31,Total JobSeeker and Youth allowance recipients,188
+21378,Flinders,2020-07-31,Population aged 15-64,3298
+21378,Flinders,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5.7
+21379,Hastings - Somers,2020-07-31,JobSeeker payment recipients,1355
+21379,Hastings - Somers,2020-07-31,Youth Allowance recipients,166
+21379,Hastings - Somers,2020-07-31,Total JobSeeker and Youth allowance recipients,1521
+21379,Hastings - Somers,2020-07-31,Population aged 15-64,14506
+21379,Hastings - Somers,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.5
+21380,Mornington,2020-07-31,JobSeeker payment recipients,1193
+21380,Mornington,2020-07-31,Youth Allowance recipients,157
+21380,Mornington,2020-07-31,Total JobSeeker and Youth allowance recipients,1350
+21380,Mornington,2020-07-31,Population aged 15-64,14522
+21380,Mornington,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.3
+21381,Mount Eliza,2020-07-31,JobSeeker payment recipients,507
+21381,Mount Eliza,2020-07-31,Youth Allowance recipients,42
+21381,Mount Eliza,2020-07-31,Total JobSeeker and Youth allowance recipients,549
+21381,Mount Eliza,2020-07-31,Population aged 15-64,11045
+21381,Mount Eliza,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,5
+21382,Mount Martha,2020-07-31,JobSeeker payment recipients,640
+21382,Mount Martha,2020-07-31,Youth Allowance recipients,76
+21382,Mount Martha,2020-07-31,Total JobSeeker and Youth allowance recipients,716
+21382,Mount Martha,2020-07-31,Population aged 15-64,11579
+21382,Mount Martha,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.2
+21383,Point Nepean,2020-07-31,JobSeeker payment recipients,1149
+21383,Point Nepean,2020-07-31,Youth Allowance recipients,104
+21383,Point Nepean,2020-07-31,Total JobSeeker and Youth allowance recipients,1253
+21383,Point Nepean,2020-07-31,Population aged 15-64,9961
+21383,Point Nepean,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.6
+21384,Rosebud - McCrae,2020-07-31,JobSeeker payment recipients,1607
+21384,Rosebud - McCrae,2020-07-31,Youth Allowance recipients,175
+21384,Rosebud - McCrae,2020-07-31,Total JobSeeker and Youth allowance recipients,1782
+21384,Rosebud - McCrae,2020-07-31,Population aged 15-64,11771
+21384,Rosebud - McCrae,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,15.1
+21385,Somerville,2020-07-31,JobSeeker payment recipients,889
+21385,Somerville,2020-07-31,Youth Allowance recipients,111
+21385,Somerville,2020-07-31,Total JobSeeker and Youth allowance recipients,1000
+21385,Somerville,2020-07-31,Population aged 15-64,12746
+21385,Somerville,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.8
+21386,Ararat,2020-07-31,JobSeeker payment recipients,548
+21386,Ararat,2020-07-31,Youth Allowance recipients,87
+21386,Ararat,2020-07-31,Total JobSeeker and Youth allowance recipients,635
+21386,Ararat,2020-07-31,Population aged 15-64,5273
+21386,Ararat,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12
+21387,Ararat Region,2020-07-31,JobSeeker payment recipients,175
+21387,Ararat Region,2020-07-31,Youth Allowance recipients,16
+21387,Ararat Region,2020-07-31,Total JobSeeker and Youth allowance recipients,191
+21387,Ararat Region,2020-07-31,Population aged 15-64,1852
+21387,Ararat Region,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.3
+21388,Horsham,2020-07-31,JobSeeker payment recipients,811
+21388,Horsham,2020-07-31,Youth Allowance recipients,149
+21388,Horsham,2020-07-31,Total JobSeeker and Youth allowance recipients,960
+21388,Horsham,2020-07-31,Population aged 15-64,9907
+21388,Horsham,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.7
+21389,Horsham Region,2020-07-31,JobSeeker payment recipients,136
+21389,Horsham Region,2020-07-31,Youth Allowance recipients,23
+21389,Horsham Region,2020-07-31,Total JobSeeker and Youth allowance recipients,159
+21389,Horsham Region,2020-07-31,Population aged 15-64,2147
+21389,Horsham Region,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.4
+21390,Nhill Region,2020-07-31,JobSeeker payment recipients,369
+21390,Nhill Region,2020-07-31,Youth Allowance recipients,52
+21390,Nhill Region,2020-07-31,Total JobSeeker and Youth allowance recipients,421
+21390,Nhill Region,2020-07-31,Population aged 15-64,3879
+21390,Nhill Region,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.9
+21391,St Arnaud,2020-07-31,JobSeeker payment recipients,212
+21391,St Arnaud,2020-07-31,Youth Allowance recipients,22
+21391,St Arnaud,2020-07-31,Total JobSeeker and Youth allowance recipients,234
+21391,St Arnaud,2020-07-31,Population aged 15-64,1864
+21391,St Arnaud,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.6
+21392,Stawell,2020-07-31,JobSeeker payment recipients,527
+21392,Stawell,2020-07-31,Youth Allowance recipients,82
+21392,Stawell,2020-07-31,Total JobSeeker and Youth allowance recipients,609
+21392,Stawell,2020-07-31,Population aged 15-64,4945
+21392,Stawell,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.3
+21393,West Wimmera,2020-07-31,JobSeeker payment recipients,142
+21393,West Wimmera,2020-07-31,Youth Allowance recipients,6
+21393,West Wimmera,2020-07-31,Total JobSeeker and Youth allowance recipients,148
+21393,West Wimmera,2020-07-31,Population aged 15-64,1557
+21393,West Wimmera,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.5
+21394,Yarriambiack,2020-07-31,JobSeeker payment recipients,350
+21394,Yarriambiack,2020-07-31,Youth Allowance recipients,27
+21394,Yarriambiack,2020-07-31,Total JobSeeker and Youth allowance recipients,377
+21394,Yarriambiack,2020-07-31,Population aged 15-64,3726
+21394,Yarriambiack,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.1
+21395,Irymple,2020-07-31,JobSeeker payment recipients,311
+21395,Irymple,2020-07-31,Youth Allowance recipients,40
+21395,Irymple,2020-07-31,Total JobSeeker and Youth allowance recipients,351
+21395,Irymple,2020-07-31,Population aged 15-64,4446
+21395,Irymple,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.9
+21396,Merbein,2020-07-31,JobSeeker payment recipients,342
+21396,Merbein,2020-07-31,Youth Allowance recipients,38
+21396,Merbein,2020-07-31,Total JobSeeker and Youth allowance recipients,380
+21396,Merbein,2020-07-31,Population aged 15-64,2986
+21396,Merbein,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.7
+21398,Mildura Region,2020-07-31,JobSeeker payment recipients,197
+21398,Mildura Region,2020-07-31,Youth Allowance recipients,21
+21398,Mildura Region,2020-07-31,Total JobSeeker and Youth allowance recipients,218
+21398,Mildura Region,2020-07-31,Population aged 15-64,2325
+21398,Mildura Region,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.4
+21399,Red Cliffs,2020-07-31,JobSeeker payment recipients,431
+21399,Red Cliffs,2020-07-31,Youth Allowance recipients,74
+21399,Red Cliffs,2020-07-31,Total JobSeeker and Youth allowance recipients,505
+21399,Red Cliffs,2020-07-31,Population aged 15-64,3778
+21399,Red Cliffs,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13.4
+21400,Buloke,2020-07-31,JobSeeker payment recipients,283
+21400,Buloke,2020-07-31,Youth Allowance recipients,35
+21400,Buloke,2020-07-31,Total JobSeeker and Youth allowance recipients,318
+21400,Buloke,2020-07-31,Population aged 15-64,3440
+21400,Buloke,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.2
+21401,Gannawarra,2020-07-31,JobSeeker payment recipients,357
+21401,Gannawarra,2020-07-31,Youth Allowance recipients,28
+21401,Gannawarra,2020-07-31,Total JobSeeker and Youth allowance recipients,385
+21401,Gannawarra,2020-07-31,Population aged 15-64,3734
+21401,Gannawarra,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.3
+21402,Kerang,2020-07-31,JobSeeker payment recipients,272
+21402,Kerang,2020-07-31,Youth Allowance recipients,28
+21402,Kerang,2020-07-31,Total JobSeeker and Youth allowance recipients,300
+21402,Kerang,2020-07-31,Population aged 15-64,2150
+21402,Kerang,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14
+21403,Robinvale,2020-07-31,JobSeeker payment recipients,199
+21403,Robinvale,2020-07-31,Youth Allowance recipients,22
+21403,Robinvale,2020-07-31,Total JobSeeker and Youth allowance recipients,221
+21403,Robinvale,2020-07-31,Population aged 15-64,2148
+21403,Robinvale,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.3
+21404,Swan Hill,2020-07-31,JobSeeker payment recipients,587
+21404,Swan Hill,2020-07-31,Youth Allowance recipients,91
+21404,Swan Hill,2020-07-31,Total JobSeeker and Youth allowance recipients,678
+21404,Swan Hill,2020-07-31,Population aged 15-64,6731
+21404,Swan Hill,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.1
+21405,Swan Hill Region,2020-07-31,JobSeeker payment recipients,335
+21405,Swan Hill Region,2020-07-31,Youth Allowance recipients,44
+21405,Swan Hill Region,2020-07-31,Total JobSeeker and Youth allowance recipients,379
+21405,Swan Hill Region,2020-07-31,Population aged 15-64,3907
+21405,Swan Hill Region,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.7
+21406,Echuca,2020-07-31,JobSeeker payment recipients,956
+21406,Echuca,2020-07-31,Youth Allowance recipients,124
+21406,Echuca,2020-07-31,Total JobSeeker and Youth allowance recipients,1080
+21406,Echuca,2020-07-31,Population aged 15-64,8872
+21406,Echuca,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.2
+21407,Kyabram,2020-07-31,JobSeeker payment recipients,583
+21407,Kyabram,2020-07-31,Youth Allowance recipients,89
+21407,Kyabram,2020-07-31,Total JobSeeker and Youth allowance recipients,672
+21407,Kyabram,2020-07-31,Population aged 15-64,6432
+21407,Kyabram,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.4
+21408,Lockington - Gunbower,2020-07-31,JobSeeker payment recipients,171
+21408,Lockington - Gunbower,2020-07-31,Youth Allowance recipients,27
+21408,Lockington - Gunbower,2020-07-31,Total JobSeeker and Youth allowance recipients,198
+21408,Lockington - Gunbower,2020-07-31,Population aged 15-64,2451
+21408,Lockington - Gunbower,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.1
+21409,Rochester,2020-07-31,JobSeeker payment recipients,203
+21409,Rochester,2020-07-31,Youth Allowance recipients,32
+21409,Rochester,2020-07-31,Total JobSeeker and Youth allowance recipients,235
+21409,Rochester,2020-07-31,Population aged 15-64,2220
+21409,Rochester,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.6
+21410,Rushworth,2020-07-31,JobSeeker payment recipients,282
+21410,Rushworth,2020-07-31,Youth Allowance recipients,29
+21410,Rushworth,2020-07-31,Total JobSeeker and Youth allowance recipients,311
+21410,Rushworth,2020-07-31,Population aged 15-64,2287
+21410,Rushworth,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13.6
+21411,Cobram,2020-07-31,JobSeeker payment recipients,372
+21411,Cobram,2020-07-31,Youth Allowance recipients,59
+21411,Cobram,2020-07-31,Total JobSeeker and Youth allowance recipients,431
+21411,Cobram,2020-07-31,Population aged 15-64,3560
+21411,Cobram,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.1
+21412,Moira,2020-07-31,JobSeeker payment recipients,166
+21412,Moira,2020-07-31,Youth Allowance recipients,26
+21412,Moira,2020-07-31,Total JobSeeker and Youth allowance recipients,192
+21412,Moira,2020-07-31,Population aged 15-64,1651
+21412,Moira,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.6
+21413,Numurkah,2020-07-31,JobSeeker payment recipients,713
+21413,Numurkah,2020-07-31,Youth Allowance recipients,73
+21413,Numurkah,2020-07-31,Total JobSeeker and Youth allowance recipients,786
+21413,Numurkah,2020-07-31,Population aged 15-64,7455
+21413,Numurkah,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.5
+21414,Yarrawonga,2020-07-31,JobSeeker payment recipients,486
+21414,Yarrawonga,2020-07-31,Youth Allowance recipients,50
+21414,Yarrawonga,2020-07-31,Total JobSeeker and Youth allowance recipients,536
+21414,Yarrawonga,2020-07-31,Population aged 15-64,4382
+21414,Yarrawonga,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.2
+21415,Mooroopna,2020-07-31,JobSeeker payment recipients,684
+21415,Mooroopna,2020-07-31,Youth Allowance recipients,94
+21415,Mooroopna,2020-07-31,Total JobSeeker and Youth allowance recipients,778
+21415,Mooroopna,2020-07-31,Population aged 15-64,4911
+21415,Mooroopna,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,15.8
+21416,Shepparton - North,2020-07-31,JobSeeker payment recipients,1196
+21416,Shepparton - North,2020-07-31,Youth Allowance recipients,208
+21416,Shepparton - North,2020-07-31,Total JobSeeker and Youth allowance recipients,1404
+21416,Shepparton - North,2020-07-31,Population aged 15-64,12347
+21416,Shepparton - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.4
+21417,Shepparton - South,2020-07-31,JobSeeker payment recipients,1692
+21417,Shepparton - South,2020-07-31,Youth Allowance recipients,249
+21417,Shepparton - South,2020-07-31,Total JobSeeker and Youth allowance recipients,1941
+21417,Shepparton - South,2020-07-31,Population aged 15-64,14893
+21417,Shepparton - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13
+21418,Shepparton Region - East,2020-07-31,JobSeeker payment recipients,176
+21418,Shepparton Region - East,2020-07-31,Youth Allowance recipients,13
+21418,Shepparton Region - East,2020-07-31,Total JobSeeker and Youth allowance recipients,189
+21418,Shepparton Region - East,2020-07-31,Population aged 15-64,2472
+21418,Shepparton Region - East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.6
+21419,Shepparton Region - West,2020-07-31,JobSeeker payment recipients,603
+21419,Shepparton Region - West,2020-07-31,Youth Allowance recipients,52
+21419,Shepparton Region - West,2020-07-31,Total JobSeeker and Youth allowance recipients,655
+21419,Shepparton Region - West,2020-07-31,Population aged 15-64,6397
+21419,Shepparton Region - West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.2
+21420,Glenelg (Vic.),2020-07-31,JobSeeker payment recipients,508
+21420,Glenelg (Vic.),2020-07-31,Youth Allowance recipients,47
+21420,Glenelg (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,555
+21420,Glenelg (Vic.),2020-07-31,Population aged 15-64,5263
+21420,Glenelg (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.5
+21421,Hamilton (Vic.),2020-07-31,JobSeeker payment recipients,541
+21421,Hamilton (Vic.),2020-07-31,Youth Allowance recipients,88
+21421,Hamilton (Vic.),2020-07-31,Total JobSeeker and Youth allowance recipients,629
+21421,Hamilton (Vic.),2020-07-31,Population aged 15-64,5969
+21421,Hamilton (Vic.),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.5
+21422,Portland,2020-07-31,JobSeeker payment recipients,863
+21422,Portland,2020-07-31,Youth Allowance recipients,103
+21422,Portland,2020-07-31,Total JobSeeker and Youth allowance recipients,966
+21422,Portland,2020-07-31,Population aged 15-64,6693
+21422,Portland,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.4
+21423,Southern Grampians,2020-07-31,JobSeeker payment recipients,298
+21423,Southern Grampians,2020-07-31,Youth Allowance recipients,26
+21423,Southern Grampians,2020-07-31,Total JobSeeker and Youth allowance recipients,324
+21423,Southern Grampians,2020-07-31,Population aged 15-64,3552
+21423,Southern Grampians,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.1
+21424,Doncaster East (North),2020-07-31,JobSeeker payment recipients,632
+21424,Doncaster East (North),2020-07-31,Youth Allowance recipients,33
+21424,Doncaster East (North),2020-07-31,Total JobSeeker and Youth allowance recipients,665
+21424,Doncaster East (North),2020-07-31,Population aged 15-64,9951
+21424,Doncaster East (North),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.7
+21425,Doncaster East (South),2020-07-31,JobSeeker payment recipients,704
+21425,Doncaster East (South),2020-07-31,Youth Allowance recipients,28
+21425,Doncaster East (South),2020-07-31,Total JobSeeker and Youth allowance recipients,732
+21425,Doncaster East (South),2020-07-31,Population aged 15-64,9241
+21425,Doncaster East (South),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.9
+21426,Bentleigh East (North),2020-07-31,JobSeeker payment recipients,597
+21426,Bentleigh East (North),2020-07-31,Youth Allowance recipients,48
+21426,Bentleigh East (North),2020-07-31,Total JobSeeker and Youth allowance recipients,645
+21426,Bentleigh East (North),2020-07-31,Population aged 15-64,10295
+21426,Bentleigh East (North),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.3
+21427,Bentleigh East (South),2020-07-31,JobSeeker payment recipients,553
+21427,Bentleigh East (South),2020-07-31,Youth Allowance recipients,40
+21427,Bentleigh East (South),2020-07-31,Total JobSeeker and Youth allowance recipients,593
+21427,Bentleigh East (South),2020-07-31,Population aged 15-64,8915
+21427,Bentleigh East (South),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.7
+21428,Preston - East,2020-07-31,JobSeeker payment recipients,1775
+21428,Preston - East,2020-07-31,Youth Allowance recipients,116
+21428,Preston - East,2020-07-31,Total JobSeeker and Youth allowance recipients,1891
+21428,Preston - East,2020-07-31,Population aged 15-64,16427
+21428,Preston - East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.5
+21429,Preston - West,2020-07-31,JobSeeker payment recipients,782
+21429,Preston - West,2020-07-31,Youth Allowance recipients,38
+21429,Preston - West,2020-07-31,Total JobSeeker and Youth allowance recipients,820
+21429,Preston - West,2020-07-31,Population aged 15-64,9286
+21429,Preston - West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.8
+21430,Doreen,2020-07-31,JobSeeker payment recipients,1117
+21430,Doreen,2020-07-31,Youth Allowance recipients,121
+21430,Doreen,2020-07-31,Total JobSeeker and Youth allowance recipients,1238
+21430,Doreen,2020-07-31,Population aged 15-64,16326
+21430,Doreen,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.6
+21431,Epping - East,2020-07-31,JobSeeker payment recipients,913
+21431,Epping - East,2020-07-31,Youth Allowance recipients,101
+21431,Epping - East,2020-07-31,Total JobSeeker and Youth allowance recipients,1014
+21431,Epping - East,2020-07-31,Population aged 15-64,9598
+21431,Epping - East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.6
+21432,Epping - South,2020-07-31,JobSeeker payment recipients,734
+21432,Epping - South,2020-07-31,Youth Allowance recipients,78
+21432,Epping - South,2020-07-31,Total JobSeeker and Youth allowance recipients,812
+21432,Epping - South,2020-07-31,Population aged 15-64,5895
+21432,Epping - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13.8
+21433,Epping - West,2020-07-31,JobSeeker payment recipients,755
+21433,Epping - West,2020-07-31,Youth Allowance recipients,71
+21433,Epping - West,2020-07-31,Total JobSeeker and Youth allowance recipients,826
+21433,Epping - West,2020-07-31,Population aged 15-64,8609
+21433,Epping - West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.6
+21434,Mernda,2020-07-31,JobSeeker payment recipients,1297
+21434,Mernda,2020-07-31,Youth Allowance recipients,138
+21434,Mernda,2020-07-31,Total JobSeeker and Youth allowance recipients,1435
+21434,Mernda,2020-07-31,Population aged 15-64,14440
+21434,Mernda,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.9
+21435,South Morang (North),2020-07-31,JobSeeker payment recipients,615
+21435,South Morang (North),2020-07-31,Youth Allowance recipients,67
+21435,South Morang (North),2020-07-31,Total JobSeeker and Youth allowance recipients,682
+21435,South Morang (North),2020-07-31,Population aged 15-64,9076
+21435,South Morang (North),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.5
+21436,South Morang (South),2020-07-31,JobSeeker payment recipients,710
+21436,South Morang (South),2020-07-31,Youth Allowance recipients,61
+21436,South Morang (South),2020-07-31,Total JobSeeker and Youth allowance recipients,771
+21436,South Morang (South),2020-07-31,Population aged 15-64,8514
+21436,South Morang (South),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.1
+21437,Wollert,2020-07-31,JobSeeker payment recipients,1120
+21437,Wollert,2020-07-31,Youth Allowance recipients,99
+21437,Wollert,2020-07-31,Total JobSeeker and Youth allowance recipients,1219
+21437,Wollert,2020-07-31,Population aged 15-64,9124
+21437,Wollert,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13.4
+21438,Glenroy,2020-07-31,JobSeeker payment recipients,1645
+21438,Glenroy,2020-07-31,Youth Allowance recipients,135
+21438,Glenroy,2020-07-31,Total JobSeeker and Youth allowance recipients,1780
+21438,Glenroy,2020-07-31,Population aged 15-64,16565
+21438,Glenroy,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.7
+21439,Gowanbrae,2020-07-31,JobSeeker payment recipients,164
+21439,Gowanbrae,2020-07-31,Youth Allowance recipients,13
+21439,Gowanbrae,2020-07-31,Total JobSeeker and Youth allowance recipients,177
+21439,Gowanbrae,2020-07-31,Population aged 15-64,2030
+21439,Gowanbrae,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.7
+21440,Hadfield,2020-07-31,JobSeeker payment recipients,412
+21440,Hadfield,2020-07-31,Youth Allowance recipients,42
+21440,Hadfield,2020-07-31,Total JobSeeker and Youth allowance recipients,454
+21440,Hadfield,2020-07-31,Population aged 15-64,3732
+21440,Hadfield,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.2
+21441,Craigieburn - Central,2020-07-31,JobSeeker payment recipients,734
+21441,Craigieburn - Central,2020-07-31,Youth Allowance recipients,86
+21441,Craigieburn - Central,2020-07-31,Total JobSeeker and Youth allowance recipients,820
+21441,Craigieburn - Central,2020-07-31,Population aged 15-64,6062
+21441,Craigieburn - Central,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13.5
+21442,Craigieburn - North,2020-07-31,JobSeeker payment recipients,833
+21442,Craigieburn - North,2020-07-31,Youth Allowance recipients,74
+21442,Craigieburn - North,2020-07-31,Total JobSeeker and Youth allowance recipients,907
+21442,Craigieburn - North,2020-07-31,Population aged 15-64,8792
+21442,Craigieburn - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.3
+21443,Craigieburn - South,2020-07-31,JobSeeker payment recipients,1759
+21443,Craigieburn - South,2020-07-31,Youth Allowance recipients,191
+21443,Craigieburn - South,2020-07-31,Total JobSeeker and Youth allowance recipients,1950
+21443,Craigieburn - South,2020-07-31,Population aged 15-64,13583
+21443,Craigieburn - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.4
+21444,Craigieburn - West,2020-07-31,JobSeeker payment recipients,1644
+21444,Craigieburn - West,2020-07-31,Youth Allowance recipients,141
+21444,Craigieburn - West,2020-07-31,Total JobSeeker and Youth allowance recipients,1785
+21444,Craigieburn - West,2020-07-31,Population aged 15-64,12316
+21444,Craigieburn - West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.5
+21445,Mickleham - Yuroke,2020-07-31,JobSeeker payment recipients,1074
+21445,Mickleham - Yuroke,2020-07-31,Youth Allowance recipients,89
+21445,Mickleham - Yuroke,2020-07-31,Total JobSeeker and Youth allowance recipients,1163
+21445,Mickleham - Yuroke,2020-07-31,Population aged 15-64,5012
+21445,Mickleham - Yuroke,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,23.2
+21446,Boronia,2020-07-31,JobSeeker payment recipients,1413
+21446,Boronia,2020-07-31,Youth Allowance recipients,136
+21446,Boronia,2020-07-31,Total JobSeeker and Youth allowance recipients,1549
+21446,Boronia,2020-07-31,Population aged 15-64,15260
+21446,Boronia,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.2
+21447,Ferntree Gully (North),2020-07-31,JobSeeker payment recipients,779
+21447,Ferntree Gully (North),2020-07-31,Youth Allowance recipients,85
+21447,Ferntree Gully (North),2020-07-31,Total JobSeeker and Youth allowance recipients,864
+21447,Ferntree Gully (North),2020-07-31,Population aged 15-64,9344
+21447,Ferntree Gully (North),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.2
+21448,Ferntree Gully (South) - Upper Ferntree Gully,2020-07-31,JobSeeker payment recipients,769
+21448,Ferntree Gully (South) - Upper Ferntree Gully,2020-07-31,Youth Allowance recipients,74
+21448,Ferntree Gully (South) - Upper Ferntree Gully,2020-07-31,Total JobSeeker and Youth allowance recipients,843
+21448,Ferntree Gully (South) - Upper Ferntree Gully,2020-07-31,Population aged 15-64,10259
+21448,Ferntree Gully (South) - Upper Ferntree Gully,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.2
+21449,The Basin,2020-07-31,JobSeeker payment recipients,209
+21449,The Basin,2020-07-31,Youth Allowance recipients,16
+21449,The Basin,2020-07-31,Total JobSeeker and Youth allowance recipients,225
+21449,The Basin,2020-07-31,Population aged 15-64,2986
+21449,The Basin,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.5
+21450,Croydon - East,2020-07-31,JobSeeker payment recipients,915
+21450,Croydon - East,2020-07-31,Youth Allowance recipients,97
+21450,Croydon - East,2020-07-31,Total JobSeeker and Youth allowance recipients,1012
+21450,Croydon - East,2020-07-31,Population aged 15-64,10683
+21450,Croydon - East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.5
+21451,Croydon - West,2020-07-31,JobSeeker payment recipients,634
+21451,Croydon - West,2020-07-31,Youth Allowance recipients,70
+21451,Croydon - West,2020-07-31,Total JobSeeker and Youth allowance recipients,704
+21451,Croydon - West,2020-07-31,Population aged 15-64,8913
+21451,Croydon - West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.9
+21452,Croydon South,2020-07-31,JobSeeker payment recipients,217
+21452,Croydon South,2020-07-31,Youth Allowance recipients,20
+21452,Croydon South,2020-07-31,Total JobSeeker and Youth allowance recipients,237
+21452,Croydon South,2020-07-31,Population aged 15-64,3163
+21452,Croydon South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.5
+21453,Endeavour Hills - North,2020-07-31,JobSeeker payment recipients,824
+21453,Endeavour Hills - North,2020-07-31,Youth Allowance recipients,70
+21453,Endeavour Hills - North,2020-07-31,Total JobSeeker and Youth allowance recipients,894
+21453,Endeavour Hills - North,2020-07-31,Population aged 15-64,8542
+21453,Endeavour Hills - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.5
+21454,Endeavour Hills - South,2020-07-31,JobSeeker payment recipients,849
+21454,Endeavour Hills - South,2020-07-31,Youth Allowance recipients,85
+21454,Endeavour Hills - South,2020-07-31,Total JobSeeker and Youth allowance recipients,934
+21454,Endeavour Hills - South,2020-07-31,Population aged 15-64,9415
+21454,Endeavour Hills - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.9
+21455,Narre Warren - North East,2020-07-31,JobSeeker payment recipients,791
+21455,Narre Warren - North East,2020-07-31,Youth Allowance recipients,98
+21455,Narre Warren - North East,2020-07-31,Total JobSeeker and Youth allowance recipients,889
+21455,Narre Warren - North East,2020-07-31,Population aged 15-64,9895
+21455,Narre Warren - North East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9
+21456,Narre Warren - South West,2020-07-31,JobSeeker payment recipients,1164
+21456,Narre Warren - South West,2020-07-31,Youth Allowance recipients,133
+21456,Narre Warren - South West,2020-07-31,Total JobSeeker and Youth allowance recipients,1297
+21456,Narre Warren - South West,2020-07-31,Population aged 15-64,10090
+21456,Narre Warren - South West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,12.9
+21457,Narre Warren South (East),2020-07-31,JobSeeker payment recipients,621
+21457,Narre Warren South (East),2020-07-31,Youth Allowance recipients,89
+21457,Narre Warren South (East),2020-07-31,Total JobSeeker and Youth allowance recipients,710
+21457,Narre Warren South (East),2020-07-31,Population aged 15-64,9538
+21457,Narre Warren South (East),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.4
+21458,Narre Warren South (West),2020-07-31,JobSeeker payment recipients,1111
+21458,Narre Warren South (West),2020-07-31,Youth Allowance recipients,143
+21458,Narre Warren South (West),2020-07-31,Total JobSeeker and Youth allowance recipients,1254
+21458,Narre Warren South (West),2020-07-31,Population aged 15-64,12142
+21458,Narre Warren South (West),2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.3
+21459,Noble Park - East,2020-07-31,JobSeeker payment recipients,996
+21459,Noble Park - East,2020-07-31,Youth Allowance recipients,89
+21459,Noble Park - East,2020-07-31,Total JobSeeker and Youth allowance recipients,1085
+21459,Noble Park - East,2020-07-31,Population aged 15-64,9481
+21459,Noble Park - East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.4
+21460,Noble Park - West,2020-07-31,JobSeeker payment recipients,1453
+21460,Noble Park - West,2020-07-31,Youth Allowance recipients,121
+21460,Noble Park - West,2020-07-31,Total JobSeeker and Youth allowance recipients,1574
+21460,Noble Park - West,2020-07-31,Population aged 15-64,13453
+21460,Noble Park - West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.7
+21461,Burnside,2020-07-31,JobSeeker payment recipients,355
+21461,Burnside,2020-07-31,Youth Allowance recipients,30
+21461,Burnside,2020-07-31,Total JobSeeker and Youth allowance recipients,385
+21461,Burnside,2020-07-31,Population aged 15-64,3428
+21461,Burnside,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.2
+21462,Burnside Heights,2020-07-31,JobSeeker payment recipients,352
+21462,Burnside Heights,2020-07-31,Youth Allowance recipients,35
+21462,Burnside Heights,2020-07-31,Total JobSeeker and Youth allowance recipients,387
+21462,Burnside Heights,2020-07-31,Population aged 15-64,4384
+21462,Burnside Heights,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.8
+21463,Caroline Springs,2020-07-31,JobSeeker payment recipients,1174
+21463,Caroline Springs,2020-07-31,Youth Allowance recipients,111
+21463,Caroline Springs,2020-07-31,Total JobSeeker and Youth allowance recipients,1285
+21463,Caroline Springs,2020-07-31,Population aged 15-64,14839
+21463,Caroline Springs,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.7
+21464,Point Cook - East,2020-07-31,JobSeeker payment recipients,944
+21464,Point Cook - East,2020-07-31,Youth Allowance recipients,75
+21464,Point Cook - East,2020-07-31,Total JobSeeker and Youth allowance recipients,1019
+21464,Point Cook - East,2020-07-31,Population aged 15-64,10863
+21464,Point Cook - East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.4
+21465,Point Cook - North,2020-07-31,JobSeeker payment recipients,1125
+21465,Point Cook - North,2020-07-31,Youth Allowance recipients,89
+21465,Point Cook - North,2020-07-31,Total JobSeeker and Youth allowance recipients,1214
+21465,Point Cook - North,2020-07-31,Population aged 15-64,16899
+21465,Point Cook - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.2
+21466,Point Cook - South,2020-07-31,JobSeeker payment recipients,740
+21466,Point Cook - South,2020-07-31,Youth Allowance recipients,64
+21466,Point Cook - South,2020-07-31,Total JobSeeker and Youth allowance recipients,804
+21466,Point Cook - South,2020-07-31,Population aged 15-64,12017
+21466,Point Cook - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,6.7
+21467,Werribee - East,2020-07-31,JobSeeker payment recipients,1870
+21467,Werribee - East,2020-07-31,Youth Allowance recipients,209
+21467,Werribee - East,2020-07-31,Total JobSeeker and Youth allowance recipients,2079
+21467,Werribee - East,2020-07-31,Population aged 15-64,13933
+21467,Werribee - East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.9
+21468,Werribee - West,2020-07-31,JobSeeker payment recipients,1312
+21468,Werribee - West,2020-07-31,Youth Allowance recipients,130
+21468,Werribee - West,2020-07-31,Total JobSeeker and Youth allowance recipients,1442
+21468,Werribee - West,2020-07-31,Population aged 15-64,9913
+21468,Werribee - West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,14.5
+21469,Mildura - North,2020-07-31,JobSeeker payment recipients,1615
+21469,Mildura - North,2020-07-31,Youth Allowance recipients,242
+21469,Mildura - North,2020-07-31,Total JobSeeker and Youth allowance recipients,1857
+21469,Mildura - North,2020-07-31,Population aged 15-64,11743
+21469,Mildura - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,15.8
+21470,Mildura - South,2020-07-31,JobSeeker payment recipients,959
+21470,Mildura - South,2020-07-31,Youth Allowance recipients,144
+21470,Mildura - South,2020-07-31,Total JobSeeker and Youth allowance recipients,1103
+21470,Mildura - South,2020-07-31,Population aged 15-64,9355
+21470,Mildura - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.8
+21471,Camperdown,2020-07-31,JobSeeker payment recipients,193
+21471,Camperdown,2020-07-31,Youth Allowance recipients,15
+21471,Camperdown,2020-07-31,Total JobSeeker and Youth allowance recipients,208
+21471,Camperdown,2020-07-31,Population aged 15-64,1931
+21471,Camperdown,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.8
+21472,Colac,2020-07-31,JobSeeker payment recipients,669
+21472,Colac,2020-07-31,Youth Allowance recipients,88
+21472,Colac,2020-07-31,Total JobSeeker and Youth allowance recipients,757
+21472,Colac,2020-07-31,Population aged 15-64,7534
+21472,Colac,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10
+21473,Colac Region,2020-07-31,JobSeeker payment recipients,257
+21473,Colac Region,2020-07-31,Youth Allowance recipients,23
+21473,Colac Region,2020-07-31,Total JobSeeker and Youth allowance recipients,280
+21473,Colac Region,2020-07-31,Population aged 15-64,3171
+21473,Colac Region,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.8
+21474,Corangamite - North,2020-07-31,JobSeeker payment recipients,307
+21474,Corangamite - North,2020-07-31,Youth Allowance recipients,33
+21474,Corangamite - North,2020-07-31,Total JobSeeker and Youth allowance recipients,340
+21474,Corangamite - North,2020-07-31,Population aged 15-64,3120
+21474,Corangamite - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,10.9
+21475,Corangamite - South,2020-07-31,JobSeeker payment recipients,306
+21475,Corangamite - South,2020-07-31,Youth Allowance recipients,34
+21475,Corangamite - South,2020-07-31,Total JobSeeker and Youth allowance recipients,340
+21475,Corangamite - South,2020-07-31,Population aged 15-64,4403
+21475,Corangamite - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,7.7
+21476,Otway,2020-07-31,JobSeeker payment recipients,291
+21476,Otway,2020-07-31,Youth Allowance recipients,15
+21476,Otway,2020-07-31,Total JobSeeker and Youth allowance recipients,306
+21476,Otway,2020-07-31,Population aged 15-64,2217
+21476,Otway,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,13.8
+21477,Moyne - East,2020-07-31,JobSeeker payment recipients,335
+21477,Moyne - East,2020-07-31,Youth Allowance recipients,47
+21477,Moyne - East,2020-07-31,Total JobSeeker and Youth allowance recipients,382
+21477,Moyne - East,2020-07-31,Population aged 15-64,4114
+21477,Moyne - East,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.3
+21478,Moyne - West,2020-07-31,JobSeeker payment recipients,465
+21478,Moyne - West,2020-07-31,Youth Allowance recipients,41
+21478,Moyne - West,2020-07-31,Total JobSeeker and Youth allowance recipients,506
+21478,Moyne - West,2020-07-31,Population aged 15-64,5810
+21478,Moyne - West,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,8.7
+21479,Warrnambool - North,2020-07-31,JobSeeker payment recipients,1154
+21479,Warrnambool - North,2020-07-31,Youth Allowance recipients,165
+21479,Warrnambool - North,2020-07-31,Total JobSeeker and Youth allowance recipients,1319
+21479,Warrnambool - North,2020-07-31,Population aged 15-64,13898
+21479,Warrnambool - North,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,9.5
+21480,Warrnambool - South,2020-07-31,JobSeeker payment recipients,810
+21480,Warrnambool - South,2020-07-31,Youth Allowance recipients,124
+21480,Warrnambool - South,2020-07-31,Total JobSeeker and Youth allowance recipients,934
+21480,Warrnambool - South,2020-07-31,Population aged 15-64,8282
+21480,Warrnambool - South,2020-07-31,Percentage aged 15-64 on either JobSeeker or Youth Allowance,11.3
