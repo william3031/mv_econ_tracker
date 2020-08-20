@@ -22,7 +22,7 @@ options(scipen = 999)
 # data #########
 ## dates -------------------------------------------------------------------------------------------------------------
 # date updated
-date_updated <- format(Sys.time(), '%d %B %Y')
+date_updated <- "19 August 2020" # update this manually now!!!
 #abs
 abs_publication_date <- "11 August 2020"
 # jobkeeper
