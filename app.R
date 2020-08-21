@@ -248,18 +248,18 @@ sidebar <- dashboardSidebar(
                  menuSubItem("Change by industry", tabName = "jobs_wages_industry")
         ),
         menuItem("Jobkeeper",
-                 menuSubItem("Jobkeeper map", tabName = "jobkeeper_map"),
-                 menuSubItem("Jobkeeper table", tabName = "jobkeeper_table")
+                 menuSubItem("Jobkeeper table", tabName = "jobkeeper_table"),
+                 menuSubItem("Jobkeeper map", tabName = "jobkeeper_map")
         ),
         menuItem("Jobseeker and Youth Allowance",
-                 menuSubItem("Jobseeker map", tabName = "jobseeker_map"),
                  menuSubItem("Jobseeker rate graph", tabName = "jobseeker_rate_graph"),
                  menuSubItem("Jobseeker totals graph", tabName = "jobseeker_total_graph"),
+                 menuSubItem("Jobseeker map", tabName = "jobseeker_map"),
                  menuSubItem("Jobseeker table", tabName = "jobseeker_table")
         ),
         menuItem("Unemployment and labour force",
-                 menuSubItem("Unemployment rate map", tabName = "unemp_map"),
                  menuSubItem("Unemployment rate graph", tabName = "salm_rate_graph"),
+                 menuSubItem("Unemployment rate map", tabName = "unemp_map"),
                  menuSubItem("Labour force graph", tabName = "salm_lf_graph"),
                  menuSubItem("Number of unemployed graph", tabName = "salm_unemp_graph"),
                  menuSubItem("Unemployment table", tabName = "unemp_table")

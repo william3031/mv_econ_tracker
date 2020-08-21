@@ -1,6 +1,6 @@
 library(microbenchmark)
 library(data.table)
-library(fread)
+library(vroom)
 library(tidyverse)
 
 times <- 50 # Number of times to run each benchmark
