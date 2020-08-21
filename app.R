@@ -14,6 +14,7 @@ library(RColorBrewer)
 library(sf)
 library(lubridate)
 library(shinycssloaders)
+library(vroom) # vroom is faster
 #library(timevis)
 
 #disable scientific notation
@@ -37,9 +38,9 @@ salm_publication_date <- "31 July 2020"
 region_text <- "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>"
 
 ## jobs and wages data ####
-jobs_wages_index <- read_csv("app_data/jobs_wages_index.csv")
+jobs_wages_index <- vroom("app_data/jobs_wages_index.csv")
 
-jobs_wages_by_age_data <- read_csv("app_data/jobs_wages_by_age_data.csv")  %>% 
+jobs_wages_by_age_data <- vroom("app_data/jobs_wages_by_age_data.csv")  %>% 
     mutate(age_group = factor(age_group, levels = c("Under 20", "20-29", "30-39", "40-49",
                                                     "50-59", "60-69", "70 and over", "All ages")))
 
@@ -75,7 +76,7 @@ industry_levels <- c("All industries", "Agriculture, forestry & fishing", "Minin
 
 industry_levels_rev <- rev(industry_levels)
 
-jobs_wages_by_industry <- read_csv("app_data/jobs_wages_by_industry.csv") %>% 
+jobs_wages_by_industry <- vroom("app_data/jobs_wages_by_industry.csv") %>% 
     mutate(industry_division = factor(industry_division, levels = industry_levels_rev))
 
 ## jobkeeper data #### 
@@ -83,11 +84,11 @@ jobs_wages_by_industry <- read_csv("app_data/jobs_wages_by_industry.csv") %>%
 mv_shp <- st_read("app_data/shp/mvcc_boundary.shp")
 
 # jobkeeper data
-jk_raw <- read_csv("app_data/jk_raw.csv")
+jk_raw <- vroom("app_data/jk_raw.csv")
 postcodes_jk <- st_read("app_data/shp/postcodes_simplified.shp")
 
 # postcode map data
-jk_map_data <- read_csv("app_data/jk_map_data.csv")
+jk_map_data <- vroom("app_data/jk_map_data.csv")
 
 # join to shp
 jk_join <- left_join(postcodes_jk, jk_map_data) %>%  
@@ -116,7 +117,7 @@ jk_mv_num <- jk_mv_postcodes %>%
     pull()
 
 ## jobseeker data #################################
-jobseeker_table_long <- read_csv("app_data/jobseeker_table_long.csv")
+jobseeker_table_long <- vroom("app_data/jobseeker_table_long.csv")
 
 sa2_greater <- st_read("app_data/shp/sa2_2016_gmel.shp") %>% 
     select(-sa2_code)
@@ -148,9 +149,9 @@ region_list <- c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Po
 selected_regions <- c("City of Moonee Valley", "Greater Melbourne")
 selected_sa2 <- c("Flemington", "Moonee Ponds", "Keilor East")
 
-jobseeker_joined <- read_csv("app_data/jobseeker_joined.csv")
-jobseeker_joined_rate <- read_csv("app_data/jobseeker_joined_rate.csv")
-jobseeker_joined_total <- read_csv("app_data/jobseeker_joined_total.csv")
+jobseeker_joined <- vroom("app_data/jobseeker_joined.csv")
+jobseeker_joined_rate <- vroom("app_data/jobseeker_joined_rate.csv")
+jobseeker_joined_total <- vroom("app_data/jobseeker_joined_total.csv")
 
 js_mv_num <- jobseeker_joined %>% 
     filter(month == jobseeker_month) %>% 
@@ -196,7 +197,7 @@ colnames(jobseeker_large) <- c("Region",
                                "Change")
 
 # salm data ##########################
-sa2_vic_current_unemp_rate <- read_csv("app_data/salm_unemp_rate_current_sa2.csv")
+sa2_vic_current_unemp_rate <- vroom("app_data/salm_unemp_rate_current_sa2.csv")
 
 unemp_rate_map_join <- left_join(sa2_greater, sa2_vic_current_unemp_rate, by = "sa2_name") 
 
@@ -208,11 +209,11 @@ salm_current_month <- sa2_vic_current_unemp_rate %>%
 
 salm_data_list <- c("Unemployment rate %", "No. of unemployed", "Labour force")
 
-salm_chart_rate_data <- read_csv("app_data/salm_chart_rate_data.csv")
-salm_chart_unemp_data <- read_csv("app_data/salm_chart_unemp_data.csv")
-salm_chart_lf_data <- read_csv("app_data/salm_chart_lf_data.csv")
+salm_chart_rate_data <- vroom("app_data/salm_chart_rate_data.csv")
+salm_chart_unemp_data <- vroom("app_data/salm_chart_unemp_data.csv")
+salm_chart_lf_data <- vroom("app_data/salm_chart_lf_data.csv")
 
-salm_table_data <- read_csv("app_data/salm_table_data.csv") %>% 
+salm_table_data <- vroom("app_data/salm_table_data.csv") %>% 
     mutate(`No. of unemployed` = format(`No. of unemployed`, big.mark = ","),
            `Labour force` = format(`Labour force`, big.mark = ","))
 
@@ -222,7 +223,7 @@ unemp_rate_mv_num <- salm_table_data %>%
     pull()
 
 ## timeline ############
-#timeline_data <- read_csv("data_in/timeline.csv") %>% 
+#timeline_data <- vroom("data_in/timeline.csv") %>% 
 #    mutate(start = dmy(start))
     
 # the app ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
