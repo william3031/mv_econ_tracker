@@ -59,7 +59,6 @@ jobs_wages_index <- bind_rows(weekly_jobs_data_raw, weekly_wages_data_raw) %>%
   mutate(values = round(values - 100, 1))
 write_csv(jobs_wages_index, "app_data/jobs_wages_index.csv")
 
-
 # data for age and gender - victoria
 jobs_wages_by_age_data <- weekly_abs_data %>% 
   filter(sex %in% c("Males", "Females")) %>% 

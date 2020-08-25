@@ -1,33 +1,33 @@
 industry_division,sex,age_group,latest_week,type
-All industries,Males,All ages,-6.2,Jobs
-All industries,Males,Under 20,-9.3,Jobs
-All industries,Males,20-29,-10.2,Jobs
-All industries,Males,30-39,-4.7,Jobs
-All industries,Males,40-49,-3.1,Jobs
-All industries,Males,50-59,-3,Jobs
-All industries,Males,60-69,-6.1,Jobs
-All industries,Males,70 and over,-11.7,Jobs
-All industries,Females,All ages,-7.1,Jobs
-All industries,Females,Under 20,-14.6,Jobs
-All industries,Females,20-29,-10.5,Jobs
-All industries,Females,30-39,-4.9,Jobs
-All industries,Females,40-49,-4.2,Jobs
-All industries,Females,50-59,-4.3,Jobs
-All industries,Females,60-69,-7.9,Jobs
-All industries,Females,70 and over,-15.8,Jobs
-All industries,Males,All ages,-6.2,Wages
-All industries,Males,Under 20,7.7,Wages
-All industries,Males,20-29,-5,Wages
-All industries,Males,30-39,-4.8,Wages
-All industries,Males,40-49,-6.3,Wages
-All industries,Males,50-59,-7,Wages
-All industries,Males,60-69,-7.7,Wages
-All industries,Males,70 and over,-5.9,Wages
-All industries,Females,All ages,-3.5,Wages
-All industries,Females,Under 20,10.7,Wages
-All industries,Females,20-29,-1.8,Wages
-All industries,Females,30-39,-3.6,Wages
-All industries,Females,40-49,-3.7,Wages
-All industries,Females,50-59,-3.6,Wages
-All industries,Females,60-69,-4.2,Wages
-All industries,Females,70 and over,-3.1,Wages
+All industries,Males,All ages,-7.3,Jobs
+All industries,Males,Under 20,-11.3,Jobs
+All industries,Males,20-29,-11.1,Jobs
+All industries,Males,30-39,-5.8,Jobs
+All industries,Males,40-49,-4.3,Jobs
+All industries,Males,50-59,-4,Jobs
+All industries,Males,60-69,-7.1,Jobs
+All industries,Males,70 and over,-14,Jobs
+All industries,Females,All ages,-8.1,Jobs
+All industries,Females,Under 20,-17.2,Jobs
+All industries,Females,20-29,-11.7,Jobs
+All industries,Females,30-39,-5.8,Jobs
+All industries,Females,40-49,-4.9,Jobs
+All industries,Females,50-59,-4.7,Jobs
+All industries,Females,60-69,-8.6,Jobs
+All industries,Females,70 and over,-17.2,Jobs
+All industries,Males,All ages,-8.5,Wages
+All industries,Males,Under 20,10,Wages
+All industries,Males,20-29,-6.1,Wages
+All industries,Males,30-39,-7.5,Wages
+All industries,Males,40-49,-9,Wages
+All industries,Males,50-59,-9.4,Wages
+All industries,Males,60-69,-9.7,Wages
+All industries,Males,70 and over,-9.5,Wages
+All industries,Females,All ages,-4.1,Wages
+All industries,Females,Under 20,12.3,Wages
+All industries,Females,20-29,-1.6,Wages
+All industries,Females,30-39,-4.5,Wages
+All industries,Females,40-49,-4.4,Wages
+All industries,Females,50-59,-4,Wages
+All industries,Females,60-69,-5.6,Wages
+All industries,Females,70 and over,-7.6,Wages
