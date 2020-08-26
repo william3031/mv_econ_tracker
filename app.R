@@ -1,4 +1,5 @@
-#add libraries -don't use pacman - it won't work when published to shinyapps
+# Run the other files first when updating data. That will export it in to the correct format and will be read in here.
+# add libraries - don't use pacman - it won't work when published to shinyapps
 library(shiny)
 library(tidyverse)
 library(glue)
