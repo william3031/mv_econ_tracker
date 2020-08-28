@@ -30,9 +30,8 @@ data_jul20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-monthly-
   clean_names() %>% remove_empty() %>%
   mutate(month = "2020-07-31")
 
-# update the mohths in the bind rows below
+# update the months in the bind rows below
 
-  
 ## simplication of the sa2_file
 #sa2_initial <- st_read("data_in/shp/sa2_2016_gmelb.shp") %>% # already deleted, but is an export from gisdb
 #  clean_names() %>% 
@@ -86,7 +85,7 @@ jobseeker_all <- bind_rows(jobseeker_merge_sa2, jobseeker_merge_mv, jobseeker_me
 # asgs
 asgs_col_names <- c("S/T code", "S/T name", "GCCSA code", "GCCSA name", "SA4 code", "SA4 name", "SA3 code", "SA3 name", "SA2 code", "SA2 name", "Age0-4", "Age5–9", "Age10–14", "Age15–19", "Age20–24", "Age25–29", "Age30–34", "Age35–39", "Age40–44", "Age45–49", "Age50–54", "Age55–59", "Age60–64", "Age65–69", "Age70–74", "Age75–79", "Age80–84", "Age85 and over", "Total Persons")
 
-asgs_age <- read_excel("data_in/32350ds0001_asgs2016_2018.xls", sheet = "Table 3", skip = 9, col_names = asgs_col_names) %>% 
+asgs_age <- read_excel("data_in/32350ds0001_2019.xls", sheet = "Table 3", skip = 9, col_names = asgs_col_names) %>% 
   clean_names() %>% 
   filter(s_t_name == "Victoria") 
 
@@ -136,7 +135,7 @@ gm_age <- asgs_age %>%
 # lga
 lga_col_names <- c("S/T code", "S/T name", "LGA code", "LGA name", "Age0-4", "Age5–9", "Age10–14", "Age15–19", "Age20–24", "Age25–29", "Age30–34", "Age35–39", "Age40–44", "Age45–49", "Age50–54", "Age55–59", "Age60–64", "Age65–69", "Age70–74", "Age75–79", "Age80–84", "Age85 and over", "Total Persons")
 
-lga_age <- read_excel("data_in/32350ds0003_lga_2018.xls", sheet = "Table 3", skip = 10, col_names = lga_col_names) %>% 
+lga_age <- read_excel("data_in/32350ds0003_2019.xls", sheet = "Table 3", skip = 10, col_names = lga_col_names) %>% 
   clean_names() %>% 
   filter(s_t_name == "Victoria") %>% 
   select(-(s_t_code:lga_code)) %>% 
@@ -189,6 +188,14 @@ jobseeker_month_formatted <- format(ymd(jobseeker_month), "%b %Y")
 jobseeker_month_long <- format(ymd(jobseeker_month), "%B %Y")
 jobseeker_first <- js_month_list[length(js_month_list)]
 jobseeker_first_month_formatted <- format(ymd(jobseeker_first), "%b %Y")
+
+jobseeker_table_filtered <- jobseeker_table_long %>% 
+  filter(month == jobseeker_month) %>% 
+  filter(data_type == "Percentage aged 15-64 on either JobSeeker or Youth Allowance") %>% 
+  rename(percentage = values)
+
+js_map_join <- left_join(sa2_greater, jobseeker_table_filtered, by = "sa2_name")
+st_write(js_map_join, "app_data/shp/js_map_join.shp")
 
 jobseeker_large_first <- jobseeker_joined %>% 
   filter(month  == jobseeker_first) %>% 

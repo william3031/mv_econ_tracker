@@ -33,6 +33,7 @@ jobkeeper_data_date <- "May 2020"
 jobkeeper_map_text <- glue("Numbers are based on the total number of <b>processed applications for organisations for {jobkeeper_data_date}</b>.")
 #jobseeker
 jobseeker_publication_date <- "14 August 2020"
+abs_age_sex_text <- "ABS, 3235.0 - Regional Population by Age and Sex (2019)"
 # salm
 salm_publication_date <- "31 July 2020"
 # region text
@@ -87,12 +88,8 @@ mv_shp <- st_read("app_data/shp/mvcc_boundary.shp")
 jk_raw <- fread("app_data/jk_raw.csv")
 postcodes_jk <- st_read("app_data/shp/postcodes_simplified.shp")
 
-# postcode map data
-jk_map_data <- fread("app_data/jk_map_data.csv")
-
 # join to shp
-jk_join <- left_join(postcodes_jk, jk_map_data) %>%  
-    filter(!is.na(count)) 
+jk_join <- st_read("app_data/shp/jk_join.shp")
 
 # mv postcodes
 jk_mv_postcodes <- jk_raw %>% 
@@ -139,8 +136,7 @@ jobseeker_table_filtered <- jobseeker_table_long %>%
     filter(data_type == "Percentage aged 15-64 on either JobSeeker or Youth Allowance") %>% 
     rename(percentage = values)
 
-js_map_join <- left_join(sa2_greater, jobseeker_table_filtered, by = "sa2_name")
-
+js_map_join <- st_read("app_data/shp/js_map_join.shp")
 
 region_list <- c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Ponds",
                  "Airport West", "Keilor East", "Niddrie - Essendon West", "Strathmore",
@@ -199,7 +195,7 @@ colnames(jobseeker_large) <- c("Region",
 # salm data ##########################
 sa2_vic_current_unemp_rate <- fread("app_data/salm_unemp_rate_current_sa2.csv")
 
-unemp_rate_map_join <- left_join(sa2_greater, sa2_vic_current_unemp_rate, by = "sa2_name") 
+unemp_rate_map_join <- st_read("app_data/shp/unemp_rate_map_join.shp")
 
 salm_current_month <- sa2_vic_current_unemp_rate %>% 
     tail(1) %>% 
@@ -406,7 +402,7 @@ body <- dashboardBody(
                     tags$a(href="https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile", target="_blank",
                            "Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile; "),
                     tags$a(href="https://www.abs.gov.au/AUSSTATS/abs@.nsf/mf/3235.0", target="_blank",
-                           "ABS, 3235.0 - Regional Population by Age and Sex (2018)"),
+                           abs_age_sex_text),
                     tags$body(HTML(glue("</br>Last updated {jobseeker_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "jobseeker_rate_graph",
@@ -431,7 +427,7 @@ body <- dashboardBody(
                     tags$a(href="https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile", target="_blank",
                            "Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile; "),
                     tags$a(href="https://www.abs.gov.au/AUSSTATS/abs@.nsf/mf/3235.0", target="_blank",
-                           "ABS, 3235.0 - Regional Population by Age and Sex (2018)"),
+                           abs_age_sex_text),
                     tags$body(HTML(glue("</br>Last updated {jobseeker_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "jobseeker_total_graph",
@@ -455,7 +451,7 @@ body <- dashboardBody(
                     tags$a(href="https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile", target="_blank",
                            "Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile; "),
                     tags$a(href="https://www.abs.gov.au/AUSSTATS/abs@.nsf/mf/3235.0", target="_blank",
-                           "ABS, 3235.0 - Regional Population by Age and Sex (2018)"),
+                           abs_age_sex_text),
                     tags$body(HTML(glue("</br>Last updated {jobseeker_publication_date}"))), width = 12)
         ),
         tabItem(tabName = "jobseeker_table",
@@ -471,7 +467,7 @@ body <- dashboardBody(
                     tags$a(href="https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile", target="_blank",
                            "Department of Social Services, JobSeeker Payment and Youth Allowance recipients – monthly profile; "),
                     tags$a(href="https://www.abs.gov.au/AUSSTATS/abs@.nsf/mf/3235.0", target="_blank",
-                           "ABS, 3235.0 - Regional Population by Age and Sex (2018)"),
+                           abs_age_sex_text),
                     tags$body(HTML(glue("</br>Last updated {jobseeker_publication_date}"))), width = 12),
         ),
         ## salm data ####

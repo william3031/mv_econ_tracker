@@ -10,19 +10,19 @@ jk_raw <- read_excel("data_in/JobKeeper-data-20200731.xlsx", sheet = "Data", ski
   clean_names()
 write_csv(jk_raw, "app_data/jk_raw.csv")
 
-jk_colnames <- colnames(jk_raw1)
+jk_colnames <- colnames(jk_raw)
 
 jk_map_data <- jk_raw %>% 
   select(postcode, jk_colnames[length(jk_colnames)]) %>% 
   rename(count = jk_colnames[length(jk_colnames)]) %>%  # change as needed
   filter(!is.na(count))
-write_csv(jk_map_data, "app_data/jk_map_data.csv")
 
 # join to selected postcodes and export # simplify the postcode file first!!!!!!!!!!!!!!!!!!!!!
 postcodes_jk <- st_read("data_in/shp/postcodes_simplified.shp") 
 
 jk_join <- left_join(postcodes_jk, jk_map_data) %>%  
   filter(!is.na(count)) 
+st_write(jk_join, "app_data/shp/jk_join.shp")
 
 jk_mv_postcodes <- jk_raw %>% 
   pivot_longer(-postcode, names_to = "month", values_to = "count") %>% 

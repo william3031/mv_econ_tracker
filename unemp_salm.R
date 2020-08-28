@@ -74,6 +74,7 @@ sa2_greater <- st_read("data_in/shp/sa2_2016_gmel.shp") %>%
 
 # join for app
 unemp_rate_map_join <- left_join(sa2_greater, sa2_vic_current_unemp_rate) 
+st_write(unemp_rate_map_join, "app_data/shp/unemp_rate_map_join.shp")
 
 # for unemployment and labour force sa2 vic ##################################
 sa2_vic_tidy_unemployment <- sa2_data_unemployment %>% 
