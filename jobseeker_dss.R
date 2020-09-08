@@ -4,7 +4,7 @@
 # libraries
 pacman::p_load(tidyverse, readxl, janitor, scales, sf, rmapshaper, lubridate, RColorBrewer)
 
-# don't use purrr on this as the files are the same, cant' work out month - note the dates in the excel file
+# note the dates in the excel file # perhaps use purrr map_dfr and list_files, but issues with the source file name
 data_mar20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipients-monthly-profile-march-2020.xlsx",
                          sheet = "Table 4 - By SA2", skip = 6) %>%
   clean_names() %>% remove_empty() %>%

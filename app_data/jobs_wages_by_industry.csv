@@ -1,41 +1,41 @@
 industry_division,latest_week,type
-All industries,-7.8,Jobs
-"Agriculture, forestry & fishing",-16.6,Jobs
-Mining,-2.4,Jobs
-Manufacturing,-3.6,Jobs
-"Electricity, gas, water & waste services",3.5,Jobs
-Construction,-6.7,Jobs
-Wholesale trade,-5.6,Jobs
-Retail trade,-5.1,Jobs
-Accommodation & food services,-30.9,Jobs
-"Transport, postal & warehousing",-5,Jobs
-Information media & telecommunications,-9.7,Jobs
-Financial & insurance services,-0.1,Jobs
-"Rental, hiring & real estate services",-12.2,Jobs
-"Professional, scientific & technical services",-7,Jobs
-Administrative & support services,-12,Jobs
-Public administration & safety,-1.8,Jobs
-Education & training,-9,Jobs
-Health care & social assistance,-0.9,Jobs
-Arts & recreation services,-24.7,Jobs
-Other services,-12.8,Jobs
-All industries,-6.7,Wages
-"Agriculture, forestry & fishing",-15,Wages
-Mining,-16.6,Wages
-Manufacturing,-8.7,Wages
-"Electricity, gas, water & waste services",4.7,Wages
-Construction,-8.3,Wages
-Wholesale trade,-10.4,Wages
-Retail trade,-2.7,Wages
-Accommodation & food services,-23.7,Wages
-"Transport, postal & warehousing",-9.8,Wages
-Information media & telecommunications,-0.5,Wages
-Financial & insurance services,-3.8,Wages
-"Rental, hiring & real estate services",-13.7,Wages
-"Professional, scientific & technical services",-9.3,Wages
-Administrative & support services,-8.4,Wages
-Public administration & safety,-5,Wages
-Education & training,-5.9,Wages
-Health care & social assistance,2,Wages
-Arts & recreation services,-17,Wages
-Other services,-4.5,Wages
+All industries,-7.9,Jobs
+"Agriculture, forestry & fishing",-16,Jobs
+Mining,-1.2,Jobs
+Manufacturing,-3.7,Jobs
+"Electricity, gas, water & waste services",3.9,Jobs
+Construction,-7,Jobs
+Wholesale trade,-4.5,Jobs
+Retail trade,-6,Jobs
+Accommodation & food services,-37.6,Jobs
+"Transport, postal & warehousing",-5.5,Jobs
+Information media & telecommunications,-7.8,Jobs
+Financial & insurance services,0.6,Jobs
+"Rental, hiring & real estate services",-12.8,Jobs
+"Professional, scientific & technical services",-5.2,Jobs
+Administrative & support services,-11.2,Jobs
+Public administration & safety,-1.3,Jobs
+Education & training,-8.7,Jobs
+Health care & social assistance,-0.5,Jobs
+Arts & recreation services,-23.4,Jobs
+Other services,-13.4,Jobs
+All industries,-6.2,Wages
+"Agriculture, forestry & fishing",-14.9,Wages
+Mining,-8.7,Wages
+Manufacturing,-9.3,Wages
+"Electricity, gas, water & waste services",3.1,Wages
+Construction,-12.3,Wages
+Wholesale trade,-9,Wages
+Retail trade,-5.9,Wages
+Accommodation & food services,-30.1,Wages
+"Transport, postal & warehousing",-8.2,Wages
+Information media & telecommunications,6.3,Wages
+Financial & insurance services,-2.9,Wages
+"Rental, hiring & real estate services",-15.2,Wages
+"Professional, scientific & technical services",-5.9,Wages
+Administrative & support services,-8.2,Wages
+Public administration & safety,-5.4,Wages
+Education & training,-3.8,Wages
+Health care & social assistance,4.2,Wages
+Arts & recreation services,-13.5,Wages
+Other services,-5.2,Wages

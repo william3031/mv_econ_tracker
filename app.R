@@ -24,9 +24,9 @@ options(scipen = 999)
 # data #########
 ## dates -------------------------------------------------------------------------------------------------------------
 # date updated
-date_updated <- "25 August 2020" # update this manually now!!!
+date_updated <- "8 September 2020" # update this manually now!!!
 #abs
-abs_publication_date <- "25 August 2020"
+abs_publication_date <- "8 September 2020"
 # jobkeeper
 jobkeeper_publication_date <- "31 July 2020"
 jobkeeper_data_date <- "May 2020"
