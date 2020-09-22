@@ -2,46 +2,26 @@
 # https://data.gov.au/data/dataset/jobseeker-payment-and-youth-allowance-recipients-monthly-profile
 
 # libraries
-pacman::p_load(tidyverse, readxl, janitor, scales, sf, rmapshaper, lubridate, RColorBrewer)
+pacman::p_load(tidyverse, readxl, janitor, scales, sf, rmapshaper, lubridate, RColorBrewer, fs, zoo)
 
-# note the dates in the excel file # perhaps use purrr map_dfr and list_files, but issues with the source file name
-data_mar20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipients-monthly-profile-march-2020.xlsx",
-                         sheet = "Table 4 - By SA2", skip = 6) %>%
-  clean_names() %>% remove_empty() %>%
-  mutate(month = "2020-03-27")
+# file locations
+jobseeker_files <- dir_ls(path = "data_in/", regexp = "jobseeker")
 
-data_apr20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipients-monthly-profile-april-2020.xlsx",
-                         sheet = "Table 4 - By SA2", skip = 6) %>%
-  clean_names() %>% remove_empty() %>%
-  mutate(month = "2020-04-24")
-
-data_may20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipients-monthly-profile-may-2020.xlsx",
-                         sheet = "Table 4 - By SA2", skip = 6) %>%
-  clean_names() %>% remove_empty() %>%
-  mutate(month = "2020-05-29")
-
-data_jun20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-recipients-june-2020.xlsx",
-                         sheet = "Table 4 - By SA2", skip = 6) %>%
-  clean_names() %>% remove_empty() %>%
-  mutate(month = "2020-06-26")
-
-data_jul20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-monthly-profile-july-2020.xlsx",
-                         sheet = "Table 4 - By SA2", skip = 6) %>%
-  clean_names() %>% remove_empty() %>%
-  mutate(month = "2020-07-31")
-
-data_aug20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-monthly-profile-august-2020.xlsx",
-                         sheet = "Table 4 - By SA2", skip = 6) %>%
-  clean_names() %>% remove_empty() %>%
-  mutate(month = "2020-08-31")
-
-
-# # test here
-# library(fs)
-# dir_ls(path = "data_in/", regexp = "jobseeker") %>%
-#   map_df(~ read_excel(path = paths, "Table 4 - By SA2", skip = 6), .id = "sheet")
-
-# update the months in the bind rows below
+# purrr read in of files
+jobseeker_merge <- jobseeker_files %>% 
+  map_dfr(read_excel, sheet = "Table 4 - By SA2", skip = 6, .id = "month") %>% 
+  mutate(month = str_remove(month, "data_in/jobseeker-payment-and-youth-allowance-recipients-")) %>% 
+  mutate(month = str_remove(month, "data_in/jobseeker-payment-and-youth-allowance-")) %>% 
+  mutate(month = str_remove(month, "monthly-profile-")) %>% 
+  mutate(month = str_remove(month, ".xlsx"))  %>% 
+  clean_names() %>% 
+  remove_empty() %>% 
+  mutate(job_seeker_payment = as.numeric(job_seeker_payment), youth_allowance_other = as.numeric(youth_allowance_other)) %>% 
+  mutate(across(everything(), ~replace_na(.x, 0))) %>% 
+  mutate(month = as.yearmon(month, format = "%B-%Y")) %>% 
+  mutate(total = job_seeker_payment + youth_allowance_other) %>% 
+  filter((sa2 >= 20000 & sa2 <= 29999)) %>% 
+  mutate(sa2 = as.character(sa2))
 
 ## simplication of the sa2_file
 #sa2_initial <- st_read("data_in/shp/sa2_2016_gmelb.shp") %>% # already deleted, but is an export from gisdb
@@ -59,13 +39,6 @@ gr_melb_sa2_5digit_list <- sa2_greater %>%
   select(sa2_5digit) %>% 
   pull()
 
-### merge it all - update here
-jobseeker_merge <- bind_rows(data_mar20, data_apr20, data_may20, data_jun20, data_jul20, data_aug20) %>% 
-  mutate(job_seeker_payment = parse_number(job_seeker_payment), youth_allowance_other = parse_number(youth_allowance_other)) %>% 
-  mutate(month = ymd(month)) %>%
-  mutate(total = job_seeker_payment + youth_allowance_other) %>% 
-  filter((sa2 >= 20000 & sa2 <= 29999))
-
 jobseeker_merge_sa2 <- jobseeker_merge %>% 
   filter(sa2_name %in% c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Ponds",
                          "Airport West", "Keilor East", "Niddrie - Essendon West", "Strathmore")) %>% 
@@ -79,9 +52,10 @@ jobseeker_merge_mv <- jobseeker_merge_sa2 %>%
   mutate(region = "City of Moonee Valley")
 
 jobseeker_merge_gm <- jobseeker_merge %>% 
-  filter(sa2 %in% gr_melb_sa2_5digit_list) %>% 
+  filter(sa2 %in% gr_melb_sa2_5digit_list) %>%
   group_by(month)  %>% 
-  summarise(job_seeker_payment = sum(job_seeker_payment), youth_allowance_other = sum(youth_allowance_other), total = sum(total)) %>% 
+  summarise(job_seeker_payment = sum(job_seeker_payment), youth_allowance_other = sum(youth_allowance_other),
+              total = sum(total)) %>% 
   mutate(region = "Greater Melbourne")
 
 jobseeker_merge_vic <- jobseeker_merge %>% 
@@ -173,11 +147,17 @@ jobseeker_joined <- left_join(jobseeker_all, joined_ages) %>%
                              "Percentage aged 15-64 on either JobSeeker or Youth Allowance"))
 write_csv(jobseeker_joined, "app_data/jobseeker_joined.csv")
 
-jobseeker_joined_rate <- jobseeker_joined %>% 
+# needed because plotly won't work with yearmon (not that I can figure out yet)
+jobseeker_joined2 <- jobseeker_joined %>% 
+  mutate(month = paste0("28 ", month)) %>% 
+  mutate(month = as.Date(month, format = "%d %b %Y"))
+write_csv(jobseeker_joined2, "app_data/jobseeker_joined2.csv")
+
+jobseeker_joined_rate <- jobseeker_joined2 %>% 
   filter(data_type == "Percentage aged 15-64 on either JobSeeker or Youth Allowance")
 write_csv(jobseeker_joined_rate, "app_data/jobseeker_joined_rate.csv")
 
-jobseeker_joined_total <- jobseeker_joined %>% 
+jobseeker_joined_total <- jobseeker_joined2 %>% 
   filter(data_type == "Total JobSeeker and Youth allowance recipients")
 write_csv(jobseeker_joined_total, "app_data/jobseeker_joined_total.csv")
 
@@ -195,22 +175,19 @@ js_month_list <- jobseeker_table_long %>%
   pull()
 
 jobseeker_month <- js_month_list[1]
-jobseeker_month_formatted <- format(ymd(jobseeker_month), "%b %Y")
-jobseeker_month_long <- format(ymd(jobseeker_month), "%B %Y")
 jobseeker_first <- js_month_list[length(js_month_list)]
-jobseeker_first_month_formatted <- format(ymd(jobseeker_first), "%b %Y")
 
 jobseeker_table_filtered <- jobseeker_table_long %>% 
   filter(month == jobseeker_month) %>% 
   filter(data_type == "Percentage aged 15-64 on either JobSeeker or Youth Allowance") %>% 
   rename(percentage = values)
 
-js_map_join <- left_join(sa2_greater, jobseeker_table_filtered, by = "sa2_name")
-st_write(js_map_join, "app_data/shp/js_map_join.shp")
+js_map_join <- left_join(sa2_greater, jobseeker_table_filtered, by = "sa2_name") %>% 
+  select(-sa2_code, -sa2_5digit)
+st_write(js_map_join, "app_data/shp/js_map_join.shp", delete_layer = TRUE)
 
 jobseeker_large_first <- jobseeker_joined %>% 
   filter(month  == jobseeker_first) %>% 
-  mutate(month = format(month, "%b %Y")) %>% 
   mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
                              "recipients_first", "of_pop_first")) %>% 
   pivot_wider(names_from = data_type, values_from = values) %>% 
@@ -218,7 +195,6 @@ jobseeker_large_first <- jobseeker_joined %>%
 
 jobseeker_large_current <- jobseeker_joined %>% 
   filter(month == jobseeker_month) %>% 
-  mutate(month = format(month, "%b %Y")) %>% 
   mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
                              "recipients_last", "of_pop_last")) %>%  
   pivot_wider(names_from = data_type, values_from = values) %>% 
@@ -231,10 +207,9 @@ jobseeker_large <- bind_cols(jobseeker_large_first, jobseeker_large_current) %>%
   mutate(recipients_change = format(recipients_change, big.mark = ","))
 # rename the columns - do it this way!!!
 colnames(jobseeker_large) <- c("Region",
-                               paste0("Recipients ", jobseeker_first_month_formatted),
-                               paste0("As % of 15-64 pop. ", jobseeker_first_month_formatted),
-                               paste0("Recipients ", jobseeker_month_formatted),
-                               paste0("As % of 15-64 pop. ", jobseeker_month_formatted),
+                               paste0("Recipients ", jobseeker_first),
+                               paste0("As % of 15-64 pop. ", jobseeker_first),
+                               paste0("Recipients ", jobseeker_month),
+                               paste0("As % of 15-64 pop. ", jobseeker_month),
                                "Change")
-
 

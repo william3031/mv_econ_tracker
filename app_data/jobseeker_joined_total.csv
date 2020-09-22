@@ -1,67 +1,67 @@
-region,month,data_type,values
-Ascot Vale,2020-03-27,Total JobSeeker and Youth allowance recipients,542
-Essendon - Aberfeldie,2020-03-27,Total JobSeeker and Youth allowance recipients,453
-Flemington,2020-03-27,Total JobSeeker and Youth allowance recipients,542
-Moonee Ponds,2020-03-27,Total JobSeeker and Youth allowance recipients,275
-Airport West,2020-03-27,Total JobSeeker and Youth allowance recipients,215
-Keilor East,2020-03-27,Total JobSeeker and Youth allowance recipients,612
-Niddrie - Essendon West,2020-03-27,Total JobSeeker and Youth allowance recipients,109
-Strathmore,2020-03-27,Total JobSeeker and Youth allowance recipients,141
-Ascot Vale,2020-04-24,Total JobSeeker and Youth allowance recipients,873
-Essendon - Aberfeldie,2020-04-24,Total JobSeeker and Youth allowance recipients,1018
-Flemington,2020-04-24,Total JobSeeker and Youth allowance recipients,873
-Moonee Ponds,2020-04-24,Total JobSeeker and Youth allowance recipients,618
-Airport West,2020-04-24,Total JobSeeker and Youth allowance recipients,384
-Keilor East,2020-04-24,Total JobSeeker and Youth allowance recipients,1053
-Niddrie - Essendon West,2020-04-24,Total JobSeeker and Youth allowance recipients,212
-Strathmore,2020-04-24,Total JobSeeker and Youth allowance recipients,281
-Ascot Vale,2020-05-29,Total JobSeeker and Youth allowance recipients,1047
-Essendon - Aberfeldie,2020-05-29,Total JobSeeker and Youth allowance recipients,1267
-Flemington,2020-05-29,Total JobSeeker and Youth allowance recipients,997
-Moonee Ponds,2020-05-29,Total JobSeeker and Youth allowance recipients,752
-Airport West,2020-05-29,Total JobSeeker and Youth allowance recipients,483
-Keilor East,2020-05-29,Total JobSeeker and Youth allowance recipients,1355
-Niddrie - Essendon West,2020-05-29,Total JobSeeker and Youth allowance recipients,321
-Strathmore,2020-05-29,Total JobSeeker and Youth allowance recipients,368
-Ascot Vale,2020-06-26,Total JobSeeker and Youth allowance recipients,1019
-Essendon - Aberfeldie,2020-06-26,Total JobSeeker and Youth allowance recipients,1245
-Flemington,2020-06-26,Total JobSeeker and Youth allowance recipients,994
-Moonee Ponds,2020-06-26,Total JobSeeker and Youth allowance recipients,722
-Airport West,2020-06-26,Total JobSeeker and Youth allowance recipients,458
-Keilor East,2020-06-26,Total JobSeeker and Youth allowance recipients,1315
-Niddrie - Essendon West,2020-06-26,Total JobSeeker and Youth allowance recipients,304
-Strathmore,2020-06-26,Total JobSeeker and Youth allowance recipients,365
-Ascot Vale,2020-07-31,Total JobSeeker and Youth allowance recipients,1058
-Essendon - Aberfeldie,2020-07-31,Total JobSeeker and Youth allowance recipients,1281
-Flemington,2020-07-31,Total JobSeeker and Youth allowance recipients,1044
-Moonee Ponds,2020-07-31,Total JobSeeker and Youth allowance recipients,753
-Airport West,2020-07-31,Total JobSeeker and Youth allowance recipients,475
-Keilor East,2020-07-31,Total JobSeeker and Youth allowance recipients,1361
-Niddrie - Essendon West,2020-07-31,Total JobSeeker and Youth allowance recipients,316
-Strathmore,2020-07-31,Total JobSeeker and Youth allowance recipients,376
-Ascot Vale,2020-08-31,Total JobSeeker and Youth allowance recipients,1082
-Essendon - Aberfeldie,2020-08-31,Total JobSeeker and Youth allowance recipients,1342
-Flemington,2020-08-31,Total JobSeeker and Youth allowance recipients,1034
-Moonee Ponds,2020-08-31,Total JobSeeker and Youth allowance recipients,801
-Airport West,2020-08-31,Total JobSeeker and Youth allowance recipients,502
-Keilor East,2020-08-31,Total JobSeeker and Youth allowance recipients,1442
-Niddrie - Essendon West,2020-08-31,Total JobSeeker and Youth allowance recipients,325
-Strathmore,2020-08-31,Total JobSeeker and Youth allowance recipients,390
-City of Moonee Valley,2020-03-27,Total JobSeeker and Youth allowance recipients,2889
-City of Moonee Valley,2020-04-24,Total JobSeeker and Youth allowance recipients,5312
-City of Moonee Valley,2020-05-29,Total JobSeeker and Youth allowance recipients,6590
-City of Moonee Valley,2020-06-26,Total JobSeeker and Youth allowance recipients,6422
-City of Moonee Valley,2020-07-31,Total JobSeeker and Youth allowance recipients,6664
-City of Moonee Valley,2020-08-31,Total JobSeeker and Youth allowance recipients,6918
-Greater Melbourne,2020-03-27,Total JobSeeker and Youth allowance recipients,130705
-Greater Melbourne,2020-04-24,Total JobSeeker and Youth allowance recipients,226065
-Greater Melbourne,2020-05-29,Total JobSeeker and Youth allowance recipients,287388
-Greater Melbourne,2020-06-26,Total JobSeeker and Youth allowance recipients,283601
-Greater Melbourne,2020-07-31,Total JobSeeker and Youth allowance recipients,294508
-Greater Melbourne,2020-08-31,Total JobSeeker and Youth allowance recipients,309140
-Victoria,2020-03-27,Total JobSeeker and Youth allowance recipients,193657
-Victoria,2020-04-24,Total JobSeeker and Youth allowance recipients,312918
-Victoria,2020-05-29,Total JobSeeker and Youth allowance recipients,389238
-Victoria,2020-06-26,Total JobSeeker and Youth allowance recipients,384127
-Victoria,2020-07-31,Total JobSeeker and Youth allowance recipients,396193
-Victoria,2020-08-31,Total JobSeeker and Youth allowance recipients,413350
+month,region,data_type,values
+2020-08-28,Ascot Vale,Total JobSeeker and Youth allowance recipients,1082
+2020-08-28,Essendon - Aberfeldie,Total JobSeeker and Youth allowance recipients,1342
+2020-08-28,Flemington,Total JobSeeker and Youth allowance recipients,1034
+2020-08-28,Moonee Ponds,Total JobSeeker and Youth allowance recipients,801
+2020-08-28,Airport West,Total JobSeeker and Youth allowance recipients,502
+2020-08-28,Keilor East,Total JobSeeker and Youth allowance recipients,1442
+2020-08-28,Niddrie - Essendon West,Total JobSeeker and Youth allowance recipients,325
+2020-08-28,Strathmore,Total JobSeeker and Youth allowance recipients,390
+2020-07-28,Ascot Vale,Total JobSeeker and Youth allowance recipients,1058
+2020-07-28,Essendon - Aberfeldie,Total JobSeeker and Youth allowance recipients,1281
+2020-07-28,Flemington,Total JobSeeker and Youth allowance recipients,1044
+2020-07-28,Moonee Ponds,Total JobSeeker and Youth allowance recipients,753
+2020-07-28,Airport West,Total JobSeeker and Youth allowance recipients,475
+2020-07-28,Keilor East,Total JobSeeker and Youth allowance recipients,1361
+2020-07-28,Niddrie - Essendon West,Total JobSeeker and Youth allowance recipients,316
+2020-07-28,Strathmore,Total JobSeeker and Youth allowance recipients,376
+2020-06-28,Ascot Vale,Total JobSeeker and Youth allowance recipients,1019
+2020-06-28,Essendon - Aberfeldie,Total JobSeeker and Youth allowance recipients,1245
+2020-06-28,Flemington,Total JobSeeker and Youth allowance recipients,994
+2020-06-28,Moonee Ponds,Total JobSeeker and Youth allowance recipients,722
+2020-06-28,Airport West,Total JobSeeker and Youth allowance recipients,458
+2020-06-28,Keilor East,Total JobSeeker and Youth allowance recipients,1315
+2020-06-28,Niddrie - Essendon West,Total JobSeeker and Youth allowance recipients,304
+2020-06-28,Strathmore,Total JobSeeker and Youth allowance recipients,365
+2020-04-28,Ascot Vale,Total JobSeeker and Youth allowance recipients,873
+2020-04-28,Essendon - Aberfeldie,Total JobSeeker and Youth allowance recipients,1018
+2020-04-28,Flemington,Total JobSeeker and Youth allowance recipients,873
+2020-04-28,Moonee Ponds,Total JobSeeker and Youth allowance recipients,618
+2020-04-28,Airport West,Total JobSeeker and Youth allowance recipients,384
+2020-04-28,Keilor East,Total JobSeeker and Youth allowance recipients,1053
+2020-04-28,Niddrie - Essendon West,Total JobSeeker and Youth allowance recipients,212
+2020-04-28,Strathmore,Total JobSeeker and Youth allowance recipients,281
+2020-03-28,Ascot Vale,Total JobSeeker and Youth allowance recipients,542
+2020-03-28,Essendon - Aberfeldie,Total JobSeeker and Youth allowance recipients,453
+2020-03-28,Flemington,Total JobSeeker and Youth allowance recipients,542
+2020-03-28,Moonee Ponds,Total JobSeeker and Youth allowance recipients,275
+2020-03-28,Airport West,Total JobSeeker and Youth allowance recipients,215
+2020-03-28,Keilor East,Total JobSeeker and Youth allowance recipients,612
+2020-03-28,Niddrie - Essendon West,Total JobSeeker and Youth allowance recipients,109
+2020-03-28,Strathmore,Total JobSeeker and Youth allowance recipients,141
+2020-05-28,Ascot Vale,Total JobSeeker and Youth allowance recipients,1047
+2020-05-28,Essendon - Aberfeldie,Total JobSeeker and Youth allowance recipients,1267
+2020-05-28,Flemington,Total JobSeeker and Youth allowance recipients,997
+2020-05-28,Moonee Ponds,Total JobSeeker and Youth allowance recipients,752
+2020-05-28,Airport West,Total JobSeeker and Youth allowance recipients,483
+2020-05-28,Keilor East,Total JobSeeker and Youth allowance recipients,1355
+2020-05-28,Niddrie - Essendon West,Total JobSeeker and Youth allowance recipients,321
+2020-05-28,Strathmore,Total JobSeeker and Youth allowance recipients,368
+2020-03-28,City of Moonee Valley,Total JobSeeker and Youth allowance recipients,2889
+2020-04-28,City of Moonee Valley,Total JobSeeker and Youth allowance recipients,5312
+2020-05-28,City of Moonee Valley,Total JobSeeker and Youth allowance recipients,6590
+2020-06-28,City of Moonee Valley,Total JobSeeker and Youth allowance recipients,6422
+2020-07-28,City of Moonee Valley,Total JobSeeker and Youth allowance recipients,6664
+2020-08-28,City of Moonee Valley,Total JobSeeker and Youth allowance recipients,6918
+2020-03-28,Greater Melbourne,Total JobSeeker and Youth allowance recipients,130575
+2020-04-28,Greater Melbourne,Total JobSeeker and Youth allowance recipients,226020
+2020-05-28,Greater Melbourne,Total JobSeeker and Youth allowance recipients,287358
+2020-06-28,Greater Melbourne,Total JobSeeker and Youth allowance recipients,283576
+2020-07-28,Greater Melbourne,Total JobSeeker and Youth allowance recipients,294473
+2020-08-28,Greater Melbourne,Total JobSeeker and Youth allowance recipients,309110
+2020-03-28,Victoria,Total JobSeeker and Youth allowance recipients,193492
+2020-04-28,Victoria,Total JobSeeker and Youth allowance recipients,312858
+2020-05-28,Victoria,Total JobSeeker and Youth allowance recipients,389193
+2020-06-28,Victoria,Total JobSeeker and Youth allowance recipients,384087
+2020-07-28,Victoria,Total JobSeeker and Youth allowance recipients,396138
+2020-08-28,Victoria,Total JobSeeker and Youth allowance recipients,413300

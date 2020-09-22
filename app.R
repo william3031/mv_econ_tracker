@@ -16,6 +16,7 @@ library(sf)
 library(lubridate)
 library(shinycssloaders)
 library(data.table) # fread is faster
+library(zoo) # for yearmon
 #library(timevis)
 
 #disable scientific notation
@@ -122,21 +123,21 @@ sa2_greater <- st_read("app_data/shp/sa2_2016_gmel.shp") %>%
 js_data_list <- c("Percentage aged 15-64 on either JobSeeker or Youth Allowance",
                   "Total JobSeeker and Youth allowance recipients")
 
-js_month_list <- jobseeker_table_long %>% 
+js_month_list <- jobseeker_table_long %>%
+    mutate(month = as.yearmon(month)) %>% 
     distinct(month) %>% 
     arrange(desc(month)) %>% 
     pull()
 
 jobseeker_month <- js_month_list[1]
-jobseeker_month_formatted <- format(ymd(jobseeker_month), "%b %Y")
-jobseeker_month_long <- format(ymd(jobseeker_month), "%B %Y")
+jobseeker_first <- js_month_list[length(js_month_list)]
 
 jobseeker_table_filtered <- jobseeker_table_long %>% 
     filter(month == jobseeker_month) %>% 
     filter(data_type == "Percentage aged 15-64 on either JobSeeker or Youth Allowance") %>% 
     rename(percentage = values)
 
-js_map_join <- st_read("app_data/shp/js_map_join.shp")
+js_map_join <- st_read("app_data/shp/js_map_join.shp") 
 
 region_list <- c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Ponds",
                  "Airport West", "Keilor East", "Niddrie - Essendon West", "Strathmore",
@@ -145,11 +146,15 @@ region_list <- c("Ascot Vale", "Essendon - Aberfeldie", "Flemington", "Moonee Po
 selected_regions <- c("City of Moonee Valley", "Greater Melbourne")
 selected_sa2 <- c("Flemington", "Moonee Ponds", "Keilor East")
 
-jobseeker_joined <- fread("app_data/jobseeker_joined.csv")
-jobseeker_joined_rate <- fread("app_data/jobseeker_joined_rate.csv")
-jobseeker_joined_total <- fread("app_data/jobseeker_joined_total.csv")
+jobseeker_joined <- fread("app_data/jobseeker_joined2.csv") %>% 
+    arrange(month) # not sure why these are needed, but they are
+jobseeker_joined_rate <- fread("app_data/jobseeker_joined_rate.csv") %>% 
+    arrange(month)
+jobseeker_joined_total <- fread("app_data/jobseeker_joined_total.csv") %>% 
+    arrange(month)
 
 js_mv_num <- jobseeker_joined %>% 
+    mutate(month = as.yearmon(month)) %>%  
     filter(month == jobseeker_month) %>% 
     filter(region == "City of Moonee Valley") %>% 
     filter(data_type == "Total JobSeeker and Youth allowance recipients") %>% 
@@ -157,13 +162,8 @@ js_mv_num <- jobseeker_joined %>%
     mutate(values = format(values, big.mark = ",")) %>% 
     pull()
 
-jobseeker_month <- js_month_list[1]
-jobseeker_month_formatted <- format(ymd(jobseeker_month), "%b %Y")
-jobseeker_month_long <- format(ymd(jobseeker_month), "%B %Y")
-jobseeker_first <- js_month_list[length(js_month_list)]
-jobseeker_first_month_formatted <- format(ymd(jobseeker_first), "%b %Y")
-
 jobseeker_large_first <- jobseeker_joined %>% 
+    mutate(month = as.yearmon(month)) %>% 
     filter(month  == jobseeker_first) %>% 
     mutate(month = format(month, "%b %Y")) %>% 
     mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
@@ -172,6 +172,7 @@ jobseeker_large_first <- jobseeker_joined %>%
     select(-month)
 
 jobseeker_large_current <- jobseeker_joined %>% 
+    mutate(month = as.yearmon(month)) %>% 
     filter(month == jobseeker_month) %>% 
     mutate(month = format(month, "%b %Y")) %>% 
     mutate(data_type = if_else(data_type == "Total JobSeeker and Youth allowance recipients",
@@ -186,10 +187,10 @@ jobseeker_large <- bind_cols(jobseeker_large_first, jobseeker_large_current) %>%
     mutate(recipients_change = format(recipients_change, big.mark = ","))
 # rename the columns - do it this way!!!
 colnames(jobseeker_large) <- c("Region",
-                               paste0("Recipients ", jobseeker_first_month_formatted),
-                               paste0("As % of 15-64 pop. ", jobseeker_first_month_formatted),
-                               paste0("Recipients ", jobseeker_month_formatted),
-                               paste0("As % of 15-64 pop. ", jobseeker_month_formatted),
+                               paste0("Recipients ", jobseeker_first),
+                               paste0("As % of 15-64 pop. ", jobseeker_first),
+                               paste0("Recipients ", jobseeker_month),
+                               paste0("As % of 15-64 pop. ", jobseeker_month),
                                "Change")
 
 # salm data ##########################
@@ -392,7 +393,7 @@ body <- dashboardBody(
         tabItem(tabName = "jobseeker_map",
                 fluidRow(
                     box(title = 'Jobseeker data (SA2)',
-                        tags$body(HTML(glue("Percentage of the population aged 15-64 on either JobSeeker or Youth Allowance (excluding students and apprentices) for <b>{jobseeker_month_formatted}</b>.</br>",
+                        tags$body(HTML(glue("Percentage of the population aged 15-64 on either JobSeeker or Youth Allowance (excluding students and apprentices) for <b>{jobseeker_month}</b>.</br>",
                                                                             "</br>Click on the map to see the percentages."))), width = 12)
                 ),
                 fluidRow(tmapOutput("jobseeker_map") %>% 
@@ -802,7 +803,7 @@ server <- function(input, output) {
     
     output$vbox_jobseek <- renderValueBox({
         valueBox(value = tags$p(js_mv_num, style = "font-size: 150%;"),
-                 subtitle = glue("Jobseeker and Youth Allowance (excluding students and apprentices) recipients ({jobseeker_month_long})"),
+                 subtitle = glue("Jobseeker and Youth Allowance (excluding students and apprentices) recipients ({jobseeker_month})"),
                  width = 4, color = "yellow")
     })
     
