@@ -26,7 +26,7 @@ options(scipen = 999)
 # date updated
 date_updated <- "22 September 2020" # update this manually now!!!
 #abs
-abs_publication_date <- "8 September 2020"
+abs_publication_date <- "22 September 2020"
 # jobkeeper
 jobkeeper_publication_date <- "18 September 2020"
 jobkeeper_data_date <- "June 2020"
@@ -299,8 +299,8 @@ body <- dashboardBody(
                 ),
                 fluidRow(
                     box(title = 'Source:',
-                        tags$a(href="https://www.abs.gov.au/ausstats/abs@.nsf/mf/6160.0.55.001", target="_blank",
-                               "ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia"),
+                        tags$a(href="https://www.abs.gov.au/statistics/labour/earnings-and-work-hours/weekly-payroll-jobs-and-wages-australia/latest-release", target="_blank",
+                               "ABS, Weekly Payroll Jobs and Wages in Australia"),
                         tags$body(HTML(glue("</br>Last updated {abs_publication_date}"))), width = 12)
                 ),
         ),
@@ -321,8 +321,8 @@ body <- dashboardBody(
                 ),
                 fluidRow(
                     box(title = 'Source:',
-                        tags$a(href="https://www.abs.gov.au/ausstats/abs@.nsf/mf/6160.0.55.001", target="_blank",
-                               "ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia"),
+                        tags$a(href="https://www.abs.gov.au/statistics/labour/earnings-and-work-hours/weekly-payroll-jobs-and-wages-australia/latest-release", target="_blank",
+                               "ABS, Weekly Payroll Jobs and Wages in Australia"),
                         tags$body(HTML(glue("</br>Last updated {abs_publication_date}"))), width = 12)
                 ),
         
@@ -344,8 +344,8 @@ body <- dashboardBody(
                 ),
                 fluidRow(
                     box(title = 'Source:',
-                        tags$a(href="https://www.abs.gov.au/ausstats/abs@.nsf/mf/6160.0.55.001", target="_blank",
-                               "ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia"),
+                        tags$a(href="https://www.abs.gov.au/statistics/labour/earnings-and-work-hours/weekly-payroll-jobs-and-wages-australia/latest-release", target="_blank",
+                               "ABS, Weekly Payroll Jobs and Wages in Australia"),
                         tags$body(HTML(glue("</br>Last updated {abs_publication_date}"))), width = 12)
                 ),
                 

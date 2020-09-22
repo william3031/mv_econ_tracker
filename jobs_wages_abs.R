@@ -1,11 +1,11 @@
-# https://www.abs.gov.au/ausstats/abs@.nsf/mf/6160.0.55.001
+# https://www.abs.gov.au/statistics/labour/earnings-and-work-hours/weekly-payroll-jobs-and-wages-australia/latest-release
 # ABS 6160.0.55.001 - Weekly Payroll Jobs and Wages in Australia
 
 # libraries
 pacman::p_load(tidyverse, readxl, ggrepel, janitor, scales, glue, lubridate, plotly)
 
 # dates for glue
-abs_path <- "data_in/6160055001_do004.xlsx"
+abs_path <- "data_in/6160055001_DO004.xlsx"
 
 # read in raw data - VICTORIAN DATA
 weekly_jobs_data_raw <- read_excel(abs_path, sheet = "Payroll jobs index", skip = 5) %>% 

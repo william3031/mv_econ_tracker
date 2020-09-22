@@ -35,6 +35,12 @@ data_aug20 <- read_excel("data_in/jobseeker-payment-and-youth-allowance-monthly-
   clean_names() %>% remove_empty() %>%
   mutate(month = "2020-08-31")
 
+
+# # test here
+# library(fs)
+# dir_ls(path = "data_in/", regexp = "jobseeker") %>%
+#   map_df(~ read_excel(path = paths, "Table 4 - By SA2", skip = 6), .id = "sheet")
+
 # update the months in the bind rows below
 
 ## simplication of the sa2_file
