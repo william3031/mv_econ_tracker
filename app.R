@@ -25,7 +25,7 @@ options(scipen = 999)
 # data #########
 ## dates -------------------------------------------------------------------------------------------------------------
 # date updated
-date_updated <- "7 October 2020" # update this manually now (probably better than updating automatically as otherwise it updates on loading)
+date_updated <- "19 October 2020" # update this manually now (probably better than updating automatically as otherwise it updates on loading)
 #abs
 abs_publication_date <- "7 October 2020"
 # jobkeeper
@@ -33,7 +33,7 @@ jobkeeper_publication_date <- "18 September 2020"
 jobkeeper_data_date <- "June 2020"
 jobkeeper_map_text <- glue("Numbers are based on the total number of <b>processed applications for organisations for {jobkeeper_data_date}</b>.")
 #jobseeker
-jobseeker_publication_date <- "18 September 2020"
+jobseeker_publication_date <- "16 October 2020"
 abs_age_sex_text <- "ABS, 3235.0 - Regional Population by Age and Sex (2019)"
 # salm
 salm_publication_date <- "31 July 2020"

@@ -5,8 +5,8 @@ account: mvcc
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2690850
-bundleId: 3710801
+bundleId: 3755816
 url: https://mvcc.shinyapps.io/mv_econ_tracker/
-when: 1602033817.67546
+when: 1603058577.80459
 asMultiple: FALSE
 asStatic: FALSE
