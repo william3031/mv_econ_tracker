@@ -35,8 +35,9 @@ Ascot Vale,2018-12-01,No. of unemployed,676
 Ascot Vale,2019-03-01,No. of unemployed,731
 Ascot Vale,2019-06-01,No. of unemployed,789
 Ascot Vale,2019-09-01,No. of unemployed,834
-Ascot Vale,2019-12-01,No. of unemployed,880
-Ascot Vale,2020-03-01,No. of unemployed,855
+Ascot Vale,2019-12-01,No. of unemployed,879
+Ascot Vale,2020-03-01,No. of unemployed,853
+Ascot Vale,2020-06-01,No. of unemployed,837
 Essendon - Aberfeldie,2010-12-01,No. of unemployed,395
 Essendon - Aberfeldie,2011-03-01,No. of unemployed,386
 Essendon - Aberfeldie,2011-06-01,No. of unemployed,371
@@ -72,9 +73,10 @@ Essendon - Aberfeldie,2018-09-01,No. of unemployed,625
 Essendon - Aberfeldie,2018-12-01,No. of unemployed,585
 Essendon - Aberfeldie,2019-03-01,No. of unemployed,625
 Essendon - Aberfeldie,2019-06-01,No. of unemployed,654
-Essendon - Aberfeldie,2019-09-01,No. of unemployed,657
-Essendon - Aberfeldie,2019-12-01,No. of unemployed,681
-Essendon - Aberfeldie,2020-03-01,No. of unemployed,651
+Essendon - Aberfeldie,2019-09-01,No. of unemployed,656
+Essendon - Aberfeldie,2019-12-01,No. of unemployed,680
+Essendon - Aberfeldie,2020-03-01,No. of unemployed,649
+Essendon - Aberfeldie,2020-06-01,No. of unemployed,723
 Flemington,2010-12-01,No. of unemployed,571
 Flemington,2011-03-01,No. of unemployed,565
 Flemington,2011-06-01,No. of unemployed,533
@@ -110,9 +112,10 @@ Flemington,2018-09-01,No. of unemployed,811
 Flemington,2018-12-01,No. of unemployed,782
 Flemington,2019-03-01,No. of unemployed,840
 Flemington,2019-06-01,No. of unemployed,863
-Flemington,2019-09-01,No. of unemployed,865
-Flemington,2019-12-01,No. of unemployed,891
-Flemington,2020-03-01,No. of unemployed,856
+Flemington,2019-09-01,No. of unemployed,864
+Flemington,2019-12-01,No. of unemployed,890
+Flemington,2020-03-01,No. of unemployed,854
+Flemington,2020-06-01,No. of unemployed,842
 Moonee Ponds,2010-12-01,No. of unemployed,215
 Moonee Ponds,2011-03-01,No. of unemployed,217
 Moonee Ponds,2011-06-01,No. of unemployed,212
@@ -146,11 +149,12 @@ Moonee Ponds,2018-03-01,No. of unemployed,424
 Moonee Ponds,2018-06-01,No. of unemployed,403
 Moonee Ponds,2018-09-01,No. of unemployed,389
 Moonee Ponds,2018-12-01,No. of unemployed,353
-Moonee Ponds,2019-03-01,No. of unemployed,361
-Moonee Ponds,2019-06-01,No. of unemployed,369
-Moonee Ponds,2019-09-01,No. of unemployed,363
-Moonee Ponds,2019-12-01,No. of unemployed,380
-Moonee Ponds,2020-03-01,No. of unemployed,365
+Moonee Ponds,2019-03-01,No. of unemployed,360
+Moonee Ponds,2019-06-01,No. of unemployed,368
+Moonee Ponds,2019-09-01,No. of unemployed,362
+Moonee Ponds,2019-12-01,No. of unemployed,379
+Moonee Ponds,2020-03-01,No. of unemployed,364
+Moonee Ponds,2020-06-01,No. of unemployed,412
 Airport West,2010-12-01,No. of unemployed,180
 Airport West,2011-03-01,No. of unemployed,172
 Airport West,2011-06-01,No. of unemployed,158
@@ -184,11 +188,12 @@ Airport West,2018-03-01,No. of unemployed,208
 Airport West,2018-06-01,No. of unemployed,188
 Airport West,2018-09-01,No. of unemployed,170
 Airport West,2018-12-01,No. of unemployed,160
-Airport West,2019-03-01,No. of unemployed,157
+Airport West,2019-03-01,No. of unemployed,158
 Airport West,2019-06-01,No. of unemployed,170
 Airport West,2019-09-01,No. of unemployed,172
 Airport West,2019-12-01,No. of unemployed,181
 Airport West,2020-03-01,No. of unemployed,189
+Airport West,2020-06-01,No. of unemployed,227
 Keilor East,2010-12-01,No. of unemployed,530
 Keilor East,2011-03-01,No. of unemployed,509
 Keilor East,2011-06-01,No. of unemployed,465
@@ -226,7 +231,8 @@ Keilor East,2019-03-01,No. of unemployed,419
 Keilor East,2019-06-01,No. of unemployed,440
 Keilor East,2019-09-01,No. of unemployed,448
 Keilor East,2019-12-01,No. of unemployed,469
-Keilor East,2020-03-01,No. of unemployed,487
+Keilor East,2020-03-01,No. of unemployed,486
+Keilor East,2020-06-01,No. of unemployed,609
 Niddrie - Essendon West,2010-12-01,No. of unemployed,112
 Niddrie - Essendon West,2011-03-01,No. of unemployed,110
 Niddrie - Essendon West,2011-06-01,No. of unemployed,101
@@ -264,7 +270,8 @@ Niddrie - Essendon West,2019-03-01,No. of unemployed,76
 Niddrie - Essendon West,2019-06-01,No. of unemployed,87
 Niddrie - Essendon West,2019-09-01,No. of unemployed,96
 Niddrie - Essendon West,2019-12-01,No. of unemployed,103
-Niddrie - Essendon West,2020-03-01,No. of unemployed,105
+Niddrie - Essendon West,2020-03-01,No. of unemployed,104
+Niddrie - Essendon West,2020-06-01,No. of unemployed,132
 Strathmore,2010-12-01,No. of unemployed,128
 Strathmore,2011-03-01,No. of unemployed,119
 Strathmore,2011-06-01,No. of unemployed,105
@@ -303,6 +310,7 @@ Strathmore,2019-06-01,No. of unemployed,98
 Strathmore,2019-09-01,No. of unemployed,98
 Strathmore,2019-12-01,No. of unemployed,100
 Strathmore,2020-03-01,No. of unemployed,104
+Strathmore,2020-06-01,No. of unemployed,138
 City of Moonee Valley,2010-12-01,No. of unemployed,2755
 City of Moonee Valley,2011-03-01,No. of unemployed,2693
 City of Moonee Valley,2011-06-01,No. of unemployed,2516
@@ -337,10 +345,11 @@ City of Moonee Valley,2018-06-01,No. of unemployed,3485
 City of Moonee Valley,2018-09-01,No. of unemployed,3353
 City of Moonee Valley,2018-12-01,No. of unemployed,3163
 City of Moonee Valley,2019-03-01,No. of unemployed,3304
-City of Moonee Valley,2019-06-01,No. of unemployed,3469
-City of Moonee Valley,2019-09-01,No. of unemployed,3532
-City of Moonee Valley,2019-12-01,No. of unemployed,3685
-City of Moonee Valley,2020-03-01,No. of unemployed,3610
+City of Moonee Valley,2019-06-01,No. of unemployed,3468
+City of Moonee Valley,2019-09-01,No. of unemployed,3530
+City of Moonee Valley,2019-12-01,No. of unemployed,3681
+City of Moonee Valley,2020-03-01,No. of unemployed,3601
+City of Moonee Valley,2020-06-01,No. of unemployed,3920
 Greater Melbourne,2010-12-01,No. of unemployed,98457
 Greater Melbourne,2011-03-01,No. of unemployed,96142
 Greater Melbourne,2011-06-01,No. of unemployed,94209
@@ -373,9 +382,10 @@ Greater Melbourne,2017-12-01,No. of unemployed,138765
 Greater Melbourne,2018-03-01,No. of unemployed,136366
 Greater Melbourne,2018-06-01,No. of unemployed,131495
 Greater Melbourne,2018-09-01,No. of unemployed,123174
-Greater Melbourne,2018-12-01,No. of unemployed,115907
-Greater Melbourne,2019-03-01,No. of unemployed,112485
-Greater Melbourne,2019-06-01,No. of unemployed,111921
-Greater Melbourne,2019-09-01,No. of unemployed,115137
-Greater Melbourne,2019-12-01,No. of unemployed,119505
-Greater Melbourne,2020-03-01,No. of unemployed,147079
+Greater Melbourne,2018-12-01,No. of unemployed,115906
+Greater Melbourne,2019-03-01,No. of unemployed,112477
+Greater Melbourne,2019-06-01,No. of unemployed,111883
+Greater Melbourne,2019-09-01,No. of unemployed,115072
+Greater Melbourne,2019-12-01,No. of unemployed,119359
+Greater Melbourne,2020-03-01,No. of unemployed,146729
+Greater Melbourne,2020-06-01,No. of unemployed,162479

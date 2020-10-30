@@ -4,8 +4,8 @@
 # libraries
 pacman::p_load(tidyverse, readxl, lubridate, janitor, tsibble, sf)
 
-sa2_data_path <- "data_in/SALM Smoothed SA2 Datafiles (ASGS 2016) - March quarter 2020.xlsx"
-lga_data_path <- "data_in/SALM Smoothed LGA Datafiles (ASGS 2019) - March quarter 2020.xlsx"
+sa2_data_path <- "data_in/SALM Smoothed SA2 Datafiles (ASGS 2016) - June quarter 2020.xlsx"
+lga_data_path <- "data_in/SALM Smoothed LGA Datafiles (ASGS 2019) - June quarter 2020.xlsx"
 
 #import files  sa2 unemployment
 sa2_data_unemp_rate <- read_excel(sa2_data_path,

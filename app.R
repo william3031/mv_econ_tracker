@@ -25,7 +25,7 @@ options(scipen = 999)
 # data #########
 ## dates -------------------------------------------------------------------------------------------------------------
 # date updated
-date_updated <- "20 October 2020" # update this manually now (probably better than updating automatically as otherwise it updates on loading)
+date_updated <- "30 October 2020" # update this manually now (probably better than updating automatically as otherwise it updates on loading)
 #abs
 abs_publication_date <- "20 October 2020"
 # jobkeeper
@@ -36,7 +36,7 @@ jobkeeper_map_text <- glue("Numbers are based on the total number of <b>processe
 jobseeker_publication_date <- "16 October 2020"
 abs_age_sex_text <- "ABS, 3235.0 - Regional Population by Age and Sex (2019)"
 # salm
-salm_publication_date <- "31 July 2020"
+salm_publication_date <- "30 October 2020"
 # region text
 region_text <- "The regions shown are SA2 areas within the City of Moonee Valley shown as well as Moonee Valley and Greater Melbourne.</br>"
 
