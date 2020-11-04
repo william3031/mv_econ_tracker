@@ -4,7 +4,7 @@
 # libraries
 pacman::p_load(tidyverse, readxl, janitor, scales, sf, rmapshaper, lubridate, RColorBrewer, fs, zoo)
 
-# file locations
+# file locations - just copy the file in, it will read everything
 jobseeker_files <- dir_ls(path = "data_in/", regexp = "jobseeker")
 
 # purrr read in of files

@@ -1,4 +1,9 @@
+############# instructions ##############################
 # Run the other files first when updating data. That will export it in to the correct format and will be read in here.
+# the dates in the top section will need to be changed, otherwise, just run everything else.
+# for example if there is new jobs and wages data, just run that file, then change the dates here and run the app
+##################################################
+
 # add libraries - don't use pacman - it won't work when published to shinyapps
 library(shiny)
 library(tidyverse)

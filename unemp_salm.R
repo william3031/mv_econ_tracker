@@ -4,6 +4,7 @@
 # libraries
 pacman::p_load(tidyverse, readxl, lubridate, janitor, tsibble, sf)
 
+# file paths - change the file names as they are based on months.
 sa2_data_path <- "data_in/SALM Smoothed SA2 Datafiles (ASGS 2016) - June quarter 2020.xlsx"
 lga_data_path <- "data_in/SALM Smoothed LGA Datafiles (ASGS 2019) - June quarter 2020.xlsx"
 

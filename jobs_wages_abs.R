@@ -4,7 +4,7 @@
 # libraries
 pacman::p_load(tidyverse, readxl, ggrepel, janitor, scales, glue, lubridate, plotly)
 
-# dates for glue
+# data - just overwrite the file when there is new data
 abs_path <- "data_in/6160055001_DO004.xlsx"
 
 # read in raw data - VICTORIAN DATA

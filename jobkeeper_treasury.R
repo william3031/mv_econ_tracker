@@ -5,7 +5,7 @@
 # libraries
 pacman::p_load(tidyverse, readxl, janitor, scales, sf, rmapshaper, tmap, tmaptools, leaflet)
 
-# read in data
+# read in data - will need to change the file name when there is new data
 jk_raw <- read_excel("data_in/JobKeeper-data-20200918.xlsx", sheet = "Data", skip = 1) %>% 
   clean_names()
 write_csv(jk_raw, "app_data/jk_raw.csv")
